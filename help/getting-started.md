@@ -4,14 +4,18 @@ seo-title: はじめに
 description: Places の概要.
 seo-description: Places の概要.
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
 
 ---
 
 
 # はじめに {#getting-started}
 
-場所を使用する前に完了する必要がある作業は次のとおりです。
+Placesの使い始めに役立つビデオを次に示します。
+
+>[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
+
+場所を使用するには、次のタスクを実行します。
 
 ## 1.場所を使用するためのプロビジョニングを行う
 
@@ -25,11 +29,11 @@ source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
 
 * 管理コンソールの「場所とエクスペリエンスプラットフォームの起動」製品コンテキストに、ユーザーとして表示されていることを確認します。
 
-   詳しくは、「エクスペリエンスプ [ラットフォームの起動と場所へのユーザーの追加」を参照してください](/help/adding-a-user-to-places.md)。
+   詳しくは、エクスペリエンスプラット *フォーム起動へのユーザーの追加および場所* FAQ内の場所を参 [照してください](/help/places-faqs.md)。
 
 * Places拡張機能がインストールされた状態で、モバイルアプリのプロパティがExperience Platform Launchで設定されていることを確認します。
 
-   詳しくは、「場所」拡張機能を参 [照してください](/help/configure-places-in-the-sdk/places-extension/places-extension.md)。
+   詳しくは、「場所」拡張機能を参 [照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 * 会社に複数のアドビ組織がある場合は、必ずPlaces用にプロビジョニングされた組織を選択してください。
 
@@ -37,7 +41,7 @@ source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
 
 ## 2.場所拡張機能と場所モニター拡張機能の設定
 
-Places拡張機能とMonitor拡張機能の設定について詳しくは、Places拡張機能と [Places Monitor拡張機能を参照](/help/configure-places-in-the-sdk/places-extension/places-extension.md)[してください](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+Places拡張機能とMonitor拡張機能の設定について詳しくは、Places拡張機能と [Places Monitor拡張機能を参照](/help/places-ext-aep-sdks/places-extension/places-extension.md)[してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 3.ライブラリとPOIの作成
 
@@ -45,14 +49,8 @@ Places拡張機能とMonitor拡張機能の設定について詳しくは、Plac
 
 * Webサービスを使用する。
 
-   詳しくは、「Places Webサービス」を [参照してください](/help/places-rest-apis/places-web-services.md)。
+   詳しくは、「Places Webサービス」を [参照してください](/help/places-web-service-api/places-web-services.md)。
 
 * 場所UIを使用する。
 
-   詳しくは、「場所UI」を参 [照してください](/help/places-database-management-1/places-database-management.md)。
-
-## 4.Placesを使い始める
-
-Placesの使い始めに役立つビデオを次に示します。
-
->[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
+   詳しくは、「場所UI」を参 [照してください](/help/poi-mgmt-ui/places-services-overview.md)。
