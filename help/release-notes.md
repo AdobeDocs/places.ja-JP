@@ -4,7 +4,7 @@ seo-title: Adobe Placesのリリースノートです。
 description: Adobe Placesのリリースノートです。
 seo-description: Adobe Placesのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 60d72318db5f19646bca8870cec33979934593a7
+source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 60d72318db5f19646bca8870cec33979934593a7
 
 Placesのリリースノートを次に示します。
 
-## 2019 年 10 月 10 日
+## 2019 年 10 月 9 日
 
 * **PlacesMonitor 2.1.0**
 
@@ -183,7 +183,7 @@ iOS Places Monitor 1.0.0
 
 iOS用プレースモニターの初期リリース。
 
-プレースモニターは、OSレベルのロケーションAPIを管理し、Places拡張と直接通信します。 両方の拡張機能がインストールされている場合、お客様はアプリケーション内で標準搭載の地域監視機能を使用できます。 プレースモニターの詳細については、「プレースモニター」拡張 [機能を参照してくださ](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)い。
+プレースモニターは、OSレベルのロケーションAPIを管理し、Places拡張と直接通信します。 両方の拡張機能がインストールされている場合、お客様はアプリケーション内で標準搭載の地域監視機能を使用できます。 プレースモニターの詳細については、「プレースモニター」拡張 [機能を参照してくださ](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)い。
 
 ## 2019 年 2 月 28 日
 
@@ -212,7 +212,7 @@ Places Extensionを使用すると、モバイルアプリにPlacesライブラ�
 * POIの入口または出口でトリガーされるルールイベント。
 * ユーザーの現在のPOIを指すデータ要素を作成します。
 
-Places拡張機能について詳しくは、 [Places extension](sdk/places-extension/places-extension.md)を参照してください。
+Places拡張機能について詳しくは、Places拡張機能を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 #### Places API
 
@@ -224,7 +224,7 @@ Places拡張機能について詳しくは、 [Places extension](sdk/places-exte
 
    PythonユーティリティはAPIと共に提供されます。
 
-Places APIについて詳しくは、Places webサービスを参 [照してください](/help/places-rest-apis/places-web-services.md)。
+Places APIについて詳しくは、Places webサービスを参 [照してください](/help/places-web-service-api/places-web-services.md)。
 
 ### まもなくリリース
 
