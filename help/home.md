@@ -4,7 +4,7 @@ seo-title: Adobe Placesの概要
 description: 'Adobe Placesは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 seo-description: '場所は、モバイルユーザーの関与を理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ---
 
@@ -30,13 +30,19 @@ Adobe Placesは、モバイルユーザーのエンゲージメントを理解�
 * 場所のコンテキストを持つオーディエンスプロファイルを使用して、オフラインの行動に基づいてオーディエンスをセグメント化します。
 * 関連する場合は、店頭での体験を持つユーザーをターゲットにします。
 
+## Brandonの「導入部を配置」ビデオのプレースホルダーの追加
+
+## 場所の使用例
+
+このセクションの機能強化
+
 ## コンポーネントを配置
 
 場所は、次のコンポーネントで構成されます。
 
 * **Places webサービス**
 
-   REST APIを使用してPOIを作成および管理できます。 REST APIについて詳しくは、「場所Webサービス」を [参照してください](/help/places-rest-apis/api-usage/api-usage.md)。
+   POIの作成と管理は、Places REST APIを使用して行うことができます。 REST APIについて詳しくは、ライブラリの管理とPOI [の管理](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) を参 [照してください](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **場所UI**
 
@@ -44,7 +50,7 @@ Adobe Placesは、モバイルユーザーのエンゲージメントを理解�
 
 * **Places SDK**
 
-   モバイルアプリに位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、場所拡張を参照 [してください](/help/configure-places-in-the-sdk/places-extension/places-extension.md)。
+   モバイルアプリに位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、場所拡張を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 * **場所ルール**
 
@@ -52,7 +58,7 @@ Adobe Placesは、モバイルユーザーのエンゲージメントを理解�
 
 * **プレースモニタ**
 
-   モバイルアプリに埋め込んで、ユーザーの場所の変更を自動的に監視し、場所ルールをトリガーできるマルチプラットフォームモバイルSDK。 詳しくは、プレースモニター拡張機能 [を参照してください](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+   モバイルアプリに埋め込んで、ユーザーの場所の変更を自動的に監視し、場所ルールをトリガーできるマルチプラットフォームモバイルSDK。 詳しくは、プレースモニター拡張機能 [を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 用語
 
@@ -87,23 +93,3 @@ Adobe Placesは、モバイルユーザーのエンゲージメントを理解�
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
    For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
-
-## 場所のUIについて
-
-場所UIにアクセスするには、ブラウザーで「場所UI」 [に移動し](https://places.adobe.com) 、Adobe IDでログインします。
-
-UIに慣れるために役立つ基本情報を次に示します。
-
-* 右上隅には、クリックしてライブラリ、POI、検索のフィルタリングを作成できるボタンがあります。
-* 画面の右下隅には、ズームインおよびズームアウト用のボタンがあり、現在の位置を中心にして、マップビューとサテライトビ **[!UICONTROL Find Me]**&#x200B;ューを切り替えることができます。
-* ダブルクリックしてズームインするか、クリックしてドラッグしてマップを中心に戻します。
-* 矢印キーを使用してマップをスクロールすることもできます。
-
-![](assets/location-services.png)
-
-
-## 場所ワークフロー
-
-場所ワークフローの概要を次に示します。
-
-![](/help/assets/places-workflow-diagram-lc-1.png)
