@@ -4,7 +4,7 @@ seo-title: 場所UIでPOIを管理
 description: 場所UIを使用してPOIを管理します。
 seo-description: 場所UIを使用してPOIを管理します。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -37,7 +37,7 @@ POIとライブラリは、場所UIを使用して場所データベースで作
 ## POIの編集
 
 1. Adobe IDを使用してPlacesにログインします。
-1. Adobe IDを使用してAdobe Places Serviceにログインします。
+1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストに似たアイコンをクリックします。
 1. 編集するPOIを見つけます。
 1. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL View Details]**&#x200B;す。
@@ -46,14 +46,14 @@ POIとライブラリは、場所UIを使用して場所データベースで作
 ## POIの削除
 
 1. Adobe IDを使用してPlacesにログインします。
-1. Adobe IDを使用してAdobe Places Serviceにログインします。
+1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストに似たアイコンをクリックします。
 1. 削除するPOIを見つけます。
 1. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL Delete]**&#x200B;す。
 
 ## 市区町村、都道府県、国またはメタデータでPOIをフィルター
 
-1. Adobe IDを使用してAdobe Places Serviceにログインします。
+1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、フィルターアイコンをクリックします。
 1. POIは、次のいずれかの方法でフィルターできます。
 
