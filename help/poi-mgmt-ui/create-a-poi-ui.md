@@ -4,7 +4,7 @@ seo-title: POI を作成
 description: 場所UIを使用してPOIを作成します。
 seo-description: 場所UIを使用してPOIを作成します。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 目標地点(POI)とは、マップ上の目標地点です。 カフェやレストランなどの場所も含めることができます。
 
-1. Adobe IDを使用してAdobe Placesにログインします。
+1. Adobe IDを使用して「場所」にログインします。
 2. 右上で、バレットリストに似たアイコンをクリックし、をクリックします **[!UICONTROL New]**。
 3. POIの名前を入力します。
 4. ライブラリを選択または追加します。
