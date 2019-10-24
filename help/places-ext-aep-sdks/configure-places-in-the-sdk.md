@@ -4,7 +4,7 @@ seo-title: 場所拡張を使用したSDKの設定
 description: '場所拡張機能を持つSDKを設定して、モバイルアプリで場所を認識できるようにすることができます。 '
 seo-description: '場所拡張機能を持つSDKを設定して、モバイルアプリで場所を認識できるようにすることができます。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
 1. 「起動」で場所拡張を設定します。
 
-   詳しくは、「起動」の「場所 *」拡張の設定」を参照してください*。
+   詳しくは、「Places拡張でのLaunch *でのPlaces拡張の設定* 」を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. モバイルアプリにPlaces拡張を追加します。
 
-   詳しくは、アプリへのPlaces *拡張の追加を参照してください*。
+   詳しくは、Places拡張機能のPlaces拡 *張機能のアプリへの追加を参照* して [ください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. Mobile core拡張機能で場所を登録します。
 
-   詳しくは、MobileコアでのAdobe Places *の登録を参照してください*。
+   詳しくは、Places拡張でのMobileコ *アへの場所の登録* を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 ## プレースモニター拡張機能の設定
 
