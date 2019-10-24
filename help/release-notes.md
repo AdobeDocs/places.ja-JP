@@ -1,17 +1,17 @@
 ---
-title: リリースノート
+title: Adobe Experience Platform Placesのリリースノート
 seo-title: Adobe Experience Placesのリリースノートです。
 description: Adobe Experience Placesのリリースノートです。
 seo-description: Adobe Experience Placesのリリースノートです。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 ---
 
 
 # リリースノート {#release-notes}
 
-Placesのリリースノートを次に示します。
+Adobe Experience Places(Places)のリリースノートは次のとおりです。
 
 ## 2019 年 10 月 9 日
 
@@ -228,7 +228,7 @@ Places APIについて詳しくは、Places webサービスを参 [照してく�
 
 ### まもなくリリース
 
-#### Analytics統合
+#### Analytics の統合
 
 ユーザーがPOI（受動呼び出し）内にいる場合、Placesデータベースから送信されるすべてのAnalytics呼び出しに位置コンテキストデータを自動的に追加するようにAnalytics拡張が更新されます。 また、この更新により、AnalyticsがPOIの入口または出口（アクティブな呼び出し）で直接呼び出しを追跡するルールを作成できるようになります。
 
