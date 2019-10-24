@@ -1,16 +1,16 @@
 ---
-product: 場所
+product: Adobe Experience Platform Places
 audience: end-user
-user-guide-title: Adobe Placesヘルプ
+user-guide-title: Adobe Experience Platform Placesヘルプ
 translation-type: tm+mt
-source-git-commit: cc5162bd71a22eec1ca8645a351e11695fd5eb16
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
 
-# Adobe Placesヘルプ {#using}
+# Adobe Experience Platform Placesヘルプ {#using}
 
-+ [Adobe Placesの概要](home.md)
++ [Adobe Experience Placesの概要](home.md)
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
 + 目標地点管理インターフェースの配置 {#poi-mgmt-ui}
