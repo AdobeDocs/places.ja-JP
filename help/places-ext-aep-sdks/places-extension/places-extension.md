@@ -4,7 +4,7 @@ seo-title: '[配置]拡張子'
 description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 seo-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 ## Adobe Experience Platform LaunchにPlaces拡張をインストールする
 
 1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Extensions]** ックします。
-2. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Adobe Places]** けてをクリックします **[!UICONTROL Install]**。
+2. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
 3. このプロパティで使用する場所ライブラリを選択します。 これらのライブラリは、アプリでアクセス可能になります。
 4. 「**[!UICONTROL Save]**」をクリックします。
 
