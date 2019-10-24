@@ -4,7 +4,7 @@ seo-title: 場所UIでのライブラリの管理
 description: 場所UIを使用してライブラリを管理します。
 seo-description: 場所UIを使用してライブラリを管理します。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -25,7 +25,7 @@ POIをライブラリに編成する方法は、組織にとって最も役立�
 
 ## ライブラリの作成
 
-1. Adobe IDを使用してAdobe Placesにログインします。
+1. Adobe IDを使用して「Places」にログインします。
 2. 右上で、/をクリックし **[!UICONTROL ...]** ます **[!UICONTROL Manage Libraries]**。
 3. 「**[!UICONTROL New]**」をクリックします。
 4. 名前を入力します。
@@ -33,13 +33,13 @@ POIをライブラリに編成する方法は、組織にとって最も役立�
 
 ## 場所UIでのライブラリのランクの変更
 
-1. Adobe IDを使用してAdobe Placesにログインします。
+1. Adobe IDを使用して「場所」にログインします。
 2. 右上で、/をクリックし **[!UICONTROL ...]** ます **[!UICONTROL Manage Libraries]**。
 3. ライブラリ名の左にあるアイコンをクリックし、ライブラリを新しいランクにドラッグします。
 
 ## ライブラリ名の変更
 
-1. Adobe IDを使用してAdobe Placesにログインします。
+1. Adobe IDを使用して「場所」にログインします。
 2. 右上で、/をクリックし **[!UICONTROL ...]** ます **[!UICONTROL Manage Libraries]**。
 3. 削除するライブラリを見つけます。
 4. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL Rename]**&#x200B;す。
@@ -47,7 +47,7 @@ POIをライブラリに編成する方法は、組織にとって最も役立�
 
 ## ライブラリの削除
 
-1. Adobe IDを使用してAdobe Placesにログインします。
+1. Adobe IDを使用して「場所」にログインします。
 2. 右上で、/をクリックし **[!UICONTROL ...]** ます **[!UICONTROL Manage Libraries]**。
 3. 削除するライブラリを見つけます。
 4. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL Delete]**&#x200B;す。
