@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Places
 description: '場所は、モバイルユーザーの関与を理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 seo-description: '場所は、モバイルユーザーの関与を理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Experience Places（場所）は、モバイルユーザーのエンゲー
 
 * **Places webサービス**
 
-   POIの作成と管理は、Places REST APIを使用して行うことができます。 REST APIについて詳しくは、ライブラリの管理とPOI [の管理](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) を参 [照してください](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
+   POIの作成と管理は、Places REST APIを使用して行うことができます。 REST APIについて詳しくは、ライブラリの管理とPOI [の管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) を参 [照してください](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **場所UI**
 
