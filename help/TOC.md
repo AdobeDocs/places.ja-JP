@@ -3,14 +3,14 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
+source-git-commit: 5cb539b41426b177f17ff1ff44988ff646259d3f
 
 ---
 
 
 # Adobe Experience Platform Location Serviceヘルプ {#using}
 
-+ [Adobe Experience Placesの概要](home.md)
++ [Adobe Experience Platform Location Serviceの概要](home.md)
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
 + 目標地点管理インターフェース {#poi-mgmt-ui}
@@ -64,8 +64,8 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
 + 他のアドビソリューションとのロケーションサービスの使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Adobe Analyticsへの場所データの送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [場所データを含むAdobe Analyticsでのレポートの実行](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [Adobe Analyticsへのロケーションサービスデータの送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [ロケーションサービスデータを含むAdobe Analyticsでのレポートの実行](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Mobile Services for Messaging {#places-mobile-svcs-messaging}
       + [Mobile Services for Messaging](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [プッシュメッセージ](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
@@ -74,7 +74,7 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
       + [プッシュ通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [アプリ内メッセージ](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Adobe targetで場所を使用](use-places-with-other-solutions/places-target/places-target.md)
+      + [Adobe targetでのロケーションサービスの使用](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
    + [場所のテストと検証](places-testing-validation/test-validate-places.md)
 + [よくある質問](places-faqs.md)
