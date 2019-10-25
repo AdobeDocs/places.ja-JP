@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform Placesのリリースノート
-seo-title: Adobe Experience Placesのリリースノートです。
-description: Adobe Experience Placesのリリースノートです。
-seo-description: Adobe Experience Placesのリリースノートです。
+title: リリースノート
+seo-title: リリースノート
+description: Adobe Experience Platform Location Serviceのリリースノートです。
+seo-description: Adobe Experience Platform Location Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # リリースノート {#release-notes}
 
-Adobe Experience Places(Places)のリリースノートは次のとおりです。
+以下に、リリースノートを示します。
 
 ## 2019 年 10 月 9 日
 
@@ -31,7 +31,7 @@ Adobe Experience Places(Places)のリリースノートは次のとおりです�
 
 このリリースでは、次の更新が行われました。
 
-### UIの更新を配置
+### UIの更新
 
 場所UIの更新の一覧を次に示します。
 
@@ -54,7 +54,7 @@ Adobe Experience Places(Places)のリリースノートは次のとおりです�
 
 このリリースでは、次の更新が行われました。
 
-### Places Monitor Launch Extension 2.0.0
+### Monitor Launch Extension 2.0.0
 
 * プレースモニター2.0のAndroidおよびiOSのインストール手順を更新しました。
 
@@ -72,7 +72,7 @@ Adobe Experience Places(Places)のリリースノートは次のとおりです�
 
    新しいAPI: `public static void stop (final boolean clearData);`
 
-* Places `getNearbyPointsOfInterest` APIの使用を更新し、エラーシナリオをより効果的に処理できるようにしました。
+* APIの使用を更新し、エラー `getNearbyPointsOfInterest` シナリオをより効果的に処理できるようになりました。
 
 ## 2019 年 7 月 25 日
 
@@ -195,12 +195,12 @@ iOS用プレースモニターの初期リリース。
 
 このリリースの主な機能は次のとおりです。
 
-#### 場所UI
+#### Location Service UI
 
 目標地点(POI)を表示および管理できる管理UIがリリースされました。 また、POIをライブラリに整理することもできます。 市、州、カテゴリなどの標準メタデータに加え、POIにカスタムメタデータを追加する機能もサポートしています。
 
-* 場所のUIを表示するには、https://places.adobe.comに移動し [ます](https://places.adobe.com)。
-* Places UIの使い始めには、はじめにを参照し [てください](/help/getting-started.md)。
+* UIを表示するには、https://places.adobe.comに移動し [ます](https://places.adobe.com)。
+* UIの使用を開始するには、はじめにを参照し [てください](/help/getting-started.md)。
 
 #### 拡張子を配置
 
@@ -224,7 +224,7 @@ Places拡張機能について詳しくは、Places拡張機能を参照 [して
 
    PythonユーティリティはAPIと共に提供されます。
 
-Places APIについて詳しくは、Places webサービスを参 [照してください](/help/places-web-service-api/places-web-services.md)。
+Places APIについて詳しくは、 [WebサービスAPIを参照してください](/help/web-service-api/places-web-services.md)。
 
 ### まもなくリリース
 
