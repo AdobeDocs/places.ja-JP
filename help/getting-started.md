@@ -1,35 +1,35 @@
 ---
 title: はじめに
 seo-title: はじめに
-description: Places の概要.
-seo-description: Places の概要.
+description: ロケーションサービスの概要を参照してください。
+seo-description: ロケーションサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # はじめに {#getting-started}
 
-Placesの使い始めに役立つビデオを次に示します。
+以下に、ロケーションサービスの使い始めに役立つビデオを示します。
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
-場所を使用するには、次のタスクを実行します。
+ロケーションサービスを使用するには、次のタスクを実行します。
 
-## 1.場所を使用するためのプロビジョニングを行う
+## 1.ロケーションサービスを使用するためのプロビジョニングを行う
 
-場所には、通常のAdobe Experience Platformプロビジョニングコンテキストとの特別なプロビジョニングコンテキストが必要です。
+ロケーションサービスには、通常のAdobe Experience Platformプロビジョニングコンテキストに対する特別なプロビジョニングコンテキストが必要です。
 
 プロビジョニングを行うには、次のタスクを実行します。
 
-* 管理コンソールで、組織にPlacesのプロビジョニングが行われていることを確認します。
+* 管理コンソールで、組織にロケーションサービスのプロビジョニングが行われていることを確認します。
 
-   アドビの管理者でない場合は、管理者に問い合わせて、管理コンソールに「配置」コンテキストが表示されることを確認してください。
+   アドビの管理者でない場合は、管理者に問い合わせて、管理コンソールで「ロケーションサービス」のコンテキストを確認してください。
 
-* 管理コンソールの「場所とエクスペリエンスプラットフォームの起動」製品コンテキストに、ユーザーとして表示されていることを確認します。
+* 管理コンソールの「ロケーションサービス」および「Experience Platform Launch」製品コンテキストに、ユーザーとして表示されていることを確認します。
 
-   詳しくは、エクスペリエンスプラット *フォーム起動へのユーザーの追加および場所* FAQ内の場所を参 [照してください](/help/places-faqs.md)。
+   詳しくは、よくある質問の *Adding a user to Experience Platform Launch and Location Service* （エクスペリエンスプラットフォームの起動とロケーションサービスへのユーザーの追加） [を参照してください](/help/places-faqs.md)。
 
 * Places拡張機能がインストールされた状態で、モバイルアプリのプロパティがExperience Platform Launchで設定されていることを確認します。
 
@@ -49,7 +49,7 @@ Places拡張機能とMonitor拡張機能の設定について詳しくは、Plac
 
 * Webサービスを使用する。
 
-   詳しくは、「Places Webサービス」を [参照してください](/help/places-web-service-api/places-web-services.md)。
+   詳しくは、 [Web Service APIを参照してください](/help/web-service-api/places-web-services.md)。
 
 * 場所UIを使用する。
 
