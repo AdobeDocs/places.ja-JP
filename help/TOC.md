@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 5cb539b41426b177f17ff1ff44988ff646259d3f
+source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 5cb539b41426b177f17ff1ff44988ff646259d3f
    + [新しい POI を作成](poi-mgmt-ui/create-a-poi-ui.md)
    + [以前に作成したPOIの管理](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [POIでのメタデータの使用方法](poi-mgmt-ui/metadata-with-pois.md)
-   + [POIの一括アップロード](poi-mgmt-ui/bulk-upload-pois.md)
+   + [POIのバルクアップロード](poi-mgmt-ui/bulk-upload-pois.md)
    + [複数のライブラリの管理](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
 + WebサービスAPI {#web-service-api}
    + [WebサービスAPIの概要](web-service-api/places-web-services.md)
