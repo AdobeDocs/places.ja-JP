@@ -4,7 +4,7 @@ seo-title: 'Web Services APIの概要 '
 description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
 seo-description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
 translation-type: tm+mt
-source-git-commit: e204958ac3acbf5fb45d2347987f35557be70e43
+source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
 
 ---
 
@@ -39,17 +39,3 @@ WebサービスAPIを使用する前に、次の要件が満たされている�
 
 * 使用可能なAPIとその使用方法について詳しくは、ライブラリの管理とPOIの管理を [参照し](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[てください](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 * これらのAPIのヘッダーとパラメーターについて詳しくは、ヘッダーとパラメーターを [参照してくださ](/help/web-service-api/api-usage/headers-and-parameters.md)い。
-
-## 組織の要件 {#org-requirements}
-
-WebサービスのREST APIにアクセスするには、システム管理者に次のタスクが完了していることを確認します。
-
-* 場所がプロビジョニングされ、組織に表示されます。
-* 組織に追加されました。
-* 組織内の場所に追加されました。
-
-   詳しくは、よくある質問の「場所 *とエクスペリエンスプラットフォームの起動* 」へのユー [ザーの追加を参照してください](/help/places-faqs.md)。
-
-* 組織にPlaces開発者として追加されました。
-
-   開発者ロールについて詳しくは、開発者の管理を参照 [してください](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
