@@ -4,12 +4,32 @@ seo-title: Adobe I/O統合の概要
 description: Adobe I/O統合の作成に関する情報です。
 seo-description: Adobe I/O統合の作成に関する情報です。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ---
 
 
-# Adobe I/O統合の概要 {#adobeio-integration}
+# Adobe I/O統合 {#adobeio-integration}
+
+この情報では、Adobe I/OとPlacesの統合を作成する方法を示します。
+
+## ユーザーアクセスの前提条件
+
+組織のシステム管理者に、次のタスクが完了していることを確認します。
+
+* コアサービスを組織の管理コンソールに配置します。
+* 組織に追加されました。
+* 組織のPlacesコアサービスにユーザーとして追加されました。
+
+   詳しくは、よくある質問(FAQ) *の「ロケーションサービスおよびエクスペリエンスプラットフォーム起動プロファイルへのユーザーまたは開発者の追加* 」 [を参照してください](/help/places-faqs.md)。
+
+* 組織のPlacesコアサービスに開発者として追加されました。
+
+   開発者の追加について詳しくは、よくある質問( *FAQ)の「ロケーションサービスおよびエクスペリエンスプラットフォーム起動プロファイルへのユーザー* または開発者の [追加」を参照してください](/help/places-faqs.md)。
+
+   開発者ロールについて詳しくは、開発者の管理を参照 [してください](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
+
+### REST APIリクエスト
 
 Places REST APIへの各リクエストには、次の項目が必要です。
 
@@ -19,8 +39,6 @@ Places REST APIへの各リクエストには、次の項目が必要です。
 
 Adobe I/Oとの統合により、これらの項目と、JSON Web Token(JWT)を使用してベアラトークンをリクエストする方法が提供されます。
 
-## 追加情報
-
 * JWTについて詳しくは、「JSON webトークンの概 [要」を参照してください](https://jwt.io/introduction/)。
 * Places用の統合を作成するには、以下の「Places統合の作 *成」の節を参照してください* 。
 * APIキーの統合、JWTの生成、および公開鍵証明書について詳しくは、 [Adobe I/O認証の概要を参照してください](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)。
@@ -29,7 +47,7 @@ Adobe I/Oとの統合により、これらの項目と、JSON Web Token(JWT)を�
 >
 >Adobe I/Oコンソールにログインできない場合、またはExperience Platform Location Serviceが統合を作成ページのオプションでない場合は *、* WebサービスAPIの概要の組織の要件 *を参照* してください [](/help/web-service-api/places-web-services.md)。
 
-## 場所の統合の作成 {#create-places-integration}
+## 場所の統合の作成
 
 Places統合を作成するには、次のタスクを実行します。
 
@@ -75,7 +93,7 @@ Places統合を作成するには、次のタスクを実行します。
 
 次のビデオでは、キーペアの生成プロセスを示します。
 
-![](/help/assets/places_integration_video.gif)
+![統合ビデオ](/help/assets/places_integration_video.gif)
 
 ### Adobe I/Oコンソールでの場所統合の作成
 
@@ -125,4 +143,3 @@ JWTトークンを生成するには：
 >[!IMPORTANT]
 >
 >アドビのアクセストークン **は** 24時間のみ有効なので、サンプルのCURLコマンド（手順5）を保存します。 アクセストークンが無効になった場合は、トークンを再生成する必要があります。
-
