@@ -4,7 +4,7 @@ seo-title: データ要素の定義
 description: ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。
 seo-description: 'ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
+source-git-commit: 5d438fdd712c85101d546ed82f8ad155010cfb91
 
 ---
 
@@ -45,8 +45,6 @@ source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
 1. アプリのプロパティページで、タブをクリック **[!UICONTROL Data Elements]** します。
 
 2. 「**[!UICONTROL Create New Data Element]**」をクリックします。
-
-   ![データ要素の作成](/help/assets/create-de-2-v3.png)
 
 3. インストールされている拡張機能のリストで、を探しま **[!UICONTROL Places]**&#x200B;す。
 
