@@ -4,15 +4,13 @@ seo-title: Adobe Analyticsへの場所データの送信
 description: この節では、PlacesデータをAnalyticsに送信する方法について説明します。
 seo-description: 'この節では、PlacesデータをAnalyticsに送信する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # Adobe Analyticsへの場所データの送信 {#places-data-analytics}
 
-
-（Steveのビデオのプレースホルダー）。
 
 >[!IMPORTANT]
 >
