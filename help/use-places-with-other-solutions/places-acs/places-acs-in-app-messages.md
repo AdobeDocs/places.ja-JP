@@ -4,14 +4,12 @@ seo-title: ロケーションサービスを使用したアプリ内メッセー
 description: ここでは、Campaign Standardのアプリ内メッセージとCampaign Standardのキャンペーン標準のプッシュメッセージを使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardのアプリ内メッセージで「Campaign Standardのプッシュメッセージ」を使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # ロケーションサービスを使用したアプリ内メッセージ {#in-app-messages-loc-service}
-
-（イワンからのビデオ）
 
 この情報は、Adobe Experience Platform Location Service情報を使用して、アプリ内メッセージまたはローカル通知を送信する方法を理解するのに役立ちます。
 
