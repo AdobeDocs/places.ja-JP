@@ -4,7 +4,7 @@ seo-title: データ要素の定義
 description: ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。
 seo-description: 'ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
 
 ---
 
@@ -30,10 +30,10 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 各POIには、次のデータ参照が含まれます。
 
 * **[!UICONTROL Category]**:POIのカテゴリ
-* **[!IUICONTROL 市区町村]**:POI都市
+* **[!UICONTROL City]**:POI都市
 * **[!UICONTROL Country]**:ポイ州
-* **[UICONTROL Latitude]**:POI緯度
-* **[UICONTROL Longitude]**:POIの経度
+* **[!UICONTROL Latitude]**:POI緯度
+* **[!UICONTROL Longitude]**:POIの経度
 * **[!UICONTROL Metadata]**:poiのカスタムメタデータ
 * **[!UICONTROL Name]**:POI地域
 * **[!UICONTROL Radius]**:POI半径
