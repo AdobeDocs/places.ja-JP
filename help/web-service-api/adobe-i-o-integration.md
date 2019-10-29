@@ -4,7 +4,7 @@ seo-title: Adobe I/O統合の概要
 description: Adobe I/O統合の作成に関する情報です。
 seo-description: Adobe I/O統合の作成に関する情報です。
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
 
 ---
 
@@ -100,25 +100,31 @@ Places統合を作成するには、次のタスクを実行します。
 場所の統合を作成するには：
 
 1. https://console.adobe.ioに移動 [し](https://console.adobe.io) 、Adobe IDでサインインします。
-2. 複数のExperience cloud組織にアクセスできる場合は、左側のドロップダウンリストから組織を選択します。
-3. 「**[!UICONTROL New Integration]**」をクリックします。
-4. を選択し、 **[!UICONTROL Access an API]** をクリックしま **[!UICONTROL Continue]**&#x200B;す。
+2. 「クイックス **タート** 」セクションで、「統合を作成」をク **リックします**。
+3. を選択し、 **[!UICONTROL Access an API]** をクリックしま **[!UICONTROL Continue]**&#x200B;す。
+
+   **[!UICONTROL Access an API]** がデフォルトの場所です。
+
+4. 複数のExperience cloud組織にアクセスできる場合は、右上のドロップダウンリストから組織を選択します。
 5. の下 **[!UICONTROL Experience Cloud]**&#x200B;で、統 **[!UICONTROL Places]** 合するアドビサービスを選択し、をクリックします **[!UICONTROL Continue]**。
 6. を選択し、 **[!UICONTROL New integration]** をクリックしま **[!UICONTROL Continue]**&#x200B;す。
-7. [新しい統 *合を作成]画面で* 、名前と説明を入力します。
+7. 新しい統合を作成画面で、名前と説明を入力します。
 8. 上で作成したフ `xxxx_public.crt` ァイルをドロップゾーンにドラッグ&amp;ドロ **[!UICONTROL Public keys certificates]** ップします。
-9. At the bottom of the page, click **[!UICONTROL Create integration]**.
-10. 数秒後、統合の作成画面で ** 、次のメッセージが表示されることを確認します。
+9. 製品プロファイルを選択します。
+
+   選択するプロファイルが不明な場合は、システム管理者に問い合わせてください。
+10. At the bottom of the page, click **[!UICONTROL Create integration]**.
+11. 数秒後、統合の作成画面で ** 、次のメッセージが表示されることを確認します。
 
    `Your integration has been created.`
 
-11. 「**[!UICONTROL Continue to integration details]**」をクリックします。
+12. 統合の詳細ページが上部に統合の名前と共に表示されます。
 
-   APIキーとの統合の概要、組織ID、テクニカルアカウントID、および統合に関するその他の詳細が表示されます。
+   このタ **[!UICONTROL Overview]** ブはデフォルトで表示され、APIキー、組織ID、テクニカルアカウントID、および統合に関するその他の詳細が表示されます。
 
 ### 組織IDとAPIキーを記録します
 
-1. タブに、そ **[!UICONTROL Services]** れが表示されることを確 **[!UICONTROL Places]** 認します。
+1. 統合の詳細ページで、タブをクリックし **[!UICONTROL Services]** て、がに表示されるこ **[!UICONTROL Places]** とを確認しま **[!UICONTROL Configured Services]**&#x200B;す。
 2. タブで、API **[!UICONTROL Overview]** キー（クライアントID）と組織IDを探して記録します。
 
    これらのIDは、各Places REST APIリクエストに必要です。
@@ -127,7 +133,7 @@ Places統合を作成するには、次のタスクを実行します。
 
 ### JWTトークンの生成
 
-Adobe I/Oコ **[!UICONTROL JWT]** ンソールのタブでは、JWTを生成し、交換URLを指定することで、統合をテストできます。
+統合の詳細ページで、タブをクリック **[!UICONTROL JWT]** し、JWTを生成して交換URLを指定することで統合をテストできるようにします。
 
 JWTトークンを生成するには：
 
