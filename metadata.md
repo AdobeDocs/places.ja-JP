@@ -1,16 +1,16 @@
 ---
 cloud: experience-cloud
 product: 場所
-solution-title: Learn & Support
+solution-title: ラーニングとサポート
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud/core-services.html
 getting-started-title: はじめに
 getting-started-url: https://www.adobe.com/jp
 tutorials-title: チュートリアル
 tutorials-url: https://www.adobe.com/jp
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
-index: false
+index: true
 translation-type: tm+mt
-source-git-commit: befe48b14946d047f331d07d7707cb070af5ff46
+source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
 
 ---
 
