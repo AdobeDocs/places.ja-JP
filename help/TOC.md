@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
    + [複数のライブラリの管理](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
 + WebサービスAPI {#web-service-api}
    + [WebサービスAPIの概要](web-service-api/places-web-services.md)
-   + [Adobe I/O統合](web-service-api/adobe-i-o-integration.md)
+   + [統合の前提条件](web-service-api/adobe-i-o-integration.md)
    + APIの使用 {#api-usage}
       + [ヘッダーとパラメーター](web-service-api/api-usage/headers-and-parameters.md)
       + Manage libraries {#manage-libraries}
@@ -76,5 +76,5 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
    + Adobe Target {#places-target}
       + [Adobe targetでのロケーションサービスの使用](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
-   + [場所のテストと検証](places-testing-validation/test-validate-places.md)
+   + [ロケーションサービスのテストと検証](places-testing-validation/test-validate-places.md)
 + [よくある質問](places-faqs.md)
