@@ -4,53 +4,48 @@ seo-title: はじめに
 description: ロケーションサービスの概要を参照してください。
 seo-description: ロケーションサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
 
 ---
 
 
 # はじめに {#getting-started}
 
-以下に、ロケーションサービスの使い始めに役立つビデオを示します。
+以下に、ロケーションサービスの概要を説明する便利なビデオを示します。
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
 ロケーションサービスを使用するには、次のタスクを実行します。
 
-## 1.ロケーションサービスを使用するためのプロビジョニングを行う
+## 1.ユーザーがロケーションサービスを使用するようにプロビジョニングされていることを確認します
 
-ロケーションサービスには、通常のAdobe Experience Platformプロビジョニングコンテキストに対する特別なプロビジョニングコンテキストが必要です。
+ロケーションサービス製品コンテキストは、すべてのExperience cloud組織で使用できます。
 
-プロビジョニングを行うには、次のタスクを実行します。
-
-* 管理コンソールで、組織にロケーションサービスのプロビジョニングが行われていることを確認します。
-
-   アドビの管理者でない場合は、管理者に問い合わせて、管理コンソールで「ロケーションサービス」のコンテキストを確認してください。
-
-* 管理コンソールの「ロケーションサービス」および「Experience Platform Launch」製品コンテキストに、ユーザーとして表示されていることを確認します。
+* 管理コンソールの「ロケーションサービス」および「Experience Platform起動」製品コンテキストに、ユーザーとして表示されていることを確認します。
 
    詳しくは、よくある質問の *Adding a user to Experience Platform Launch and Location Service* （エクスペリエンスプラットフォームの起動とロケーションサービスへのユーザーの追加） [を参照してください](/help/places-faqs.md)。
 
-* Places拡張機能がインストールされた状態で、モバイルアプリのプロパティがExperience Platform Launchで設定されていることを確認します。
+* Places拡張機能がExperience Platform Launchのモバイルアプリプロパティにインストールされていることを確認します。
 
-   詳しくは、「場所」拡張機能を参 [照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+   アドビが提供する地域別監視機能を地域フェンスで使用するには、Places Monitor Extensionをインストールします。 詳しくは、「配置モニター拡張機能」 [を参照してくださ](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)い。
 
-* 会社に複数のアドビ組織がある場合は、必ずPlaces用にプロビジョニングされた組織を選択してください。
 
-   これにより、POIとライブラリを追加できます。
+## 2.POIの作成
 
-## 2.場所拡張機能と場所モニター拡張機能の設定
+目標地点(POI)は、組織用に作成するジオフェンスで、次のいずれかの方法でPOIを作成できます。
 
-Places拡張機能とMonitor拡張機能の設定について詳しくは、Places拡張機能と [Places Monitor拡張機能を参照](/help/places-ext-aep-sdks/places-extension/places-extension.md)[してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+* Location Serviceユーザーインターフェイスの使用。
 
-## 3.ライブラリとPOIの作成
+   詳しくは、「Placesサービスの概 [要」を参照してください](/help/poi-mgmt-ui/places-services-overview.md)。
 
-ライブラリとPOIは、次のいずれかの方法で作成できます。
-
-* Webサービスを使用する。
+* Places webサービスのAPIの使用。
 
    詳しくは、 [Web Service APIを参照してください](/help/web-service-api/places-web-services.md)。
 
-* 場所UIを使用する。
 
-   詳しくは、「場所UI」を参 [照してください](/help/poi-mgmt-ui/places-services-overview.md)。
+## 3.場所拡張機能と場所モニター拡張機能の設定
+
+Places拡張機能とMonitor拡張機能の設定について詳しくは、次の情報を参照してください。
+
+* [[配置]拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [Places Monitor拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
