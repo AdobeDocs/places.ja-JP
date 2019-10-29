@@ -4,12 +4,12 @@ seo-title: Adobe I/O統合の概要
 description: Adobe I/O統合の作成に関する情報です。
 seo-description: Adobe I/O統合の作成に関する情報です。
 translation-type: tm+mt
-source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
-# Adobe I/O統合 {#adobeio-integration}
+# Integration overview and prerequisites {#integration-prereqs}
 
 この情報では、Adobe I/OとPlacesの統合を作成する方法を示します。
 
