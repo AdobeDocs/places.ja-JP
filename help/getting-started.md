@@ -4,7 +4,7 @@ seo-title: はじめに
 description: ロケーションサービスの概要を参照してください。
 seo-description: ロケーションサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
+source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 ---
 
@@ -15,9 +15,11 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
+## Location Serviceの使用
+
 ロケーションサービスを使用するには、次のタスクを実行します。
 
-## 1.ユーザーがロケーションサービスを使用するようにプロビジョニングされていることを確認します
+### 1.ユーザーがロケーションサービスを使用するようにプロビジョニングされていることを確認します
 
 ロケーションサービス製品コンテキストは、すべてのExperience cloud組織で使用できます。
 
@@ -30,7 +32,7 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
    アドビが提供する地域別監視機能を地域フェンスで使用するには、Places Monitor Extensionをインストールします。 詳しくは、「配置モニター拡張機能」 [を参照してくださ](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)い。
 
 
-## 2.POIの作成
+### 2.POIの作成
 
 目標地点(POI)は、組織用に作成するジオフェンスで、次のいずれかの方法でPOIを作成できます。
 
@@ -43,7 +45,7 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
    詳しくは、 [Web Service APIを参照してください](/help/web-service-api/places-web-services.md)。
 
 
-## 3.場所拡張機能と場所モニター拡張機能の設定
+### 3.場所拡張機能と場所モニター拡張機能の設定
 
 Places拡張機能とMonitor拡張機能の設定について詳しくは、次の情報を参照してください。
 
