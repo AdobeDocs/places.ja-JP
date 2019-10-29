@@ -4,7 +4,7 @@ seo-title: ロケーションサービスを使用したアプリ内メッセー
 description: ここでは、Campaign Standardのアプリ内メッセージとCampaign Standardのキャンペーン標準のプッシュメッセージを使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardのアプリ内メッセージで「Campaign Standardのプッシュメッセージ」を使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -54,6 +54,4 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 Location ServicesをAdobe Campaign Standardと共に使用すると、地域フェンスの入口と出口に基づいて、ユーザーに対するメッセージをセグメント化およびターゲット化する強力なツールが提供されます。 このシンプルな統合により、よりパーソナライズされた状況に応じた使用例を構築できます。
 
-## 場所メタデータに基づいてCampaign Standardで異なるトリガーを作成する
-
-（この情報は今後表示されますか？）
+>[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)
