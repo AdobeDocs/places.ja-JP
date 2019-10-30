@@ -4,7 +4,7 @@ seo-title: クエリAPI
 description: クエリAPIの理解と使用を参照してください。
 seo-description: クエリAPIの理解と使用を参照してください。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
@@ -45,7 +45,7 @@ GET https://query.places.adobe.com/placesedgequery
 
    クエリーを実行するライブラリのID。 複数のライブラリに対してクエリーを実行する場合は、必ずライブラリパラメーターの複数のコピーをクエリーに含めてください。
 
-次に、正常に返されたJSON形式の例を示します。
+正常に返されたJSON形式の例を次に示します。
 
 ```markup
 {
