@@ -4,7 +4,7 @@ seo-title: 'Web Services APIの概要 '
 description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
 seo-description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
 translation-type: tm+mt
-source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
@@ -29,11 +29,11 @@ WebサービスAPIを使用する前に、次の要件が満たされている�
 
 * 組織内の場所がプロビジョニングされ、ユーザーとして適切なアクセス権を持っている。
 
-   詳しくは、以下の「組織の要件 *」の節を参* 照してください。
+   詳しくは、統合の概要と前提 *条件の「ユーザーアクセスの* 前提条 [件」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
 * Placesが組織でプロビジョニングされ、アクセス権を持ったら、Places用のAdobe統合を作成します。
 
-   詳しくは、「 *Adobe I/O統合の概要での場所* 統合の作成 [」を参](/help/web-service-api/adobe-i-o-integration.md)照してください。
+   詳しくは、「統合の概要と前提 *条件」の「場所の統合の作成* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
 追加情報:
 
