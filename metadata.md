@@ -10,7 +10,7 @@ tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 35353d02b791bcb234a45b612b0bc481b604afdf
+source-git-commit: 8b9b84a12c40e93ecd1aea1cee5d44c37dc439e8
 
 ---
 
@@ -31,7 +31,7 @@ metadata. md ファイルにはリポジトリ内のユーザーガイド TOC.md
 | tutorials-title | チュートリアルが適切でない場合はほとんど使用されません |
 | tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
 | mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です。 |
-| git-repo | コラボレーションリポジトリの場所を指定します。公開ドキュメントに github.com のミラーを使用 |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | set index=no for soft launch |
 
 TOC.md ファイル内
