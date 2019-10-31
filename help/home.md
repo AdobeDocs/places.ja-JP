@@ -4,14 +4,16 @@ seo-title: Adobe Experience Platform Location Service
 description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 seo-description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: a5eee2378475885a2aef9867ff2c38a8881c9bbe
+source-git-commit: 9fd6c1fdd740a021d7612aa33693c392bff53994
 
 ---
 
 
-# 概要 {#home}
+# Adobe Experience Platform Location Serviceの概要 {#home}
 
-Adobe Experience Platform Location Service(Location Service)は、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 場所は、モバイルアプリ開発者が、柔軟な目標地点(POI)データベースを伴う豊富で使いやすいSDKインターフェイスを使用して、場所のコンテキストを理解できるようにする地域サービスです。
+場所は、モバイルユーザーを理解し、関与させるための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。
+
+Adobe Experience Platform Location Service(Location Service)は、場所を認識するモバイルアプリで、柔軟な目標地点(POI)データベースを含む豊富で使いやすいSDKインターフェイスを使用して、場所のコンテキストを理解できるようにする地域サービスです。
 
 ロケーションサービスを使用すると、次のことを実現できます。
 
@@ -19,7 +21,7 @@ Adobe Experience Platform Location Service(Location Service)は、モバイル�
 * カスタムメタデータをPOIに添付し、追加の属性を指定して、より豊かで意味のある情報を提供します。
 * マップ上のPOIを視覚化して、空間的なコンテキストを理解し、メタデータ属性を追加/編集します。
 * Adobe Experience Platform LaunchでSDKを設定し、場所でトリガーされるルールとメタデータに基づく条件を定義します。
-* モニターデバイスの場所に書き込む必要があるコードを減らし、場所拡張を使用して場所固有のルールを自動的にトリガーします。
+* デバイスの場所を監視するために書き込む必要があるコードを減らし、場所拡張を使用して場所固有のルールを自動的にトリガーします。
 
 これにより、位置信号が重要な場合や場所からリアルタイムにアクションを実行できます。 適切なコンテキストを使用すると、モバイルエンゲージメントのエクスペリエンスがより豊かになります。
 
@@ -30,31 +32,27 @@ Adobe Experience Platform Location Service(Location Service)は、モバイル�
 * 場所のコンテキストを持つオーディエンスプロファイルを使用して、オフラインの行動に基づいてオーディエンスをセグメント化します。
 * 関連する場合は、店頭での体験を持つユーザーをターゲットにします。
 
-## ロケーションサービスの使用例
-
-このセクションの機能強化
-
 ## Location Serviceコンポーネント
 
 ロケーションサービスは、次のコンポーネントで構成されます。
 
-* **Places webサービス**
+* **Webサービス**
 
    POIの作成と管理は、Places REST APIを使用して行うことができます。 REST APIについて詳しくは、ライブラリの管理とPOI [の管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) を参 [照してください](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
-* **Location Service UI**
+* **POI管理インターフェイス**
 
    マップ上のPOIを視覚化して、空間的な状況を把握し、POIとそのカスタムメタデータを追加/編集します。
 
-* **Places SDK**
+* **[配置]拡張子**
 
    モバイルアプリに位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、場所拡張を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-* **場所ルール**
+* **ルールの起動**
 
    入口イベントと出口イベントでアクションをトリガーできる、地域インテリジェント起動ルール。 また、条件で地域属性を使用して、エクスペリエンスをパーソナライズすることもできます。
 
-* **プレースモニタ**
+* **プレースモニタ拡張機能**
 
    モバイルアプリに埋め込んで、ユーザーの場所の変更を自動的に監視し、場所ルールをトリガーできるマルチプラットフォームモバイルSDK。 詳しくは、プレースモニター拡張機能 [を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
@@ -76,7 +74,7 @@ Adobe Experience Platform Location Service(Location Service)は、モバイル�
 
 * ライ **ブラリ** はPOIの集まりで、1つのPOIではなくセットに簡単にルールを付加できるようにグループ化されています。
 
-* Places SDK拡張は、Places SDKをモ **** バイルアプリに統合するために必要なExperience Platform Launch拡張です。
+* 拡張機 **能とは** 、Places SDKをモバイルアプリに統合するために必要なExperience Platform Launch拡張機能です。
 
    他のモバイルSDKと共に使用する拡張機能で、エクスペリエンスに場所のコンテキストを追加します。
 
