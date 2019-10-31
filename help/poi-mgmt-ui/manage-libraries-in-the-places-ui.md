@@ -4,12 +4,12 @@ seo-title: 場所UIでのライブラリの管理
 description: 場所UIを使用してライブラリを管理します。
 seo-description: 場所UIを使用してライブラリを管理します。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# 場所UIでのライブラリの管理 {#manage-libraries-places-ui}
+# Manage libraries {#manage-libraries-places-ui}
 
 図書館はPOIの集まりです。 ライブラリには最大150,000個のPOIを設定でき、Experience cloud組織には最大100個のライブラリを設定できます。
 
