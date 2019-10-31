@@ -4,7 +4,7 @@ seo-title: POIの一括アップロード
 description: ここでは、POIをバルクアップロードする方法について説明します。
 seo-description: ここでは、POIをバルクアップロードする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 31462861efa807583c245963d8496eecdd3cf92e
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 31462861efa807583c245963d8496eecdd3cf92e
 
 Web Service APIを使用して.csvファイルからPOIデータベースへのPOIのバッチインポートを簡単にするPythonスクリプトのセットが作成されました。 これらのスクリプトは、このオープンソース [gitレポートからダウンロードできま](https://github.com/adobe/places-scripts)す。
 
-これらのスクリプトを実行する前に、WebサービスAPIにアクセスする方法については、 *Adobe I/O統合の概要の* 「ユーザーアクセスの前提条件 [」を参照](/help/web-service-api/adobe-i-o-integration.md)してください。
+これらのスクリプトを実行する前に、WebサービスAPIにアクセスする場合は、統合の概要と前提 *条件の「ユーザーアクセスの前提条件* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
 スクリプトに関する情報を次に示します。
 
@@ -52,7 +52,7 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 次の列の値は、Location Service UIで使用されます。
 
 * 色。ロケーションサービスのUIマップでPOIの場所を表すピンの色として使用されます。
-   * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56B」です。bおよび#3DC8DE。
+   * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56B」です。b、#3DC8DE、および""
    * この値を空白のままにすると、Location Service UIのデフォルトの色は青になります。
 
       値は、青(#3E76D0)、紫(#AA99E8)、フスキア(#DC2ABA)、オレンジ(#FC685B)、淡いオレンジ(#FC962E)、黄(#F6C436)、明(#BECE5D)、緑(#61B56B)、薄い青(#3DC8DE)のそれぞれに対応しています。
@@ -60,6 +60,11 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 * アイコン。ロケーションサービスのUIマップ上のPOIの場所を表すピン上のアイコンとして使用されます。
 
    * 有効値は、「」、ショップ、ホテルベッド、車、飛行機、電車、船、スタジアム、アムゼントパーク、アンカー、ベル、ベル、入札、書き物、ブラウズ、ブラシ、ビル、カメラ、時計、教育、懐中電灯、ゲーム、女性、男性、ハンマー、ハート、ホーム、打ち上げ、電球、郵便受け、金、ピン、買い物かごstar、target、teapot、thumbDown、thumbUp、trap、trophy、rench。
+
+      アイコンの値は、次の図に示す順序で表示されます。
+
+      ![アイコン、UI内](/help/assets/UI_icons.png)
+
    * 値を空白のままにすると、UIはデフォルトのアイコンとして星を使用します。
 
 * 言及されていない列は空白にできます。
@@ -73,19 +78,19 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 
    * `csv_file_path`
 
-      ファイルへのパ `.csv` スです。
+      これはファイルへのパス `.csv` です。
 
    * `access_code`
 
-      これは、Adobe IMSへの呼び出しから取得したアクセスコードです。 このアクセスコードの取得方法について詳しくは、「ユーザーアクセスの [前提条件」を参照してください](/help/web-service-api/adobe-i-o-integration.md) 。
+      これは、Adobe IMSへの呼び出しから取得したアクセスコードです。 このアクセスコードの取得方法について詳しくは、統合の概要と前提条件で *「ユーザーアクセスの前提条件* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `org_id`
 
-      POIの読み込み先のExperience cloud組織ID。 組織IDの取得方法について詳しくは、ユーザーアクセスの [前提条件を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      POIの読み込み先のExperience cloud組織ID。 組織IDの取得方法について詳しくは、統合の概要と前提条件で *「ユーザーアクセスの前提条件* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `api_key`
 
-      これは、Adobe I/O Places統合から取得したPlaces REST APIキーです。 APIキーの取得方法について詳しくは、ユーザーアクセスの [前提条件を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      これは、Adobe I/O Places統合から取得したPlaces REST APIキーです。 APIキーの取得方法について詳しくは、統合の概要と前提条件で *「ユーザーアクセスの前提条件* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
    b.変更を保存します。
 
 1. ターミナルウィンドウで、ディレクトリに移動 `…/places-scripts/import/` します。
