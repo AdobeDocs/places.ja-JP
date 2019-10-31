@@ -4,14 +4,14 @@ seo-title: プッシュ通知
 description: ここでは、プッシュ通知で場所を使用する方法について説明します。
 seo-description: ここでは、プッシュ通知で場所を使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
 
 # プッシュ通知(#places-push-messaging)
 
-Mobile Servicesを使用すると、Adobe Analyticsセグメントにプッシュ通知を送信できます。 ロケーションサービスでは、POIとの過去のインタラクションによって、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去30日間にストアにいたユーザーにメッセージを送信できます。
+Mobile Servicesを使用すると、Adobe Analyticsセグメントにプッシュ通知を送信できます。 ロケーションサービスでは、POIとの過去のインタラクションを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去30日間にストアにいたユーザーにメッセージを送信できます。
 
 開始する前に、次のタスクが完了していることを確認します。
 
@@ -36,4 +36,3 @@ Mobile Servicesを使用すると、Adobe Analyticsセグメントにプッシ�
 * このセクション **[!UICONTROL Custom Segment]** では、利用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
 
 ![プッシュメッセージの設定](/help/assets/push-set-up.png)
-
