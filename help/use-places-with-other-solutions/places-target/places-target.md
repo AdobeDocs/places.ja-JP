@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: 'ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 >
 >の表記は、配 `request[*]` 列内の各オブジェクトに対して_と読み上げることがで `request` きます。
 
-![イベントの追加](/help/assets/ad-setCondition_target.png)
+![イベントの追加](/help/assets/ad-setAction_target.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
