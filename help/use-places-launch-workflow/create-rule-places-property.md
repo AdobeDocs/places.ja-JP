@@ -4,14 +4,14 @@ seo-title: Placesプロパティのルールの作成
 description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 seo-description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
 
 ---
 
 
-# Placesプロパティのルールを作成する {#creating-rule-places-property}
+# 入口ルールと出口ルールの作成 {#create-entry-exit-rules}
 
-Location Service SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。
+モバイルアプリケーションにプレースモニター拡張機能がインストールされている場合、Adobe Experience Platform Launchで、プレースロケーションエントリや終了イベントなど、トリガーされた、または条件付きのロケーションデータを含むルールを作成できます。
 
 ## ルール
 
@@ -21,18 +21,18 @@ Location Service SDKは、現在の場所を追跡し、現在の場所を中心
 * （オプション）条件
 * 1つ以上のアクション
 
-### イベント
+### 場所イベント
 
 場所には、ルールを実行できる次のイベントがあります。
 
-* **[!UICONTROL Enter POI]**&#x200B;に設定されているPOIに顧客が入ったときに、Places SDKによってトリガーされます。
-* **[!UICONTROL Exit POI]**&#x200B;を呼び出します。これは、設定したPOIから顧客が離れたときに、Places SDKによってトリガーされます。
+* **POIと入力します**。これは、設定したPOIに顧客が入ったときにPlaces SDKによってトリガーされます。
+* **出口POI**。顧客が設定したPOIを離れると、Places SDKによってトリガーされます。
 
-### 条件
+### 配置条件
 
 条件は、イベントに関連付けられたデータ、またはそのインスタンスの拡張の共有状態が、アクションを実行するために満たす必要がある条件を定義します。 例えば、サンフランシスコ市内の喫茶店への入口に対してのみアクションをトリガーする条件を設定できます。
 
-ロケーションサービスSDKは、次の状態を維持します。
+配置SDKは次の状態を維持します。
 
 * 現在のPOIは、お客様の現在の所在地のPOIを指します。
 * POIから離脱した最後のPOIは、顧客が最後に離脱したPOIを指します。
@@ -54,37 +54,37 @@ Location Service SDKは、現在の場所を追跡し、現在の場所を中心
 
 >[!CAUTION]
 >
->この例では、米国内のすべてのコーヒーショップのPOIライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、POIの作成を参照し [て、場所UIのライブラリの管理で](/help/poi-mgmt-ui/create-a-poi-ui.md)*ライブラリの作成を参照してください*[](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)。
+>この例では、米国内のすべてのコーヒーショップのPOIライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、POIの作成 [とライブラリの作](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/managing-pois-in-the-places-ui#create-a-poi) 成を参 [照してください](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/manage-libraries#create-a-library)。
 
 サンフランシスコで喫茶店に入ったときにSlackに投稿を返すルールを作成する手順の例を次に示します。
 
 イベント、条件およびアクションは、次の方法で定義します。
 
-* **イベント**:ロケーションサービスエントリイベント。
+* **イベント**:エントリイベントを配置します。
 * **条件**:現在のPOI **の市** はサンフランシスコ
 * **アクション**:顧客が入力したコーヒーショップの名前をSlackにポストバックします。
 
 ### 前提条件
 
-ルールを作成する前に、Experience Platform Launchでデータ要素を作成する必要があります。 データ要素は、ポストバックメッセージにPOIに関する必要な情報を自動的に入力します。
+ルールを作成する前に、Adobe Experience Platform Launchでデータ要素を作成する必要があります。 データ要素は、ポストバックメッセージにPOIに関する必要な情報を自動的に入力します。
 
 エクスペリエンスプラットフォームの起動でデータ要素を作成するには：
 
-1. Click the **[!UICONTROL Data Elements]** tab.
-2. 「**[!UICONTROL Add Data Element]**」をクリックします。
-3. Type a name, for example, **[!UICONTROL Current coffee shop name]**.
-4. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
-5. で、を **[!UICONTROL Data Element]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
+1. 「データ要素」 **タブをクリックします** 。
+2. Click **Add Data Element**.
+3. 「現在の喫茶店名」などの名前 **を入力します**。
+4. 「拡張機能」 **ドロップダウン** ・リストで **、「場所 — ベータ」**&#x200B;を選択します。
+5. 「デー **タ要素**」で「市区町村 **」を選択**&#x200B;します。
 6. 右側のウィンドウで、「現在のPOI」 **を選択します**。
-7. 「**[!UICONTROL Save]**」をクリックします。
+7. **保存** をクリックします。
 
-### Experience Platform Launchでのロケーションサービス用のルールの作成
+### Experience Platform Launchでの場所のルールの作成
 
-![](//help/assets/create-a-rule.png)
+![ルールの作成](/help/assets/placesrule.png)
 
 1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Rules]** ックします。
-2. 「**Add Rule**」をクリックします。
-3. ルールの名前を入力します(例：SFのコーヒーショ **ップのトラックエントリ**)。
+2. 「**[!UICONTROL Add Rule]**」をクリックします。
+3. 例えば、ルールの名前を入力します **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### イベントの作成
 
@@ -98,7 +98,7 @@ Location Service SDKは、現在の場所を追跡し、現在の場所を中心
 
 1. 「条件」セクションで、をクリックしま **[!UICONTROL +Add]**&#x200B;す。 条件は、アクションを実行するために満たす必要がある条件を決定します。
 2. で、「 **[!UICONTROL Logic Type]**&#x200B;標準」を選択します。これにより、条件が満たされた場合にアクションを実行できます。
-3. 「拡張」ド **ロップダウン** ・リストで、「」を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
+3. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
 4. で、を **[!UICONTROL Condition Type]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
 5. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
 6. 右側のウィンドウでをクリ **[!UICONTROL Current POI]**&#x200B;ックし、ドロップダウンリストで都市の1 **[!UICONTROL San Francisco]** つとして選択します。
@@ -106,22 +106,28 @@ Location Service SDKは、現在の場所を追跡し、現在の場所を中心
 
 ### アクションの作成
 
-1. セクションで **[!UICONTROL Actions]** 「+追加」をク **[!UICONTROリックします]**。
-2. 「拡張機能」ド **[!UICONTRO ロップダウンリストで]** 、デフォルトの「 **[!UICONTRO Mobile Core]** 」オプションを選択したままにします。
-3. アクションのタイプを選択します(例：「ポストバック **[!UICONTRO を送信」]**)。
+1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
+2. ドロップダウン **[!UICONTROL Extension]** リストで、デフォルトのオプションを選択したま **[!UICONTROL Mobile Core]** まにします。
+3. 例えば、アクションのタイプを選択しま **[!UICONTROL Send Postback]**&#x200B;す。
 
    a.「」 **[!UICONTROL URL]**&#x200B;に、SlackのポストバックURLを入力します(例： `https://hooks.slack.com/services/`)。
 
-   b.投稿の本文を送信するには、「投稿の本文を追加」チ **[!UICONTRO ェックボックスを]** 選択します。
+   b.投稿の本文を送信するには、チェックボックスを **[!UICONTROL Add Post Body]** 選択します。
 
-   c.「投 **[!UICONTRO 稿本文]**」で、次のように投稿本文を追加します。 `{ "text": "A customer has entered" }`
+   c.で、 **[!UICONTROL Post Body]**&#x200B;次のように投稿の本文を追加します。 `{ "text": "A customer has entered" }`
 
-   c.コンテンツタイプ(例： **[!UICONTRO application/json)を入力します]**。
+   c.例えば、コンテンツタイプを入力しま **[!UICONTROL application/json]**&#x200B;す。
 
-   d.タイムアウト値(例： **5**)を選択します。
+   d.例えば、タイムアウト値を選択します **[!UICONTROL 5]**。
 
-4. Click **[!UICONTRO Keep Changes]**.
+4. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ### ルールの発行
 
 1. ルールをアクティブ化するには、ルールを発行する必要があります。 エクスペリエンスプラットフォームの起動でのルールの発行について詳しくは、「発行」を参照し [てくださ](https://docs.adobelaunch.com/launch-reference/publishing)い。
+
+### 入口と出口を越えた考え方
+
+[場所] [ジオフェンス] [入口] [出口]を使用して[起動]でルールをトリガするのは非常に強力ですが、場所データを他のイベントが発生する条件として使用することもできます。 例えば、アプリ内の特定のtrackAction呼び出しイベントに基づいて、Mobileコア追跡アクションイベントトリガーを起動する準備が整っているとします。 このイベントに基づいて、アクションが実行される前にイベントに追加の場所条件を設定できます。 例えば、購入イベントが発生した場合にアプリ内調査を開き、ユーザーの現在の場所に特定のロケーショ `trackAction` ン **** サービスメタデータが含まれている場合にのみ調査を開きます。
+
+![条件を作成する](/help/assets/places-condition.png)
