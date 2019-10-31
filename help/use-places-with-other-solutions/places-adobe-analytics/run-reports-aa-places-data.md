@@ -4,7 +4,7 @@ seo-title: 場所データを含むAdobe Analyticsでのレポートの実行
 description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 seo-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**&#x200B;す。
 
-![「イベントの作成」](/help/assets/ad-setEvent.png)
+![「イベントの作成」](/help/assets/pt-selectEvent.png)
 
 
 ## 2.条件の追加
@@ -60,7 +60,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 5. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-!["条件の作成"](/help/assets/ad-setCondition.png)
+!["条件の作成"](/help/assets/pt-setCondition.png)
 
 ## 3.アクションの定義
 
