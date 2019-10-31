@@ -4,7 +4,7 @@ seo-title: Adobe Analyticsへの場所データの送信
 description: この節では、PlacesデータをAnalyticsに送信する方法について説明します。
 seo-description: 'この節では、PlacesデータをAnalyticsに送信する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-   !["イベントを選択"](/help/assets/ad-setEvent.png)
+   !["イベントを選択"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.条件の追加
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-   !["条件を設定"](/help/assets/ad-setCondition.png)
+   !["条件を設定"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 
 ## 4.アクションの定義
@@ -81,13 +81,13 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
    次の例では、このエントリイ `TrackAction` ベントをトリガーしたPOIの名前と等しい追加のコンテキストデ `poi.name` ータを使用して、呼び出しがAnalyticsに送信されます。
 
-   !["アクションを設定"](/help/assets/ad-setAction.png)
+   !["アクションを設定"](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-!["ルールが作成されました"](/help/assets/ad-ruleComplete.png)
+!["ルールが作成されました"](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
