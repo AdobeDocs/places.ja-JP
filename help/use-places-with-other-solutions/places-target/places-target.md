@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: 'ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 
 5. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-![イベントの追加](/help/assets/ad-addEvent.png)
+![イベントの追加](/help/assets/ad-setEvent_target.png)
 
 ## 3.条件の追加
 
@@ -58,7 +58,7 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 
 5. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-![イベントの追加](/help/assets/ad-setCondition.png)
+![イベントの追加](/help/assets/ad-setCondition_target.png)
 
 ## 4.アクションの定義
 
@@ -82,13 +82,13 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 >
 >の表記は、配 `request[*]` 列内の各オブジェクトに対して_と読み上げることがで `request` きます。
 
-![イベントの追加](/help/assets/ad-setAction.png)
+![イベントの追加](/help/assets/ad-setCondition_target.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![完了規則](/help/assets/ad-ruleComplete.png)
+![完了規則](/help/assets/ad-ruleComplete_target.png)
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
