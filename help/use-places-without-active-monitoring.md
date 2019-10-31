@@ -1,21 +1,23 @@
 ---
-title: 'アクティブな地域の監視なしで場所を使用 '
-seo-title: 'アクティブな地域の監視なしで場所を使用 '
-description: このセクションでは、アクティブな地域の監視を行わずに場所を使用する方法について説明します。
-seo-description: このセクションでは、アクティブな地域監視を行わない場所を使用する方法について説明します。
+title: '地域の監視機能を有効にしないでLocation Serviceを使用 '
+seo-title: '地域の監視機能を有効にしないでLocation Serviceを使用 '
+description: このセクションでは、アクティブな地域監視を行わないLocation ServicePlacesの使用方法について説明します。
+seo-description: この節では、アクティブな地域監視を行わずにLocation Serviceを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# アクティブな地域の監視なしで場所を使用 {#use-places-without-active-monitoring}
+# 地域の監視機能を有効にしないでLocation Serviceを使用 {#use-places-without-active-monitoring}
 
 アプリケーションの使用例では、アクティブな領域の監視が不要な場合があります。 引き続き、Adobe Placesを使用して、ユーザーの場所のデータを他のExperience Platform製品と統合できます。
 
 ここでは、ユーザーの場所（緯度と経度）を収集したときにのみPOIメンバーシップチェックを完了する方法について説明します。
 
-****&#x200B;前提条件：開発者は、ターゲットプラットフォームのオペレーティングシステムで提供されるAPIを使用して、デバイスの場所を収集します。
+## 前提条件
+
+開発者は、ターゲットプラットフォームのオペレーティングシステムで提供されるAPIを使用して、デバイスの場所を収集します。
 
 >[!TIP]
 >
@@ -80,7 +82,6 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
     }
 }
 ```
-
 
 ### Objective-C
 
@@ -229,9 +230,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完全なサンプル実装
 
-次のコード例は、デバイスの現在の場所を取得し、必要なイベントをトリガーし、1回の訪問で同じ場所に対して複数のエントリが得られないようにする方法を示しています。
+以下のコードサンプルでは、デバイスの現在の場所を取得し、必要なイベントをトリガーし、1回の訪問で同じ場所に対して複数のエントリを取得しないようにする方法を示します。
 
 >[!IMPORTANT]
+>
+>
 これらのスニペットは **ただの例** です。 開発者は、機能の実装方法を決定する必要があり、決定では、対象のオペレーティングシステムが推奨するベストプラクティスを考慮する必要があります。
 
 ### Android
