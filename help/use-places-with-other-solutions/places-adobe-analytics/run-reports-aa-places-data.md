@@ -4,7 +4,7 @@ seo-title: 場所データを含むAdobe Analyticsでのレポートの実行
 description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 seo-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
    * このプロパティに対する既存のルールがない場合、ボ **[!UICONTROL Create New Rule]** タンは画面の中央に表示されます。
    * プロパティにルールが含まれ **[!UICONTROL Create New Rule]** ている場合、ボタンは画面の右上に表示されます。
 
-## 1.イベントを選択します。
+## 2.イベントを選択します。
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
@@ -42,7 +42,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 ![「イベントの作成」](/help/assets/pt-selectEvent.png)
 
 
-## 2.条件の追加
+## 3.条件の追加
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 !["条件の作成"](/help/assets/pt-setCondition.png)
 
-## 3.アクションの定義
+## 4.アクションの定義
 
 1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
@@ -80,7 +80,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ![「アクションの作成」](/help/assets/pt-setAction.png)
 
-## 4.ルールを保存し、プロパティを再構築します
+## 5.ルールを保存し、プロパティを再構築します
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
