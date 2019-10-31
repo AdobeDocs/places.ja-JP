@@ -4,7 +4,7 @@ seo-title: アプリ内通知
 description: ここでは、アプリ内メッセージで場所を使用する方法について説明します。
 seo-description: ここでは、アプリ内メッセージで場所を使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -29,7 +29,7 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 * アラート
 * ローカル通知
 
-これらのタイプはSDKによってトリガーされるので、アプリ内メッセージです。 ローカル通知は、アプリがバックグラウンドにあるときに表示されるので、プッシュ通知のような外観と雰囲気がします。 また、アプリがバックグラウンドにある間、ユーザーがPOIに入るかPOIから出ると、これらの通知はリアルタイムで通知されます。 詳しくは、プレースモニター拡張 [機能を参照してください。](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+これらのタイプはSDKによってトリガーされるので、アプリ内メッセージです。 ローカル通知は、アプリがバックグラウンドにあるときに表示されるので、プッシュ通知のような外観と雰囲気がします。 また、アプリがバックグラウンドにある間、ユーザーがPOIに入るかPOIから出ると、これらの通知はリアルタイムで通知されます。 詳しくは、プレースモニター拡張 [機能を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ### 前提条件
 
@@ -51,18 +51,18 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
 ## アクションの作成
 
-次に手順を示します。
+アクションを作成するには：
 
 1. **拡張機能を選択します。[!UICONTROL Adobe Analytics]**
 1. ドロップダ **[!UICONTROL Action type]** ウンリストで、「 **[!UICONTROL Track.]**
 1. アクションの名前を入力します。
 1. 右側のウィンドウので、キ **[!UICONTROL Context Data]**&#x200B;ーと値のペアを選択し、Analyticsに送信するコンテキストデータを設定します。
 
-例えば、キーとして「**」 **[!UICONTROL poiname]** を選択できます[!UICONTROL `{%%Last Entered POI Name}`。]
+例えば、キーとしてを選択し、 `poiname` 値としてを選択する `{%%Last Entered POI Name}` ことができます。
 
 >[!TIP]
 >
->Analytics処理ルールを設定して、このコンテキストデータを取得できます。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 「アクションの作 *成」の例では*、Analyticsに送信されるPOIentryイベントを説明するコンテキストと `poiname` して、アクションがを送信します。
+>Analytics処理ルールを設定して、このコンテキストデータを取得できます。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 「アクションの作 *成」の例では*、Analyticsに送信されるPOIエントリイベントを説明するコンテキストと `poiname` して、アクションがを送信します。
 
 ![アクションの作成](/help/assets/configure-action.png)
 
@@ -70,11 +70,11 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
 ![完了規則](/help/assets/create-a-rule.png)
 
-## AMSでのアプリ内メッセージの作成
+## Mobile Servicesでのアプリ内メッセージの作成
 
 トリガーパラメーターの一部として、次のいずれかの方法で、Location Serviceのデータを使用してメッセージのオーディエンスを作成できます。
 
-* 入口または出口など、場所固有のアクションの使用。
+* 入口や出口など、場所に固有のアクションを使用する。
 * コンテキストデータとして送信されるPOIメタデータを使用して、オーディエンスのターゲットを絞り込みます。
 
    このオプションは、入口など場所に固有のアクションで使用したり、起動やボタンクリックなど、別のイベントへのコンテキストとして使用したりできます。
@@ -83,4 +83,6 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
    ![トリガパラメータ](/help/assets/trigger-parameters.png)
 
-* Mobile Servicesのトリガーと特徴ページの場所 *見出しのパラメーターは* 、Location Serviceのデータでは動作しません。 これらのパラメーターは、Mobile Servicesで作成されたレガシーPlacesデータベースに対してのみ使用できます。
+* Mobile Servicesのトリガーと特徴ページの場所 *見出しのパラメーターは* 、Location Serviceのデータでは動作しません。
+
+   これらのパラメーターは、Mobile Servicesで作成されたレガシーPlacesデータベースに対してのみ使用できます。
