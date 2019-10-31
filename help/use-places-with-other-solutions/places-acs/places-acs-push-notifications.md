@@ -4,7 +4,7 @@ seo-title: プッシュ通知
 description: ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -13,55 +13,59 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 
 このガイドでは、Adobe Campaign Standardを通じて配信されるプッシュ通知をターゲットにする、過去の地域情報を使用する方法を説明します。
 
->[!IMPORTANT]
->
->開始する前に、次のタスクを実行します。
->
->* Adobe Campaign Standard拡張機能を含む、Adobe Experience Platform Mobile SDKを使用して設定したモバイルアプリ [ケーションがある](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)。
-   >
-   >
-* Adobe Experience Platform Mobile SDK [をアプリに統合します](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) 。
->* モバイルア [プリ設定に](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) Adobe Campaign Standard Extensionを追加します。
-   >
-   >
-* [場所POI管理インターフェイスで](/help/poi-mgmt-ui/create-a-poi-ui.md) 、POIを作成します。
-   >
-   >
-* Places拡張機能を有効にしてインス [トールします](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+## 前提条件
 
+開始する前に、次のタスクを実行します。
+
+* Adobe Campaign Standard拡張機能を含む、Adobe Experience Platform Mobile SDKを使用して設定したモバイルアプリ [ケーションがある](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)。
+
+* Adobe Experience Platform Mobile SDK [をアプリに統合します](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) 。
+* モバイルア [プリ設定に](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) Adobe Campaign Standard Extensionを追加します。
+
+* [場所POI管理インターフェイスで](/help/poi-mgmt-ui/create-a-poi-ui.md) 、POIを作成します。
+
+* Places拡張機能を有効にしてインス [トールします](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 
 ## エクスペリエンスプラットフォームの起動でのデータ要素の作成
 
-ロケーションサービス拡張の場所と場所モニターがアプリケーションで正しく機能していることを確認したら、Experience Platform Launchでデータ要素を作成します。 データ要素を使用すると、Mobile SDKイベントハブを介して提供される拡張機能によって提供された情報を読み取り、クライアントアプリケーションからデータを取得するエイリアスとして機能できます。 場所の拡張からデータを取得するデータ要素をいくつか作成して、場所の情報をCampaignに送信できるようにします。
+ロケーションサービス拡張の場所と場所モニターがアプリケーションで正しく機能していることを確認したら、Experience Platform Launchでデータ要素を作成します。 データ要素を使用すると、Mobile SDKイベントハブを介して提供される拡張機能によって提供された情報を読み取り、クライアントアプリケーションからデータを取得するエイリアスとして機能できます。 Places拡張機能からデータを取得し、Places情報をCampaignに送信するには、いくつかのデータ要素を作成する必要があります。
 
-1. エクスペリエンスプラットフォームの起動モバイルプロパティで、「デー **タ要素** 」タブをクリックし、「データ要 **素を追加」をクリックします**。
-2. 「拡張」ド **ロップダウン** リストで「配置」を選 **択します**。
-3. 「データ要 **素のタイプ** 」ドロップダウンリストで「名前」を選 **択します**。
-4. 右側のウィンドウで、「現在のPOI **** 」を選択して、ユーザーが現在いるPOIの名前を取得できます。
+データ要素を作成するには：
 
-   **「最終入力** 」はユーザーが最後に入力したPOIの名前を取得し、「最終出 **口** 」はユーザーが最後に退出したPOIの名前を提供します。 この例では、「 **Last Entered** 」を選択し、「 **Last Entered POI Name** 」や「 **Save**」などのデータ要素の名前を入力します。
+1. エクスペリエンスプラットフォーム起動モバイルプロパティで、タブをク **[!UICONTROL Data Elements]** リックし、「データ要素を **[!UICONTROLA追加」をクリックしま]**&#x200B;す。
+2. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places]**&#x200B;す。
+3. ドロップダウ **[!UICONTROL Data Element Type]** ンリストから、を選択しま **[!UICONTROL Name]**&#x200B;す。
+4. 右側のパネルで、ユーザーが現在い **[!UICONTROL Current POI]** るPOIの名前を取得する対象を選択できます。
+
+   **[!UICONTROL Last Entered]** ユーザーが最後に入力したPOIの名前を取得し、ユ **[!UICONTROL Last Exited]** ーザーが最後に残したPOIの名前を提供します。 この例では、「And Clicked」な **[!UICONTROL Last Entered]** ど、データ要素の名前を選択して入力 **[!UICONTROL Last Entered POI Name]** します **[!UICONTROL Save]**。
 
    ![「キャンペーン標準のプッシュメッセージ」](/help/assets/ACS_Push1.png)
 
+5. 上記の手順1 ～ 4を繰り返し、「最後に入力したPOI緯度」、「最後に入力したPOI経度 *」、「最後に入力したPOI半径*」のデ *ータ要素を作成します***。
 
-5. 上記と同じ手順を繰り返し、「最後に入力されたPOI緯度 _」、「最後に入力されたPOI経_&#x200B;度 _」、「最後に入力されたPOI半径_」のデータ要素を作成します __。
-
-ロケーションサービスのデータ要素に加えて、 _App IDと_ Experience Cloud IDのMobile coreデータ要素を必ず作成し _ます_。
+ロケーションサービスのデータ要素に加えて、 *App IDと* Experience Cloud IDのMobile coreデータ要素を必ず作成し *ます*。
 
 ## 場所データをAdobe Campaign Standardに送信するルールの作成
 
-エクスペリエンスプラットフォームの起動のルールを使用すると、イベントトリガーに基づいて複雑なマルチソリューションワークフローを作成できます。 ルールの優れた点は、新しいルールを作成したり、既存のルールを変更したり、更新をモバイルアプリケーションに動的にデプロイしたりできる点です。 この例では、ユーザーが地域フェンスのPOIに入ったときにトリガーされるルールを作成します。 ルールがトリガーされると、Experience Cloud IDに基づいて特定のユーザーの特定のPOIへのエントリを記録するように、Campaignに更新が送信されます。
+エクスペリエンスプラットフォームの起動のルールを使用すると、イベントトリガーに基づいて複雑なマルチソリューションワークフローを作成できます。 ルールを使用すると、新しいルールを作成したり、既存のルールを変更したり、更新をモバイルアプリケーションに動的にデプロイしたりできます。 次の例では、ユーザーが地域フェンスのPOIに入るとルールがトリガーされます。 ルールがトリガーされると、Experience Cloud IDに基づいて特定のユーザーの特定のPOIへのエントリを記録するように、Campaign Standardに更新が送信されます。
 
-1. 「モバイルを起動」プロパティで、「ルール」タブをクリ **ックし** 、「ルールを追加」を **クリックします**。
-2. 「 **Events** 」セクションで「 **+** 」をクリ **ックし、拡張** 子として「Places」を選択します。
-3. 「Event Type **」で「** Enter POI **」**&#x200B;を選択します。
+1. モバイルを起動プロパティのタブで、を **[!UICONTROL Rules]** クリックしま **[!UICONTROL Add Rule]**&#x200B;す。
+2. セクションの **[!UICONTROL Events]** 下でをクリックし、 **[!UICONTROL +]** 拡張子と **[!UICONTROL Places]** してを選択します。
+3. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
 4. ルールに名前を付けます。例えば、 **User entered POI**。
-5. Click **Keep Changes**.
-6. [条件 **** ]セクションでは、このルールをいつ実行するかをフィルタまたは制限できます。  今はこのままにしておこう
-7. 「アクション」セ **クションで** 、「 **+** 」をクリックして新しいアクションを作成します
-8. 「拡張」ドロ **ップダウンリストで「** Mobile Core **」を選択し、「** Action Type **」ドロップダウンリストで「** Send Postback- **** down」を選択します。
-9. この **URLの場合は**、Campaign Standardのロケーションエンドポイントを作成する必要があります。  URLは次のようになります。 CampaignサーバーおよびpKey用に以前に作成した正しいデータ要素を使用していることを確認します。 `https:///rest/head/mobileAppV5//locations/`
+5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+6. セクションは空 **[!UICONTROL Conditions]** 白のままにします。
+
+   このセクションでは、このルールをいつ実行するかをフィルターまたは制限できます。
+
+7. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL +]**&#x200B;す。
+8. ドロップダ **[!UICONTROL Extension]** ウンリストでを選択し、ド **[!UICONTROL Mobile Core]** ロップダウン **[!UICONTROL Action Type]** リストでを選択します **[!UICONTROL Send Postback]**。
+9. で、キャン **[!UICONTROL URL]**&#x200B;ペーン標準ロケーションエンドポイントを作成する必要があります。
+
+   URLは、に類似している必要がありま `https:///rest/head/mobileAppV5//locations/`す。
+CampaignサーバーおよびpKey用に以前に作成した正しいデータ要素を使用していることを確認します。
+
 10. ボックスをクリックして投稿の本文を追加し、以下を送信します。
 
    ```
@@ -77,38 +81,47 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
    }
    ```
 
-11. 前の節で作成した特定のデータ要素を使用していることを確認します。
-12. 「 **Content Type**」に **application/jsonと入力します**。
-13. この設定 **が完了したら** 、「変更を保持」をクリックします。
-14. Slack webフックを追加のアクションとして設定すると、エントリがトリガーされ、適切なデータが収集されていることを検証できる場合があります。
+11. 前の節で作成したデータ要素を使用してください。
+12. に、と **[!UICONTROL Content Type]**&#x200B;入力しま **[!UICONTROL application/json]**&#x200B;す。
+13. 「**[!UICONTROL Keep Changes]**」をクリックします。
+
+>[!IMPORTANT]
+>
+>* Slack webフックを追加のアクションとして設定すると、エントリがトリガーされ、適切なデータが収集されていることを検証できる場合があります。
 
 
->ルールとすべてのデータ要素が設定の一部としてデプロイされていることを確認するため、アプリに最新の変更を公開するのを忘れないでください。 公開後、モバイルアプリケーションを再起動して、最新の設定の更新を取得する必要があります。
+>* ルールとすべてのデータ要素が設定の一部としてデプロイされていることを確認するために、アプリに最新の変更を公開してください。 公開後、モバイルアプリケーションを再起動して、最新の設定の更新を取得する必要があります。
+
 
 ## 場所データを使用してキャンペーンメッセージをターゲット設定する
 
 キャンペーンに場所のデータが入力されたので、POIをオーディエンスセグメントツールとして使用できます。
 
-1. Adobe Campaign Standardインスタンスで、「プッシュ通知を作成」 **をクリックします**。
-2. プッシュ通知タイプとして、「キャンペーンプ **ロファイルにプッシュを送信」を選択しま**&#x200B;す。
-3. 「 **Next** 」をクリックし、次の画面に一般的な詳細を入力します。
-4. オーディエンス画面で、「 **Count** 」をクリックして、プッシュ通知が送信される推定ユーザー数を確認します。
+1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create Push Notification]**&#x200B;す。
+2. プッシュ通知タイプに対して、を選択しま **[!UICONTROL Send push to Campaign profiles]**&#x200B;す。
+3. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
+4. オーディエンス画面で、をクリック **[!UICONTROL Count]** して、プッシュ通知を送信する推定ユーザー数を決定します。
 
-   *この場合、アプリケーションをテストする3台のデバイスをインストールしているので、カウントは3になります。*
+   >[!TIP]
+   >
+   >この例では、アプリケーションのテスト対象となる3台のデバイスがインストールされているので、カウントは3になります。
 
-5. 左側のサイドバーで、「プロファイル」タブを **展開し** 、 **** POI位置フィルターをメイン領域にドラッグします
+5. 左側のペインで、タブを展開し、 **[!UICONTROL Profile]** フィルターをメイ **[!UICONTROL POI location]** ン領域にドラッグします。
 6. POIフィルタウィンドウで、ターゲットにするPOIの正確な名前を入力します。
 
-   *このPOIを最後に訪問してからの時間範囲を指定するには、追加の選択を行います。*
+   >[!TIP]
+   >
+   >このPOIへのユーザーの前回の訪問からの期間を指定するには、追加の選択を行います。
 
    !["ACSでのプッシュメッセージ2"](/help/assets/ACS_push2.png)
 
+7. 「**[!UICONTROL Confirm]**」をクリックします。
+8. 上部でもう一度カウントを実行し、オーディエンスのサイズ変更を確認します。
 
-7. 「**確認**」をクリックします。
-8. 上部でもう一度カウントを実行し、オーディエンスのサイズ変更を確認します。  カウントの更新が表示されない場合は、エントリをトリガーしたデバイスがないPOI名を入力した可能性があります。 様々なテストデバイスからのPOIエントリのリストが表示されるので、Slack webフックを持つことはここで重要になります。
+   カウントの更新が表示されない場合は、エントリをトリガーしたデバイスがないPOI名を入力した可能性があります。 Slack webフックを使用すると、様々なテストデバイスからのPOIエントリのリストが表示されるので、この状況で役に立ちます。
 9. 追加のPOI位置フィルターをドラッグして、メッセージに複数のPOIを含めることができます。
-10. 「次へ **** 」をクリックして、配信用のプッシュ通知の作成を終了します。
+10. クリック **[!UICONTROL Next]** して、配信用のプッシュ通知の作成を終了します。
 
    !["ACSでのプッシュメッセージ3"](/help/assets/ACS_push3.html)
 
-Adobe Campaign Standardでロケーションサービスを使用すると、地域フェンスのエントリとエクスティスに基づいて、ユーザーに対するメッセージをセグメント化およびターゲット化する強力なツールが提供されます。 このシンプルな統合により、よりパーソナライズされた状況に応じた使用例を構築することができます。
+Adobe Campaign Standardでロケーションサービスを使用すると、地域フェンスの入口と出口に基づいて、ユーザーに対するメッセージをセグメント化およびターゲット化する強力なツールが提供されます。 この統合により、よりパーソナライズされたコンテキスト的な使用例を構築できます。
