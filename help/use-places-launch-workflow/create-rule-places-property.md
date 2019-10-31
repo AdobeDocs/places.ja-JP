@@ -4,14 +4,14 @@ seo-title: Placesプロパティのルールの作成
 description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 seo-description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 translation-type: tm+mt
-source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
 # 入口ルールと出口ルールの作成 {#create-entry-exit-rules}
 
-モバイルアプリケーションにプレースモニター拡張機能がインストールされている場合、Adobe Experience Platform Launchで、プレースロケーションエントリや終了イベントなど、トリガーされた、または条件付きのロケーションデータを含むルールを作成できます。
+モバイルアプリケーションにプレースモニター拡張機能がインストールされている場合、Adobe Experience Platform Launchで、場所の入口イベントや出口イベントなど、場所のデータをトリガーまたは条件付きで表示するルールを作成できます。
 
 ## ルール
 
@@ -54,7 +54,7 @@ source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
 
 >[!CAUTION]
 >
->この例では、米国内のすべてのコーヒーショップのPOIライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、POIの作成 [とライブラリの作](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/managing-pois-in-the-places-ui#create-a-poi) 成を参 [照してください](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/manage-libraries#create-a-library)。
+>この例では、米国内のすべてのコーヒーショップのPOIライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、「POIの作成」と「複数のラ [イブラリの管理](/help/poi-mgmt-ui/create-a-poi-ui.md)** 」を [参照してください](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)。
 
 サンフランシスコで喫茶店に入ったときにSlackに投稿を返すルールを作成する手順の例を次に示します。
 
@@ -128,6 +128,6 @@ source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
 
 ### 入口と出口を越えた考え方
 
-[場所] [ジオフェンス] [入口] [出口]を使用して[起動]でルールをトリガするのは非常に強力ですが、場所データを他のイベントが発生する条件として使用することもできます。 例えば、アプリ内の特定のtrackAction呼び出しイベントに基づいて、Mobileコア追跡アクションイベントトリガーを起動する準備が整っているとします。 このイベントに基づいて、アクションが実行される前にイベントに追加の場所条件を設定できます。 例えば、購入イベントが発生した場合にアプリ内調査を開き、ユーザーの現在の場所に特定のロケーショ `trackAction` ン **** サービスメタデータが含まれている場合にのみ調査を開きます。
+ロケーションサービスの地域フェンスのエントリと出口を使用して、エクスペリエンスプラットフォーム起動でルールをトリガーするのは非常に強力ですが、場所データを他のイベントの発生条件として使用することもできます。 例えば、アプリ内の特定のtrackAction呼び出しイベントに基づいて、Mobileコア追跡アクションイベントトリガーを起動する準備が整っているとします。 このイベントに基づいて、アクションが実行される前にイベントに追加の場所条件を設定できます。 例えば、購入イベントが発生した場合にアプリ内調査を開き、ユーザーの現在の場所に特定のロケーショ `trackAction` ン **** サービスメタデータが含まれている場合にのみ調査を開きます。
 
 ![条件を作成する](/help/assets/places-condition.png)
