@@ -4,7 +4,7 @@ seo-title: Placesプロパティのルールの作成
 description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 seo-description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -71,44 +71,44 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 エクスペリエンスプラットフォームの起動でデータ要素を作成するには：
 
 1. 「データ要素」 **タブをクリックします** 。
-2. Click **Add Data Element**.
-3. 「現在の喫茶店名」などの名前 **を入力します**。
-4. 「拡張機能」 **ドロップダウン** ・リストで **、「場所 — ベータ」**&#x200B;を選択します。
-5. 「デー **タ要素**」で「市区町村 **」を選択**&#x200B;します。
-6. 右側のウィンドウで、「現在のPOI」 **を選択します**。
-7. **保存** をクリックします。
+1. Click **Add Data Element**.
+1. 「現在の喫茶店名」などの名前 **を入力します**。
+1. 「拡張機能」 **ドロップダウン** ・リストで **、「場所 — ベータ」**&#x200B;を選択します。
+1. 「デー **タ要素**」で「市区町村 **」を選択**&#x200B;します。
+1. 右側のウィンドウで、「現在のPOI」 **を選択します**。
+1. **保存** をクリックします。
 
 ### Experience Platform Launchでの場所のルールの作成
 
 ![ルールの作成](/help/assets/placesrule.png)
 
 1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Rules]** ックします。
-2. 「**[!UICONTROL Add Rule]**」をクリックします。
-3. 例えば、ルールの名前を入力します **[!UICONTROL Track entry for coffee shop in SF]**。
+1. 「**[!UICONTROL Add Rule]**」をクリックします。
+1. 例えば、ルールの名前を入力します **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### イベントの作成
 
 1. 「イベント」セクションで、をクリックしま **[!UICONTROL + Add]**&#x200B;す。 イベントは、ルールを実行するタイミングを決定します。
-2. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
-3. ドロップダ **[!UICONTROL Event Type]** ウンリストで、を選択しま **[!UICONTROL Enter POI]**&#x200B;す。
-4. に、 **[!UICONTROL Name]**&#x200B;イベントの名前（例：）を入力します **[!UICONTROL Entering a coffee shop]**。
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
+1. ドロップダ **[!UICONTROL Event Type]** ウンリストで、を選択しま **[!UICONTROL Enter POI]**&#x200B;す。
+1. に、 **[!UICONTROL Name]**&#x200B;イベントの名前（例：）を入力します **[!UICONTROL Entering a coffee shop]**。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ### 条件の作成
 
 1. 「条件」セクションで、をクリックしま **[!UICONTROL +Add]**&#x200B;す。 条件は、アクションを実行するために満たす必要がある条件を決定します。
-2. で、「 **[!UICONTROL Logic Type]**&#x200B;標準」を選択します。これにより、条件が満たされた場合にアクションを実行できます。
-3. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
-4. で、を **[!UICONTROL Condition Type]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
-5. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-6. 右側のウィンドウでをクリ **[!UICONTROL Current POI]**&#x200B;ックし、ドロップダウンリストで都市の1 **[!UICONTROL San Francisco]** つとして選択します。
-7. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. で、「 **[!UICONTROL Logic Type]**&#x200B;標準」を選択します。これにより、条件が満たされた場合にアクションを実行できます。
+1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
+1. で、を **[!UICONTROL Condition Type]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
+1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
+1. 右側のウィンドウでをクリ **[!UICONTROL Current POI]**&#x200B;ックし、ドロップダウンリストで都市の1 **[!UICONTROL San Francisco]** つとして選択します。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ### アクションの作成
 
 1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
-2. ドロップダウン **[!UICONTROL Extension]** リストで、デフォルトのオプションを選択したま **[!UICONTROL Mobile Core]** まにします。
-3. 例えば、アクションのタイプを選択しま **[!UICONTROL Send Postback]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Extension]** リストで、デフォルトのオプションを選択したま **[!UICONTROL Mobile Core]** まにします。
+1. 例えば、アクションのタイプを選択しま **[!UICONTROL Send Postback]**&#x200B;す。
 
    a.「」 **[!UICONTROL URL]**&#x200B;に、SlackのポストバックURLを入力します(例： `https://hooks.slack.com/services/`)。
 
@@ -120,7 +120,7 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
    d.例えば、タイムアウト値を選択します **[!UICONTROL 5]**。
 
-4. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ### ルールの発行
 
