@@ -4,7 +4,7 @@ seo-title: ロケーションサービスを使用したアプリ内メッセー
 description: ここでは、Campaign Standardのアプリ内メッセージとCampaign Standardのキャンペーン標準のプッシュメッセージを使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardのアプリ内メッセージで「Campaign Standardのプッシュメッセージ」を使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 ## ジオフェンスの入口または出口に基づくアプリ内メッセージの送信
 
 1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create In-App message]**&#x200B;す。
-2. メッセージタイプに対して、を選択しま **[!UICONTROL Target all users of a Mobile application]**&#x200B;す。
-3. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
-4. 左側のウィンドウで、ロケーションサービスに関連する様々なトリガーを使用できることを確認します。
+1. メッセージタイプに対して、を選択しま **[!UICONTROL Target all users of a Mobile application]**&#x200B;す。
+1. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
+1. 左側のウィンドウで、ロケーションサービスに関連する様々なトリガーを使用できることを確認します。
 
    * ユーザーがPOIジオフェンスを入力した場合、アプリ内メッセージを表示するように選択できます。
    * また、ロケーションサービスUIで定義されたメタデータを使用して、オーディエンスをフィルターすることもできます。
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
    ![「アプリ内メッセージ配置メタデータ」](/help/assets/last-entered-vacation.png)
 
-5. をクリックし **[!UICONTROL Next]** て、配信するアプリ内メッセージの作成を終了します。
+1. をクリックし **[!UICONTROL Next]** て、配信するアプリ内メッセージの作成を終了します。
 
    ![「イベントの作成」](/help/assets/prepare-ACS.png)
 
