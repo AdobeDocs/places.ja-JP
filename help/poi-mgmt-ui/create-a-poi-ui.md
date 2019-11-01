@@ -4,7 +4,7 @@ seo-title: POI を作成
 description: 場所UIを使用してPOIを作成します。
 seo-description: 場所UIを使用してPOIを作成します。
 translation-type: tm+mt
-source-git-commit: 32c670773421406591ba85a628760553ce6ad840
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 目標地点(POI)は、組織や会社にとって重要な地図上の位置または地点です。 カフェ、レストラン、小売店、スタジアムなどの場所も含まれます。 会社は目標地点を定義して、特定の目標地点に対して地域フェンスの地域に入ったユーザーのモバイル体験をパーソナライズできます。 パーソナライズされたエクスペリエンスの他に、会社は目標地点を作成して、場所のトラフィックパターンを分析し、より良く理解するのに役立てることができます。 大規模な小売チェーンでは、すべての店舗の場所に対してPOIを作成し、モバイルアプリケーションを持つユーザーの分析を行って、店舗の場所を訪問することができます。
 
 1. Adobe IDを使用してロケーションサービスにログインします。
-2. 右上のをクリックします **[!UICONTROL New]**。
-3. POIの名前を入力します。
-4. ライブラリを選択します。
-5. 半径を入力または選択します。
+1. 右上のをクリックします **[!UICONTROL New]**。
+1. POIの名前を入力します。
+1. ライブラリを選択します。
+1. 半径を入力または選択します。
 
    半径は最小距離で、推奨値は100 mです。
 
    ![POIを定義する](/help/assets/define_poi.png)
 
-6. 次の手順はオプションです。
+1. 次の手順はオプションです。
 
    a.POIのアイコンを選択します。
 
@@ -31,7 +31,7 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    c.POIのカテゴリを指定します。
 
-7. Expand the **[!UICONTROL Location]** section.
+1. Expand the **[!UICONTROL Location]** section.
 
    a.住所を入力します。
 
@@ -47,7 +47,7 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    正確な緯度と経度がわからない場合は、ピンをドロップすると便利です。
 
-8. セクションを展開 **[!UICONTROL Metadata]** し、をクリックしま **[!UICONTROL Add Metadata]**&#x200B;す。
+1. セクションを展開 **[!UICONTROL Metadata]** し、をクリックしま **[!UICONTROL Add Metadata]**&#x200B;す。
 
    メタデータは、場所をさらに定義するのに役立ち、他のAdobeソリューションワークフローで使用して、オーディエンスをさらに絞り込むことができます。
 
@@ -55,4 +55,4 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    b.キーの値を入力します。
 
-9. をクリッ **[!UICONTROL Confirm]** クし、次にをクリックしま **[!UICONTROL  Save]**&#x200B;す。
+1. をクリッ **[!UICONTROL Confirm]** クし、次にをクリックしま **[!UICONTROL  Save]**&#x200B;す。
