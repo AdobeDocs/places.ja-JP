@@ -4,7 +4,7 @@ seo-title: プレースモニター拡張機能の使用
 description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 seo-description: 'プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,9 +16,9 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 ## Experience Platform LaunchにPlaces Monitor Extensionをインストールする
 
 1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Extensions]** ックします。
-2. タブで、拡 **[!UICONTROL Catalog]** 張機能を探し、「イ **[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
-3. 「**[!UICONTROL Save]**」をクリックします。
-4. 公開プロセスに従ってSDK設定を更新します。
+1. タブで、拡 **[!UICONTROL Catalog]** 張機能を探し、「イ **[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
+1. 「**[!UICONTROL Save]**」をクリックします。
+1. 公開プロセスに従ってSDK設定を更新します。
 
 ### プレースモニター拡張機能の設定 {#configure-places-monitor-extension}
 
@@ -38,7 +38,7 @@ Androidで、次の手順を実行します。
 
 1. アプリのグレードファイルを使用して、プレースモニター拡張機能とプレース拡張機能をプロジェクトに追加します。
 
-2. また、最新のGoogle Locationサービスをグレードファイルに含めます。
+1. また、最新のGoogle Locationサービスをグレードファイルに含めます。
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -47,7 +47,7 @@ Androidで、次の手順を実行します。
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-3. アプリケーションのメインアクティビティにプレースモニター拡張機能を読み込みます。
+1. アプリケーションのメインアクティビティにプレースモニター拡張機能を読み込みます。
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -58,7 +58,7 @@ Androidで、次の手順を実行します。
 iOSで、次の手順を実行します。
 
 1. を追加して、Cocoapodsを使用してプロジェクトにライブラリ `Podfile` を追加しま `pod 'ACPPlacesMonitor'`す。
-2. 場所および場所モニターライブラリの読み込み：
+1. 場所および場所モニターライブラリの読み込み：
 
 #### Objective-C
 
