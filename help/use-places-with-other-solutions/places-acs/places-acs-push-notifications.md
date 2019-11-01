@@ -4,7 +4,7 @@ seo-title: プッシュ通知
 description: ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -34,15 +34,15 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 データ要素を作成するには：
 
 1. エクスペリエンスプラットフォーム起動モバイルプロパティで、タブをク **[!UICONTROL Data Elements]** リックし、「データ要素を **[!UICONTROLA追加」をクリックしま]**&#x200B;す。
-2. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places]**&#x200B;す。
-3. ドロップダウ **[!UICONTROL Data Element Type]** ンリストから、を選択しま **[!UICONTROL Name]**&#x200B;す。
-4. 右側のパネルで、ユーザーが現在い **[!UICONTROL Current POI]** るPOIの名前を取得する対象を選択できます。
+1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Data Element Type]** ンリストから、を選択しま **[!UICONTROL Name]**&#x200B;す。
+1. 右側のパネルで、ユーザーが現在い **[!UICONTROL Current POI]** るPOIの名前を取得する対象を選択できます。
 
    **[!UICONTROL Last Entered]** ユーザーが最後に入力したPOIの名前を取得し、ユ **[!UICONTROL Last Exited]** ーザーが最後に残したPOIの名前を提供します。 この例では、「And Clicked」な **[!UICONTROL Last Entered]** ど、データ要素の名前を選択して入力 **[!UICONTROL Last Entered POI Name]** します **[!UICONTROL Save]**。
 
    ![「キャンペーン標準のプッシュメッセージ」](/help/assets/ACS_Push1.png)
 
-5. 上記の手順1 ～ 4を繰り返し、「最後に入力したPOI緯度」、「最後に入力したPOI経度 *」、「最後に入力したPOI半径*」のデ *ータ要素を作成します***。
+1. 上記の手順1 ～ 4を繰り返し、「最後に入力したPOI緯度」、「最後に入力したPOI経度 *」、「最後に入力したPOI半径*」のデ *ータ要素を作成します***。
 
 ロケーションサービスのデータ要素に加えて、 *App IDと* Experience Cloud IDのMobile coreデータ要素を必ず作成し *ます*。
 
@@ -51,22 +51,22 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 エクスペリエンスプラットフォームの起動のルールを使用すると、イベントトリガーに基づいて複雑なマルチソリューションワークフローを作成できます。 ルールを使用すると、新しいルールを作成したり、既存のルールを変更したり、更新をモバイルアプリケーションに動的にデプロイしたりできます。 次の例では、ユーザーが地域フェンスのPOIに入るとルールがトリガーされます。 ルールがトリガーされると、Experience Cloud IDに基づいて特定のユーザーの特定のPOIへのエントリを記録するように、Campaign Standardに更新が送信されます。
 
 1. モバイルを起動プロパティのタブで、を **[!UICONTROL Rules]** クリックしま **[!UICONTROL Add Rule]**&#x200B;す。
-2. セクションの **[!UICONTROL Events]** 下でをクリックし、 **[!UICONTROL +]** 拡張子と **[!UICONTROL Places]** してを選択します。
-3. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
-4. ルールに名前を付けます。例えば、 **User entered POI**。
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
-6. セクションは空 **[!UICONTROL Conditions]** 白のままにします。
+1. セクションの **[!UICONTROL Events]** 下でをクリックし、 **[!UICONTROL +]** 拡張子と **[!UICONTROL Places]** してを選択します。
+1. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
+1. ルールに名前を付けます。例えば、 **User entered POI**。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. セクションは空 **[!UICONTROL Conditions]** 白のままにします。
 
    このセクションでは、このルールをいつ実行するかをフィルターまたは制限できます。
 
-7. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL +]**&#x200B;す。
-8. ドロップダ **[!UICONTROL Extension]** ウンリストでを選択し、ド **[!UICONTROL Mobile Core]** ロップダウン **[!UICONTROL Action Type]** リストでを選択します **[!UICONTROL Send Postback]**。
-9. で、キャン **[!UICONTROL URL]**&#x200B;ペーン標準ロケーションエンドポイントを作成する必要があります。
+1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL +]**&#x200B;す。
+1. ドロップダ **[!UICONTROL Extension]** ウンリストでを選択し、ド **[!UICONTROL Mobile Core]** ロップダウン **[!UICONTROL Action Type]** リストでを選択します **[!UICONTROL Send Postback]**。
+1. で、キャン **[!UICONTROL URL]**&#x200B;ペーン標準ロケーションエンドポイントを作成する必要があります。
 
    URLは、に類似している必要がありま `https:///rest/head/mobileAppV5//locations/`す。
 CampaignサーバーおよびpKey用に以前に作成した正しいデータ要素を使用していることを確認します。
 
-10. ボックスをクリックして投稿の本文を追加し、以下を送信します。
+1. ボックスをクリックして投稿の本文を追加し、以下を送信します。
 
    ```
    {
@@ -81,9 +81,9 @@ CampaignサーバーおよびpKey用に以前に作成した正しいデータ�
    }
    ```
 
-11. 前の節で作成したデータ要素を使用してください。
-12. に、と **[!UICONTROL Content Type]**&#x200B;入力しま **[!UICONTROL application/json]**&#x200B;す。
-13. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 前の節で作成したデータ要素を使用してください。
+1. に、と **[!UICONTROL Content Type]**&#x200B;入力しま **[!UICONTROL application/json]**&#x200B;す。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 >[!IMPORTANT]
 >
@@ -98,16 +98,16 @@ CampaignサーバーおよびpKey用に以前に作成した正しいデータ�
 キャンペーンに場所のデータが入力されたので、POIをオーディエンスセグメントツールとして使用できます。
 
 1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create Push Notification]**&#x200B;す。
-2. プッシュ通知タイプに対して、を選択しま **[!UICONTROL Send push to Campaign profiles]**&#x200B;す。
-3. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
-4. オーディエンス画面で、をクリック **[!UICONTROL Count]** して、プッシュ通知を送信する推定ユーザー数を決定します。
+1. プッシュ通知タイプに対して、を選択しま **[!UICONTROL Send push to Campaign profiles]**&#x200B;す。
+1. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
+1. オーディエンス画面で、をクリック **[!UICONTROL Count]** して、プッシュ通知を送信する推定ユーザー数を決定します。
 
    >[!TIP]
    >
    >この例では、アプリケーションのテスト対象となる3台のデバイスがインストールされているので、カウントは3になります。
 
-5. 左側のペインで、タブを展開し、 **[!UICONTROL Profile]** フィルターをメイ **[!UICONTROL POI location]** ン領域にドラッグします。
-6. POIフィルタウィンドウで、ターゲットにするPOIの正確な名前を入力します。
+1. 左側のペインで、タブを展開し、 **[!UICONTROL Profile]** フィルターをメイ **[!UICONTROL POI location]** ン領域にドラッグします。
+1. POIフィルタウィンドウで、ターゲットにするPOIの正確な名前を入力します。
 
    >[!TIP]
    >
@@ -115,12 +115,12 @@ CampaignサーバーおよびpKey用に以前に作成した正しいデータ�
 
    !["ACSでのプッシュメッセージ2"](/help/assets/ACS_push2.png)
 
-7. 「**[!UICONTROL Confirm]**」をクリックします。
-8. 上部でもう一度カウントを実行し、オーディエンスのサイズ変更を確認します。
+1. 「**[!UICONTROL Confirm]**」をクリックします。
+1. 上部でもう一度カウントを実行し、オーディエンスのサイズ変更を確認します。
 
    カウントの更新が表示されない場合は、エントリをトリガーしたデバイスがないPOI名を入力した可能性があります。 Slack webフックを使用すると、様々なテストデバイスからのPOIエントリのリストが表示されるので、この状況で役に立ちます。
-9. 追加のPOI位置フィルターをドラッグして、メッセージに複数のPOIを含めることができます。
-10. クリック **[!UICONTROL Next]** して、配信用のプッシュ通知の作成を終了します。
+1. 追加のPOI位置フィルターをドラッグして、メッセージに複数のPOIを含めることができます。
+1. クリック **[!UICONTROL Next]** して、配信用のプッシュ通知の作成を終了します。
 
    !["ACSでのプッシュメッセージ3"](/help/assets/ACS_push3.html)
 
