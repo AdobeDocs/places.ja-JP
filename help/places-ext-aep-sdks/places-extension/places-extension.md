@@ -4,7 +4,7 @@ seo-title: '[配置]拡張子'
 description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 seo-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,13 +16,13 @@ source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 ## Adobe Experience Platform LaunchにPlaces拡張をインストールする
 
 1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Extensions]** ックします。
-2. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
-3. このプロパティで使用する場所ライブラリを選択します。 これらのライブラリは、アプリでアクセス可能になります。
-4. 「**[!UICONTROL Save]**」をクリックします。
+1. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
+1. このプロパティで使用する場所ライブラリを選択します。 これらのライブラリは、アプリでアクセス可能になります。
+1. 「**[!UICONTROL Save]**」をクリックします。
 
    をクリックす **[!UICONTROL Save]**&#x200B;ると、Experience Platform SDKは選択したライブラリ内のPOIに関するPlaces Servicesを検索します。 POIデータはアプリの作成時にライブラリのダウンロードに含まれませんが、POIの場所ベースのサブセットは実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
 
-5. 公開プロセスを完了してSDK設定を更新します。
+1. 公開プロセスを完了してSDK設定を更新します。
 
    エクスペリエンスプラットフォームの起動での投稿について詳しくは、投稿を参照し [てくださ](https://docs.adobelaunch.com/launch-reference/publishing)い。
 
@@ -45,7 +45,7 @@ Javaを使用してPlaces拡張をアプリに追加するには：
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-2. アプリのメインアクティビティにPlaces拡張を読み込みます。
+1. アプリのメインアクティビティにPlaces拡張を読み込みます。
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -65,13 +65,13 @@ Objective-CまたはSwiftを使用してアプリに場所拡張を追加する�
 
    また、Cocoapodを使用していない場合は、Githubのリリースページから手動でMobile CoreライブラリとPlacesライブラリを含める [こともで](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) きます。
 
-2. Cocoapodの更新：
+1. Cocoapodの更新：
 
    ```objective-c
    pod update
    ```
 
-3. Xcodeを開き、AppDelegateクラスで、CoreヘッダーとPlacesヘッダーを読み込みます。
+1. Xcodeを開き、AppDelegateクラスで、CoreヘッダーとPlacesヘッダーを読み込みます。
 
    **Objective-C**
 
