@@ -4,7 +4,7 @@ seo-title: 場所のテストと検証
 description: ここでは、場所をテストして検証する方法について説明します。
 seo-description: ここでは、場所をテストして検証する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
+source-git-commit: 181185d441a6a4740b2e8770adcb71e81e2e816e
 
 ---
 
@@ -33,8 +33,8 @@ source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
 | 5 | テスト用に正しい環境が設定されていることを確認します。 起動環境IDは、起動開発環境と一致する必要があります。 | 確認済み |
 | 6 | テストするPOIごとにGPXファイルを作成します。 GPXファイルは、ローカル開発環境で、場所のエントリをシミュレートするために使用できます。 GPXファイルの作成と使用について詳しくは、次を参照してください。iOSシミュレー <br>[ター用のGPXファイル[閉じる]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.](https://mapstogpx.com/mobiledev.php)<br>[phpモバイルアプリでの場所のテスト](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPXファイルが作成され、アプリケーションプロジェクトに読み込まれます。 |
 | 7 | 他の操作を行わないと、Android studioまたはXCodeからアプリケーションを起動し、適切なアラートを確認して、追跡場所へのアクセスをリクエストできます。 「常に許可」 *権限をクリックします* 。<br><br>デバイスシミュレーターを使用する代わりに、コンピューターに接続された実際のデバイスを使用することをお勧めします。 | 場所の要求プロンプトは、IDEを使用して読み込んだアプリケーションで表示する必要があります |
-| 8 | 場所の権限が受け入れられた後、アプリケーションコンソールに、が呼び出されたことを示すメ `ACPExtensionEventName : requestgetnearbyplaces`ッセージが表示されます。 XCodeまたはAndroid studioで異なる場所を切り替えると、特定のPOIに対してエントリイベントが生成されます | `ACPExtensionEventName : requestgetnearbyplaces` は、異なる場所をシミュレートする際に表示される必要があります。 |
-| 9 | 選択した場所が近くのPOIに近い場合、モニタ拡張機能は、現在の場所から最も近い20個のPOIの監視を開始します。 コンソール内のメッセージは次のようになります。 `[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Received a new list of POIs from Places:`. | XCodeまたはAndroid studioで異なる場所を切り替えると、特定のPOIに対してエントリイベントが生成されます。 |
+| 8 | 場所の権限が受け入れられたら、 場所SDKはデバイスの現在の場所を取得し、場所モニター拡張機能は現在の場所から最も近い20個のPOIの監視を開始します | 表の下のログサンプルを参照してください。 |
+| 9 | XCodeまたはAndroid studioで異なる場所を切り替えると、特定のPOIに対してエントリイベントが生成されます。 POIへのエントリ時には、以下のログが必要です。 | 表の下のログサンプルを参照してください。 |
 | 10 | プレースモニターが近くのPOIを見つけたら、場所のpingを送信してテストする必要があります。 「起動」で、「場所」拡張を使用してジオフェンスのエントリに基づいてトリガーする新しいルールを作成します。 次に、Mobile coreを使用してポストバックを送信し、新しいアクションを作成します。 Slack Webhookアプリを作成すると、場所の入口と出口を確認できます。 Slack Webhookアプリの作成について詳しくは、「受信Webhookを使用したメ [ッセージの送信」を参照してください。](https://api.slack.com/messaging/webhooks) |  |
 | 10a | 「起動」で、「場所」拡張に次のデータ要素が追加されていることを確認します。現在 <br>POI名現在POI<br>lat POI<br>lat POI<br>long最後に入力された<br>POI<br>last最後に入力された<br>LONG最後に出力されたPOI<br><br><br>LAT最後に出力されたPOI最新のPOI long |  |
 | 10b | イベント=配置を含む新しいルールを作成し、「POIを入力」を選択します。 |  |
@@ -71,3 +71,47 @@ source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
 | 19 | 携帯電話のみを有効にし、Wi-Fiをオフにしてテストを実施します。 |  |
 | 20 | 携帯電話とWi-Fiの両方をオンにしてテストを実施します。 |  |
 |  | **SUMMARY POINT** On <br>Site Testingは、開発テストと密接に一致する必要があります。 POIジオフェンスでの滞在時間、セル信号の可用性、近くのWi-Fiアクセスポイントの強さなど、ユーザーの場所を決定する際に生じる環境要因がいくつかあることに注意してください。 |  |
+
+## ログサンプル
+
+**** 手順8 :場所の更新中にiOSおよびAndroidのログが予想される
+
+**iOS**
+
+```
+[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Authorization status changed: Always
+[AdobeExperienceSDK DEBUG <Places>]: Requesting 20 nearby POIs for device location (<lat>, <longitude>)
+[AdobeExperienceSDK DEBUG <Places>]: Response from Places Query Service contained <n> nearby POIs
+[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Received a new list of POIs from Places: (
+<ACPPlacePoi: 0x600002b75a40> Name: <poi name>; ID:<poi id>; Center: (<lat>, <long>); Radius: <radius>
+..
+..)   
+```
+
+**Android**
+
+```
+PlacesMonitor - All location settings are satisfied to monitor location
+PlacesMonitor - PlacesMonitorInternal : New location obtained: <latitude> <longitude> Attempting to get the near by pois
+PlacesExtension - Dispatching nearby places event with n POIs
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+...
+...
+PlacesMonitor - Successfully added n fences for monitoring
+```
+
+**** 手順9:イベント中にiOSおよびAndroidのログが予想される
+
+**iOS**
+
+```
+[AdobeExperienceSDK TRACE <Places>]: Dispatching Places region entry event for place ID <poiId>
+```
+
+**Android**
+
+```
+PlacesExtension -  Dispatching Places Region Event for <poi name> with eventType entry
+```
