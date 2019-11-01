@@ -4,7 +4,7 @@ seo-title: Adobe Analyticsへの場所データの送信
 description: この節では、PlacesデータをAnalyticsに送信する方法について説明します。
 seo-description: 'この節では、PlacesデータをAnalyticsに送信する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -33,13 +33,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
    これにより、ルールはルールのリストで簡単に認識できます。 この例では、Ruleという名前が付けられていま **[!UICONTROL Send Data to Analytics]**&#x200B;す。
 
-2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
-3. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Places]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Places]**&#x200B;す。
 
-4. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Enter POI]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Enter POI]**&#x200B;す。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
    !["イベントを選択"](/help/assets/ad-setEvent_use-analytics-data.png)
 
@@ -54,13 +54,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. セクションの下 **[!UICONTROL Conditions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Places]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Places]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Name]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Name]**&#x200B;す。
 
-4. 右側のペインのテキストフィールドに、と入力します **[!UICONTROL My POI]**。
+1. 右側のペインのテキストフィールドに、と入力します **[!UICONTROL My POI]**。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
    !["条件を設定"](/help/assets/ad-setCondition_use-analytics-data.png)
 
@@ -69,15 +69,15 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Adobe Analytics]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Adobe Analytics]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Track]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Track]**&#x200B;す。
 
-4. 右側のウィンドウで、Analyticsに送信するアクションまたは状態を追加します。
+1. 右側のウィンドウで、Analyticsに送信するアクションまたは状態を追加します。
 
    また、このリクエストに追加のコンテキストデータを追加することもできます。 データ要素を使用して、SDKからこのデータを動的に取得できます。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
    次の例では、このエントリイ `TrackAction` ベントをトリガーしたPOIの名前と等しい追加のコンテキストデ `poi.name` ータを使用して、呼び出しがAnalyticsに送信されます。
 
@@ -91,5 +91,5 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
-2. 起動プロパティを再構築し、正しい環境に展開します。
+1. 起動プロパティを再構築し、正しい環境に展開します。
 
