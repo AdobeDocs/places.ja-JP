@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: 'ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -30,13 +30,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
    この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Target Content Requested]**&#x200B;す。
 
-2. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Adobe Target]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Adobe Target]**&#x200B;す。
 
-4. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Content Requested]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Content Requested]**&#x200B;す。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ![イベントの追加](/help/assets/ad-setEvent_target.png)
 
@@ -50,13 +50,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. セクションの下 **[!UICONTROL Conditions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Launches]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Launches]**&#x200B;す。
 
-4. 右側のウィンドウで、コンボボックスと数値コントロールを変更し、「 **[!UICONTROL User has launched the app leater than or equal to 5 then**」という条件を設定します。
+1. 右側のウィンドウで、コンボボックスと数値コントロールを変更し、「 **[!UICONTROL User has launched the app leater than or equal to 5 then**」という条件を設定します。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ![イベントの追加](/help/assets/ad-setCondition_target.png)
 
@@ -64,13 +64,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
 
-4. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
+1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 右側のウィンドウで、このイベントをリッスンする拡張でSDKイベントがリッスンする前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。
 
@@ -92,4 +92,4 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
-2. 起動プロパティを再構築し、正しい環境に展開します。
+1. 起動プロパティを再構築し、正しい環境に展開します。
