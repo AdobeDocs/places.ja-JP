@@ -4,12 +4,12 @@ seo-title: プッシュ通知
 description: ここでは、プッシュ通知で場所を使用する方法について説明します。
 seo-description: ここでは、プッシュ通知で場所を使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 60c274c309a2c86b67d6c19ea28ae300a37d723a
 
 ---
 
 
-# プッシュ通知(#places-push-messaging)
+# プッシュ通知
 
 Mobile Servicesを使用すると、Adobe Analyticsセグメントにプッシュ通知を送信できます。 ロケーションサービスでは、POIとの過去のインタラクションを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去30日間にストアにいたユーザーにメッセージを送信できます。
 
