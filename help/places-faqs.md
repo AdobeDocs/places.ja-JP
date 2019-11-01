@@ -4,7 +4,7 @@ seo-title: よくある質問
 description: このトピックでは、よくある質問に関する追加情報を提供します。
 seo-description: このトピックでは、よくある質問に関する追加情報を提供します。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -91,7 +91,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
       以前にエクスペリエンスプラットフォームの起動にユーザーを追加した場合は、複数のプロファイルが表示される場合があります。
 
-2. 正しいプロファイルを選択します。
+1. 正しいプロファイルを選択します。
 
    a.デフォルトのプロファイルの名前をクリックします。
 
@@ -145,7 +145,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
    g.をクリックし **[!UICONTROL Save]**&#x200B;ます。
 
-2. にユーザーを追加しま **[!UICONTROL Places Core Services]**&#x200B;す。
+1. にユーザーを追加しま **[!UICONTROL Places Core Services]**&#x200B;す。
 
    >[!TIP]
    >
