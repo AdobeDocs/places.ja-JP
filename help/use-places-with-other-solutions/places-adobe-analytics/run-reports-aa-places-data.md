@@ -4,7 +4,7 @@ seo-title: 場所データを含むAdobe Analyticsでのレポートの実行
 description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 seo-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -31,11 +31,11 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
    この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Analytics Track Action Events]**&#x200B;す。
 
-2. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
 
-4. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Track Action]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Track Action]**&#x200B;す。
 
 これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**&#x200B;す。
 
@@ -52,13 +52,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. セクションの下 **[!UICONTROL Conditions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから「モバイルコア」 **[!UICONTORL を選択します]**。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから「モバイルコア」 **[!UICONTORL を選択します]**。
 
-3. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Carrier Name]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Carrier Name]**&#x200B;す。
 
-4. 右側のウィンドウで、チェックボックスを選択 **[!UICONTROL AT&T]** します。
+1. 右側のウィンドウで、チェックボックスを選択 **[!UICONTROL AT&T]** します。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 !["条件の作成"](/help/assets/pt-setCondition.png)
 
@@ -66,13 +66,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
 
-2. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
 
-3. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
 
-4. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
+1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
 
-5. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 右側のウィンドウで、このイベントをリッスンする拡張がイベントを受け取る前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。 この例では、Analytics拡張で処理される前に、このイベントに一部のコンテキストデータが追加されます。 追加されたコンテキストデータは、送信Analyticsヒットに置かれます。
 
@@ -88,4 +88,4 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
-2. 起動プロパティを再構築し、正しい環境に展開します。
+1. 起動プロパティを再構築し、正しい環境に展開します。
