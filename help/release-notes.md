@@ -4,14 +4,12 @@ seo-title: リリースノート
 description: Adobe Experience Platform Location Serviceのリリースノートです。
 seo-description: Adobe Experience Platform Location Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
 
 ---
 
 
 # リリースノート {#release-notes}
-
-以下に、リリースノートを示します。
 
 ## 2019 年 10 月 9 日
 
