@@ -11,7 +11,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 # Places拡張を使用したSDKの設定 {#configure-sdk-places-extension}
 
-モバイルアプリで場所の認識を有効にするには、場所拡張を使用してSDKを設定し、必要に応じて場所監視拡張を設定します。 SDK設定を含む詳細については、 [Places (Beta) extension](sdk/places-extension/places-extension.md)を参照してください。
+モバイルアプリで場所の認識を有効にするには、場所拡張を使用してSDKを設定し、必要に応じて場所監視拡張を設定します。 SDK設定を含む詳細については、 [Places (Beta) extension](/help/places-ext-aep-sdks/places-extension/places-extension.md)を参照してください。
 
 ## 場所拡張の設定
 
