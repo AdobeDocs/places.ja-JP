@@ -2,9 +2,9 @@
 title: Adobe Target
 seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
-seo-description: 'ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。 '
+seo-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Launches]**&#x200B;す。
 
-1. 右側のウィンドウで、コンボボックスと数値コントロールを変更し、「 **[!UICONTROL User has launched the app leater than or equal to 5 then**」という条件を設定します。
+1. 右側のウィンドウで、ドロップダウンリストと番号コントロールを変更して、条件が読み上げられるようにしま **[!UICONTROL User has launched the app greater than or equal to 5 times]**&#x200B;す。
 
 1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
@@ -76,11 +76,11 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 次の例では、Targetイベ `poiCity` ントで `poiName` 処理される各リクエ **[!UICONTROL mboxparameters]** ストのに、との値が追加されます。 新しいキーの値は、このイベントの処理時にSDKによって動的に決定されます。
 
->[!TIP
->]
+>[!TIP]
+>
 >このJSONペイロードは、オブジェクトに特別な表記を使用 `request` します。 元のイベントでは、 `request` は匿名オブジェクトの配列です。 「Attach Data」を使用して配列内のすべてのオブジェクトにデータをアタッチする場合、配列を含むことがわかっているキーの表記法によって、その配列内のすべてのオブジェクトにペイロードが適用されます。 `[*]`
 >
->の表記は、配 `request[*]` 列内の各オブジェクトに対して_と読み上げることがで `request` きます。
+>の表記は、配 `request[*]` 列内の各オブジェクトにつ _いて大きく読み上げることがで`request`きる_。
 
 ![イベントの追加](/help/assets/ad-setAction_target.png)
 
