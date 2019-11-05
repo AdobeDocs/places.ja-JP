@@ -4,7 +4,7 @@ seo-title: 場所データを含むAdobe Analyticsでのレポートの実行
 description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 seo-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**&#x200B;す。
 
-![「イベントの作成」](/help/assets/pt-selectEvent.png)
+![「イベントの作成」](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.条件の追加
@@ -60,7 +60,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-!["条件の作成"](/help/assets/pt-setCondition.png)
+!["条件の作成"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.アクションの定義
 
@@ -78,13 +78,13 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 次の例では、との値 `poi.city` がAnalyticsイ `poi.name` ベントのコンテキストデータに追加されます。 新しいキーの値は、このイベントが処理されるときにSDKによって動的に決定されます。
 
-![「アクションの作成」](/help/assets/pt-setAction.png)
+![「アクションの作成」](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![「ルールは完了です。」](/help/assets/pt-ruleComplete.png)
+![「ルールは完了です。」](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
