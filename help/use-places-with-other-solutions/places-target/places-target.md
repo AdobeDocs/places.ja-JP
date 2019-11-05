@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -58,7 +58,7 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-![イベントの追加](/help/assets/ad-setCondition_target.png)
+![条件の追加](/help/assets/ad-setCondition_target.png)
 
 ## 4.アクションの定義
 
@@ -82,7 +82,7 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 >
 >の表記は、配 `request[*]` 列内の各オブジェクトにつ _いて大きく読み上げることがで`request`きる_。
 
-![イベントの追加](/help/assets/ad-setAction_target.png)
+![アクションを定義する](/help/assets/ad-setAction_target.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
