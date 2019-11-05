@@ -1,10 +1,10 @@
 ---
 title: 独自のモニタを使用する
 seo-title: 独自のモニタを使用する
-description: 'また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。 '
-seo-description: 'また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。 '
+description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
+seo-description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -27,11 +27,9 @@ iOSで、次の手順を実行します。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
-   
-          [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
-              [self startMonitoringGeoFences:nearbyPoi];
-      }];
-   
+       [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
+           [self startMonitoringGeoFences:nearbyPoi];
+       }];
    }
    ```
 
