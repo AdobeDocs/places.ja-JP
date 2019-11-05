@@ -4,7 +4,7 @@ seo-title: 独自のモニタを使用する
 description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 seo-description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -23,16 +23,15 @@ iOSで、次の手順を実行します。
 
 1. iOSのコアロケーションサービスから取得した場所の更新をPlaces拡張に渡します。
 
-1. Places拡張APIを `getNearbyPointsOfInterest` 使用して、現在の場所周辺の *n*`ACPPlacesPoi` 個のオブジェクトの配列を取得します。
+1. Places拡張APIを `getNearbyPointsOfInterest` 使用して、現在の場所の周囲にあるオブジ `ACPPlacesPoi` ェクトの配列を取得します。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }
-   ```
-
+   }```
+   
 1. 取得したオブジェクトから情報を抽 `ACPPlacesPOI` 出し、それらのPOIの監視を開始します。
 
    ```objective-c
