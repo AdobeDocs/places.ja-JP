@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![完了規則](/help/assets/ad-ruleComplete_target.png)
+![完了規則](/help/assets/ad-ruleComplete-target.png)
 
 1. 「**[!UICONTROL Save]**」をクリックします
 
