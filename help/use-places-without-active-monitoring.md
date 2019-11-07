@@ -1,10 +1,10 @@
 ---
-title: '地域の監視機能を有効にしないでLocation Serviceを使用 '
-seo-title: '地域の監視機能を有効にしないでLocation Serviceを使用 '
+title: 地域の監視機能を有効にしないでLocation Serviceを使用
+seo-title: 地域の監視機能を有効にしないでLocation Serviceを使用
 description: このセクションでは、アクティブな地域監視を行わないLocation ServicePlacesの使用方法について説明します。
 seo-description: この節では、アクティブな地域監視を行わずにLocation Serviceを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -68,17 +68,18 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 }
 ```
@@ -122,8 +123,8 @@ SDKは、ユーザーが現在各POI内にいるかどうかを含む、近く�
 >[!IMPORTANT]
 >
 >1回の訪問でアプリが複数のエントリイベントをトリガーしないようにするには、ユーザーが入力した地域のリストを保持します。 SDKから近くのPOIの応答を処理する場合、その領域がリストにない場合にのみエントリイベントをトリガーします。
-
-次のコード例では、 `NSUserDefaults` (iOS)と `SharedPreferences` (Android)が使用されています。
+>
+>以下のコードの例では、 `NSUserDefaults` (iOS)と `SharedPreferences` (Android)を使用して地域のリストを管理します。
 
 ### Android
 
@@ -265,18 +266,19 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                        handleUpdatedPOIs(pois);
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                    handleUpdatedPOIs(pois);
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 
     void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
