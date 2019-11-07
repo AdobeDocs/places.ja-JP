@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -48,8 +48,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
             + [複数のPOIの削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリAPI](web-service-api/api-usage/query-apis.md)
 + モバイルSDKの拡張機能 {#places-ext-aep-sdks}
-   + [配置]拡張子 {#places-extension}
-      + [[配置]拡張子](places-ext-aep-sdks/places-extension/places-extension.md)
+   + Places 拡張機能{#places-extension}
+      + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places APIリファレンス](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [イベント参照を配置](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [カスタム配置オブジェクト](places-ext-aep-sdks/places-extension/cust-places-objects.md)
@@ -64,8 +64,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
 + 他のアドビソリューションとのロケーションサービスの使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Adobe Analyticsへのロケーションサービスデータの送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [ロケーションサービスデータを含むAdobe Analyticsでのレポートの実行](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [POIの入口と出口のデータをAnalyticsに送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [Analyticsリクエストへの場所のコンテキストの追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [プッシュ通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
