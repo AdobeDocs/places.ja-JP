@@ -4,7 +4,7 @@ seo-title: 独自のモニタを使用する
 description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 seo-description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -30,8 +30,9 @@ iOSで、次の手順を実行します。
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }```
-   
+   }
+   ```
+
 1. 取得したオブジェクトから情報を抽 `ACPPlacesPOI` 出し、それらのPOIの監視を開始します。
 
    ```objective-c
@@ -42,13 +43,14 @@ iOSで、次の手順を実行します。
        for (ACPPlacesPoi * currentRegion in newGeoFences) {
            // make the circular region
            CLLocationCoordinate2D center = CLLocationCoordinate2DMake(currentRegion.latitude, currentRegion.longitude);
-           CLCircularRegion* currentCLRegion = [[CLCircularRegion alloc] initWithCenter:center                                                                                                                              radius:currentRegion.radius                                                                                                                    identifier:currentRegion.identifier];
+           CLCircularRegion* currentCLRegion = [[CLCircularRegion alloc] initWithCenter:center
+                                                                                 radius:currentRegion.radius
+                                                                             identifier:currentRegion.identifier];
            currentCLRegion.notifyOnExit = YES;
            currentCLRegion.notifyOnEntry = YES;
    
            // start monitoring the new region
            [_locationManager startMonitoringForRegion:currentCLRegion];
-   
        }
    }
    ```
@@ -57,23 +59,22 @@ iOSで、次の手順を実行します。
 
 1. Google playサービスまたはAndroidロケーションサービスから取得した場所の更新をPlaces Extensionに渡します。
 
-1. Places Extension APIを使 `getNearbyPointsOfInterest` 用して、現在の場所周辺のオブジェクト `PlacesPoi` のリストを取得します。
+1. Places Extension APIを使 `getNearbyPointsOfInterest` 用して、現在の場所周辺のオブジ `PlacesPoi` ェクトのリストを取得します。
 
    ```java
-       LocationCallback callback = new LocationCallback() {
-               @Override
-               public void onLocationResult(LocationResult locationResult) {
-                   super.onLocationResult(locationResult);
+   LocationCallback callback = new LocationCallback() {
+       @Override
+       public void onLocationResult(LocationResult locationResult) {
+           super.onLocationResult(locationResult);
    
-                   Places.getNearbyPointsOfInterest(currentLocation, 10, new            AdobeCallback<List<PlacesPOI>>() {
+           Places.getNearbyPointsOfInterest(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
                @Override
-               public void call(List<PlacesPOI> pois)
+               public void call(List<PlacesPOI> pois) {
                    starMonitoringGeofence(pois);
                }
            });
-   
-               }
-           };
+       }
+   };
    ```
 
 1. 取得したオブジェクトからデータを抽 `PlacesPOI` 出し、POIの監視を開始します。
@@ -82,21 +83,21 @@ iOSで、次の手順を実行します。
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
        // check for location permission
        for (PlacesPOI poi : nearByPOIs) {
-               final Geofence fence = new Geofence.Builder()
+           final Geofence fence = new Geofence.Builder()
                .setRequestId(poi.getIdentifier())
                .setCircularRegion(poi.getLatitude(), poi.getLongitude(), poi.getRadius())
                .setExpirationDuration(Geofence.NEVER_EXPIRE)
                .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER |
                                    Geofence.GEOFENCE_TRANSITION_EXIT)
                .build();
-               geofences.add(fence);
-           }
+           geofences.add(fence);
+       }
    
-           GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
-           builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
-           builder.addGeofences(geofences);
-           builder.build();
-           geofencingClient.addGeofences(builder.build(), geoFencePendingIntent)
+       GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
+       builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
+       builder.addGeofences(geofences);
+       builder.build();
+       geofencingClient.addGeofences(builder.build(), geoFencePendingIntent)
    }
    ```
 
@@ -120,5 +121,30 @@ iOSでは、Places APIをデリゲ `processGeofenceEvent` ートで呼び出し 
 
 - (void) locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
     [ACPPlaces processRegionEvent:region forRegionEventType:ACPRegionEventTypeExit];
+}
+```
+
+### Android
+
+Androidで、Geofenceブロードキャスト受信 `processGeofence` 機の適切なトランジションイベントと共にメソッドを呼び出します。 入口/出口の重複を防ぐために、受け取ったジオフェンスのリストをキュレーションする必要がある場合があります。
+
+```java
+void onGeofenceReceived(final Intent intent) {
+    // do appropriate validation steps for the intent
+    ...
+
+    // get GeofencingEvent from intent
+    GeofencingEvent geoEvent = GeofencingEvent.fromIntent(intent);
+
+    // get the transition type (entry or exit)
+    int transitionType = geoEvent.getGeofenceTransition();
+
+    // validate your geoEvent and get the necessary Geofences from the list
+    List<Geofence> myGeofences = geoEvent.getTriggeringGeofences();
+
+    // process region events for your geofences
+    for (Geofence geofence : myGeofences) {
+        Places.processGeofence(geofence, transitionType);
+    }
 }
 ```
