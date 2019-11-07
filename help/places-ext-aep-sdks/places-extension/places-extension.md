@@ -1,21 +1,21 @@
 ---
-title: 配置拡張子
-seo-title: 配置拡張子'
-description: 場所拡張では、ユーザーの場所に基づいて行動できます。
-seo-description: 場所拡張では、ユーザーの場所に基づいて行動できます。
+title: Places 拡張機能
+seo-title: Places 拡張機能
+description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
+seo-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
 source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
 
-# [配置]拡張子 {#places-extension}
+# Places 拡張機能{#places-extension}
 
 「場所」拡張では、ユーザーの場所に基づいて行動できます。 この拡張は、Places Query Service APIへのインターフェイスです。 GPS座標とジオフェンス領域イベントを含むイベントをリッスンすると、この拡張は、ルールエンジンで処理される新しいイベントをディスパッチします。 また、Places拡張機能は、APIから取得したアプリデータに最も近いPOIのリストを取得し、配信します。 APIから返される領域はキャッシュと永続性に保存されるので、オフライン処理に制限があります。
 
 ## Adobe Experience Platform LaunchにPlaces拡張をインストールする
 
-1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Extensions]** ックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
 1. このプロパティで使用する場所ライブラリを選択します。 これらのライブラリは、アプリでアクセス可能になります。
 1. 「**[!UICONTROL Save]**」をクリックします。
