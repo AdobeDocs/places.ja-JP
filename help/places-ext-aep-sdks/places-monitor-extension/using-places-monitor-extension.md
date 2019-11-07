@@ -2,9 +2,9 @@
 title: プレースモニター拡張機能の使用
 seo-title: プレースモニター拡張機能の使用
 description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
-seo-description: 'プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。 '
+seo-description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ## Experience Platform LaunchにPlaces Monitor Extensionをインストールする
 
-1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Extensions]** ックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. タブで、拡 **[!UICONTROL Catalog]** 張機能を探し、「イ **[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
 1. 「**[!UICONTROL Save]**」をクリックします。
 1. 公開プロセスに従ってSDK設定を更新します。
@@ -107,7 +107,9 @@ public class MobileApp extends Application {
 }
 ```
 
-**** 重要：場所の監視は、場所の拡張機能に依存します。 プレースモニター拡張機能を手動でインストールする場合は、プロジェクトにライブラリも追 `places.aar` 加してください。
+>[!IMPORTANT]
+>
+>場所の監視は、場所の拡張機能に依存します。 Places 監視拡張機能を手動でインストールする場合は、プロジェクトに `places.aar` ライブラリも追加してください。
 
 ## iOS
 
@@ -125,7 +127,7 @@ iOSアプリで、Mobile coreに`application:didFinishLaunchingWithOptions`「�
         [ACPPlacesMonitor start];
     }];
 
-    return YES; 
+    return YES;
 }
 ```
 
@@ -140,7 +142,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         // do other initialization required for the SDK
         ACPPlacesMonitor.start()
     })
-    
+
     // Override point for customization after application launch.        
     return true
 }
@@ -148,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
->場所の監視は、場所の拡張機能に依存します。 プレースモニター拡張機能を手動でインストールする場合は、プロジェクトにもライブラリを追 `libACPPlaces_iOS.a` 加してください。
+>場所の監視は、場所の拡張機能に依存します。 When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
 ## マニフェストへの権限の追加
@@ -163,7 +165,7 @@ Androidのすべてのバージョンで、アプリに場所の権限が必要�
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     // Only for Android apps targeting API level 29 and above
-  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> 
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
   <application>        
     ...    
   </application>
@@ -189,4 +191,3 @@ iOSは、停止中のアプリケーションや実行されなくなったア�
 >アプリがiOS 10以前をサポートしている場合は、 `NSLocationAlwaysUsageDescription` キーも必須です。
 
 ![](/help/assets/using-the-places-monitor_2.png)
-
