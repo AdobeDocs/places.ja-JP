@@ -1,8 +1,8 @@
 ---
-title: '[配置]拡張子'
-seo-title: '[配置]拡張子'
-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
-seo-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
+title: 配置拡張子
+seo-title: 配置拡張子'
+description: 場所拡張では、ユーザーの場所に基づいて行動できます。
+seo-description: 場所拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
 source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
