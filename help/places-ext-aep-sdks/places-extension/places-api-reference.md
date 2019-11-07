@@ -4,7 +4,7 @@ seo-title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
 seo-description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 69173bdbd1a69ae1b75ba70e775a4603d1f1b8fc
 
 ---
 
@@ -115,7 +115,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## 近くの目標地点の取得
 
-コールバック内の近くのPOIの順序付きリストを返します。
+コールバック内の近くのPOIの順序付きリストを返します。 このメソッドのオーバーロードされたバージョンは、結果のネットワーク呼び出しで何か問題が発生した場合にエラーコードを返します。
 
 ### GetNicherePointsOfInterest (Android)
 
@@ -124,8 +124,12 @@ public class GeofenceTransitionsIntentService extends IntentService {
 **構文**
 
 ```java
-public static void getNearbyPointsOfInterest(final Location location,
-    final int limit, final AdobeCallback<List<PlacesPOI>> callback);
+public static void getNearbyPointsOfInterest(final Location location, final int limit,
+                                             final AdobeCallback<List<PlacesPOI>> callback);
+
+public static void getNearbyPointsOfInterest(final Location location, final int limit,
+                                             final AdobeCallback<List<PlacesPOI>> callback,
+                                             final AdobeCallback<PlacesRequestError> errorCallback);
 ```
 
 **例**
@@ -133,13 +137,31 @@ public static void getNearbyPointsOfInterest(final Location location,
 このメソッドのコードサンプルを次に示します。
 
 ```java
-Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
+// getNearbyPointsOfInterest without an error callback
+Places.getNearbyPointsOfInterest(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
     @Override
     public void call(List<PlacesPOI> pois) {
         // do required processing with the returned nearbyPoi array
         startMonitoringPois(pois);
     }
 });
+
+// getNearbyPointsOfInterest with an error callback
+Places.getNearbyPointsOfInterest(currentLocation, 10,
+    new AdobeCallback<List<PlacesPOI>>() {
+        @Override
+        public void call(List<PlacesPOI> pois) {
+            // do required processing with the returned nearbyPoi array
+            startMonitoringPois(pois);
+        }
+    }, new AdobeCallback<PlacesRequestError>() {
+        @Override
+        public void call(PlacesRequestError placesRequestError) {
+            // look for the placesRequestError and handle the error accordingly
+            handleError(placesRequestError);
+        }
+    }
+);
 ```
 
 ### GetNicheredPointsOfInterest (iOS)
@@ -150,17 +172,34 @@ Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>()
 + (void) getNearbyPointsOfInterest: (nonnull CLLocation*) currentLocation
                              limit: (NSUInteger) limit
                           callback: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi)) callback;
+
++ (void) getNearbyPointsOfInterest: (nonnull CLLocation*) currentLocation
+                             limit: (NSUInteger) limit
+                          callback: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi)) callback
+                     errorCallback: (nullable void (^) (ACPPlacesRequestError result)) errorCallback;
 ```
 
 **例**
 
 ```objectivec
+// getNearbyPointsOfInterest without an error callback
 [ACPPlaces getNearbyPointsOfInterest:location
                                limit:10     
                             callback:^(NSArray<ACPPlacesPoi*>* nearbyPoi) {
     // do required processing with the returned nearbyPoi array
     [self startMonitoringPois:nearbyPOI];
 }];
+
+// getNearbyPointsOfInterest with an error callback
+[ACPPlaces getNearbyPointsOfInterest:location limit:10
+    callback:^(NSArray<ACPPlacesPoi *> * _Nullable nearbyPoi) {
+        // do required processing with the returned nearbyPoi array
+        [self startMonitoringPois:nearbyPOI];
+    } errorCallback:^(ACPPlacesRequestError result) {
+        // look for the error and handle accordingly
+        [self handleError:result];
+    }
+];
 ```
 
 ## 現在のデバイス目標地点の取得
