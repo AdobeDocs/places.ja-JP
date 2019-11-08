@@ -1,15 +1,15 @@
 ---
-title: 場所データを含むAdobe Analyticsでのレポートの実行
-seo-title: 場所データを含むAdobe Analyticsでのレポートの実行
-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
-seo-description: ここでは、Placesデータを含むAnalyticsでのレポートの実行方法について説明します。
+title: Analyticsリクエストへの場所のコンテキストの追加
+seo-title: Analyticsリクエストへの場所のコンテキストの追加
+description: この節では、Analyticsリクエストに場所のコンテキストを追加する方法について説明します。
+seo-description: この節では、Analyticsリクエストに場所のコンテキストを追加する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# 場所データを含むAdobe Analyticsでのレポートの実行 {#run-reports-aa-locserv-data}
+# Analyticsリクエストへの場所のコンテキストの追加 {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >
