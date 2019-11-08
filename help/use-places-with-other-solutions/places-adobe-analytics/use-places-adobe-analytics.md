@@ -1,15 +1,15 @@
 ---
-title: Adobe Analyticsへの場所データの送信
-seo-title: Adobe Analyticsへの場所データの送信
-description: この節では、PlacesデータをAnalyticsに送信する方法について説明します。
-seo-description: この節では、PlacesデータをAnalyticsに送信する方法について説明します。
+title: POIの入口と出口のデータをAnalyticsに送信
+seo-title: POIの入口と出口のデータをAnalyticsに送信
+description: この節では、POIの入口データと出口データをAnalyticsに送信する方法について説明します。
+seo-description: この節では、POIの入口データと出口データをAnalyticsに送信する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# Adobe Analyticsへの場所データの送信 {#places-data-analytics}
+# POIの入口と出口のデータをAnalyticsに送信 {#places-data-analytics}
 
 
 >[!IMPORTANT]
