@@ -1,10 +1,10 @@
 ---
 title: Places Monitor APIリファレンス
 seo-title: Places Monitor APIリファレンス
-description: 'プレースモニターのAPIのリストです。 '
+description: プレースモニターのAPIのリストです。
 seo-description: 'プレースモニターのAPIのリストです。  '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
@@ -323,7 +323,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   アプリがバックグラウンドにある場合でも、この列挙を使用して場所サービスを要求します。 アプリのInfo.plistに `NSLocationAlwaysUsageDescription` キーと `NSLocationWhenInUseUsageDescription` キーが必要です。 これらのキーは、ユーザープロンプトの実行時に表示されるテキストを定義します。 詳しくは、requestalwaysauthorizationに関する [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
+   アプリがバックグラウンドにある場合でも、この列挙を使用して場所サービスを要求します。 アプリのInfo.plistに `NSLocationAlwaysUsageDescription` キーと `NSLocationWhenInUseUsageDescription` キーが必要です。 これらのキーは、ユーザープロンプトの実行時に表示されるテキストを定義します。 詳しくは、requestAlwaysAuthorizationの [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
 
 `ACPPlacesRequestAuthorizationLevelAlways` はデフォルトのリクエスト承認値です。
 
@@ -336,7 +336,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 #### 構文
 
 ```objective-c
-+ (void) setRequestAuthorizationLevel: (ACPPlacesRequestAuthorizationLevel) requestAuthorizationLevel
++ (void) setRequestAuthorizationLevel: (ACPPlacesRequestAuthorizationLevel) requestAuthorizationLevel;
 ```
 
 #### 例
@@ -354,7 +354,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 ```objective-c
 // set the request authorization level
-[ACPPlacesMonitor setRequestAuthorizationLevel: ACPPlacesRequestAuthorizationLevelAlways]
+[ACPPlacesMonitor setRequestAuthorizationLevel: ACPPlacesRequestAuthorizationLevelAlways];
 ```
 
 ## 監視モード（iOSのみ）
