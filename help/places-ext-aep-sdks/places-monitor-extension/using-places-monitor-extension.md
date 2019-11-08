@@ -4,7 +4,7 @@ seo-title: プレースモニター拡張機能の使用
 description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 seo-description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
@@ -102,7 +102,7 @@ public class MobileApp extends Application {
             MobileCore.start(null);
         } catch (Exception e) {
             //Log the exception
-         }
+        }
     }
 }
 ```
