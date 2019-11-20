@@ -4,7 +4,7 @@ seo-title: POIの一括アップロード
 description: ここでは、POIをバルクアップロードする方法について説明します。
 seo-description: ここでは、POIをバルクアップロードする方法について説明します。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
 
 ---
 
@@ -45,7 +45,7 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 
 * `radius`
 
-   10 ～ 2000の値です。
+   10 ～ 20,000の値です。
 
 ### 列の値
 
