@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: a5ac49b0a18ce52fb71b2920d04918539b35294b
 
 ---
 
@@ -14,7 +14,8 @@ source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
 + 目標地点管理インターフェース {#poi-mgmt-ui}
-   + [新しい POI を作成](poi-mgmt-ui/create-a-poi-ui.md)
+   + [目標地点管理インターフェイスの概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
+   + [POI を作成](poi-mgmt-ui/create-a-poi-ui.md)
    + [以前に作成したPOIの管理](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [POIでのメタデータの使用方法](poi-mgmt-ui/metadata-with-pois.md)
    + [POIのバルクアップロード](poi-mgmt-ui/bulk-upload-pois.md)
@@ -23,6 +24,7 @@ source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
    + [WebサービスAPIの概要](web-service-api/places-web-services.md)
    + [統合の前提条件](web-service-api/adobe-i-o-integration.md)
    + APIの使用 {#api-usage}
+      + [APIの使用の概要](web-service-api/api-usage/api-usage-overview.md)
       + [ヘッダーとパラメーター](web-service-api/api-usage/headers-and-parameters.md)
       + Manage libraries {#manage-libraries}
          + [ライブラリの管理の概要](web-service-api/api-usage/manage-libraries/manage-libraries.md)
