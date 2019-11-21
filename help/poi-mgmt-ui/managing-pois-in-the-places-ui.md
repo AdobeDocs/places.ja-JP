@@ -4,12 +4,12 @@ seo-title: 既存のPOIの管理
 description: ロケーションサービスのUIでは、既存のPOIの編集、削除またはフィルターを実行できます。
 seo-description: ロケーションサービスのUIでは、既存のPOIの編集、削除またはフィルターを実行できます。
 translation-type: tm+mt
-source-git-commit: 32c670773421406591ba85a628760553ce6ad840
+source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
 
 ---
 
 
-# 既存のPOIの管理
+# 既存のPOIの管理 {#managing-existing-pois}
 
 POIとライブラリは、場所UIを使用して場所データベースで作成および管理します。
 
