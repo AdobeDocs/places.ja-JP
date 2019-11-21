@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: a5ac49b0a18ce52fb71b2920d04918539b35294b
+source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
 
 ---
 
@@ -62,6 +62,7 @@ source-git-commit: a5ac49b0a18ce52fb71b2920d04918539b35294b
 + [独自の監視ソリューションでロケーションサービスを使用](using-your-own-monitor.md)
 + [地域の監視機能を有効にしないでLocation Serviceを使用](use-places-without-active-monitoring.md)
 + Experience Platform起動ワークフローの一部としてロケーションサービスを使用 {#use-places-launch-workflow}
+   + [Experience Platform起動ワークフローの一部としてロケーションサービスを使用](use-places-launch-workflow/places-launch-workflow.md)
    + [データ要素の定義](use-places-launch-workflow/define-data-elements.md)
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
 + 他のアドビソリューションとのロケーションサービスの使用 {#use-places-with-other-solutions}
