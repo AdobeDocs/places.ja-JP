@@ -4,12 +4,21 @@ seo-title: リリースノート
 description: Adobe Experience Platform Location Serviceのリリースノートです。
 seo-description: Adobe Experience Platform Location Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
+source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
 
 ---
 
 
 # リリースノート {#release-notes}
+
+## 2019 年 22 月 11 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **Android**
+
+      * モニターはAndroidデバイスの起動を認識し、必要に応じて、デバイスの現在の場所に基づいてジオフェンスをOSに再登録します。
+      * 入口/出口イベントが破棄されることがある競合状態を修正しました。
 
 ## 2019 年 10 月 9 日
 
@@ -210,7 +219,7 @@ Places Extensionを使用すると、モバイルアプリにPlacesライブラ�
 * POIの入口または出口でトリガーされるルールイベント。
 * ユーザーの現在のPOIを指すデータ要素を作成します。
 
-Places拡張機能について詳しくは、Places拡張機能を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Places API
 
