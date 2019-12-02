@@ -4,14 +4,14 @@ seo-title: Analytics Workspaceの場所データに関するレポート
 description: ここでは、Analytics Workspaceで場所データをレポートする方法について説明します。
 seo-description: ここでは、Analytics Workspaceで場所データをレポートする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
 # Analytics Workspaceの場所データに関するレポート {#places-in-workspace}
 
-このドキュメントでは、Analytics Workspaceでの場所データのレポート方法の例を示します。 各手順には、概要を記載し、詳細は他のドキュメントページを参照して提供します。
+このドキュメントでは、Analytics Workspaceでの場所データのレポート方法の例を示します。 各手順には、他のドキュメントページを参照することで提供される詳細を含む概要が含まれます。
 
 ## 前提条件
 
