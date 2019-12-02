@@ -4,12 +4,12 @@ seo-title: プッシュ通知
 description: ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。
 seo-description: 'ここでは、Campaign Standardで場所をプッシュ通知と共に使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# エクスペリエンスプラットフォームロケーションサービスを使用したプッシュ通知 {#push-notifications}
+# ロケーションサービスでのプッシュ通知 {#push-notifications}
 
 このガイドでは、Adobe Campaign Standardを通じて配信されるプッシュ通知をターゲットにする、過去の地域情報を使用する方法を説明します。
 
@@ -42,7 +42,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ![「キャンペーン標準のプッシュメッセージ」](/help/assets/ACS_Push1.png)
 
-1. 上記の手順1 ～ 4を繰り返し、「最後に入力したPOI緯度」、「最後に入力したPOI経度 *」、「最後に入力したPOI半径*」のデ *ータ要素を作成します***。
+1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
 
 ロケーションサービスのデータ要素に加えて、 *App IDと* Experience Cloud IDのMobile coreデータ要素を必ず作成し *ます*。
 
@@ -120,7 +120,7 @@ CampaignサーバーおよびpKey用に以前に作成した正しいデータ�
 
    カウントの更新が表示されない場合は、エントリをトリガーしたデバイスがないPOI名を入力した可能性があります。 Slack webフックを使用すると、様々なテストデバイスからのPOIエントリのリストが表示されるので、この状況で役に立ちます。
 1. 追加のPOI位置フィルターをドラッグして、メッセージに複数のPOIを含めることができます。
-1. クリック **[!UICONTROL Next]** して、配信用のプッシュ通知の作成を終了します。
+1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
 
    !["ACSでのプッシュメッセージ3"](/help/assets/ACS_push3.html)
 
