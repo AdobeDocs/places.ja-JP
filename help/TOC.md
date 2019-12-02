@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
@@ -67,6 +67,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
 + 他のアドビソリューションとのロケーションサービスの使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
+      + [Adobe Analyticsでのロケーションサービスの使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POIの入口と出口のデータをAnalyticsに送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [Analyticsリクエストへの場所のコンテキストの追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics Workspaceの場所データに関するレポート](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -75,6 +76,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
       + [プッシュ通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [アプリ内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
+      + [Adobe Campaign Standardでのロケーションサービスの使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [プッシュ通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [アプリ内メッセージ](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
