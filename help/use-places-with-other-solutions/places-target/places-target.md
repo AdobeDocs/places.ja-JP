@@ -4,12 +4,12 @@ seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 seo-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 27f4e5397caf14e24bcbc4a2d276647e72a6d115
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# Adobe Target {#places-target}
+# Adobe targetでのロケーションサービスの使用 {#places-target}
 
 このドキュメントでは、アプリケーションにPlaces拡張機能が実装されていることを前提としています。 Places拡張機能の実装に関するヘルプが必要な場合は、Places拡張機能を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
