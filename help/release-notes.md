@@ -4,14 +4,22 @@ seo-title: リリースノート
 description: Adobe Experience Platform Location Serviceのリリースノートです。
 seo-description: Adobe Experience Platform Location Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
+source-git-commit: ef129b7b168444edaf58ef55331efdf2f55a993f
 
 ---
 
 
 # リリースノート {#release-notes}
 
-## 2019 年 22 月 11 日
+## 2019年12月4日
+
+* **ACPPlaces 1.3.0**
+
+   * **iOS**
+
+      * ロケーションサービスのデバ `setAuthorizationStatus`イス認証ステータスを設定する新しいAPIが追加されました。 この値は「場所」共有状態で保存され、使用されます。
+
+## 2019 年 22 月 12 日
 
 * **PlacesMonitor 2.1.1**
 
@@ -223,13 +231,13 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Places API
 
-場所APIを使用して、次の操作を行うことができます。
+Places APIを使用して、次の操作を行うことができます。
 
 * 開発者はPOIのリストにデータを埋め込み、更新できます。
 * 独自のUIを作成するか、既存のPOIデータベースと統合します。
 * POIの一括インポートを行うには、Places APIバッチエンドポイントを使用します。
 
-   PythonユーティリティはAPIと共に提供されます。
+   提供されたPythonユーティリティを使用して、バルクインポートを完了できます。
 
 Places APIについて詳しくは、 [WebサービスAPIを参照してください](/help/web-service-api/places-web-services.md)。
 
@@ -238,4 +246,3 @@ Places APIについて詳しくは、 [WebサービスAPIを参照してくだ�
 #### Analytics の統合
 
 ユーザーがPOI（受動呼び出し）内にいる場合、Placesデータベースから送信されるすべてのAnalytics呼び出しに位置コンテキストデータを自動的に追加するようにAnalytics拡張が更新されます。 また、この更新により、AnalyticsがPOIの入口または出口（アクティブな呼び出し）で直接呼び出しを追跡するルールを作成できるようになります。
-
