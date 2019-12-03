@@ -4,7 +4,7 @@ seo-title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
 seo-description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: 69173bdbd1a69ae1b75ba70e775a4603d1f1b8fc
+source-git-commit: 77bd510506d950348452eb26386cd25fe570fa65
 
 ---
 
@@ -347,4 +347,39 @@ Places.clear();
 
 ```objectivec
 [ACPPlaces clear];
+```
+
+## 場所の認証状態の設定
+
+### setAuthorizationStatus(Android)
+
+まもなくリリース
+
+### setAuthorizationStatus(iOS)
+
+_[ACPPlaces v1.3.0以降で使用可能]_
+
+場所拡張での認証状態を設定します。
+
+提供された状態は「場所」共有状態に保存され、参照用にのみ使用されます。
+このメソッドを呼び出しても、このデバイスの実際の場所の認証状態には影響しません。
+
+デバイスの認証状態が変わると、その `locationManager:didChangeAuthorizationStatus:` メソッドが呼び `CLLocationManagerDelegate` 出されます。 このメソッド内から、新しい値をACPPlaces `CLAuthorizationStatus` APIに渡す必要があ `setAuthorizationStatus:` ります。
+
+**構文**
+
+このメソッドの構文を次に示します。
+
+```objectivec
++ (void) setAuthorizationStatus: (CLAuthorizationStatus) status;
+```
+
+**例**
+
+このメソッドのコードサンプルを次に示します。
+
+```objectivec
+- (void) locationManager: (CLLocationManager*) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status {    
+    [ACPPlaces setAuthorizationStatus:status];
+}
 ```
