@@ -4,7 +4,7 @@ seo-title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
 seo-description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: 5d4974a341f6d0009ad93a9eea2f940ac9d8e871
+source-git-commit: 379278f7677d7d3cdc697d78c54693d0a3c62e02
 
 ---
 
@@ -357,7 +357,7 @@ Places.clear();
 
 ### setAuthorizationStatus(iOS)
 
-*[ACPPlaces v1.3.0以降で使用可能]*
+*ACPPlaces v1.3.0以降で使用可能*
 
 場所拡張での認証状態を設定します。
 
