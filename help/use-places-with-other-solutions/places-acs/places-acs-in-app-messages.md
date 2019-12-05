@@ -1,10 +1,8 @@
 ---
 title: ロケーションサービスを使用したアプリ内メッセージ
-seo-title: ロケーションサービスを使用したアプリ内メッセージ
 description: ここでは、Campaign Standardのアプリ内メッセージとCampaign Standardのキャンペーン標準のプッシュメッセージを使用する方法について説明します。
-seo-description: 'ここでは、Campaign Standardのアプリ内メッセージで「Campaign Standardのプッシュメッセージ」を使用する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -39,7 +37,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ![「アプリ内メッセージ配置メタデータ」](/help/assets/last-entered-vacation.png)
 
-1. をクリックし **[!UICONTROL Next]** て、配信するアプリ内メッセージの作成を終了します。
+1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
 
    ![「イベントの作成」](/help/assets/prepare-ACS.png)
 
