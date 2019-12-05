@@ -1,10 +1,8 @@
 ---
 title: 場所拡張を使用したSDKの設定
-seo-title: 場所拡張を使用したSDKの設定
 description: '場所拡張機能を持つSDKを設定して、モバイルアプリで場所を認識できるようにすることができます。 '
-seo-description: '場所拡張機能を持つSDKを設定して、モバイルアプリで場所を認識できるようにすることができます。 '
 translation-type: tm+mt
-source-git-commit: 61256ee0f01775bf09a3aee06b6e7253527fc383
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
