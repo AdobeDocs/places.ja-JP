@@ -1,10 +1,8 @@
 ---
 title: 場所のテストと検証
-seo-title: 場所のテストと検証
 description: ここでは、場所をテストして検証する方法について説明します。
-seo-description: ここでは、場所をテストして検証する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 181185d441a6a4740b2e8770adcb71e81e2e816e
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
