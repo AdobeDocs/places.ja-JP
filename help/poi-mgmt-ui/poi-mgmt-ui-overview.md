@@ -1,10 +1,8 @@
 ---
 title: 目標地点管理インターフェイスの概要
-seo-title: 目標地点管理インターフェイスの概要
 description: この節では、Location Service UIを使用したライブラリとPOIの作成および管理方法について説明します。
-seo-description: この節では、Location Service UIを使用したライブラリとPOIの作成および管理方法について説明します。
 translation-type: tm+mt
-source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
