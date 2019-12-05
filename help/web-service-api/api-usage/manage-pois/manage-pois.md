@@ -1,10 +1,8 @@
 ---
 title: POIの管理の概要
-seo-title: POIの管理の概要
 description: 'POIの把握と操作 '
-seo-description: 'POIの把握と操作 '
 translation-type: tm+mt
-source-git-commit: e204958ac3acbf5fb45d2347987f35557be70e43
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
