@@ -1,10 +1,8 @@
 ---
 title: Places 拡張機能
-seo-title: Places 拡張機能
 description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
-seo-description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
