@@ -1,10 +1,8 @@
 ---
 title: プレースモニタ拡張機能
-seo-title: プレースモニタ拡張機能
 description: プレースモニター拡張機能は、オペレーティングシステムとのやりとりを処理して、ユーザーに最も近いPOIを登録および監視します。
-seo-description: 'プレースモニター拡張機能は、オペレーティングシステムとのやりとりを処理して、ユーザーに最も近いPOIを登録および監視します。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
