@@ -1,10 +1,8 @@
 ---
 title: イベント参照を配置
-seo-title: イベント参照を配置
 description: 'Places拡張で処理されるイベントのリストです。 '
-seo-description: 'Places拡張で処理されるイベントのリストです。  '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
