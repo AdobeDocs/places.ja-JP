@@ -1,10 +1,8 @@
 ---
 title: POIの一括アップロード
-seo-title: POIの一括アップロード
 description: ここでは、POIをバルクアップロードする方法について説明します。
-seo-description: ここでは、POIをバルクアップロードする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -53,7 +51,7 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 
 * 色。ロケーションサービスのUIマップでPOIの場所を表すピンの色として使用されます。
    * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56B」です。b、#3DC8DE、および""
-   * この値を空白のままにすると、Location Service UIのデフォルトの色は青になります。
+   * この値を空白のままにした場合、Location Service UIのデフォルトの色は青になります。
 
       値は、青(#3E76D0)、紫(#AA99E8)、フスキア(#DC2ABA)、オレンジ(#FC685B)、淡いオレンジ(#FC962E)、黄(#F6C436)、明(#BECE5D)、緑(#61B56B)、薄い青(#3DC8DE)のそれぞれに対応しています。
 
