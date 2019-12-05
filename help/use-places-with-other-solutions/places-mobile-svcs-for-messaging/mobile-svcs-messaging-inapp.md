@@ -1,10 +1,8 @@
 ---
 title: アプリ内通知
-seo-title: アプリ内通知
 description: ここでは、アプリ内メッセージで場所を使用する方法について説明します。
-seo-description: ここでは、アプリ内メッセージで場所を使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -62,7 +60,7 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
 >[!TIP]
 >
->Analytics処理ルールを設定して、このコンテキストデータを取得できます。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 「アクションの作 *成」の例では*、Analyticsに送信されるPOIエントリイベントを説明するコンテキストと `poiname` して、アクションがを送信します。
+>Analytics処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、「[処理ルール](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)」を参照してください。「アクションの作 *成」の例では*、Analyticsに送信されるPOIエントリイベントを説明するコンテキストと `poiname` して、アクションがを送信します。
 
 ![アクションの作成](/help/assets/configure-action.png)
 
