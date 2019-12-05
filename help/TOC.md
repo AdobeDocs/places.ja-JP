@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 967726c02b725d8d7aca657754f1ae30f79a665d
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 + [Adobe Experience Platform Location Serviceの概要](home.md)
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
++ [ロケーションサービスにアクセスする](places-gain-access.md)
 + 目標地点管理インターフェース {#poi-mgmt-ui}
    + [目標地点管理インターフェイスの概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [POI を作成](poi-mgmt-ui/create-a-poi-ui.md)
