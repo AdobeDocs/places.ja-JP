@@ -4,7 +4,7 @@ seo-title: はじめに
 description: ロケーションサービスの概要を参照してください。
 seo-description: ロケーションサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 66472aa1800bcf36fb1d7f7129da70a573f355ab
 
 ---
 
@@ -27,10 +27,6 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
    詳しくは、よくある質問の *Adding a user to Experience Platform Launch and Location Service* （エクスペリエンスプラットフォームの起動とロケーションサービスへのユーザーの追加） [を参照してください](/help/places-faqs.md)。
 
-* Places拡張機能がExperience Platform Launchのモバイルアプリプロパティにインストールされていることを確認します。
-
-   アドビが提供する地域別監視機能を地域フェンスで使用するには、Places Monitor Extensionをインストールします。 詳しくは、「配置モニター拡張機能」 [を参照してくださ](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)い。
-
 
 ### 2.POIの作成
 
@@ -49,5 +45,5 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 Places拡張機能とMonitor拡張機能の設定について詳しくは、次の情報を参照してください。
 
-* [[配置]拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md)
 * [Places Monitor拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
