@@ -1,10 +1,8 @@
 ---
 title: バッチAPI
-seo-title: バッチAPI
 description: バッチAPIを使用すると、複数のPOIを作成、更新および削除できます。
-seo-description: バッチAPIを使用すると、複数のPOIを作成、更新および削除できます。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
