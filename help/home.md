@@ -4,12 +4,14 @@ seo-title: Adobe Experience Platform Location Service
 description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 seo-description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: 9fd6c1fdd740a021d7612aa33693c392bff53994
+source-git-commit: ecb059400d9203884faab6fd2f627251eeaeea38
 
 ---
 
 
 # Adobe Experience Platform Location Serviceの概要 {#home}
+
+![「Adobe Experience Platform Location Service」](/help/assets/LocationHeader.png)
 
 場所は、モバイルユーザーを理解し、関与させるための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。
 
@@ -44,7 +46,7 @@ Adobe Experience Platform Location Service(Location Service)は、場所を認�
 
    マップ上のPOIを視覚化して、空間的な状況を把握し、POIとそのカスタムメタデータを追加/編集します。
 
-* **[配置]拡張子**
+* **Places 拡張機能**
 
    モバイルアプリに位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、場所拡張を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
@@ -72,17 +74,17 @@ Adobe Experience Platform Location Service(Location Service)は、場所を認�
 
    このPOIタイプは、低電力のBluetooth信号を発することで位置を表す物理デバイスです。 ビーコンのサポートは、今後のリリースで提供される予定です。
 
-* ライ **ブラリ** はPOIの集まりで、1つのPOIではなくセットに簡単にルールを付加できるようにグループ化されています。
+* **ライブラリ** は POI の集まりで、1 つではなく POI のセットへ簡単にルールを付加できるようにグループ化されています。
 
 * 拡張機 **能とは** 、Places SDKをモバイルアプリに統合するために必要なExperience Platform Launch拡張機能です。
 
    他のモバイルSDKと共に使用する拡張機能で、エクスペリエンスに場所のコンテキストを追加します。
 
-* 組織 **とは** 、Adobe Experience cloudで会社を識別するアドビのエンティティです。
+* **組織**&#x200B;とは、Adobe Experience Cloud で会社を識別するアドビのエンティティです。
 
    通常、組織は会社名です。 ただし、1つの会社に複数の組織を持つことはできます。 組織管理者は、グループとユーザーを設定し、シングルサインオン機能を設定できます。
 
-* orgIDは **** 、Adobe Experience Platform全体で組織を表すIDです。
+* **orgID** はAdobe Experience Platform をまたいで組織を表す ID です。
 
    詳しくは、orgIDの検索を参 [照してください](https://forums.adobe.com/thread/2339895)。
 
