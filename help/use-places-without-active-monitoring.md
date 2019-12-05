@@ -1,10 +1,8 @@
 ---
 title: 地域の監視機能を有効にしないでLocation Serviceを使用
-seo-title: 地域の監視機能を有効にしないでLocation Serviceを使用
 description: このセクションでは、アクティブな地域監視を行わないLocation ServicePlacesの使用方法について説明します。
-seo-description: この節では、アクティブな地域監視を行わずにLocation Serviceを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -235,8 +233,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 >[!IMPORTANT]
 >
->
-これらのスニペットは **ただの例** です。 開発者は、機能の実装方法を決定する必要があり、決定では、対象のオペレーティングシステムが推奨するベストプラクティスを考慮する必要があります。
+>これらのスニペットは **ただの例** です。 開発者は、機能の実装方法を決定する必要があり、決定では、対象のオペレーティングシステムが推奨するベストプラクティスを考慮する必要があります。
 
 ### Android
 
