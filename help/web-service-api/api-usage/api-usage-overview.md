@@ -1,10 +1,8 @@
 ---
 title: APIの使用の概要
-seo-title: APIの使用の概要
 description: この節では、Location Serviceで使用できるREST APIに関する情報を提供します。
-seo-description: この節では、Location Serviceで使用できるREST APIに関する情報を提供します。
 translation-type: tm+mt
-source-git-commit: 885cc8c9b306cf6e25381a355898a0229670a696
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
