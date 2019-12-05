@@ -1,10 +1,8 @@
 ---
 title: 独自のモニタを使用する
-seo-title: 独自のモニタを使用する
 description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
-seo-description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
