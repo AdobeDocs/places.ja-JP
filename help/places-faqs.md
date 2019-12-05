@@ -1,10 +1,8 @@
 ---
 title: よくある質問
-seo-title: よくある質問
 description: このトピックでは、よくある質問に関する追加情報を提供します。
-seo-description: このトピックでは、よくある質問に関する追加情報を提供します。
 translation-type: tm+mt
-source-git-commit: f4b8bccc154df346e67ef17295d7c6b42c68b26d
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
