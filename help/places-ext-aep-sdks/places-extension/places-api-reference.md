@@ -1,10 +1,8 @@
 ---
 title: Places APIリファレンス
-seo-title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
-seo-description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: 379278f7677d7d3cdc697d78c54693d0a3c62e02
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
