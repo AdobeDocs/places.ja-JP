@@ -1,10 +1,8 @@
 ---
 title: 'Web Services APIの概要 '
-seo-title: 'Web Services APIの概要 '
 description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
-seo-description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
 translation-type: tm+mt
-source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
