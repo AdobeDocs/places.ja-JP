@@ -1,10 +1,8 @@
 ---
 title: Mobile Servicesでの場所のメッセージングでの使用
-seo-title: Mobile Servicesでの場所のメッセージングでの使用
 description: ここでは、Mobile Servicesでメッセージング用に場所を使用する方法について説明します。
-seo-description: ここでは、Mobile Servicesでメッセージング用に場所を使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
