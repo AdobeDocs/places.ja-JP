@@ -1,8 +1,14 @@
 ---
-source-git-commit: 9b5ed11499da580e48ae27affda238ce6d91f435
+title: Adobe Experience Platform Location Serviceへのアクセス
+seo-title: Adobe Experience Platform Location Serviceへのアクセス
+description: ここでは、ユーザーがロケーションサービスにアクセスできるように、ロケーションサービスとExperience Platformの起動にユーザーを追加する方法について説明します。
+seo-description: ここでは、ユーザーがロケーションサービスにアクセスできるように、ロケーションサービスとExperience Platformの起動にユーザーを追加する方法について説明します。
 translation-type: tm+mt
+source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
 
 ---
+
+
 # Adobe Experience Platform Location Serviceへのアクセス {#adding-user-launch-places}
 
 プラットフォームロケーションサービスには、 [Adobe Experience cloudホームのクイックアクセスメニューからアクセスできます](https://experience.adobe.com)。
