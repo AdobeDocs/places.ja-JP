@@ -1,10 +1,8 @@
 ---
 title: Adobe Experience Platform Location Service
-seo-title: Adobe Experience Platform Location Service
 description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
-seo-description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: ecb059400d9203884faab6fd2f627251eeaeea38
+source-git-commit: c20e720d23121970bb2fa1c63a2fd1e81c84b977
 
 ---
 
