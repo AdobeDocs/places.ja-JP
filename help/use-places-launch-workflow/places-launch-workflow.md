@@ -1,10 +1,8 @@
 ---
 title: Experience Platform起動ワークフローの一部としてロケーションサービスを使用
-seo-title: Experience Platform起動ワークフローの一部としてロケーションサービスを使用
 description: この節では、ロケーションサービスで使用できるExperience Platform Launchでデータ要素を定義し、入口ルールと出口ルールを作成する方法について説明します。
-seo-description: この節では、ロケーションサービスで使用できるExperience Platform Launchでデータ要素を定義し、入口ルールと出口ルールを作成する方法について説明します
 translation-type: tm+mt
-source-git-commit: 02616ae6fe046fb6f4905283734f72d670b72ec0
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
