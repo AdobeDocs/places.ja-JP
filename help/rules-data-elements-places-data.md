@@ -1,10 +1,8 @@
 ---
 title: エクスペリエンスプラットフォーム起動ルールと、場所データでのデータ要素の使用を参照してください。
-seo-title: PlacesデータでのExperience Platform Launchルールとデータ要素の使用
 description: ルールとデータ要素および配置データに関する情報です。
-seo-description: ルールとデータ要素および配置データに関する情報です。
 translation-type: tm+mt
-source-git-commit: af4cdf8803267ade9519e212857d3ac7df5fb85b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -13,7 +11,7 @@ source-git-commit: af4cdf8803267ade9519e212857d3ac7df5fb85b
 
 ## ルール
 
-エクスペリエンスプラットフォームの起動はルールベースのシステムで、ユーザーの操作と関連データを探します。 ルールで概要が示されている条件が満たされると、ルールは指定した拡張子、スクリプトまたはHTMLをトリガーします。 異なる製品を1つのソリューションに統合するマーケティングおよび広告技術のデータと機能を統合するルールを作成できます。 ルールの詳細については、「ルール [とルール](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html) の作 [成」を参照してください](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html#create-a-rule)。
+Experience Platform Launch はルールベースのシステムで、ユーザーの操作と関連データを探します。ルールで概要が示されている条件が満たされると、ルールは指定した拡張機能、スクリプトまたは HTML をトリガーします。ルールを構築して、異なる製品を 1 つのソリューションに統合するマーケティングおよび広告技術のデータと機能を統合できます。ルールの詳細については、「[ルール](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html)」と「[ルールの作成](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html#create-a-rule)」を参照してください。
 
 ## データ要素
 
@@ -21,5 +19,5 @@ source-git-commit: af4cdf8803267ade9519e212857d3ac7df5fb85b
 
 データ要素は変数で、この変数の値をクエリ文字列、URL、cookie値、JavaScript変数などにマップできます。 エクスペリエンスプラットフォームの起動では、変数名でこの値を参照できます。 データ要素のコレクションは、ルール（イベント、条件およびアクション）の構築に使用できる定義済みデータのディクショナリになり、データディクショナリはエクスペリエンスプラットフォームの起動で共有され、Places拡張と共に使用できます。
 
-データ要素について詳しくは、「データ要素」 [および「データ](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) 要 [素の作成」を参照してください](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)。
+データ要素について詳しくは、「[データ要素](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html)」および「[データ要素の作成](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)」を参照してください。
 
