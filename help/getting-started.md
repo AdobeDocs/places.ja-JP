@@ -4,7 +4,7 @@ seo-title: はじめに
 description: ロケーションサービスの概要を参照してください。
 seo-description: ロケーションサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
+source-git-commit: 879c367ea24d8bd0e1f5595a88a97bb1ff47c6da
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
 
 * 管理コンソールの「ロケーションサービス」および「Experience Platform起動」製品コンテキストに、ユーザーとして表示されていることを確認します。
 
-   詳しくは、Location Serviceへのアクセス権 *の取得で、Experience Platform LaunchおよびLocation Serviceへのユーザーの追加* 「Adding a [user to Experience Platform Launch」および「Location Service」を参照してください](/help/places-gain-access.md)。
+   詳しくは、よくある質問の *Adding a user to Experience Platform Launch and Location Service* （エクスペリエンスプラットフォームの起動とロケーションサービスへのユーザーの追加） [を参照してください](/help/places-gain-access.md)。
 
 
 ### 2.POIの作成
