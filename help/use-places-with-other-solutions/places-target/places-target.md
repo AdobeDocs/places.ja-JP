@@ -1,10 +1,8 @@
 ---
 title: Adobe Target
-seo-title: Adobe Target
 description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
-seo-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
