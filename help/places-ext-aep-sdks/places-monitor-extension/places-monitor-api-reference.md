@@ -1,10 +1,8 @@
 ---
 title: Places Monitor APIリファレンス
-seo-title: Places Monitor APIリファレンス
 description: プレースモニターのAPIのリストです。
-seo-description: 'プレースモニターのAPIのリストです。  '
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -119,7 +117,7 @@ NSString *placesMonitorVersion = [ACPPlacesMonitor extensionVersion];
 
 ### 開始(Android)
 
-デバイスの場所を使用する権限がユーザーによって付与されていない場合、 `start` APIの最初の呼び出しで、ユーザーに権限を求めるメッセージが表示されます。
+デバイスの場所を使用する権限がユーザーによって許可されていない場合、 `start` APIの最初の呼び出しで、ユーザーに権限を求めるメッセージが表示されます。
 
 このAPIの構文とコード例を次に示します。
 
