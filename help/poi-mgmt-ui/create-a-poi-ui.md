@@ -1,10 +1,8 @@
 ---
 title: POI を作成
-seo-title: POI を作成
 description: 場所UIを使用してPOIを作成します。
-seo-description: 場所UIを使用してPOIを作成します。
 translation-type: tm+mt
-source-git-commit: 58218dac5df3fdb1ff660368af52e43409f99c95
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
