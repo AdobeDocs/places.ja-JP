@@ -1,10 +1,8 @@
 ---
 title: 他のアドビソリューションとのロケーションサービスの使用
-seo-title: 他のアドビソリューションとのロケーションサービスの使用
 description: この節では、他のアドビソリューションと共にロケーションサービスを使用する方法について説明します。
-seo-description: この節では、他のアドビソリューションと共にロケーションサービスを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 299afc48c5962c3180578d5352b97096ad0395dc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
