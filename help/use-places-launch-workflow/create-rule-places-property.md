@@ -1,10 +1,8 @@
 ---
 title: Placesプロパティのルールの作成
-seo-title: Placesプロパティのルールの作成
 description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
-seo-description: '場所SDKは、現在の場所を追跡し、現在の場所を中心に設定済みのPOIを監視し、これらのPOIの入口イベントと出口イベントを追跡します。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -54,14 +52,14 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 >[!CAUTION]
 >
->この例では、米国内のすべてのコーヒーショップのPOIライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、「POIの作成」と「複数のラ [イブラリの管理](/help/poi-mgmt-ui/create-a-poi-ui.md)** 」を [参照してください](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)。
+>この例では、米国内のすべてのコーヒーショップの POI ライブラリを作成済みであることを前提としています。For more information about creating POIs and libraries, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md) and *Create a Library* in [Manage multiple libraries](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 サンフランシスコで喫茶店に入ったときにSlackに投稿を返すルールを作成する手順の例を次に示します。
 
 イベント、条件およびアクションは、次の方法で定義します。
 
 * **イベント**:エントリイベントを配置します。
-* **条件**:現在のPOI **の市** はサンフランシスコ
+* **条件**：**現在の POI** の市区町村はサンフランシスコ
 * **アクション**:顧客が入力したコーヒーショップの名前をSlackにポストバックします。
 
 ### 前提条件
@@ -74,15 +72,15 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 1. Click **Add Data Element**.
 1. 「現在の喫茶店名」などの名前 **を入力します**。
 1. 「拡張機能」 **ドロップダウン** ・リストで **、「場所 — ベータ」**&#x200B;を選択します。
-1. 「デー **タ要素**」で「市区町村 **」を選択**&#x200B;します。
+1. 「**データ要素**」で「**市区町村**」を選択します。
 1. 右側のウィンドウで、「現在のPOI」 **を選択します**。
-1. **保存** をクリックします。
+1. 「**保存**」をクリックします。
 
 ### Experience Platform Launchでの場所のルールの作成
 
 ![ルールの作成](/help/assets/placesrule.png)
 
-1. 「エクスペリエンスプラットフォームの起動」で、タブをクリ **[!UICONTROL Rules]** ックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
 1. 「**[!UICONTROL Add Rule]**」をクリックします。
 1. 例えば、ルールの名前を入力します **[!UICONTROL Track entry for coffee shop in SF]**。
 
@@ -97,11 +95,11 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 ### 条件の作成
 
 1. 「条件」セクションで、をクリックしま **[!UICONTROL +Add]**&#x200B;す。 条件は、アクションを実行するために満たす必要がある条件を決定します。
-1. で、「 **[!UICONTROL Logic Type]**&#x200B;標準」を選択します。これにより、条件が満たされた場合にアクションを実行できます。
+1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
 1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
 1. で、を **[!UICONTROL Condition Type]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
 1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. 右側のウィンドウでをクリ **[!UICONTROL Current POI]**&#x200B;ックし、ドロップダウンリストで都市の1 **[!UICONTROL San Francisco]** つとして選択します。
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
 1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ### アクションの作成
