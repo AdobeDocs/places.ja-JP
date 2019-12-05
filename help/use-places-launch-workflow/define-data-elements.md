@@ -1,10 +1,8 @@
 ---
 title: データ要素の定義
-seo-title: データ要素の定義
 description: ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。
-seo-description: 'ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
