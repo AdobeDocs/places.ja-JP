@@ -2,7 +2,7 @@
 title: プレースモニター拡張機能の使用
 description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 ---
 
@@ -98,6 +98,7 @@ public class MobileApp extends Application {
             PlacesMonitor.registerExtension(); //Register PlacesMonitor with Mobile Core
             Places.registerExtension(); //Register Places with Mobile Core
             MobileCore.start(null);
+            PlacesMonitor.start();//Start monitoring the geo-fences
         } catch (Exception e) {
             //Log the exception
         }
