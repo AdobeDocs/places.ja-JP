@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
-product: 場所
-solution-title: Learn & Support
+product: adobe experience platform
+solution-title: ラーニングとサポート
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud.html
 getting-started-title: はじめに
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
@@ -10,7 +10,7 @@ tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 8b9b84a12c40e93ecd1aea1cee5d44c37dc439e8
+source-git-commit: 48dcc14ee9b98ba1ffb5c6dab4e9be2e245bd308
 
 ---
 
@@ -30,7 +30,7 @@ metadata. md ファイルにはリポジトリ内のユーザーガイド TOC.md
 | getting-started-url | Helpx 開始ページへのリンク |
 | tutorials-title | チュートリアルが適切でない場合はほとんど使用されません |
 | tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です。 |
+| mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です |
 | git-repo | https://github.com/AdobeDocs/places.en |
 | index | set index=no for soft launch |
 
