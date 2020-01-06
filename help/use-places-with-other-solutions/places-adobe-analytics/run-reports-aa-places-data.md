@@ -17,25 +17,25 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.ルールの作成
 
-1. タブで、をク **[!UICONTROL Rules]** リックしま **[!UICONTROL Create New Rule]**&#x200B;す。
+1. タブで、をク **[!UICONTROL Rules]**リックしま**[!UICONTROL Create New Rule]**&#x200B;す。
 
    次の情報に留意してください。
-   * このプロパティに対する既存のルールがない場合、ボ **[!UICONTROL Create New Rule]** タンは画面の中央に表示されます。
-   * プロパティにルールが含まれ **[!UICONTROL Create New Rule]** ている場合、ボタンは画面の右上に表示されます。
+   * このプロパティに対する既存のルールがない場合、ボ **[!UICONTROL Create New Rule]**タンは画面の中央に表示されます。
+   * プロパティにルールが含まれ **[!UICONTROL Create New Rule]**ている場合、ボタンは画面の右上に表示されます。
 
 ## 2.イベントを選択します。
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Analytics Track Action Events]**&#x200B;す。
+   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Analytics Track Action Events]**す。
 
-1. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Events]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Track Action]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Event Type]**ンリストから、を選択しま**[!UICONTROL Track Action]**&#x200B;す。
 
-これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**&#x200B;す。
+これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**す。
 
 ![「イベントの作成」](/help/assets/ad-setEvent_use-analytics-data.png)
 
@@ -48,29 +48,29 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 この例では、AT&amp;T顧客に対してのみルールをトリガーする条件を作成します。
 
-1. セクションの下 **[!UICONTROL Conditions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Conditions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから「モバイルコア」 **[!UICONTORL を選択します]**。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから「モバイルコア」**[!UICONTORL &#x200B;を選択します]**。
 
-1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Carrier Name]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Condition Type]**ンリストから、を選択しま**[!UICONTROL Carrier Name]**&#x200B;す。
 
-1. 右側のウィンドウで、チェックボックスを選択 **[!UICONTROL AT&T]** します。
+1. 右側のウィンドウで、チェックボックスを選択 **[!UICONTROL AT&T]**します。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
-!["条件の作成"](/help/assets/ad-setCondition_use-analytics-data.png)
+![&quot;条件の作成&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.アクションの定義
 
-1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Actions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Action Type]**ンリストから、を選択しま**[!UICONTROL Attach Data]**&#x200B;す。
 
-1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
+1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]**に、このイベントに追加するデータを入力します。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 右側のウィンドウで、このイベントをリッスンする拡張がイベントを受け取る前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。 この例では、Analytics拡張で処理される前に、このイベントに一部のコンテキストデータが追加されます。 追加されたコンテキストデータは、送信Analyticsヒットに置かれます。
 
@@ -84,6 +84,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![「ルールは完了です。」](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
-1. 「**[!UICONTROL Save]**」をクリックします
+1. クリック **[!UICONTROL Save]**
 
 1. 起動プロパティを再構築し、正しい環境に展開します。
