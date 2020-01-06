@@ -17,8 +17,8 @@ POIとライブラリは、場所UIを使用して場所データベースで作
 1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストに似たアイコンをクリックします。
 1. 編集するPOIを見つけます。
-1. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL View Details]**&#x200B;す。
-1. 情報を更新し、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+1. をクリック **[!UICONTROL ...]**し、を選択しま**[!UICONTROL View Details]**&#x200B;す。
+1. 情報を更新し、をクリックしま **[!UICONTROL Save]**す。
 
 ## POIの削除
 
@@ -26,7 +26,7 @@ POIとライブラリは、場所UIを使用して場所データベースで作
 1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストに似たアイコンをクリックします。
 1. 削除するPOIを見つけます。
-1. をクリック **[!UICONTROL ...]** し、を選択しま **[!UICONTROL Delete]**&#x200B;す。
+1. をクリック **[!UICONTROL ...]**し、を選択しま**[!UICONTROL Delete]**&#x200B;す。
 
 ## 市区町村、都道府県、国またはメタデータでPOIをフィルター
 
@@ -42,11 +42,11 @@ POIとライブラリは、場所UIを使用して場所データベースで作
 
    * プロパティ別：
 
-      a.「プロパティ」ドロップダウンリストで、、、ま **[!UICONTROL Country]**&#x200B;たはを **[!UICONTROL State]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
+      a.「プロパティ」ドロップダウンリストで、、、ま **[!UICONTROL Country]**たはを**[!UICONTROL State]**&#x200B;選択しま **[!UICONTROL City]**す。
 
       b.次の行に値を入力します。
 
-      例えば、を選択して、と入 **[!UICONTROL State]** 力します **[!UICONTROL California]**。
+      例えば、を選択して、と入 **[!UICONTROL State]**力します**[!UICONTROL California]**。
 
    * メタデータ付き：
 
