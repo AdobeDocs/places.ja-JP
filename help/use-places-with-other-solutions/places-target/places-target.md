@@ -15,7 +15,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.ルールの作成
 
-1. タブで、をク **[!UICONTROL Rules]** リックしま **[!UICONTROL Create New Rule]**&#x200B;す。
+1. タブで、をク **[!UICONTROL Rules]**リックしま**[!UICONTROL Create New Rule]**&#x200B;す。
 
    次の情報に留意してください。
 
@@ -26,15 +26,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Target Content Requested]**&#x200B;す。
+   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Target Content Requested]**す。
 
-1. セクションの下 **[!UICONTROL Events]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Events]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Adobe Target]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Adobe Target]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Event Type]** ンリストから、を選択しま **[!UICONTROL Content Requested]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Event Type]**ンリストから、を選択しま**[!UICONTROL Content Requested]**&#x200B;す。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 ![イベントの追加](/help/assets/ad-setEvent_target.png)
 
@@ -46,33 +46,33 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 次の例では、アプリを5回以上起動したユーザーに対してのみルールをトリガーする条件を作成します。
 
-1. セクションの下 **[!UICONTROL Conditions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Conditions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Condition Type]** ンリストから、を選択しま **[!UICONTROL Launches]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Condition Type]**ンリストから、を選択しま**[!UICONTROL Launches]**&#x200B;す。
 
-1. 右側のウィンドウで、ドロップダウンリストと番号コントロールを変更して、条件が読み上げられるようにしま **[!UICONTROL User has launched the app greater than or equal to 5 times]**&#x200B;す。
+1. 右側のウィンドウで、ドロップダウンリストと番号コントロールを変更して、条件が読み上げられるようにしま **[!UICONTROL User has launched the app greater than or equal to 5 times]**す。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 ![条件の追加](/help/assets/ad-setCondition_target.png)
 
 ## 4.アクションの定義
 
-1. セクションの下 **[!UICONTROL Actions]** のをクリックしま **[!UICONTROL Add]**&#x200B;す。
+1. セクションの下 **[!UICONTROL Actions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]** ンリストから、を選択しま **[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Action Type]** ンリストから、を選択しま **[!UICONTROL Attach Data]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Action Type]**ンリストから、を選択しま**[!UICONTROL Attach Data]**&#x200B;す。
 
-1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]** に、このイベントに追加するデータを入力します。
+1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]**に、このイベントに追加するデータを入力します。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 右側のウィンドウで、このイベントをリッスンする拡張でSDKイベントがリッスンする前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。
 
-次の例では、Targetイベ `poiCity` ントで `poiName` 処理される各リクエ **[!UICONTROL mboxparameters]** ストのに、との値が追加されます。 新しいキーの値は、このイベントの処理時にSDKによって動的に決定されます。
+次の例では、Targetイベ `poiCity` ントで `poiName` 処理される各リクエ **[!UICONTROL mboxparameters]**ストのに、との値が追加されます。 新しいキーの値は、このイベントの処理時にSDKによって動的に決定されます。
 
 >[!TIP]
 >
@@ -88,6 +88,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![完了規則](/help/assets/ad-ruleComplete-target.png)
 
-1. 「**[!UICONTROL Save]**」をクリックします
+1. クリック **[!UICONTROL Save]**
 
 1. 起動プロパティを再構築し、正しい環境に展開します。
