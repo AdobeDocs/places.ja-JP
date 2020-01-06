@@ -55,7 +55,7 @@ Places統合を作成するには、次のタスクを実行します。
 
 独自の自己署名キーを生成するには：
 
-1. ターミナルウィンドウで、次の各行をコピーして貼り付け、各行を貼り付け **[!UICONTROL Enter]** た後にを押します。
+1. ターミナルウィンドウで、次の各行をコピーして貼り付け、各行を貼り付け **[!UICONTROL Enter]**た後にを押します。
 
    ```text
       mkdir keys
@@ -87,7 +87,7 @@ Places統合を作成するには、次のタスクを実行します。
 
 1. とファイルが存在するディレク `.key` トリ `.crt` に移動します。
 
-   例えば、iOSでは、// **[!UICONTROL Macintosh HD]** &gt;に移 **[!UICONTROL users]** 動し **[!UICONTROL (your user name)]** ます **[!UICONTROL Keys]**。
+   例えば、iOSでは、// **[!UICONTROL Macintosh HD]**>に移**[!UICONTROL users]** 動し **[!UICONTROL (your user name)]**ます**[!UICONTROL Keys]**。
 
 次のビデオでは、キーペアの生成プロセスを示します。
 
@@ -99,15 +99,15 @@ Places統合を作成するには、次のタスクを実行します。
 
 1. https://console.adobe.ioに移動 [し](https://console.adobe.io) 、Adobe IDでサインインします。
 1. 「クイックス **タート** 」セクションで、「統合を作成」を **クリックします**。
-1. を選択し、 **[!UICONTROL Access an API]** をクリックしま **[!UICONTROL Continue]**&#x200B;す。
+1. を選択し、 **[!UICONTROL Access an API]**をクリックしま**[!UICONTROL Continue]**&#x200B;す。
 
-   **[!UICONTROL Access an API]** がデフォルトの場所です。
+   **[!UICONTROL Access an API]**がデフォルトの場所です。
 
 1. 複数のExperience cloud組織にアクセスできる場合は、右上のドロップダウンリストから組織を選択します。
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
-1. を選択し、 **[!UICONTROL New integration]** をクリックしま **[!UICONTROL Continue]**&#x200B;す。
+1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
+1. を選択し、 **[!UICONTROL New integration]**をクリックしま**[!UICONTROL Continue]**&#x200B;す。
 1. 新しい統合を作成画面で、名前と説明を入力します。
-1. 上で作成したフ `xxxx_public.crt` ァイルをドロップゾーンにドラッグ&amp;ドロ **[!UICONTROL Public keys certificates]** ップします。
+1. 上で作成したフ `xxxx_public.crt` ァイルをドロップゾーンにドラッグ&amp;ドロ **[!UICONTROL Public keys certificates]**ップします。
 1. 製品プロファイルを選択します。
 
    選択するプロファイルが不明な場合は、システム管理者に問い合わせてください。
@@ -118,12 +118,12 @@ Places統合を作成するには、次のタスクを実行します。
 
 1. 統合の詳細ページが上部に統合の名前と共に表示されます。
 
-   このタ **[!UICONTROL Overview]** ブはデフォルトで表示され、APIキー、組織ID、テクニカルアカウントID、および統合に関するその他の詳細が表示されます。
+   このタ **[!UICONTROL Overview]**ブはデフォルトで表示され、APIキー、組織ID、テクニカルアカウントID、および統合に関するその他の詳細が表示されます。
 
 ### 組織IDとAPIキーを記録します
 
-1. 統合の詳細ページで、タブをクリックし **[!UICONTROL Services]** て、がに表示されるこ **[!UICONTROL Places]** とを確認しま **[!UICONTROL Configured Services]**&#x200B;す。
-1. タブで、API **[!UICONTROL Overview]** キー（クライアントID）と組織IDを探して記録します。
+1. 統合の詳細ページで、タブをクリックし **[!UICONTROL Services]**て、がに表示されるこ**[!UICONTROL Places]** とを確認しま **[!UICONTROL Configured Services]**す。
+1. タブで、API **[!UICONTROL Overview]**キー（クライアントID）と組織IDを探して記録します。
 
    これらのIDは、各Places REST APIリクエストに必要です。
 
@@ -131,15 +131,15 @@ Places統合を作成するには、次のタスクを実行します。
 
 ### JWTトークンの生成
 
-統合の詳細ページで、タブをクリック **[!UICONTROL JWT]** し、JWTを生成して交換URLを指定することで統合をテストできるようにします。
+統合の詳細ページで、タブをクリック **[!UICONTROL JWT]**し、JWTを生成して交換URLを指定することで統合をテストできるようにします。
 
 JWTトークンを生成するには：
 
 1. テキストエディターで、上で作成し `private.key` たファイルを開きます。
-1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
-1. 「**[!UICONTROL Generate JWT]**」をクリックします。
-1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
-1. キーボードを押して、コマ **[!UICONTROL Enter]** ンドを実行します。
+1. On the **[!UICONTROL JWT]**tab, copy the contents of the key and paste it in the**[!UICONTROL Paste private key]** field.
+1. **[!UICONTROL Generate JWT]**をクリックします。
+1. In the **[!UICONTROL Sample CURL command]**section, click**[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
+1. キーボードを押して、コマ **[!UICONTROL Enter]**ンドを実行します。
 1. との値 `"token_type": "bearer"` を探し `"access_token"` ます。
 
    bearerアクセストークンの値は、Places APIリクエストで使用する値です。
