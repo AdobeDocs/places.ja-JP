@@ -51,10 +51,10 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
 アクションを作成するには：
 
-1. **拡張機能を選択します。[!UICONTROL Adobe Analytics]**
-1. ドロップダ **[!UICONTROL Action type]** ウンリストで、「 **[!UICONTROL Track.]**
+1. **[!UICONTROL Adobe Analytics]**拡張機能を選択します。
+1. ドロップダ **[!UICONTROL Action type]**ウンリストで、「**[!UICONTROL Track.]**
 1. アクションの名前を入力します。
-1. 右側のウィンドウので、キ **[!UICONTROL Context Data]**&#x200B;ーと値のペアを選択し、Analyticsに送信するコンテキストデータを設定します。
+1. 右側のウィンドウので、キ **[!UICONTROL Context Data]**ーと値のペアを選択し、Analyticsに送信するコンテキストデータを設定します。
 
 例えば、キーとしてを選択し、 `poiname` 値としてを選択する `{%%Last Entered POI Name}` ことができます。
 
@@ -77,7 +77,7 @@ Mobile Servicesでは、Analyticsに送信される場所データを、アプ�
 
    このオプションは、入口など場所に固有のアクションで使用したり、起動やボタンクリックなど、別のイベントへのコンテキストとして使用したりできます。
 
-   名前にPOIを入力するユーザーを迎え入れるアプリ内メッセージを設定する方法の例を次に **[!UICONTROL Adobe]** 示します。
+   名前にPOIを入力するユーザーを迎え入れるアプリ内メッセージを設定する方法の例を次に **[!UICONTROL Adobe]**示します。
 
    ![トリガパラメータ](/help/assets/trigger-parameters.png)
 
