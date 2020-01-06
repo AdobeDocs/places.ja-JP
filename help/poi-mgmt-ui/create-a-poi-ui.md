@@ -27,21 +27,21 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    1. アイコンの色を選択します。
    1. POIのカテゴリを指定します。
 
-1. Expand the **[!UICONTROL Location]** section.
+1. Expand the **[!UICONTROL Location]**section.
 
    1. 住所を入力します。
    1. 市区町村を入力します。
    1. 州名を入力します。
    1. 国名を入力します。
    1. 緯度または経度を選択または入力します（必須）。
-   1. 「**[!UICONTROL Drop Pin on Map]**」をクリックします。
+   1. **[!UICONTROL Drop Pin on Map]**をクリックします。
    正確な緯度と経度がわからない場合は、ピンをドロップすると便利です。
 
-1. セクションを展開 **[!UICONTROL Metadata]** し、をクリックしま **[!UICONTROL Add Metadata]**&#x200B;す。
+1. セクションを展開 **[!UICONTROL Metadata]**し、をクリックしま**[!UICONTROL Add Metadata]**&#x200B;す。
 
    メタデータは、場所をさらに定義するのに役立ち、他のAdobeソリューションワークフローで使用して、オーディエンスをさらに絞り込むことができます。
 
    1. キー名を入力します。
    1. キーの値を入力します。
 
-1. 「**[!UICONTROL  Save]**」をクリックします。
+1. **[!UICONTROL  Save]**をクリックします。
