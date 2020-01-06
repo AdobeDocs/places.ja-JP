@@ -28,17 +28,17 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 この例では、ルールのアクションに、Analyticsリクエストに対して次の値が定義されています。
 
-* **[!UICONTROL Action]** の値が指定される場合は **[!UICONTROL Places Entry]**、
+* **[!UICONTROL Action]**の値が指定される場合は**[!UICONTROL Places Entry]**、
 
-* コンテキストデータ **[!UICONTROL poi.name]** キーは、データ要素の値に設定されま **[!UICONTROL {%%POI Name%%}]**&#x200B;す。
+* コンテキストデータ **[!UICONTROL poi.name]**キーは、データ要素の値に設定されま**[!UICONTROL {%%POI Name%%}]**&#x200B;す。
 
-!["アクションを設定"](/help/assets/pt-setAction.png)
+![&quot;アクションを設定&quot;](/help/assets/pt-setAction.png)
 
 ## 2.Analytics変数の作成
 
 （手順1で送信された）コンテキストデータをマップするには、まずAnalyticsレポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、コンバージ [ョン変数\(eVars\)を参照してください](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
-この例では、コンバージョン変数、 **[!UICONTROL Evar2]**&#x200B;が作成され、名前が付けられていま **[!UICONTROL Places POI Name]**&#x200B;す。 レポートに表示する場所変数ごとに、追加の変数を作成する必要があります。
+この例では、コンバージョン変数、 **[!UICONTROL Evar2]**が作成され、名前が付けられていま**[!UICONTROL Places POI Name]**&#x200B;す。 レポートに表示する場所変数ごとに、追加の変数を作成する必要があります。
 
 ![「analytics変数の作成」](/help/assets/aa-evar.png)
 
@@ -46,7 +46,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 この手順は、コンテキストデータ（手順1）をAnalytics変数にマッピングするために必要です（手順2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-この例では、コンテキストデータ値をマッピングする処理ルールが作成され **[!UICONTROL poi.name]** ていま **[!UICONTROL Places POI Name \(eVar2\)]**&#x200B;す。 作成した場所の変数ごとに、追加の処理ルールを作成する必要があります。
+この例では、コンテキストデータ値をマッピングする処理ルールが作成され **[!UICONTROL poi.name]**ていま**[!UICONTROL Places POI Name \(eVar2\)]**&#x200B;す。 作成した場所の変数ごとに、追加の処理ルールを作成する必要があります。
 
 ![「処理ルールの作成」](/help/assets/aa-processing-rule.png)
 
@@ -56,9 +56,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 この例では、レポートに次の設定が含まれます。
 
-* Metric - **[!UICONTROL Occurrences]**
+* 指標 - **[!UICONTROL Occurrences]**
 
-* Dimension - **[!UICONTROL Action Name]**
+* ディメンション - **[!UICONTROL Action Name]**
 
    * ディメンション別の分類 — **[!UICONTROL Places POI Name]**
 
