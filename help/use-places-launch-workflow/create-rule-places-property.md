@@ -80,45 +80,45 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![ルールの作成](/help/assets/placesrule.png)
 
-1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
-1. 「**[!UICONTROL Add Rule]**」をクリックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]**tab.
+1. **[!UICONTROL Add Rule]**をクリックします。
 1. 例えば、ルールの名前を入力します **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### イベントの作成
 
-1. 「イベント」セクションで、をクリックしま **[!UICONTROL + Add]**&#x200B;す。 イベントは、ルールを実行するタイミングを決定します。
-1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
-1. ドロップダ **[!UICONTROL Event Type]** ウンリストで、を選択しま **[!UICONTROL Enter POI]**&#x200B;す。
-1. に、 **[!UICONTROL Name]**&#x200B;イベントの名前（例：）を入力します **[!UICONTROL Entering a coffee shop]**。
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「イベント」セクションで、をクリックしま **[!UICONTROL + Add]**す。 イベントは、ルールを実行するタイミングを決定します。
+1. ドロップダ **[!UICONTROL Extension]**ウンリストで、を選択しま**[!UICONTROL Places – Beta]**&#x200B;す。
+1. ドロップダ **[!UICONTROL Event Type]**ウンリストで、を選択しま**[!UICONTROL Enter POI]**&#x200B;す。
+1. に、 **[!UICONTROL Name]**イベントの名前（例：）を入力します**[!UICONTROL Entering a coffee shop]**。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 ### 条件の作成
 
-1. 「条件」セクションで、をクリックしま **[!UICONTROL +Add]**&#x200B;す。 条件は、アクションを実行するために満たす必要がある条件を決定します。
+1. 「条件」セクションで、をクリックしま **[!UICONTROL +Add]**す。 条件は、アクションを実行するために満たす必要がある条件を決定します。
 1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
-1. ドロップダ **[!UICONTROL Extension]** ウンリストで、を選択しま **[!UICONTROL Places – Beta]**&#x200B;す。
-1. で、を **[!UICONTROL Condition Type]**&#x200B;選択しま **[!UICONTROL City]**&#x200B;す。
+1. ドロップダ **[!UICONTROL Extension]**ウンリストで、を選択しま**[!UICONTROL Places – Beta]**&#x200B;す。
+1. で、を **[!UICONTROL Condition Type]**選択しま**[!UICONTROL City]**&#x200B;す。
 1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select**[!UICONTROL San Francisco]** as one of your cities.
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 ### アクションの作成
 
-1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
-1. ドロップダウン **[!UICONTROL Extension]** リストで、デフォルトのオプションを選択したま **[!UICONTROL Mobile Core]** まにします。
-1. 例えば、アクションのタイプを選択しま **[!UICONTROL Send Postback]**&#x200B;す。
+1. In the **[!UICONTROL Actions]**section, click**[!UICONTROL + Add]**.
+1. ドロップダウン **[!UICONTROL Extension]**リストで、デフォルトのオプションを選択したま**[!UICONTROL Mobile Core]** まにします。
+1. 例えば、アクションのタイプを選択しま **[!UICONTROL Send Postback]**す。
 
-   a.「」 **[!UICONTROL URL]**&#x200B;に、SlackのポストバックURLを入力します(例： `https://hooks.slack.com/services/`)。
+   a.「」 **[!UICONTROL URL]**に、SlackのポストバックURLを入力します(例：`https://hooks.slack.com/services/`)。
 
-   b.投稿の本文を送信するには、チェックボックスを **[!UICONTROL Add Post Body]** 選択します。
+   b.投稿の本文を送信するには、チェックボックスを **[!UICONTROL Add Post Body]**選択します。
 
-   c.で、 **[!UICONTROL Post Body]**&#x200B;次のように投稿の本文を追加します。 `{ "text": "A customer has entered" }`
+   c.で、 **[!UICONTROL Post Body]**次のように投稿の本文を追加します。`{ "text": "A customer has entered" }`
 
-   c.例えば、コンテンツタイプを入力しま **[!UICONTROL application/json]**&#x200B;す。
+   c.例えば、コンテンツタイプを入力しま **[!UICONTROL application/json]**す。
 
    d.例えば、タイムアウト値を選択します **[!UICONTROL 5]**。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. **[!UICONTROL Keep Changes]**をクリックします。
 
 ### ルールの発行
 
