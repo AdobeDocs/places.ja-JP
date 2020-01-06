@@ -26,9 +26,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## ジオフェンスの入口または出口に基づくアプリ内メッセージの送信
 
-1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create In-App message]**&#x200B;す。
-1. メッセージタイプに対して、を選択しま **[!UICONTROL Target all users of a Mobile application]**&#x200B;す。
-1. をクリ **[!UICONTROL Next]** ックし、一般的な詳細を入力します。
+1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create In-App message]**す。
+1. メッセージタイプに対して、を選択しま **[!UICONTROL Target all users of a Mobile application]**す。
+1. をクリ **[!UICONTROL Next]**ックし、一般的な詳細を入力します。
 1. 左側のウィンドウで、ロケーションサービスに関連する様々なトリガーを使用できることを確認します。
 
    * ユーザーがPOIジオフェンスを入力した場合、アプリ内メッセージを表示するように選択できます。
@@ -37,7 +37,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    ![「アプリ内メッセージ配置メタデータ」](/help/assets/last-entered-vacation.png)
 
-1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
+1. Click the **[!UICONTROL Next]**to finish creating the In-app message for delivery.
 
    ![「イベントの作成」](/help/assets/prepare-ACS.png)
 
