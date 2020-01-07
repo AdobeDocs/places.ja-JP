@@ -13,9 +13,9 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 ## Experience Platform LaunchにPlaces Monitor Extensionをインストールする
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. タブで、拡 **[!UICONTROL Catalog]** 張機能を探し、「イ **[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
-1. 「**[!UICONTROL Save]**」をクリックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. タブで、拡 **[!UICONTROL Catalog]**張機能を探し、「イ**[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
+1. **[!UICONTROL Save]**をクリックします。
 1. 公開プロセスに従ってSDK設定を更新します。
 
 ### プレースモニター拡張機能の設定 {#configure-places-monitor-extension}
