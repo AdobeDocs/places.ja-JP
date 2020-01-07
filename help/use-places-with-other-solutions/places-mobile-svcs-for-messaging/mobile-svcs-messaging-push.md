@@ -27,10 +27,10 @@ Mobile Servicesを使用すると、Adobe Analyticsセグメントにプッシ�
 
 ## 通知の送信
 
-プッシュ通 **[!UICONTROL Audience]** 知を作成ワー *クフローのタブで* 、次のいずれかの方法でこのメッセージのオーディエンスを作成できます。
+プッシュ通 **[!UICONTROL Audience]**知を作成ワー&#x200B;*クフローのタブで*、次のいずれかの方法でこのメッセージのオーディエンスを作成できます。
 
-* ドロップダ **[!UICONTROL Analytics Segments]** ウンリストで、以前に作成したAdobe Analyticsセグメントを選択します。
+* ドロップダ **[!UICONTROL Analytics Segments]**ウンリストで、以前に作成したAdobe Analyticsセグメントを選択します。
 
-* このセクション **[!UICONTROL Custom Segment]** では、利用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
+* このセクション **[!UICONTROL Custom Segment]**では、利用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
 
 ![プッシュメッセージの設定](/help/assets/push-set-up.png)
