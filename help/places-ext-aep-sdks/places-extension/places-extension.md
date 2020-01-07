@@ -13,12 +13,12 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## Adobe Experience Platform LaunchにPlaces拡張をインストールする
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. タブで、 **[!UICONTROL Catalog]** 拡張機能を見つ **[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. タブで、 **[!UICONTROL Catalog]**拡張機能を見つ**[!UICONTROL Places]** けてをクリックします **[!UICONTROL Install]**。
 1. このプロパティで使用する場所ライブラリを選択します。 これらのライブラリは、アプリでアクセス可能になります。
-1. 「**[!UICONTROL Save]**」をクリックします。
+1. **[!UICONTROL Save]**をクリックします。
 
-   をクリックす **[!UICONTROL Save]**&#x200B;ると、Experience Platform SDKは選択したライブラリ内のPOIに関するPlaces Servicesを検索します。 POIデータはアプリの作成時にライブラリのダウンロードに含まれませんが、POIの場所ベースのサブセットは実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
+   をクリックす **[!UICONTROL Save]**ると、Experience Platform SDKは選択したライブラリ内のPOIに関するPlaces Servicesを検索します。 POIデータはアプリの作成時にライブラリのダウンロードに含まれませんが、POIの場所ベースのサブセットは実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
 
 1. 公開プロセスを完了してSDK設定を更新します。
 
