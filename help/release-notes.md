@@ -2,12 +2,21 @@
 title: リリースノート
 description: Adobe Experience Platform Location Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
 ---
 
 
 # リリースノート {#release-notes}
+
+## 2020 年 1 月 10 日
+
+* **ACPPlaces 1.4.0**
+
+   * **Android**
+
+      * ロケーションサービスのデバ `setAuthorizationStatus`イス認証ステータスを設定する新しいAPIが追加されました。 この値は「場所」共有状態で保存され、使用されます。
+
 
 ## 2019年12月4日
 
