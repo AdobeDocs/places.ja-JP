@@ -2,7 +2,7 @@
 title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
 
 ---
 
@@ -351,7 +351,28 @@ Places.clear();
 
 ### setAuthorizationStatus(Android)
 
-まもなくリリース
+*Places v1.4.0以降で利用可能*
+
+場所拡張での認証状態を設定します。
+
+提供された状態は「場所」共有状態に保存され、参照用にのみ使用されます。
+このメソッドを呼び出しても、このデバイスの実際の場所の認証状態には影響しません。
+
+**構文**
+
+このメソッドの構文を次に示します。
+
+```java
+public static void setAuthorizationStatus(final PlacesAuthorizationStatus status);
+```
+
+**例**
+
+このメソッドのコードサンプルを次に示します。
+
+```java
+Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
+```
 
 ### setAuthorizationStatus(iOS)
 
