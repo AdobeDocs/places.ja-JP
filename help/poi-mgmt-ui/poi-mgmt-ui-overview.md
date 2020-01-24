@@ -1,15 +1,15 @@
 ---
 title: 目標地点管理インターフェイスの概要
-description: この節では、Location Service UIを使用したライブラリとPOIの作成および管理方法について説明します。
+description: この節では、Places Service UIを使用してライブラリとPOIを作成および管理する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
-# 目標地点管理インターフェイスの概要 {#management-ui-overview}
+# PlacesサービスUIの概要 {#management-ui-overview}
 
-POIとライブラリは、ロケーションサービスUIを使用して、ロケーションサービスデータベースで作成および管理されます。
+POIとライブラリは、Places Service UIを使用してPlaces Serviceデータベースで作成および管理されます。
 
 * ライブラリの作成や複数のライブラリの管理については、「ライブラリの管理」を参 [照してくださ](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)い。
 * POIを作成するには、POIの作成を [参照してください](/help/poi-mgmt-ui/create-a-poi-ui.md)。
