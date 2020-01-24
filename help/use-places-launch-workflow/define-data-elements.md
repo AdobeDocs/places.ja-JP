@@ -2,7 +2,7 @@
 title: データ要素の定義
 description: ここでは、Experience Platform Launch for Placesでデータ要素を作成、使用および公開する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
@@ -33,26 +33,26 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * **[!UICONTROL Latitude]**:POI緯度
 * **[!UICONTROL Longitude]**:POIの経度
 * **[!UICONTROL Metadata]**:poiのカスタムメタデータ
-* **[!UICONTROL Name]**:POI地域
+* **[!UICONTROL Name]**:POIの名前
 * **[!UICONTROL Radius]**:POI半径
 * **[!UICONTROL Region ID]**:POIのID
 * **[!UICONTROL Region/State]**:POIの地域、都道府県、州
 
 ### データ要素の作成
 
-1. アプリのプロパティページで、タブをクリック **[!UICONTROL Data Elements]** します。
+1. アプリのプロパティページで、タブをクリック **[!UICONTROL Data Elements]**します。
 
-1. 「**[!UICONTROL Create New Data Element]**」をクリックします。
+1. **[!UICONTROL Create New Data Element]**をクリックします。
 
-1. インストールされている拡張機能のリストで、を探しま **[!UICONTROL Places]**&#x200B;す。
+1. インストールされている拡張機能のリストで、を探しま **[!UICONTROL Places]**す。
 
-1. ドロップダ **[!UICONTROL Data Element Type]** ウンリストで、このデータ要素のデータ参照を選択します。
+1. ドロップダ **[!UICONTROL Data Element Type]**ウンリストで、このデータ要素のデータ参照を選択します。
 
 1. POIターゲットを選択します。
 
 1. このデータ要素がカスタムメタデータ参照の場合は、メタデータキーを選択します。
 
-1. データ要素の名前を入力し、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+1. データ要素の名前を入力し、をクリックしま **[!UICONTROL Save]**す。
 
    ![データ要素の作成](/help/assets/create-de-7-v3.png)
 
@@ -63,8 +63,8 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![データ要素の使用](/help/assets/use-de-v2.png)
 
-データ要素ピッカーがルールコンポーネントに存在しない場合は、データ要素名をトークンでラップして、データ要素を使用で **[!UICONTROL %%]** きます。
-例えば、データ要素名がである場合は、テ **[!UICONTROL Last POI City]**&#x200B;キスト入力にを追 **[!UICONTROL LAST POI City]** 加することができます。
+データ要素ピッカーがルールコンポーネントに存在しない場合は、データ要素名をトークンでラップして、データ要素を使用で **[!UICONTROL %%]**きます。
+例えば、データ要素名がである場合は、テ**[!UICONTROL Last POI City]**&#x200B;キスト入力にを追 **[!UICONTROL LAST POI City]**加することができます。
 
 
 ## データ要素の発行
