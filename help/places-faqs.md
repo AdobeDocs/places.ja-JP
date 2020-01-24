@@ -2,14 +2,14 @@
 title: よくある質問
 description: このトピックでは、よくある質問に関する追加情報を提供します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # よくある質問
 
-ここでは、ロケーションサービスに関する情報とよくある質問を示します。
+ここでは、プレースサービスに関する情報とよくある質問を示します。
 
 ## サイズと信頼性
 
