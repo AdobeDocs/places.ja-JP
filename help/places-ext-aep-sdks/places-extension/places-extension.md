@@ -2,12 +2,12 @@
 title: Places 拡張機能
 description: 「場所」拡張では、ユーザーの場所に基づいて行動できます。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# Places 拡張機能{#places-extension}
+# Places 拡張機能 {#places-extension}
 
 「場所」拡張では、ユーザーの場所に基づいて行動できます。 この拡張は、Places Query Service APIへのインターフェイスです。 GPS座標とジオフェンス領域イベントを含むイベントをリッスンすると、この拡張は、ルールエンジンで処理される新しいイベントをディスパッチします。 また、Places拡張機能は、APIから取得したアプリデータに最も近いPOIのリストを取得し、配信します。 APIから返される領域はキャッシュと永続性に保存されるので、オフライン処理に制限があります。
 
@@ -22,7 +22,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 公開プロセスを完了してSDK設定を更新します。
 
-   エクスペリエンスプラットフォームの起動での投稿について詳しくは、投稿を参照し [てくださ](https://docs.adobelaunch.com/launch-reference/publishing)い。
+   エクスペリエンスプラットフォームの起動での投稿について詳しくは、投稿を参照し [てくださ](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)い。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -61,7 +61,7 @@ Objective-CまたはSwiftを使用してアプリに場所拡張を追加する�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   また、Cocoapodを使用していない場合は、Githubのリリースページから手動でMobile CoreライブラリとPlacesライブラリを含める [こともで](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) きます。
+   また、Cocoapodを使用していない場合は、GithubのリリースページからMobile coreライブラリとPlacesライブラリを手動で含め [ること](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) もできます。
 
 1. Cocoapodの更新：
 
@@ -85,13 +85,13 @@ Objective-CまたはSwiftを使用してアプリに場所拡張を追加する�
    import ACPPlaces
    ```
 
-### モバイルコアへの場所の登録 {#register-places-mobile-core}
+### Mobile coreでのPlaces拡張の登録 {#register-places-mobile-core}
 
-AndroidおよびiOSでMobile coreにPlacesを登録する必要があります。
+AndroidおよびiOSでMobile coreにPlaces拡張を登録する必要があります。
 
 #### Android
 
-アプリのメソッドで、ロケーシ `OnCreate` ョンサービスの拡張機能を登録します。
+アプリのメソッドで、Places `OnCreate` 拡張を登録します。
 
 ```java
 public class PlacesTestApp extends Application {
@@ -137,10 +137,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## 設定キー
 
-実行時にSDK設定をプログラム的に更新するには、次の情報を使用してPlaces設定値を変更します。 詳しくは、設定APIリファレン [スを参照してください](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
+実行時にSDK設定をプログラム的に更新するには、次の情報を使用してPlaces拡張の設定値を変更します。 詳しくは、設定APIリファレン [スを参照してください](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
 
 | キー | 必須 | 説明 |
 | :--- | :--- | :--- |
-| `places.libraries` | ○ | モバイルアプリ用の場所ライブラリ。 ライブラリIDと、モバイルアプリがサポートするライブラリの名前を指定します。 |
-| `places.endpoint` | ○ | デフォルトのExperience Platform Location Query Serviceエンドポイント。ライブラリとPOIに関する情報の取得に使用されます。 |
+| `places.libraries` | ○ | モバイルアプリ用のPlaces拡張ライブラリ。 ライブラリIDと、モバイルアプリがサポートするライブラリの名前を指定します。 |
+| `places.endpoint` | ○ | デフォルトのPlaces Query Serviceエンドポイント。ライブラリとPOIに関する情報の取得に使用されます。 |
 
