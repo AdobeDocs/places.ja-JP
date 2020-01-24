@@ -1,14 +1,14 @@
 ---
 title: ライブラリの管理
-description: Places REST APIライブラリの管理を参照してください。
+description: PlacesサービスREST APIライブラリの管理を参照してください。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 # ライブラリの管理の概要 {#manage-libraries}
 
-Places REST APIを使用して、次のタスクを実行できます。
+Places Service REST APIを使用して、次のタスクを完了できます。
 
 * [ライブラリの作成](/help/web-service-api/api-usage/manage-libraries/create-a-library.md)
 * [ライブラリの読み取り](/help/web-service-api/api-usage/manage-libraries/read-a-library.md)
