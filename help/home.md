@@ -1,21 +1,21 @@
 ---
-title: Adobe Experience Platform Location Service
-description: 'ロケーションサービスは、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
+title: Placesサービス
+description: 'プレースサービスは、モバイルユーザーの関与を理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: c20e720d23121970bb2fa1c63a2fd1e81c84b977
+source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
 
 ---
 
 
-# Adobe Experience Platform Location Serviceの概要 {#home}
+# Placesサービス {#home}
 
-![「Adobe Experience Platform Location Service」](/help/assets/LocationHeader.png)
+![「プレースサービス」](/help/assets/LocationHeader.png)
 
 場所は、モバイルユーザーを理解し、関与させるための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。
 
-Adobe Experience Platform Location Service(Location Service)は、場所を認識するモバイルアプリで、柔軟な目標地点(POI)データベースを含む豊富で使いやすいSDKインターフェイスを使用して、場所のコンテキストを理解できるようにする地域サービスです。
+プレースサービスは、以前はAdobe Experience Platform Location Serviceと呼ばれていましたが、場所を認識するモバイルアプリで、柔軟な目標地点(POI)データベースを含む豊富で使いやすいSDKインターフェイスを使用して場所のコンテキストを把握できる地域サービスです。
 
-ロケーションサービスを使用すると、次のことを実現できます。
+プレースサービスでは、次のことが可能です。
 
 * 他のAdobe Experience cloudソリューションで利用できるPOIのデータベースを作成し、管理します。
 * カスタムメタデータをPOIに添付し、追加の属性を指定して、より豊かで意味のある情報を提供します。
@@ -32,9 +32,9 @@ Adobe Experience Platform Location Service(Location Service)は、場所を認�
 * 場所のコンテキストを持つオーディエンスプロファイルを使用して、オフラインの行動に基づいてオーディエンスをセグメント化します。
 * 関連する場合は、店頭での体験を持つユーザーをターゲットにします。
 
-## Location Serviceコンポーネント
+## Places Serviceコンポーネント
 
-ロケーションサービスは、次のコンポーネントで構成されます。
+場所サービスは、次のコンポーネントで構成されます。
 
 * **Webサービス**
 
@@ -82,7 +82,7 @@ Adobe Experience Platform Location Service(Location Service)は、場所を認�
 
    通常、組織は会社名です。 ただし、1つの会社に複数の組織を持つことはできます。 組織管理者は、グループとユーザーを設定し、シングルサインオン機能を設定できます。
 
-* **orgID** はAdobe Experience Platform をまたいで組織を表す ID です。
+* **orgID** は Adobe Experience Platform をまたいで組織を表す ID です。
 
    詳しくは、orgIDの検索を参 [照してください](https://forums.adobe.com/thread/2339895)。
 
