@@ -2,7 +2,7 @@
 title: POIの入口と出口のデータをAnalyticsに送信
 description: この節では、POIの入口データと出口データをAnalyticsに送信する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->この節では、アプリケーションにPlacesが実装されていることを前提としています。 場所の実装について詳しくは、場所の拡張を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>この節では、アプリケーションにPlaces Serviceが実装されていることを前提としています。 Placesサービスの実装について詳しくは、「Places拡張」を参 [照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-場所が入口イベントと出口イベントを送信した後、エクスペリエンスプラットフォーム起動に場所データをAdobe Analyticsに送信するルールを作成できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
+Placesサービスが入口イベントと出口イベントを送信した後、Experience Platform LaunchでPlacesサービスデータをAdobe Analyticsに送信するルールを作成できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
 
 ## 1.ルールの作成
 
@@ -33,7 +33,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. In the **[!UICONTROL Events]**section, click**[!UICONTROL Add]**.
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Places]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Places Service]**&#x200B;す。
 
 1. ドロップダウ **[!UICONTROL Event Type]**ンリストから、を選択しま**[!UICONTROL Enter POI]**&#x200B;す。
 
@@ -52,7 +52,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. セクションの下 **[!UICONTROL Conditions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Places]**&#x200B;す。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Places Service]**&#x200B;す。
 
 1. ドロップダウ **[!UICONTROL Condition Type]**ンリストから、を選択しま**[!UICONTROL Name]**&#x200B;す。
 
