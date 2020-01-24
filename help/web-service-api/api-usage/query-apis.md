@@ -2,7 +2,7 @@
 title: 概要
 description: クエリAPIの理解と使用を参照してください。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -20,7 +20,7 @@ GET https://query.places.adobe.com/placesedgequery
 
 次の入力を使用して、サービスは呼び出し元に最も近いPOIのリストを返します。
 
-* 呼び出し元の位置\(latitude, longitude\)。
+* 発信者の位置（緯度、経度）。
 * 検索に含めるPOIライブラリのID。
 * 返すPOIの最大数です。  デフォルト値は 100 です。
 
