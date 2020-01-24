@@ -1,15 +1,15 @@
 ---
-title: 地域の監視機能を有効にしないでLocation Serviceを使用
-description: このセクションでは、アクティブな地域監視を行わないLocation ServicePlacesの使用方法について説明します。
+title: アクティブな地域の監視なしでPlacesサービスを使用
+description: このセクションでは、アクティブな地域監視を行わずにPlaces Serviceを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# 地域の監視機能を有効にしないでLocation Serviceを使用 {#use-places-without-active-monitoring}
+# アクティブな地域の監視なしでPlacesサービスを使用 {#use-places-without-active-monitoring}
 
-アプリケーションの使用例では、アクティブな領域の監視が不要な場合があります。 引き続き、Adobe Placesを使用して、ユーザーの場所のデータを他のExperience Platform製品と統合できます。
+アプリケーションの使用例では、アクティブな領域の監視が不要な場合があります。 プレースサービスは、引き続き、ユーザーの場所データを他のExperience Platform製品と統合するために使用できます。
 
 ここでは、ユーザーの場所（緯度と経度）を収集したときにのみPOIメンバーシップチェックを完了する方法について説明します。
 
@@ -19,9 +19,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!TIP]
 >
->アプリの使用例でアクティブな領域の監視が必要な場合は、場所モニターの拡張 [機能を使用して読み取ります](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+>アプリの使用例でアクティブな領域の監視が必要な場合は、場所モニター拡張機能の使 [用を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
-アクティブ・リージョンの監視なしで場所を使用する手順は、次のとおりです。
+アクティブ・リージョンの監視を行わずにPlaces Serviceを使用する手順は、次のとおりです。
 
 ## 1.ユーザーの場所の収集
 
@@ -396,6 +396,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-SDK内の場所エントリイベントをトリガーするだけでなく、エントリイベントがトリガーされるので、POIを定義するすべてのデータを、起動時にSDKの残りの部分で使用で `data elements` きます。 「起動」を使 `rules`用すると、SDKによって処理される受信イベントに場所データを動的に添付できます。 例えば、ユーザーがいるPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
+SDKでPlaces Serviceエントリイベントをトリガーするほか、エントリイベントがトリガーされるので、POIを定義するすべてのデータは、Experience Platform Launchで他のSDKで使用するこ `data elements` とができます。 エクスペリエンスプラットフォ `rules`ームの起動を使用すると、SDKによって処理される受信イベントにPlaces Serviceデータを動的に添付できます。 例えば、ユーザーがいるPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
 
-詳しくは、「場所と他のアドビソリュ [ーションを使用する」を参照してください](/help/use-places-with-other-solutions/use-places-with-other-solutions.md)。
+詳しくは、「Places Serviceを他のアドビソリ [ューションと共に使用する」を参照してください](/help/use-places-with-other-solutions/use-places-with-other-solutions.md)。
