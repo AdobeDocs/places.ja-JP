@@ -1,38 +1,38 @@
 ---
 title: はじめに
-description: ロケーションサービスの概要を参照してください。
+description: Placesサービスの概要を参照してください。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # はじめに {#getting-started}
 
-以下に、ロケーションサービスの概要を説明する便利なビデオを示します。
+Places Servicesの概要を説明する便利なビデオを以下に示します。
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
-## Location Serviceの使用
+## Placesサービスの使用
 
-ロケーションサービスを使用するには、次のタスクを実行します。
+Placesサービスを使用するには、次のタスクを実行します。
 
-### 1.ユーザーがロケーションサービスを使用するようにプロビジョニングされていることを確認します
+### 1.ユーザーがPlaces Serviceを使用するようにプロビジョニングされていることを確認します。
 
-ロケーションサービス製品コンテキストは、すべてのExperience cloud組織で使用できます。
+Placesサービス製品コンテキストは、すべてのExperience cloud組織で使用できます。
 
-* 管理コンソールの「ロケーションサービス」および「Experience Platform起動」製品コンテキストに、ユーザーとして表示されていることを確認します。
+* 管理コンソールの「Places Service and Experience Platform Launch」製品コンテキストに、ユーザーとして表示されていることを確認します。
 
-   詳しくは、よくある質問の *Adding a user to Experience Platform Launch and Location Service* （エクスペリエンスプラットフォームの起動とロケーションサービスへのユーザーの追加） [を参照してください](/help/places-gain-access.md)。
+   詳しくは、「Experience Platform Launchへのユーザ *ーの追加」および「Places Service* 」の「よくある質問」を [参照してください](/help/places-gain-access.md)。
 
 
 ### 2.POIの作成
 
 目標地点(POI)は、組織用に作成するジオフェンスで、次のいずれかの方法でPOIを作成できます。
 
-* Location Serviceユーザーインターフェイスの使用。
+* Places Serviceユーザーインターフェイスの使用
 
-   詳しくは、「Placesサービスの概 [要」を参照してください](/help/poi-mgmt-ui/places-services-overview.md)。
+   詳しくは、「Placesサービスの概 [要」を参照してください](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md)。
 
 * Places webサービスのAPIの使用。
 
@@ -44,4 +44,4 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 Places拡張機能とMonitor拡張機能の設定について詳しくは、次の情報を参照してください。
 
 * [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md)
-* [Places Monitor拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+* [プレースモニタ拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
