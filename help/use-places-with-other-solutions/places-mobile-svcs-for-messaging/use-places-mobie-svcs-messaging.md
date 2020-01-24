@@ -1,8 +1,8 @@
 ---
-title: Mobile Servicesでの場所のメッセージングでの使用
-description: ここでは、Mobile Servicesでメッセージング用に場所を使用する方法について説明します。
+title: Mobile ServicesでのPlacesサービスのメッセージング用の使用
+description: この節では、Places ServiceとMobile Servicesを使用したメッセージングの使用方法を示します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -11,33 +11,49 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 メッセージングにMobile Services Extensionを使用する前に、次の前提条件を確認します。
 
-* 目標地点がロケーションサービスに作成されました。 必要に応じて、「ドキュメント」を参照してください。 （POI作成へのリンク）注意：ロケーションサービスには、レガシーAMSインターフェイス以外に存在する組織の目標地点データベースが新たに強化されました。 AMSの「場所を管理」ナビゲーションにあるPOIは、SDKのバージョン4でのみ機能します。
-   * 以前のバージョンのSDK用のAMS内の従来のPlaces POI管理インターフェイスを次に示します。
+* 目標地点はPlaces Serviceで作成されました。 For more information, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
-      ![レガシーUI](/help/assets/legacy-location-v4-ui.png)
+   >[!IMPORTANT]
+   >
+   >Placesサービスには、従来のMobile Services UIの外部に存在する、組織用の新しい強化されたPOIデータベースが含まれています。 Mobile Service *Manage PlacessページナビゲーションにあるPOIは* 、SDKバージョン4でのみ機能します。
 
-   * 以下に、ロケーションサービスのPOI管理インターフェイスを示します。
+* 以前のバージ *ョンのSDK用のレガシーMobile Services UIの場所* POI管理ページを次に示します。
 
-      ![ロケーションサービスPOI管理UI](/help/assets/places-ui.png)
+   ![レガシーUI](/help/assets/legacy-location-v4-ui.png)
 
-* ACP SDKは、場所および/または場所モニターの拡張を使用して適切に設定されます。 つまり、モバイルアプリの起動ルールエンジンで、データをイベントや条件として使用できます。 必要に応じて、ドキュメントを参照してください。 (https://aep-sdks.gitbook.io/docs/beta/adobe-places)
+* PlacesサービスのUIを次に示します。
 
-* 起動ルールを作成し、モバイルアプリのACP SDKに公開する方法に詳しく説明します。 必要に応じて、ドキュメントを参照してください。 (https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)
+   ![PlacesサービスPOI管理UI](/help/assets/places-ui.png)
 
-* 起動データ要素は、ルールで使用される場所SDK拡張データから作成されます。 ドキュメント(https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)を参照してください。
+* ACP SDKは、Places Service拡張またはPlaces Monitor拡張を使用して正しく設定されています。
+
+   つまり、モバイルアプリのエクスペリエンスプラットフォーム起動ルールエンジンで、データをイベントや条件として使用できます。 詳しくは、「場所」拡張機能または「場所 [モニター](/help/places-ext-aep-sdks/places-extension/places-extension.md) 」拡張 [機能を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)。
+
+* モバイルアプリのACP SDKに対するエクスペリエンスプラットフォーム起動ルールの作成と公開について説明します。
+
+   For more information, see [Rules engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
+
+* エクスペリエンスプラットフォーム起動データ要素は、ルールエンジンで使用される場所拡張データから作成されます。
+
+   For more information, see [Data elements](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
 ## レポート
 
 レポートを使用する前に、次の前提条件を満たします。
 
-* ロケーションサービスデータがAdobe Analyticsレポートスイートに正常に送信されました。 必要に応じて、Adobe Analyticsのドキュメントを参照してください（Steveのドキュメントへのリンク）。
-* AMSのレポートに詳しい。 必要に応じて、ドキュメント(https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html)をご覧ください。
+* PlacesサービスのデータがAdobe Analyticsレポートスイートに正常に送信されました。
+
+   詳しくは、「Adobe AnalyticsでのPlacesサ [ービスの使用」を参照してください](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)。
+
+* Mobile Servicesのレポートについて理解します。
+
+   For more information, see [Reports](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
 ## レポートの視覚化
 
-Adobe Analyticsに送信されるロケーションサービスデータを使用してAMSレポートを実行できます。 例えば、ユーザーがPOIにエントリを持つ場合にイベントを送信したとします。 このレポートでは、すぐに使用できるユーザーレポートの上に、POIエントリイベントのフィルターを追加しました。
+Adobe Analyticsに送信されるPlaces Serviceデータを使用して、Mobile Serviceレポートを実行できます。 次の例では、ユーザーがPOIのいずれかにエントリを持つ場合にイベントが送信されます。 このレポートでは、POIエントリイベントのフィルターが追加され、すぐに使用できるユーザーレポートに表示されます。
 
 ![レポートの視覚化](/help/assets/report-visualize.png)
 
-Adobe Analyticsインターフェイス内で、ロケーションサービスデータの視覚化に関する柔軟性が向上しました。
+Places Serviceデータを視覚化する際の柔軟性がAdobe Analyticsインターフェイスでも向上しました。
 
