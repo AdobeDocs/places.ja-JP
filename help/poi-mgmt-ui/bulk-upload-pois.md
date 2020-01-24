@@ -2,7 +2,7 @@
 title: POIの一括アップロード
 description: ここでは、POIをバルクアップロードする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -47,15 +47,15 @@ Web Service APIを使用して.csvファイルからPOIデータベースへのP
 
 ### 列の値
 
-次の列の値は、Location Service UIで使用されます。
+Places Service UIでは、次の列の値が使用されます。
 
-* 色。ロケーションサービスのUIマップでPOIの場所を表すピンの色として使用されます。
+* colorは、Places Service UIマップ内のPOIの位置を表すピンのカラーとして使用されます。
    * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56B」です。b、#3DC8DE、および&quot;&quot;
-   * この値を空白のままにすると、Location Service UIのデフォルトの色は青になります。
+   * この値を空白のままにすると、Places Service UIではデフォルトの色として青が使用されます。
 
       値は、青(#3E76D0)、紫(#AA99E8)、フスキア(#DC2ABA)、オレンジ(#FC685B)、淡いオレンジ(#FC962E)、黄(#F6C436)、明(#BECE5D)、緑(#61B56B)、薄い青(#3DC8DE)のそれぞれに対応しています。
 
-* アイコン。ロケーションサービスのUIマップ上のPOIの場所を表すピン上のアイコンとして使用されます。
+* アイコン。Places Service UIマップ上のPOIの場所を表すピン上のアイコンとして使用されます。
 
    * 有効値は、「」、ショップ、ホテルベッド、車、飛行機、電車、船、スタジアム、アムゼントパーク、アンカー、ベル、ベル、入札、書き物、ブラウズ、ブラシ、ビル、カメラ、時計、教育、懐中電灯、ゲーム、女性、男性、ハンマー、ハート、ホーム、打ち上げ、電球、郵便受け、金、ピン、買い物かごstar、target、teapot、thumbDown、thumbUp、trap、trophy、rench。
 
