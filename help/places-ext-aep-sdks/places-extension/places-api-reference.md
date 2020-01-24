@@ -2,18 +2,18 @@
 title: Places APIリファレンス
 description: 場所のAPIリファレンスに関する情報です。
 translation-type: tm+mt
-source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Places APIリファレンス {#places-api-reference}
 
-場所のAPIリファレンスに関する情報を次に示します。
+Places拡張のAPIリファレンスに関する情報を次に示します。
 
 ## 地域イベントの処理
 
-デバイスがアプリの事前定義された場所領域の境界を越えると、領域とイベントタイプがSDKに渡され、処理されます。
+デバイスがアプリの事前定義された場所サービス領域の境界を越えると、領域とイベントタイプがSDKに渡され、処理されます。
 
 ### ProcessGeofence(Android)
 
@@ -309,7 +309,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 ### 消去(Android)
 
-「共有状態」、「ローカルストレージ」、「メモリ内」の各場所のクライアント側データをクリアします。
+共有状態、ローカルストレージ、およびメモリ内のPlaces拡張のクライアント側データをクリアします。
 
 **構文**
 
@@ -329,7 +329,7 @@ Places.clear();
 
 ### clear(iOS)
 
-「共有状態」、「ローカルストレージ」、「メモリ内」の各場所のクライアント側データをクリアします。
+Places拡張のクライアント側のデータを共有状態、ローカルストレージ、およびメモリ内でクリアします。
 
 **構文**
 
