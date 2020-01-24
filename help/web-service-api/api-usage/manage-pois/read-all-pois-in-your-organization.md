@@ -2,12 +2,12 @@
 title: 組織内のすべてのPOIを読む
 description: Places REST APIを使用して、組織内のすべてのPOIを読み取ります。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 組織内のすべてのPOIを読む
+# 組織内のすべてのPOIを読む {#read-all-pois-org}
 
 組織内のすべてのPOIを返すGETメソッド。
 
