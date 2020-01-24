@@ -1,15 +1,15 @@
 ---
 title: 独自のモニタを使用する
-description: また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
+description: また、Places Service Extension APIを使用して、監視サービスを使用し、Places Serviceと統合することもできます。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 独自のモニタを使用する {#using-your-monitor}
 
-また、Places拡張APIを使用して、監視サービスを使用し、Placesと統合することもできます。
+また、監視サービスを使用し、Places拡張APIを使用してPlaces Serviceと統合することもできます。
 
 ## ジオフェンスの登録
 
