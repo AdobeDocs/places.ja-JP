@@ -1,21 +1,21 @@
 ---
-product: adobe experience platform
+product: Places Service, powered by Adobe Experience Platform
 audience: end-user
-user-guide-title: Adobe Experience Platform Location Service
+user-guide-title: Places Service, powered by Adobe Experience Platform
 translation-type: tm+mt
-source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
-# Adobe Experience Platform Location Serviceヘルプ {#using}
+# Places Service, powered by Adobe Experience Platform Help {#using}
 
-+ [Adobe Experience Platform Location Serviceの概要](home.md)
++ [Places Service、powered by Adobe Experience Platform概要](home.md)
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
-+ [ロケーションサービスにアクセスする](places-gain-access.md)
-+ 目標地点管理インターフェース {#poi-mgmt-ui}
-   + [目標地点管理インターフェイスの概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
++ [Placesサービスへのアクセス](places-gain-access.md)
++ Places Service UI {#poi-mgmt-ui}
+   + [PlacesサービスUIの概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [POI を作成](poi-mgmt-ui/create-a-poi-ui.md)
    + [以前に作成したPOIの管理](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [POIでのメタデータの使用方法](poi-mgmt-ui/metadata-with-pois.md)
@@ -51,7 +51,7 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
             + [複数のPOIの削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリAPI](web-service-api/api-usage/query-apis.md)
 + モバイルSDKの拡張機能 {#places-ext-aep-sdks}
-   + Places 拡張機能{#places-extension}
+   + Places 拡張機能 {#places-extension}
       + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places APIリファレンス](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [イベント参照を配置](places-ext-aep-sdks/places-extension/places-event-ref.md)
@@ -60,15 +60,15 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
       + [プレースモニタ拡張機能](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
       + [プレースモニター拡張機能の使用](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Places Monitor APIリファレンス](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
-+ [独自の監視ソリューションでロケーションサービスを使用](using-your-own-monitor.md)
-+ [地域の監視機能を有効にしないでLocation Serviceを使用](use-places-without-active-monitoring.md)
-+ Experience Platform起動ワークフローの一部としてロケーションサービスを使用 {#use-places-launch-workflow}
-   + [Experience Platform起動ワークフローの一部としてロケーションサービスを使用](use-places-launch-workflow/places-launch-workflow.md)
++ [お客様独自の監視ソリューションでPlaces Serviceを使用](using-your-own-monitor.md)
++ [アクティブな地域の監視なしでPlacesサービスを使用](use-places-without-active-monitoring.md)
++ Experience Platform起動ワークフローの一部としてPlacesサービスを使用 {#use-places-launch-workflow}
+   + [Experience Platform起動ワークフローの一部としてPlacesサービスを使用](use-places-launch-workflow/places-launch-workflow.md)
    + [データ要素の定義](use-places-launch-workflow/define-data-elements.md)
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
-+ 他のアドビソリューションとのロケーションサービスの使用 {#use-places-with-other-solutions}
++ 他のアドビソリューションでPlacesサービスを使用する {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Adobe Analyticsでのロケーションサービスの使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
+      + [Adobe AnalyticsでのPlacesサービスの使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POIの入口と出口のデータをAnalyticsに送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [Analyticsリクエストへの場所のコンテキストの追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics Workspaceの場所データに関するレポート](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -77,11 +77,11 @@ source-git-commit: c88c8f8e7e3bb9ea3af85948e682e75e894ad782
       + [プッシュ通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [アプリ内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
-      + [Adobe Campaign Standardでのロケーションサービスの使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
+      + [Adobe Campaign StandardでのPlacesサービスの使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [プッシュ通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [アプリ内メッセージ](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Adobe targetでのロケーションサービスの使用](use-places-with-other-solutions/places-target/places-target.md)
+      + [Adobe targetでのPlacesサービスの使用](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
-   + [ロケーションサービスのテストと検証](places-testing-validation/test-validate-places.md)
+   + [Placesサービスのテストと検証](places-testing-validation/test-validate-places.md)
 + [よくある質問](places-faqs.md)
