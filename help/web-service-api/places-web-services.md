@@ -1,15 +1,15 @@
 ---
 title: 'Web Services APIの概要 '
-description: 場所とは、アドビのお客様が、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に適切な場所に簡単に提供する一連のサービスです。
+description: プレースサービスは、Adobe Experience cloudとAdobe Experience Platformの各ソリューションを、場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に適切なエクスペリエンスと共に、アドビのお客様が簡単に活用できる一連のサービスです。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Web Services APIの概要 {#places-web-services-api}
 
-場所とは、アドビのお客様がAdobe Cloud PlatformとAdobe Experience Platformの各ソリューションを場所データと適切なエクスペリエンスを適切なタイミングで適切な担当者に提供できるようにする一連のサービスです。
+プレースサービスは、Adobe Cloud PlatformとAdobe Experience Platformの各ソリューションを、場所データと適切なエクスペリエンスを適切なタイミングで適切な個人に適切なエクスペリエンスと共に、アドビのお客様が簡単に活用できる一連のサービスです。
 
 WebサービスAPIを使用すると、次のことができます。
 
@@ -21,17 +21,17 @@ WebサービスAPIを使用すると、次のことができます。
 
 ## REST API
 
-Places REST APIを使用すると、組織のPOIをプログラムで操作できます。 これらのAPIを使用すると、ライブラリとそれらのライブラリ内のPOIを作成、更新、削除できます。 これらのAPIは、JavaScript Object Notation(JSON)規格を使用して、送受信されるデータの形式を設定します。 JSONの主な利点は、開発者やマシンがAPIクエリを簡単に書き込み、読み取り、解析できる点です。
+Places Service REST APIを使用すると、組織のPOIをプログラムで操作できます。 これらのAPIを使用すると、ライブラリとそれらのライブラリ内のPOIを作成、更新、削除できます。 これらのAPIは、JavaScript Object Notation(JSON)規格を使用して、送受信されるデータの形式を設定します。 JSONの主な利点は、開発者やマシンがAPIクエリを簡単に書き込み、読み取り、解析できる点です。
 
 WebサービスAPIを使用する前に、次の要件が満たされていることを確認します。
 
-* 組織内の場所がプロビジョニングされ、ユーザーとして適切なアクセス権を持っている。
+* プレースサービスが組織内でプロビジョニングされ、ユーザーとして適切なアクセス権を持っている。
 
    詳しくは、統合の概要と前提 *条件の「ユーザーアクセスの* 前提条 [件」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
-* Placesが組織でプロビジョニングされ、アクセス権を持ったら、Places用のAdobe統合を作成します。
+* Placesサービスが組織でプロビジョニングされ、アクセス権を持ったら、Places Service用のAdobe統合を作成します。
 
-   詳しくは、「統合の概要と前提 *条件」の「場所の統合の作成* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+   詳しくは、「統合の概要と前提 *条件」の「場所サービス統合の作成* 」 [を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
 追加情報:
 
