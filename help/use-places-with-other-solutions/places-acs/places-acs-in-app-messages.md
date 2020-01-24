@@ -1,15 +1,15 @@
 ---
-title: ロケーションサービスを使用したアプリ内メッセージ
+title: Placesサービスを使用したアプリ内メッセージ
 description: ここでは、Campaign Standardのアプリ内メッセージとCampaign Standardのキャンペーン標準のプッシュメッセージを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# ロケーションサービスを使用したアプリ内メッセージ {#in-app-messages-loc-service}
+# Placesサービスを使用したアプリ内メッセージ {#in-app-messages-loc-service}
 
-この情報は、Adobe Experience Platform Location Service情報を使用して、アプリ内メッセージまたはローカル通知を送信する方法を理解するのに役立ちます。
+この情報は、Places Service情報を使用してアプリ内メッセージやローカル通知を送信する方法を理解するのに役立ちます。
 
 ## 前提条件
 
@@ -20,7 +20,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * Adobe Experience Platform Mobile SDK [をアプリに統合します](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) 。
 * モバイルア [プリ設定に](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) Adobe Campaign Standard Extensionを追加します。
 
-* [場所POI管理インターフェイスで](/help/poi-mgmt-ui/create-a-poi-ui.md) 、POIを作成します。
+* [Places Service POI管理インターフェイスでPOI](/help/poi-mgmt-ui/create-a-poi-ui.md) を作成します。
 
 * モバイルアプリケーションに [Places拡張機能と](/help/places-ext-aep-sdks/places-extension/places-extension.md) Places Monitor拡張機能をイ [ンストールして設定します](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md) 。
 
@@ -29,10 +29,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 1. Adobe Campaign Standardインスタンスで、をクリックしま **[!UICONTROL Create In-App message]**す。
 1. メッセージタイプに対して、を選択しま **[!UICONTROL Target all users of a Mobile application]**す。
 1. をクリ **[!UICONTROL Next]**ックし、一般的な詳細を入力します。
-1. 左側のウィンドウで、ロケーションサービスに関連する様々なトリガーを使用できることを確認します。
+1. 左側のウィンドウで、Places Servicesに関連する様々なトリガーを使用できることを確認します。
 
    * ユーザーがPOIジオフェンスを入力した場合、アプリ内メッセージを表示するように選択できます。
-   * また、ロケーションサービスUIで定義されたメタデータを使用して、オーディエンスをフィルターすることもできます。
+   * また、Places Services UIで定義されたメタデータを使用して、オーディエンスをフィルターすることもできます。
    以下の例では、無料飲料プログラムに参加している休暇リゾートに入ったユーザーにのみ表示されるアプリ内メッセージをトリガーし、それらのユーザーが到着したらクーポンを送信することができます。
 
    ![「アプリ内メッセージ配置メタデータ」](/help/assets/last-entered-vacation.png)
@@ -45,6 +45,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    ![「クーポンを飲む」](/help/assets/drink-coupon-on-app.png)
 
-Location ServicesをAdobe Campaign Standardと共に使用すると、地域フェンスの入口と出口に基づいて、ユーザーに対するメッセージをセグメント化およびターゲット化する強力なツールが提供されます。 この統合により、よりパーソナライズされたコンテキスト的な使用例を構築できます。
+Places ServicesをAdobe Campaign Standardと共に使用すると、地域フェンスの入口と出口に基づいて、ユーザーに対するメッセージをセグメント化およびターゲット化する強力なツールが提供されます。 この統合により、よりパーソナライズされたコンテキスト的な使用例を構築できます。
 
 >[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)
