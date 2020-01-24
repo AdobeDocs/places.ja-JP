@@ -1,15 +1,15 @@
 ---
 title: ヘッダーとパラメーター
-description: Places REST APIで使用できるヘッダーとパラメーター。
+description: Places Service REST APIで使用できるヘッダーとパラメーター。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # ヘッダーとパラメーター {#headers-and-parameters}
 
-Places REST APIで使用できるヘッダーとパラメーターの詳細を以下に示します。
+Places Service REST APIで使用できるヘッダーとパラメーターの詳細を以下に示します。
 
 ## サポートされるヘッダー
 
