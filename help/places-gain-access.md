@@ -1,27 +1,27 @@
 ---
-title: 'Adobe Experience Platform Location Serviceへのアクセス '
-description: ここでは、ユーザーがロケーションサービスにアクセスできるように、ロケーションサービスとExperience Platformの起動にユーザーを追加する方法について説明します。
+title: 'Placesサービスへのアクセス '
+description: この節では、ユーザーがPlaces Serviceにアクセスできるように、Places Service and Experience Platform Launchにユーザーを追加する方法について説明します。
 translation-type: tm+mt
-source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
-# ロケーションサービスにアクセスする {#adding-user-launch-places}
+# Placesサービスへのアクセス {#adding-user-launch-places}
 
-プラットフォームロケーションサービスには、 [Adobe Experience cloudホームのクイックアクセスメニューからアクセスできます](https://experience.adobe.com)。
-ユーザーIDにアクセス権がある場合は、次に示すように「ロケーションサービス」アイコンが表示されます。
+Placesサービスには、 [Adobe Experience cloudホームのクイックアクセスメニューからアクセスできます](https://experience.adobe.com)。
+ユーザーIDにアクセス権がある場合は、次に示す「Places Service」アイコンが表示されます。
 
 ![クイックアクセスメニュー](/help/assets/quick-access.png)
 
-Adobe Experience Platformメニューからも、プラットフォームロケーションサービスにアクセスできます。
+Adobe Experience PlatformメニューからPlaces Serviceにアクセスすることもできます。
 
 ![エクスペリエンスプラットフォームメニュー](/help/assets/exp-platform-menu-sm.png)
 
-これらのメニューにプラットフォームロケーションサービスが表示されない場合は、組織内の管理者に問い合わせて、管理コンソールのPlacesコアサービスにユーザーIDを追加する必要があります。
+これらのメニューに「Places Service」が表示されない場合は、組織の管理者に問い合わせて、管理コンソールのPlaces Core ServiceにユーザIDを追加してください。
 
-## ロケーションサービスとExperience Platformの起動へのユーザーの追加
+## Places Service and Experience Platform Launchへのユーザーの追加
 
-ユーザーが「サービスの起動」UI [にアクセスできるようにするには](https://places.adobe.com)、ユーザーとして管理コンソールの「Placesコアサービス」に追加する必要があります。 ユーザーがエクスペリエンスプラットフォーム起動へのアクセス権を持ち、モバイルプロパティを設定し、Adobe Experience Platform SDKで場所を使用できるようにするには、管理コンソールのエクスペリエンスプラットフォーム起動に追加し、エクスペリエンスプラットフォーム起動に関する次の権限を与える必要があります。
+ユーザーが [Experience Platform起動UIにアクセスできるようにするには](https://launch.adobe.com)、ユーザーとして管理コンソールのPlacesコアサービスに追加する必要があります。 ユーザーがエクスペリエンスプラットフォーム起動へのアクセス権を持ち、モバイルプロパティを設定し、Adobe Experience Platform SDKで場所を使用できるようにするには、管理コンソールのエクスペリエンスプラットフォーム起動に追加し、エクスペリエンスプラットフォーム起動に関する次の権限を与える必要があります。
 
 * All Property Rights:
    * 開発
@@ -31,15 +31,13 @@ Adobe Experience Platformメニューからも、プラットフォームロケ�
    * 環境の管理
 * 「会社権限」の下の「プロパティの管理」権限
 
-初めてユーザーを追加する場合は、次の手順を実行して、Experience Platform Launch and Location Serviceにユーザーを追加します。 以前にユーザーを追加したことがある場合は、複数のプロファイルが表示される可能性があるので、必ず正しいプロファイルを選択してください。
+初めてユーザーを追加する場合は、次の手順を実行して、Experience Platform Launch and Places Serviceにユーザーを追加します。 以前にユーザーを追加したことがある場合は、複数のプロファイルが表示される可能性があるので、必ず正しいプロファイルを選択してください。
 
 >[!IMPORTANT]
 >
 >組織の管理者のみが管理コンソールにアクセスし、ユーザーを追加できます。
 
-### 1.ロケーションサービスとExperience Platformの起動がプロビジョニングされていることを確認します。
-
-ロケーションサービスとExperience Platformの起動がプロビジョニングされていることを確認するには：
+### 1.Places Service and Experience Platform Launchがプロビジョニングされていることを確認します。
 
 1. Experience cloud組織にログインします。
 1. 右上部で、Experience cloudシェルスイッチャーをクリックします。
@@ -64,12 +62,10 @@ Adobe Experience Platformメニューからも、プラットフォームロケ�
 
    ![](/help/assets/places_provisioned1.png)
 
-   表示された場合は、ロケーションサービスとエクスペリエンスプラットフォームの起動が組織用にプロビジョニングされています。 表示されない場合は、組織のプロビジョニングが必要です。
+   表示された場合は、Places Service and Experience Platform Launchが組織用にプロビジョニングされています。 表示されない場合は、組織のプロビジョニングが必要です。
 
 
 ### 2.プロファイルの設定と権限の追加
-
-プロファイルを設定し、権限を追加するには：
 
 1. エクスペリエンスプラットフォーム起動プロファイルを設定します。これにより、プロファイルに追加されたユーザーは、エクスペリエンスプラットフォーム起動と、エクスペリエンスプラットフォームSDKのモバイルプロパティを使用できます。
 
@@ -102,17 +98,17 @@ Adobe Experience Platformメニューからも、プラットフォームロケ�
 
 >[!IMPORTANT]
 >
->ロケーションサービスの場合は、デフォルトのプロファイルがありますが、権限を追加する必要はありません。
+>Places Serviceの場合は、デフォルトのプロファイルがありますが、権限を追加する必要はありません。
 
 作成したプロファイルに権限が正常に追加されました。
 
-### 3.ロケーションサービスおよびExperience Platform Launchプロファイルへのユーザーまたは開発者の追加
+### 3.Places Service and Experience Platform Launchプロファイルへのユーザーまたは開発者の追加
 
-ロケーションサービスおよびエクスペリエンスプラットフォーム起動プロファイルに、ユーザーまたは開発者を追加できます。
+Places Service and Experience Platform Launchのプロファイルにユーザーまたは開発者を追加できます。
 
 ### ユーザーの追加
 
-ロケーションサービスおよびエクスペリエンスプラットフォーム起動プロファイルにユーザーを追加するには：
+Places Service and Experience Platform Launchプロファイルにユーザーを追加するには：
 
 1. エクスペリエンスプラットフォーム起動プロファイルにユーザーを追加します。
 
@@ -140,7 +136,7 @@ Adobe Experience Platformメニューからも、プラットフォームロケ�
 
    >[!TIP]
    >
-   >現在、すべてのLocation Serviceユーザーに同じ権限が与えられているので、権限を編集する必要はありません。
+   >現在、すべてのPlaces Serviceユーザーに同じ権限が与えられているので、権限を編集する必要はありません。
 
    a.カード上で、 **[!UICONTROL Places Core Services]**次の内容を確認します。
 
@@ -178,8 +174,8 @@ Web Service APIへのアクセスも必要なユーザーの場合は、開発�
    * 新しいユーザーを追加する場合は、をクリック **[!UICONTROL New user]**し、ユーザーの姓と名を入力します。
    * 既存のユーザーを追加する場合は、表示されるユーザーの名前をクリックします。
 
-1. ドロップダウ **[!UICONTROL Please select a profile for this product]**ンリストで、Location Serviceプロファイルを選択します。
+1. ドロップダウ **[!UICONTROL Please select a profile for this product]**ンリストで、Places Serviceプロファイルを選択します。
 
 1. 「**保存**」をクリックします。
 
-ユーザーには、Experience Platform Launch へのアクセス権があることを通知する電子メールが届きます。ユーザーは、この組織の [Experience Platform Launch](https://launch.adobe.com) または [Places](https://places.adobe.com) UI にログインできます。「**開発者の追加**」手順の手順 4 を完了すると、ユーザーは [Adobe I/O コンソール](https://console.adobe.io)にログインして、Places 統合を作成し、Places REST API を使用することもできます。
+ユーザーには、Experience Platform Launch へのアクセス権があることを通知する電子メールが届きます。They can can log in to the [Experience Platform Launch](https://launch.adobe.com) or the [Places Service](https://places.adobe.com) UIs for this organization. 「**開発者の追加**」手順の手順 4 を完了すると、ユーザーは [Adobe I/O コンソール](https://console.adobe.io)にログインして、Places 統合を作成し、Places REST API を使用することもできます。
