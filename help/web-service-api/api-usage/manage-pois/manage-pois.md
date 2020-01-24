@@ -2,14 +2,14 @@
 title: POIの管理の概要
 description: 'POIの把握と操作 '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # POIの管理の概要 {#manage-pois}
 
-Places REST APIを使用して、次のタスクを実行できます。
+Places Service REST APIを使用して、次のタスクを完了できます。
 
 * [POI を作成](/help/web-service-api/api-usage/manage-pois/create-a-poi.md)
 * [POIの読み取り](/help/web-service-api/api-usage/manage-pois/read-a-poi.md)
