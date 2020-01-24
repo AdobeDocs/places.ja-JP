@@ -1,8 +1,8 @@
 ---
 title: Analyticsリクエストへの場所のコンテキストの追加
-description: この節では、Analyticsリクエストに場所のコンテキストを追加する方法について説明します。
+description: ここでは、Analyticsリクエストに場所のコンテキストを追加する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->このドキュメントでは、アプリケーションにAdobe Placesが実装されていることを前提としています。 Adobe Placesの実装について詳しくは、Places拡張機能を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>このドキュメントでは、アプリケーションにPlaces Serviceが実装されていることを前提としています。 Placesサービスの実装について詳しくは、「Places拡張」を参 [照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-場所が入口イベントと出口イベントを送信した後、エクスペリエンスプラットフォーム起動にルールを作成し、場所のデータをすべてのAdobe Analyticsイベントに添付できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
+Placesサービスが入口イベントと出口イベントを送信した後、Experience Platform Launchでルールを作成し、Places ServiceデータをすべてのAdobe Analyticsイベントに添付できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
 
 ## 1.ルールの作成
 
@@ -27,7 +27,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Analytics Track Action Events]**す。
+   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**す。
 
 1. セクションの下 **[!UICONTROL Events]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
@@ -50,7 +50,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. セクションの下 **[!UICONTROL Conditions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから「モバイルコア」**[!UICONTORL &#x200B;を選択します]**。
+1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
 
 1. ドロップダウ **[!UICONTROL Condition Type]**ンリストから、を選択しま**[!UICONTROL Carrier Name]**&#x200B;す。
 
