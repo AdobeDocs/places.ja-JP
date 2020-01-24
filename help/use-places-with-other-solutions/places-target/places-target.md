@@ -1,17 +1,17 @@
 ---
 title: Adobe Target
-description: ここでは、Adobe targetでロケーションサービスを使用する方法について説明します。
+description: ここでは、Places ServiceをAdobe targetと共に使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# Adobe targetでのロケーションサービスの使用 {#places-target}
+# Adobe targetでのPlacesサービスの使用 {#places-target}
 
 このドキュメントでは、アプリケーションにPlaces拡張機能が実装されていることを前提としています。 Places拡張機能の実装に関するヘルプが必要な場合は、Places拡張機能を参照 [してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-場所拡張で入口と出口のイベントを送信した後、起動のルールを使用して場所データをAdobe Target SDKイベントに添付できます。 「起動」で目的のプロパティを選択し、次のタスクを実行して、このタイプのルールを作成できます。
+Places拡張機能が入口と出口のイベントを送信した後、「起動中のルール」を利用して、Places ServiceデータをAdobe Target SDKイベントに添付できます。 「起動」で目的のプロパティを選択し、次のタスクを実行して、このタイプのルールを作成できます。
 
 ## 1.ルールの作成
 
@@ -26,7 +26,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Data to Target Content Requested]**す。
+   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Service Data to Target Content Requested]**す。
 
 1. セクションの下 **[!UICONTROL Events]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
 
