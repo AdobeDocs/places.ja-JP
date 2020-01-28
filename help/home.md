@@ -2,14 +2,14 @@
 title: Placesサービス
 description: 'プレースサービスは、モバイルユーザーの関与を理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。 '
 translation-type: tm+mt
-source-git-commit: 0341e1c818bf61bee01e02c91a67f184c7778c0d
+source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
 
 ---
 
 
 # Placesサービス {#home}
 
-![「プレースサービス」](/help/assets/LocationHeader.png)
+![「プレースサービス」](/help/assets/places-service-header.png)
 
 場所は、モバイルユーザーを理解し、関与させるための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスを実現できます。
 
