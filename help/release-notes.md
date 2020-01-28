@@ -2,12 +2,21 @@
 title: リリースノート
 description: Places Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
 ---
 
 
 # リリースノート {#release-notes}
+
+## 2020年1月27日
+
+* **PlacesMonitor 2.2.0**
+
+   * **Android**
+
+      * 新しい場所APIを呼び出して、アプリの起動時およびアプリの実行中に認証が変更された場合に場所の認証ステータスを収集します。
+      * setRequestLocationPermission APIと非推奨のsetLocationPermission APIが追加されました。
 
 ## 2020 年 1 月 10 日
 
@@ -17,6 +26,13 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
       * Places Servicesのデバイス認証状態を `setAuthorizationStatus`設定する新しいAPIが追加されました。 この値は「場所」共有状態で保存され、使用されます。
 
+## 2019年12月5日
+
+* **PlacesMonitor 2.1.2**
+
+   * **iOS**
+
+      * Places APIを呼び出して、デバイスが変更された場合にCLAuthorizationStatusをデバイスから収集します。
 
 ## 2019年12月4日
 
@@ -25,6 +41,14 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    * **iOS**
 
       * Places Servicesのデバイス認証状態を `setAuthorizationStatus`設定する新しいAPIが追加されました。 この値は「場所」共有状態で保存され、使用されます。
+
+## 2019 年 11 月 26 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **iOS**
+
+      * 複数のポッドプロジェクトオプションを使用するCocoopodsプロジェクトのインポートステートメントを修正しました。
 
 ## 2019 年 22 月 12 日
 
