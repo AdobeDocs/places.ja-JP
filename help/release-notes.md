@@ -2,14 +2,27 @@
 title: リリースノート
 description: Places Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
 
 # リリースノート {#release-notes}
 
-## 2020年1月27日
+## 2020年2月20日
+
+* **ACPPlaces 1.3.1(iOS)**
+
+   * 拡張機能は、バージョン情報をコアSDKのイベントハブにレポートするようになりました。
+   * デバイスのPOIメンバーシップ情報のデフォルトの有効期間は、収集された時点から1時間になりました。 詳しくは、「Placesメンバーシ [ップの有効期間の変更」を参照してください。](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+
+* **場所1.4.1(Android)**
+
+   * 拡張機能は、バージョン情報をコアSDKのイベントハブにレポートするようになりました。
+   * デバイスのPOIメンバーシップ情報のデフォルトの有効期間は、収集された時点から1時間になりました。 詳しくは、「Placesメンバーシ [ップの有効期間の変更」を参照してください。](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+## 2020 年 1 月 27 日
 
 * **PlacesMonitor 2.2.0**
 
@@ -20,7 +33,7 @@ source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ## 2020 年 1 月 10 日
 
-* **ACPPlaces 1.4.0**
+* **場所1.4.0**
 
    * **Android**
 
