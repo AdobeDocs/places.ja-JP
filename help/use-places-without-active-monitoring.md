@@ -2,7 +2,7 @@
 title: アクティブな地域の監視なしでPlacesサービスを使用
 description: このセクションでは、アクティブな地域の監視を行わずにPlaces Serviceを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
@@ -11,11 +11,9 @@ source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 
 アプリケーションの使用例では、アクティブな領域の監視が必要でない場合があります。 Places Serviceは、引き続き、ユーザーの場所データを他のExperience Platform製品と統合するために使用できます。
 
-ここでは、ユーザーの場所（緯度と経度）を収集したときにのみPOIメンバーシップの確認を完了する方法について説明します。
-
 ## 前提条件
 
-開発者は、ターゲットプラットフォームのオペレーティングシステムで提供されるAPIを使用して、デバイスの場所を収集します。
+開発者は、デバイスプラットフォームのオペレーティングシステムが提供するAPIを使用してターゲットの場所を収集します。
 
 >[!TIP]
 >
@@ -34,7 +32,7 @@ source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 
 ## 2.SDKから近くの目標地点を取得する
 
-ユーザーの場所を取得した後、SDKに渡して、近くにあるPOIのリストを取得できます。
+ユーザーの場所を取得した後、SDKに渡して、近くのPOIのリストを取得できます。
 
 ### Android
 
@@ -84,7 +82,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-次に、iOSでの実装例を示し [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc) ます [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc)。
+iOSの実装例を示します。 コードは、次の内のメソッドの実 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 装を示していま [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)す。
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +98,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Swift
 
-次に、iOSでの実装例を示し [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager) ます [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager)。
+iOSの実装例を示します。 コードは、次の内のメソッドの実 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 装を示していま [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)す。
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,15 +112,27 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.ユーザーがPOIにいる場合にエントリイベントをトリガーする
+## 3.場所データをAnalyticsリクエストに添付
 
-SDKは、ユーザーが現在各POI内にいるかどうかを含む、近くのPOIのリストを返します。 ユーザーがPOIにいる場合は、SDKがその地域のエントリイベントをトリガーするように設定できます。
+Places SDKは、 `getNearbyPointsOfInterest` APIを呼び出すことで、デバイスに関連するすべてのPOIデータを、Launchのデータ要素を介して使用できるようにします。 「データの添付」 [ルールを使用すると](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 、Analyticsに対する今後のリクエストに場所データを自動的に追加できます。 これにより、デバイスの場所が収集された時点でAnalyticsに対して1回限りの呼び出しを行う必要がなくなります。
+
+このトピ [ックについて詳しくは](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) 、「Analyticsリクエストの場所のコンテキスト」を参照してください。
+
+## オプション — ユーザーがPOIにいる場合に入口イベントをトリガーします。
+
+>[!TIP]
+>
+>場所データを取り込む推奨方法は、場所データをAnalytics [リクエストに添付することです](#attach-places-data-to-your-analytics-requests)。
+>
+>使用事例で、SDKによってトリガ [ーされる領域エントリのイベント](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) が必要な場合は、以下に示すように手動で行う必要があります。
+
+APIから返されるリストには `getNearbyPointsOfInterest` 、ユーザーが現 [在POI内にいるかどうかを示す](places-ext-aep-sdks/places-extension/cust-places-objects.md) 、カスタムオブジェクトが含まれています。 ユーザーがPOIにいる場合は、SDKがその地域のエントリイベントをトリガーできます。
 
 >[!IMPORTANT]
 >
->1回の訪問でアプリが複数のエントリイベントをトリガーしないようにするには、ユーザーが入力した地域のリストを保持します。 SDKから近くのPOIの応答を処理する場合、領域がリストにない場合にのみエントリイベントをトリガーします。
+>1回の訪問でアプリが複数の入口イベントをトリガーしないようにするには、ユーザーが入力したことを知っている地域のリストを保持します。 SDKから近くのPOIの応答を処理する場合は、領域がリストにない場合にのみ、エントリイベントをトリガーします。
 >
->次のコードの例では、(iOS) `NSUserDefaults` と `SharedPreferences` (Android)を使用して地域のリストを管理しています。
+>次のコードの例では、(iOS) `NSUserDefaults` と `SharedPreferences` (Android)を使用して地域のリストを管理します。
 
 ### Android
 
@@ -229,11 +239,13 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完全なサンプル実装
 
-以下のコード例は、デバイスの現在の場所を取得し、必要なイベントをトリガーし、1回の訪問で同じ場所の複数のエントリが得られないようにする方法を示しています。
+以下のコード例は、デバイスの現在の場所を取得し、必要な入口イベントをトリガーし、1回の訪問で同じ場所の複数の入口を取得しないようにする方法を示しています。
+
+このコードサンプルには、ユーザーがPOIにいる [ときにエントリイベントをトリガーするオプションの手順が含まれます](#trigger-entry-events-when-the-user-is-in-a-poi)。
 
 >[!IMPORTANT]
 >
->これらのスニペットは **一例に過ぎ** ません。 開発者は、機能の実装方法を決定する必要があります。また、この決定では、対象のオペレーティングシステムが推奨するベストプラクティスを考慮する必要があります。
+>これらのスニペットは **一例に過ぎ** ません。 開発者は、機能の実装方法を決定する必要があり、決定では、ターゲットのオペレーティングシステムが推奨するベストプラクティスを検討する必要があります。
 
 ### Android
 
@@ -396,6 +408,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-SDKでPlaces Serviceエントリイベントをトリガーするほか、エントリイベントがトリガーされるので、POIを定義するすべてのデータを、Experience Platform Launchを介してSDKの残りの部分で使 `data elements` 用できます。 エクスペリエンスプラットフォ `rules`ームの起動を使用すると、SDKによって処理される受信イベントにPlaces Serviceデータを動的に添付できます。 例えば、ユーザーが存在するPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
+エントリイベントをトリガーするので、SDKでPlaces Serviceエントリイベントをトリガーするほかに、POIを定義するすべてのデータを、Experience Platform Launchを介して残りのSDKで使用する `data elements` ことができます。 エクスペリエンスプラットフォ `rules`ームの起動を使用すると、SDKで処理される受信イベントにPlaces Serviceデータを動的に添付できます。 例えば、ユーザーが存在するPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
 
 詳しくは、他のアドビソリューシ [ョンとのPlaces Serviceの使用を参照してください](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。
