@@ -2,9 +2,9 @@
 title: Places 拡張機能
 description: Places拡張機能を使用すると、ユーザの場所に基づいて操作を行うことができます。
 translation-type: tm+mt
-source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 5%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 5%
 
 Places拡張機能を使用すると、ユーザの場所に基づいて操作を行うことができます。 この拡張機能は、PlacesクエリサービスAPIへのインターフェイスです。 GPS座標とジオフェンス領域のイベントを含むイベントをリッスンすると、この拡張は、ルールエンジンで処理される新しいイベントをディスパッチします。 また、Places拡張は、APIから取得したアプリデータに最も近いPOIのリストを取得し、配信します。 APIから返される領域はキャッシュと永続性に保存されるので、オフライン処理に制限があります。
 
-## Places拡張機能のAdobe Experience Platform Launchへのインストール
+## Adobe Experience Platform起動時のPlaces拡張機能のインストール
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. タブで、 **[!UICONTROL Catalog]** 拡張機能を探してをクリックし **[!UICONTROL Places]****[!UICONTROL Install]**&#x200B;ます。
 1. このプロパティで使用する場所ライブラリを選択します。 これらは、アプリケーションでアクセスできるライブラリです。
 1. 「**[!UICONTROL Save]**」をクリックします。
 
-   をクリックする **[!UICONTROL Save]**&#x200B;と、Experience Platform SDKは、選択したライブラリ内のPlaces ServicesでPOIを検索します。 POIデータは、アプリケーションの構築時にライブラリのダウンロードには含まれませんが、POIの場所ベースのサブセットは、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
+   をクリックする **[!UICONTROL Save]**&#x200B;と、Experience PlatformSDKは、選択したライブラリ内のPOIをPlaces Servicesで検索します。 POIデータは、アプリケーションの構築時にライブラリのダウンロードには含まれませんが、POIの場所ベースのサブセットは、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
 
 1. 公開プロセスを完了して、SDK設定を更新します。
 
-   エクスペリエンスプラットフォームの開始での投稿について詳しくは、 [投稿を参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)。
+   Experience Platform Launchでの公開について詳しくは、 [公開を参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -35,9 +35,9 @@ Places拡張機能を使用すると、ユーザの場所に基づいて操作�
 
 Places拡張機能は、AndroidおよびiOSアプリに追加できます。 iOSまたはAndroidアプリケーションに場所を追加する手順は、次のとおりです。 場所は、CordovaとReact Nativeでも利用できます。 以下のプラットフォームのいずれかを使用して開発する場合、アプリケーションに場所を追加する方法については、付属のリンクを参照してください。
 
-**Cordova ACPPlaces**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+**[Cordova Placesプラグイン](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**ネイティブACPPlaces**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
+**[ネイティブPlacesプラグインを反応](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 ### Android
 
