@@ -2,17 +2,33 @@
 title: リリースノート
 description: Places Serviceのリリースノートです。
 translation-type: tm+mt
-source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 2%
+source-wordcount: '1503'
+ht-degree: 3%
 
 ---
 
 
 # リリースノート {#release-notes}
 
-## 2020年5月6日
+## 2020 年 7 月 9 日
+
+* **場所と場所のモニター拡張**
+
+   * Places and Places Monitor拡張が追加され、 [React Nativeアプリケーションに対応](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * Cordovaアプリケーション用に、場所と場所のモニターの拡張機能が追加され [ました。](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * 詳しくは、次を参照してください。 [Places拡張子の使用](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+
+
+## 2020年5月12日
+
+* **Places Service**
+
+   * 「POIを読み込み」ボタンを使用して、CSVファイルからPOIを一括読み込み
+   * 複数のPOIを選択し、メタデータ値をバルク編集または追加する
+
+## 2020 年 5 月 6 日
 
 * **PlacesMonitor 2.2.1**
 
@@ -184,7 +200,7 @@ ht-degree: 2%
 
 共有状態、アプリ内メモリ、およびPlaces関連のすべてのデータを消去する新しいAPIが追加されました `NSUserDefaults`。
 
-## 2019 年 6 月 25 日
+## 2019 年 6 月 26 日
 
 このリリースでは、次の更新が行われました。
 
@@ -192,7 +208,7 @@ ht-degree: 2%
 
 * 優れたインコードドキュメントやログを含む、ライフサイクルの質の向上。
 
-## 2019 年 6 月 17 日
+## 2019 年 17 月 7 日
 
 このリリースでは、次の更新が行われました。
 
@@ -213,7 +229,7 @@ ht-degree: 2%
 
 Places UIでの次の問題を修正しました。
 
-* 場所のソリューション切り替えボタンが更新され、Experience Cloudの他の部分と連携するようになりました。
+* 場所のソリューション切り替えボタンが更新され、Experience Cloudの残りの部分と連携するようになりました。
 * ランクが変更されない場合にランクが保存される問題を修正しました。
 * UIの最小許容半径を10メートルに増やしました。
 * フィールド内の数値をすべて削除すると、半径フィールドが20メートルにリセットされる問題を修正しました。
@@ -256,7 +272,7 @@ Android用プレースモニターの初回リリース。
 * CI統合(CircleCI)
 * コードカバレッジ統合(codecov)
 
-## 2019 年 4 月 26 日
+## 2019 年 3 月 26 日
 
 iOS Places Monitor 1.0.0
 
@@ -268,7 +284,7 @@ iOS用Places Monitorの最初のリリース。
 
 ### ベータリリース
 
-これは、顧客が実際の場所データに対してユーザーの体験を豊かにするツールのセットであるPlaces Serviceの最初のリリースです。 最初のリリースでは、主にモバイルアプリで、Adobe Experience Platform Launchを使用してカスタム位置データを取得し、そのデータに基づいて動作できるようにすることが使用されます。
+これは、顧客が実際の場所データに対してユーザーの体験を豊かにするツールのセットであるPlaces Serviceの最初のリリースです。 最初のリリースでは、主にモバイルアプリで、Adobe Experience Platformの起動を通じてカスタム位置データを取得し、そのデータに基づいて動作できるようにする使用例が挙げられます。
 
 ### 主な特長
 
@@ -283,7 +299,7 @@ iOS用Places Monitorの最初のリリース。
 
 #### 拡張子を配置
 
-Places Extensionを使用すると、Places Serviceライブラリをモバイルアプリに追加して、POIに基づいて動作させることができます。 エクスペリエンスプラットフォームの起動のルールビルダーを使用すると、ユーザーがPOIに入ってPOIを終了したときに実行するアクションをトリガーできます。
+Places Extensionを使用すると、Places Serviceライブラリをモバイルアプリに追加して、POIに基づいて動作させることができます。 Experience Platform Launchでルールビルダーを使用すると、ユーザーがPOIにアクセスしてPOIを終了したときに実行するアクションをトリガーできます。
 
 Places拡張子で次の操作を行います。
 
@@ -309,4 +325,4 @@ Places APIについて詳しくは、 [WebサービスAPIを参照してくだ�
 
 #### Analytics の統合
 
-ユーザーがPOI（受動的な呼び出し）を使用している場合、Analyticsの拡張機能は、Places Serviceデータベースの場所コンテキストデータを、送信されるすべてのAnalytics呼び出しに自動的に追加するように更新されています。 また、この更新により、AnalyticsでPOIの入口または出口（アクティブな呼び出し）で直接呼び出しを追跡するルールを作成できるようになります。
+Analytics拡張機能は、ユーザーがPOI（パッシブコール）を使用している場合に、Places Serviceデータベースの場所コンテキストデータを、送信されるすべてのAnalytics呼び出しに自動的に追加するように更新中です。 また、この更新により、POIの入口または出口（アクティブな呼び出し）で直接Analyticsトラッキングの呼び出しを実行するルールの作成も可能になります。
