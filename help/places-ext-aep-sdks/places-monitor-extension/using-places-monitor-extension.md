@@ -1,32 +1,43 @@
 ---
-title: プレースモニター拡張機能の使用
+title: 「Places Monitor」拡張機能の使用
 description: プレースモニター拡張機能のインストール、設定、使用方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: ac1d410a676557064d5390f8392f402541754478
+source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 6%
 
 ---
 
 
-# プレースモニター拡張機能の使用 {#using-places-monitor-extension}
+# 「Places Monitor」拡張機能の使用 {#using-places-monitor-extension}
 
-プレースモニター拡張機能を使用するには、次のタスクを実行します。
+プレースモニタ拡張機能を使用するには、次のタスクを実行します。
 
-## Experience Platform LaunchにPlaces Monitor Extensionをインストールする
+## Experience Platform LaunchでのPlaces Monitor拡張のインストール
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
-1. タブで、拡 **[!UICONTROL Catalog]**張機能を探し、「イ**[!UICONTROL Places Monitor]** ンストール」をクリック **します**。
-1. **[!UICONTROL Save]**をクリックします。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. タブで、 **[!UICONTROL Catalog]** 拡張機能を探し、「インストー **[!UICONTROL Places Monitor]** ル ****」をクリックします。
+1. 「**[!UICONTROL Save]**」をクリックします。
 1. 公開プロセスに従ってSDK設定を更新します。
 
-### プレースモニター拡張機能の設定 {#configure-places-monitor-extension}
+### 配置モニター拡張機能の設定 {#configure-places-monitor-extension}
 
-プレースモニター拡張機能の設定タスクはありません。
+Places Monitor拡張機能の設定タスクはありません。
 
-![場所モニターの設定](/help/assets/configure_places_monitor.png)
+![「場所モニター](/help/assets/configure_places_monitor.png)」の設定
 
-## プレースモニター拡張機能のアプリへの追加 {#add-monitor-extension-to-app}
+## アプリケ追加ーションのプレースモニター拡張機能 {#add-monitor-extension-to-app}
 
-AndroidまたはiOSアプリにプレースモニター拡張機能を追加する必要があります。
+AndroidまたはiOSアプリケーションにプレースモニター拡張機能を追加する手順は、以下のとおりです。
+
+Places Monitor拡張機能のその他のプラットフォームサポートには、次のものがあります。
+**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+
+**[ネイティブ・プレース・モニターに反応](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
+
+**[はためく場所モニタ](https://github.com/adobe/flutter_acpplaces_monitor/blob/master/README.md)**
+
 
 ### Android
 
@@ -34,9 +45,9 @@ Androidで、次の手順を実行します。
 
 #### Java
 
-1. アプリのグレードファイルを使用して、プレースモニター拡張機能とプレース拡張機能をプロジェクトに追加します。
+1. アプ追加リのグレードルファイルを使用して、プレースモニター拡張子と配置拡張子をプロジェクトに追加します。
 
-1. また、最新のGoogle Locationサービスをグレードファイルに含めます。
+1. 最新のGoogle Locationサービスもグラデールファイルに含めます。
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -45,7 +56,7 @@ Androidで、次の手順を実行します。
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-1. アプリケーションのメインアクティビティにプレースモニター拡張機能を読み込みます。
+1. アプリケーションのメインアクティビティーにPlaces Monitor拡張機能を読み込みます。
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -55,8 +66,8 @@ Androidで、次の手順を実行します。
 
 iOSで、次の手順を実行します。
 
-1. を追加して、Cocoapodsを使用してプロジェクトにライブラリ `Podfile` を追加しま `pod 'ACPPlacesMonitor'`す。
-1. 場所および場所モニターライブラリの読み込み：
+1. Add the library to your project via your Cocoapods `Podfile` by adding `pod 'ACPPlacesMonitor'`.
+1. 場所と場所モニターライブラリを読み込む：
 
 #### Objective-C
 
@@ -75,9 +86,9 @@ import ACPPlacesMonitor
 ```
 
 
-## プレースモニターの登録と起動 {#register-start-places-monitor}
+## プレースモニターの登録と開始 {#register-start-places-monitor}
 
-AndroidまたはiOSでプレースモニターを登録して起動する必要があります。
+AndroidまたはiOSのプレースモニターを登録して開始する必要があります。
 
 ## Android
 
@@ -85,7 +96,7 @@ Androidで、次の手順を実行します。
 
 ### Java
 
-アプリのメソッドで、プレース `OnCreate` モニターの拡張機能を登録します。
+Appの `OnCreate` メソッドで、プレースモニターの拡張機能を登録します。
 
 ```java
 public class MobileApp extends Application {
@@ -108,11 +119,11 @@ public class MobileApp extends Application {
 
 >[!IMPORTANT]
 >
->場所の監視は、場所の拡張機能に依存します。 Places 監視拡張機能を手動でインストールする場合は、プロジェクトに `places.aar` ライブラリも追加してください。
+>場所の監視は、Places拡張子に応じて異なります。 Places 監視拡張機能を手動でインストールする場合は、プロジェクトに `places.aar` ライブラリも追加してください。
 
 ## iOS
 
-iOSアプリで、Mobile coreに`application:didFinishLaunchingWithOptions`「登録 `PlacesMonitor` 」と「場所」を選択します。
+iOSアプリで`application:didFinishLaunchingWithOptions`、Mobile Coreに登録 `PlacesMonitor` し、場所を設定します。
 
 ### Objective-C
 
@@ -149,16 +160,16 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
->場所の監視は、場所の拡張機能に依存します。 When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
+>場所の監視は、Places拡張子に応じて異なります。 When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
-## マニフェストへの権限の追加
+## マニフェスト追加への権限
 
 ### Android
 
 **Java**
 
-Androidのすべてのバージョンで、アプリに場所の権限が必要であることを宣言するには、アプリのマニフェストに要素を最上位 `<uses-permission>` の要素の子として追加し `<manifest>` ます。 APIレベル29以降をターゲットとするAndroidアプリケーションの場合、アプリケーションがバックグラウンドで場所にアクセスできるようにするには、ACCESS_BACKGROUND_LOCATION権限を含めます。
+Androidのすべてのバージョンで、アプリに場所の権限が必要であることを宣言するには、アプリのマニフェストに `<uses-permission>` 要素を最上位 `<manifest>` 要素の子として追加します。 APIレベル29以降のターゲットを使用するAndroidアプリケーションの場合、アプリケーションをバックグラウンドで場所にアクセスできるようにするには、ACCESS_BACKGROUND_LOCATION権限を含めます。
 
 ```java
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
@@ -172,18 +183,18 @@ Androidのすべてのバージョンで、アプリに場所の権限が必要�
 ```
 
 
-## バックグラウンドで場所の更新を有効にする {#enable-location-updates-background}
+## バックグラウンドで場所の更新を有効にする  {#enable-location-updates-background}
 
-iOSは、停止中のアプリケーションや実行されなくなったアプリケーションへの位置イベントの配信をサポートします。 プレースモニター拡張機能のバックグラウンドで場所の更新を受け取るには、でアプリの場所の更新機能を設定しま `Xcode.background-location-updates`す。
+iOSでは、停止されているアプリや実行されなくなったアプリへの場所イベントの配信がサポートされます。 プレースモニター拡張機能のバックグラウンドで場所の更新を受け取るには、でアプリの場所の更新機能を設定し `Xcode.background-location-updates`ます。
 
 ![プレースモニターの使用](/help/assets/using-the-places-monitor_1.png)
 
 ## plistキーの設定
 
-アプリのファイルには、次のキーを含める必要があ `Info.plist` ります。
+次のキーをアプリの `Info.plist` ファイルに含める必要があります。
 
-* `NSLocationWhenInUseUsageDescription`  — アプリがフォアグラウンドでの実行中にユーザーの場所情報へのアクセスを要求する理由を説明するテキストが必要です。
-* `NSLocationAlwaysAndWhenInUseUsageDescription`  — アプリがユーザーの場所情報へのアクセスを常に要求する理由を説明するテキストが必要です。
+* `NSLocationWhenInUseUsageDescription`  — テキストは、前景での実行中にアプリがユーザーの位置情報へのアクセスを要求する理由を説明する必要があります。
+* `NSLocationAlwaysAndWhenInUseUsageDescription`  — このテキストには、アプリがユーザーの位置情報へのアクセスを常に要求している理由を説明する必要があります。
 
 >[!TIP]
 >
