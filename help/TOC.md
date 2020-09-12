@@ -1,18 +1,18 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: Places サービス
+user-guide-title: Placesサービスガイド
 user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 14%
+source-wordcount: '298'
+ht-degree: 13%
 
 ---
 
 
-# Places サービス {#using}
+# Places Service {#using}
 
 + [Placesサービスの概要](home.md)
 + [リリースノート](release-notes.md)
@@ -66,13 +66,13 @@ ht-degree: 14%
       + [Places Monitor APIリファレンス](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [独自の監視ソリューションでPlaces Serviceを使用](using-your-own-monitor.md)
 + [Places Serviceを地域の監視なしで使用](use-places-without-active-monitoring.md)
-+ Places ServiceをExperience Platform Launchワークフローの一部として使用 {#use-places-launch-workflow}
-   + [Places ServiceをExperience Platform Launchワークフローの一部として使用](use-places-launch-workflow/places-launch-workflow.md)
++ Experience Platform Launchワークフローの一部としてPlaces Serviceを使用 {#use-places-launch-workflow}
+   + [Experience Platform Launchワークフローの一部としてPlaces Serviceを使用](use-places-launch-workflow/places-launch-workflow.md)
    + [データ要素の定義](use-places-launch-workflow/define-data-elements.md)
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
-+ 他のアドビソリューションとPlaces Serviceを使用する {#use-places-with-other-solutions}
++ 他のAdobeソリューションでPlaces Serviceを使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [Adobe AnalyticsでのPlacesサービスの使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
+      + [Adobe Analyticsでプレイスサービスを使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POIの入口データと出口データをAnalyticsに送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [Analytics追加リクエストの場所のコンテキスト](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics Workspaceの場所データに関するレポート](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -81,11 +81,11 @@ ht-degree: 14%
       + [プッシュ通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [アプリ内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
-      + [Adobe Campaign標準でPlacesサービスを使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
+      + [Adobe Campaign Standardでプレイスサービスを使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [プッシュ通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [アプリ内メッセージ](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [Places ServiceとAdobeターゲットの使用](use-places-with-other-solutions/places-target/places-target.md)
+      + [Adobe Targetでプレイスサービスを使用](use-places-with-other-solutions/places-target/places-target.md)
 + テストと検証 {#places-testing-validation}
    + [Placesサービスのテストと検証](places-testing-validation/test-validate-places.md)
 + [よくある質問](places-faqs.md)
