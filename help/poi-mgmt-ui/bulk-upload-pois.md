@@ -2,9 +2,9 @@
 title: POIの一括アップロード
 description: POIを一括アップロードする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 ![一括インポート画面](/help/assets/Bulk-import.png)
 
-一括インポートおよびバルク編集のプロセスを示すビデオを以下に示します。
+一括インポートおよび一括編集のプロセスを示す次のビデオを参照してください。
 
->[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[サービスの一括インポートとPOIの編集](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python APIスクリプト
 
@@ -64,7 +66,7 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 * 色。Places Service UIマップのPOIの位置を表すピンの色として使用されます。
    * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56」です。b、#3DC8DE、および&quot;&quot;を追加します。
-   * 値を空白のままにすると、Places Service UIではデフォルトの色として青が使用されます。
+   * 値を空白のままにした場合、Places Service UIではデフォルトの色として青が使用されます。
 
       値は、青(#3E76D0)、紫(#AA99E8)、フスキア(#DC2ABA)、オレンジ(#FC685B)、淡いオレンジ(#FC962E)、黄(#F6C436)、明るい(#BECE5D)、緑(#61B56B)、ライトブルー(#3DC8DE)です。
 
@@ -85,7 +87,7 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 1. Gitリポジトリからローカルディレクトリ [にファイルをダウンロードし](https://github.com/adobe/places-scripts) ます。
 1. テキストエディターで、 `config.py` ファイルを開き、次のタスクを入力します。
 
-   a. 次の変数値を文字列として編集します。
+   a.次の変数値を文字列として編集します。
 
    * `csv_file_path`
 
@@ -93,7 +95,7 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
    * `access_code`
 
-      これは、Adobe IMSへの呼び出しで取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      これは、AdobeIMSへの呼び出しから取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `org_id`
 
@@ -101,8 +103,8 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
    * `api_key`
 
-      これは、Adobe I/O Places統合から取得したPlaces REST APIキーです。 APIキーの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
-   b. 変更を保存します。
+      これは、AdobeI/O Places統合から取得したPlaces REST APIキーです。 APIキーの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+   b.変更を保存します。
 
 1. ターミナルウィンドウで、ディレクトリに移動し `…/places-scripts/import/` ます。
 1. と入力 `python ./places_import.py` し、 **[!UICONTROL enter]** (**[!UICONTROL return]**)キーを押します。
