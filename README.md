@@ -1,25 +1,32 @@
 ---
-source-git-commit: acbe79b1a66cb8a439f3cb223d3006128aaca457
+source-git-commit: ca711e5f9d05ff01ab87a39377b09fad258fbb90
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-# 記事のコントリビューション
+# 記事の投稿
+
+| EXL-PR | EXL | プレビュー | アクティブ化 | 公開日 | ヘルプ |
+|--- |--- |--- |--- |--- |--- |
+| [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/lastBuild/) | [![ビルドの状態](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/lastBuild) | [プレビューURL](https://experienceleague.corp.adobe.com/docs/places/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [ライブURL](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [オーサリングガイド](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 アドビのコミュニティや、ドキュメントチーム以外のアドビ従業員からのコンテンツのコントリビューションを歓迎します。
 
 ## アドビオープンソース行動規範
 
-このプロジェクトでは、[Adobe Open Source Code of Actions](code-of-conduct.md)または. NET Foundation [Codeの実施を採用してい](https://dotnetfoundation.org/code-of-conduct)ます。詳しくは[、貢献度の高い](contributing.md)記事を参照してください。
+このプロジェクトでは、[Adobe Open Source Code of Actions](code-of-conduct.md) または. NET Foundation [Code の実施を採用してい](https://dotnetfoundation.org/code-of-conduct)ます。詳しくは、[投稿](contributing.md)の記事を参照してください。
 
-## Adobeコンテンツへの貢献事項について
+## アドビのコンテンツへの投稿について
 
-["Adobe Docs寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
 
-どのような貢献度が貢献しているか、およびどのように貢献したいかによって異なります。
+投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
 
 ### マイナーな変更またはリクエスト
 
-リクエストを送信するには、記事内の&#x200B;**問題のログ**&#x200B;リンクをクリックして、GitHub で問題を開きます。タイトルと説明を指定し、「**Submit new issue**」をクリックします。
+リクエストを送信するには、記事内の「**Log an issue**」リンクをクリックして、GitHub で問題を開きます。タイトルと説明を指定し、「**Submit new issue**」をクリックします。
 
 マイナーアップデートをリクエストするには、記事の「**Edit this page**」リンクをクリックして、GitHub でソース記事を開きます。GitHub の UI を使用して、更新をおこないます。詳しくは、全般的な事項について説明した[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
 
@@ -35,22 +42,22 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### アドビの従業員による大きな変更
 
-[!UICONTROL Adobe Experience Cloud] ソリューションの製品チームのテクニカルライター、プログラムマネージャーまたは開発者が、業務として技術記事の執筆やコントリビューションをする場合は、`https://git.corp.adobe.com/AdobeDocs` にあるプライベートリポジトリを使用する必要があります。『 [Internal Collaboration Guide』を参照してください](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
+[!UICONTROL Adobe Experience Cloud] ソリューションの製品チームのテクニカルライター、プログラムマネージャーまたは開発者が、業務として技術記事の執筆やコントリビューションをする場合は、`https://git.corp.adobe.com/AdobeDocs` にあるプライベートリポジトリを使用する必要があります。『[内部共同作業ガイド](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)』を参照してください。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールとセットアップ
 
-コミュニティ寄稿者は、基本的な編集にGitHub UIを使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
+コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
 
-詳しくは、[Adobe Docs寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
 
-## markdownを使用してトピックをフォーマットする方法
+## markdown を使用してトピックをフォーマットする方法
 
 このリポジトリのすべての記事は GitHub フレーズダウンダウンを使用します。マークダウンについて詳しくない場合は、以下を参照してください。
 
-* [マーケティングの基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [印刷可能なマーチャンダイジングシート](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## ラベル
 
