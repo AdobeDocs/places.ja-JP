@@ -103,7 +103,7 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
    * `api_key`
 
-      これは、AdobeI/O Places統合から取得したPlaces REST APIキーです。 APIキーの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      これは、Places REST APIキーで、Adobe I/Oプレイス統合から取得します。 APIキーの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
    b.変更を保存します。
 
 1. ターミナルウィンドウで、ディレクトリに移動し `…/places-scripts/import/` ます。
