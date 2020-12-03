@@ -1,25 +1,28 @@
 ---
 title: Places APIリファレンス
-description: 場所のAPIリファレンスに関する情報です。
+description: PlacesのAPIリファレンスに関する情報です。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 32%
 
 ---
 
 
 # Places APIリファレンス {#places-api-reference}
 
-Places拡張のAPIリファレンスに関する情報を次に示します。
+Places拡張機能のAPIリファレンスに関する情報を次に示します。
 
 ## 地域イベントの処理
 
-デバイスがアプリの事前定義された場所サービス領域の境界を越えると、領域とイベントタイプがSDKに渡され、処理されます。
+デバイスがアプリの事前定義済みの場所サービスの領域の境界の1つを越えると、領域とイベントタイプがSDKに渡され、処理されます。
 
 ### ProcessGeofence(Android)
 
-指定したの領 `Geofence` 域イベントを処理しま `transitionType`す。
+指定されたの領域 `Geofence` イベントを処理し `transitionType`ます。
 
-fromを渡 `transitionType` します `GeofencingEvent.getGeofenceTransition()`。 現在、およ `Geofence.GEOFENCE_TRANSITION_ENTER` びはサ `Geofence.GEOFENCE_TRANSITION_EXIT` ポートされています。
+からを渡 `transitionType` し `GeofencingEvent.getGeofenceTransition()`ます。 現在、 `Geofence.GEOFENCE_TRANSITION_ENTER` およびがサポートさ `Geofence.GEOFENCE_TRANSITION_EXIT` れています。
 
 **構文**
 
@@ -31,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **例**
 
-Androidジオフェンスイベントを受け取るた `IntentService` めに登録されているユーザーで、このメソッドを呼び出します。
+Android Geofenceイベントの受信用に登録さ `IntentService` れているユーザーで、このメソッドを呼び出します。
 
 このメソッドのコードサンプルを次に示します。
 
@@ -57,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent(iOS)
 
-このメソッドは、ユーザーが特定の地域に入ったか出 `CLLocationManager` たかを知らせるdelegateで呼び出す必要があります。
+このメソッドは、 `CLLocationManager` delegateで呼び出す必要があります。このメソッドは、ユーザーが特定の領域に入ったか出たかを知らせます。
 
 **構文**
 
@@ -84,7 +87,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessGeofencingEvent(Android)
 
-すべてを `Geofences` 同時に `GeofencingEvent` 処理します。
+すべて `Geofences` を同時に処理 `GeofencingEvent` します。
 
 **構文**
 
@@ -94,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **例**
 
-Androidジオフェンスイベントを受け取るた `IntentService` めに登録されているユーザーでこのメソッドを呼び出します
+Android Geofenceイベントの受信用に登録さ `IntentService` れているユーザーでこのメソッドを呼び出す
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -113,9 +116,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## 近くの目標地点の取得
 
-コールバック内の近くのPOIの順序付きリストを返します。 このメソッドのオーバーロードされたバージョンは、結果のネットワーク呼び出しで何か問題が発生した場合にエラーコードを返します。
+コールバックで、隣接するPOIの順序付けられたリストを返します。 このメソッドのオーバーロードされたバージョンは、結果のネットワーク呼び出しで何か問題が発生した場合にエラーコードを返します。
 
-### GetNicherePointsOfInterest (Android)
+### GetNichlorePointsOfInterest (Android)
 
 このメソッドの構文を次に示します。
 
@@ -162,7 +165,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 );
 ```
 
-### GetNicheredPointsOfInterest (iOS)
+### GetNichlorePointsOfInterest (iOS)
 
 **構文**
 
@@ -200,9 +203,9 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 ];
 ```
 
-## 現在のデバイス目標地点の取得
+## 現在のデバイスの目標地点の取得
 
-デバイスが現在インしていることがわかっているPOIのリストを要求し、コールバックで返します。
+デバイスが現在存在することがわかっているPOIのリストを要求し、コールバックで返します。
 
 ### GetCurrentPointsOfInterest (Android)
 
@@ -250,13 +253,13 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 ```
 
 
-## デバイスの場所を取得します
+## デバイスの場所を取得する
 
-以前に知られていたデバイスの場所をPlaces拡張で要求します。
+Places拡張機能によって、既知のデバイスの場所を要求します。
 
 >[!TIP]
 >
->Places拡張では、への呼び出しによって提供された場所についてのみ認識されま `GetNearbyPointsOfInterest`す。
+>Places拡張機能では、への呼び出しによって提供された場所についてのみ認識され `GetNearbyPointsOfInterest`ます。
 
 
 ### GetLastKnownLocation(Android)
@@ -304,12 +307,12 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 }];
 ```
 
-## クライアント側データの消去
+## クライアント側のデータの消去
 
 
-### 消去(Android)
+### クリア(Android)
 
-共有状態、ローカルストレージ、およびメモリ内のPlaces拡張のクライアント側データをクリアします。
+共有状態、ローカルストレージ、およびメモリ内のPlaces拡張のクライアント側データを消去します。
 
 **構文**
 
@@ -327,9 +330,9 @@ public static void clear();
 Places.clear();
 ```
 
-### clear(iOS)
+### クリア(iOS)
 
-Places拡張のクライアント側のデータを共有状態、ローカルストレージ、およびメモリ内でクリアします。
+共有状態、ローカルストレージ、およびメモリ内のPlaces拡張のクライアント側データを消去します。
 
 **構文**
 
@@ -353,9 +356,9 @@ Places拡張のクライアント側のデータを共有状態、ローカル�
 
 *Places v1.4.0以降で利用可能*
 
-場所拡張での認証状態を設定します。
+Places拡張で認証状態を設定します。
 
-提供された状態は「場所」共有状態に保存され、参照用にのみ使用されます。
+表示されるステータスは、[場所]共有状態に保存され、参照用にのみ表示されます。
 このメソッドを呼び出しても、このデバイスの実際の場所の認証状態には影響しません。
 
 **構文**
@@ -376,14 +379,14 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 ### setAuthorizationStatus(iOS)
 
-*ACPPlaces v1.3.0以降で使用可能*
+*ACPPlaces v1.3.0以降で利用可能*
 
-場所拡張での認証状態を設定します。
+Places拡張で認証状態を設定します。
 
-提供された状態は「場所」共有状態に保存され、参照用にのみ使用されます。
+表示されるステータスは、[場所]共有状態に保存され、参照用にのみ表示されます。
 このメソッドを呼び出しても、このデバイスの実際の場所の認証状態には影響しません。
 
-デバイスの認証状態が変わると、その `locationManager:didChangeAuthorizationStatus:` メソッドが呼び `CLLocationManagerDelegate` 出されます。 このメソッド内から、新しい値をACPPlaces `CLAuthorizationStatus` APIに渡す必要があ `setAuthorizationStatus:` ります。
+デバイスの認証状態が変更されると、 `locationManager:didChangeAuthorizationStatus:` メソッドが呼び出 `CLLocationManagerDelegate` されます。 このメソッド内から、新しい `CLAuthorizationStatus` 値をACPPlaces `setAuthorizationStatus:` APIに渡す必要があります。
 
 **構文**
 
