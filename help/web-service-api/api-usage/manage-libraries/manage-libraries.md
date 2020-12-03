@@ -1,8 +1,11 @@
 ---
 title: ライブラリの管理
-description: PlacesサービスREST APIライブラリの管理を参照してください。
+description: Places Service REST APIライブラリの管理を参照してください。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 5%
 
 ---
 
