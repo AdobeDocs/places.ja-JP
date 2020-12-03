@@ -1,89 +1,92 @@
 ---
-title: Analyticsリクエストへの場所のコンテキストの追加
-description: ここでは、Analyticsリクエストに場所のコンテキストを追加する方法について説明します。
+title: Analytics追加リクエストの場所のコンテキスト
+description: この節では、Analyticsリクエストに場所コンテキストを追加する方法について説明します。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
 
-# Analyticsリクエストへの場所のコンテキストの追加 {#run-reports-aa-locserv-data}
+# Analytics追加リクエストの場所のコンテキスト {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >
->このドキュメントでは、アプリケーションにPlaces Serviceが実装されていることを前提としています。 Placesサービスの実装について詳しくは、「Places拡張」を参 [照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>このドキュメントは、アプリケーションにPlaces Serviceが実装されていることを前提としています。 Places Serviceの導入について詳しくは、「Places拡張」を参照して [ください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-Placesサービスが入口イベントと出口イベントを送信した後、Experience Platform Launchでルールを作成し、Places ServiceデータをすべてのAdobe Analyticsイベントに添付できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
+Places Serviceが入口イベントと出口イベントを送信した後、Experience Platform Launchでルールを作成し、Places ServiceデータをすべてのAdobe Analyticsに添付できます。 このタイプのルールを作成するには、「起動」でプロパティを選択し、次の手順を実行します。
 
-## 1.ルールの作成
+## 1.ルールを作成する
 
-1. タブで、をク **[!UICONTROL Rules]**リックしま**[!UICONTROL Create New Rule]**&#x200B;す。
+1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
 
    次の情報に留意してください。
-   * このプロパティに対する既存のルールがない場合、ボ **[!UICONTROL Create New Rule]**タンは画面の中央に表示されます。
-   * プロパティにルールが含まれ **[!UICONTROL Create New Rule]**ている場合、ボタンは画面の右上に表示されます。
+   * このプロパティに対して既存のルールがない場合、 **[!UICONTROL Create New Rule]** ボタンは画面の中央に表示されます。
+   * プロパティにルールが含まれている場合、この **[!UICONTROL Create New Rule]** ボタンは画面の右上に表示されます。
 
-## 2.イベントを選択します。
+## 2.イベントの選択
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、Ruleという名前が付けられていま **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**す。
+   この例では、ルールに名前が付けられてい **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**&#x200B;ます。
 
-1. セクションの下 **[!UICONTROL Events]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
+1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Extension]** リストで、を選択し **[!UICONTROL Mobile Core]**&#x200B;ます。
 
-1. ドロップダウ **[!UICONTROL Event Type]**ンリストから、を選択しま**[!UICONTROL Track Action]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Event Type]** リストで、を選択し **[!UICONTROL Track Action]**&#x200B;ます。
 
-これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての呼び出しに基づいてい `TrackAction` ます。 イベントを設定したら、をクリックしま **[!UICONTROL Keep Changes]**す。
+次に、このルールに含めるトリガーを決定します。 この例では、トリガーはすべての `TrackAction` 呼び出しに基づいています。 イベントを設定したら、をクリックし **[!UICONTROL Keep Changes]**&#x200B;ます。
 
-![「イベントの作成」](/help/assets/ad-setEvent_use-analytics-data.png)
+![イベントの作成](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
-## 3.条件の追加
+## 3.追加条件
 
 >[!IMPORTANT]
 >
->ルールに条件を追加するには、次の手順を実行します。 それ以外の場合は、以下の「アクシ *ョンの定義* 」の節に進みます。
+>ルールに条件を追加するには、次の手順を実行します。 それ以外の場合は、次の「アクションの *定義* 」の節に進みます。
 
-この例では、AT&amp;T顧客に対してのみルールをトリガーする条件を作成します。
+この例では、AT&amp;Tのお客様に対してのみルールをトリガーする条件を作成します。
 
-1. セクションの下 **[!UICONTROL Conditions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Extension]** リストで、を選択し **[!UICONTROL Mobile Core]**&#x200B;ます。
 
-1. ドロップダウ **[!UICONTROL Condition Type]**ンリストから、を選択しま**[!UICONTROL Carrier Name]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Condition Type]** リストで、を選択し **[!UICONTROL Carrier Name]**&#x200B;ます。
 
-1. 右側のウィンドウで、チェックボックスを選択 **[!UICONTROL AT&T]**します。
+1. 右側のウィンドウで、チェックボックスを選択し **[!UICONTROL AT&T]** ます。
 
-1. **[!UICONTROL Keep Changes]**をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
 ![&quot;条件の作成&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.アクションの定義
 
-1. セクションの下 **[!UICONTROL Actions]**のをクリックしま**[!UICONTROL Add]**&#x200B;す。
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 
-1. ドロップダウ **[!UICONTROL Extension]**ンリストから、を選択しま**[!UICONTROL Mobile Core]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Extension]** リストで、を選択し **[!UICONTROL Mobile Core]**&#x200B;ます。
 
-1. ドロップダウ **[!UICONTROL Action Type]**ンリストから、を選択しま**[!UICONTROL Attach Data]**&#x200B;す。
+1. ドロップダウン **[!UICONTROL Action Type]** リストで、を選択し **[!UICONTROL Attach Data]**&#x200B;ます。
 
-1. 右側のウィンドウのフィールド **[!UICONTROL JSON Payload]**に、このイベントに追加するデータを入力します。
+1. 右側のウィンドウのフィールドで、このイベントに追加するデータを **[!UICONTROL JSON Payload]** 入力します。
 
-1. **[!UICONTROL Keep Changes]**をクリックします。
+1. 「**[!UICONTROL Keep Changes]**」をクリックします。
 
-右側のウィンドウで、このイベントをリッスンする拡張がイベントを受け取る前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。 この例では、Analytics拡張で処理される前に、このイベントに一部のコンテキストデータが追加されます。 追加されたコンテキストデータは、送信Analyticsヒットに置かれます。
+右側のウィンドウで、このイベントをリッスンする拡張がイベントを聞く前に、SDKイベントにデータを追加するフリーフォームJSONペイロードを追加できます。 この例では、Analytics拡張機能による処理の前に、一部のコンテキストデータがこのイベントに追加されます。 追加されたコンテキストデータが、送信Analyticsヒットになります。
 
-次の例では、との値 `poi.city` がAnalyticsイ `poi.name` ベントのコンテキストデータに追加されます。 新しいキーの値は、このイベントが処理されるときにSDKによって動的に決定されます。
+次の例では、 `poi.city``poi.name` との値がAnalyticsイベントのコンテキストデータに追加されます。 新しいキーの値は、このイベントが処理するときに、SDKによって動的に決定されます。
 
 ![「アクションの作成」](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.ルールを保存し、プロパティを再構築します
 
-設定が完了したら、ルールが次の画像のようになっていることを確認します。
+設定が完了したら、ルールが次の図のように表示されることを確認します。
 
 ![「ルールは完了です。」](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
-1. クリック **[!UICONTROL Save]**
+1. **[!UICONTROL Save]** をクリックします。
 
-1. 起動プロパティを再構築し、正しい環境に展開します。
+1. Launchプロパティを再構築し、正しい環境に展開します。
