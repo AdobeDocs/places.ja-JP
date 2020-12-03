@@ -3,13 +3,16 @@ title: POIの更新
 description: Places REST APIを使用してPOIを更新します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 8%
 
 ---
 
 
 # POIの更新 {#update-a-poi}
 
-POIを更新できるPUTメソッド。
+POIを更新できるPUT方法。
 
 ## リクエスト
 
@@ -45,4 +48,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->、、お `<POIID>`よびを実 `<API KEY>`際の `<TOKEN>`値に置き `<ORGID>``<SINGLEPOIDATA>` 換えます。
+>、 `<POIID>`、 `<API KEY>`、 `<TOKEN>`およびを実際の値 `<ORGID>``<SINGLEPOIDATA>` に置き換えます。
