@@ -3,13 +3,16 @@ title: 複数のPOIの更新
 description: バッチAPIを使用して複数のPOIを更新します。
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 7%
 
 ---
 
 
 # 複数のPOIの更新 {#update-multiple-pois}
 
-複数のPOIを更新できるPOSTメソッド。
+複数のPOIを更新できるPOST方法。
 
 ## リクエスト
 
@@ -45,7 +48,7 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchUpdate' 
 
 >[!IMPORTANT]
 >
->、、お `<API KEY>`よびを実 `<TOKEN>`数値で `<ORGID>``<PATHTOBATCHUPDATEJSONFILE>` 置き換えます。
+>、 `<API KEY>`、 `<TOKEN>`およびを実数値 `<ORGID>``<PATHTOBATCHUPDATEJSONFILE>` に置き換えます。
 
 ## サンプルJSONファイル
 
