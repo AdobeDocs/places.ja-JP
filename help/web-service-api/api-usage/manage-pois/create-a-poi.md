@@ -1,15 +1,18 @@
 ---
-title: POI を作成
+title: POIの作成
 description: Places REST APIを使用してPOIを作成します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# POI を作成 {#create-a-poi}
+# POIの作成 {#create-a-poi}
 
-POIを作成できるPOSTメソッドです。
+POIを作成できるPOST方法。
 
 ## リクエスト
 
@@ -94,4 +97,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->、、、「、」 `<API KEY>`を実 `<TOKEN>`際の値に置き換えるこ `<SINGLEPOIDATA>` とを忘れないでください。
+>「,」 `<API KEY>`、「,」、およびを実際の値に置き換えるこ `<TOKEN>``<SINGLEPOIDATA>` とを忘れないでください。
