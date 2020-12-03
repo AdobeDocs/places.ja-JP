@@ -2,6 +2,9 @@
 title: カスタム配置オブジェクト
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '28'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +17,7 @@ Places APIで使用されるカスタムネイティブクラスを次に示し�
 
 ### ACPPlacesPoi
 
-以下に定義を示します。
+次に定義を示します。
 
 ```text
 /**
