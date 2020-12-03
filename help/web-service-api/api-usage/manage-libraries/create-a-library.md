@@ -3,13 +3,16 @@ title: ライブラリの作成
 description: Places REST APIを使用してライブラリを作成します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 20%
 
 ---
 
 
 # ライブラリの作成 {#create-a-library}
 
-ライブラリを作成できるPOSTメソッドです。
+ライブラリを作成できるPOST方法。
 
 ## リクエスト
 
@@ -45,5 +48,5 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->、などの変数を `<API KEY>`実際の `<TOKEN>`値に `<ORGID>` 置き換えます。
+>、 `<API KEY>`、などの変数を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
 
