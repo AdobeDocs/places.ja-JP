@@ -1,19 +1,22 @@
 ---
-title: 独自のモニタを使用する
+title: 独自のモニタの使用
 description: また、Places Service Extension APIを使用して、監視サービスを使用し、Places Serviceと統合することもできます。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
-# 独自のモニタを使用する {#using-your-monitor}
+# 独自のモニタの使用 {#using-your-monitor}
 
-また、監視サービスを使用し、Places拡張APIを使用してPlaces Serviceと統合することもできます。
+また、Places拡張APIを使用して、監視サービスを使用し、Places Serviceと統合することもできます。
 
 ## ジオフェンスの登録
 
-監視サービスを使用する場合は、次の手順を実行して、現在の場所周辺のPOIのジオフェンスを登録します。
+監視サービスを使用する場合は、次の手順を実行して、現在の場所にあるPOIのジオフェンスを登録します。
 
 ### iOS
 
@@ -21,7 +24,7 @@ iOSで、次の手順を実行します。
 
 1. iOSのコアロケーションサービスから取得した場所の更新をPlaces拡張に渡します。
 
-1. Places拡張APIを `getNearbyPointsOfInterest` 使用して、現在の場所の周囲にあるオブジ `ACPPlacesPoi` ェクトの配列を取得します。
+1. Places拡張APIを使用して、現在の場所周辺の `getNearbyPointsOfInterest``ACPPlacesPoi` オブジェクトの配列を取得します。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -31,7 +34,7 @@ iOSで、次の手順を実行します。
    }
    ```
 
-1. 取得したオブジェクトから情報を抽 `ACPPlacesPOI` 出し、それらのPOIの監視を開始します。
+1. 取得したオブジェクトから情報を抽出し、それらのPOIを監視する `ACPPlacesPOI` 開始。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -55,9 +58,9 @@ iOSで、次の手順を実行します。
 
 ### Android
 
-1. Google playサービスまたはAndroidロケーションサービスから取得した場所の更新をPlaces Extensionに渡します。
+1. Google PlayサービスまたはAndroidロケーションサービスから取得した場所の更新をPlaces Extensionに渡します。
 
-1. Places Extension APIを使 `getNearbyPointsOfInterest` 用して、現在の場所周辺のオブジ `PlacesPoi` ェクトのリストを取得します。
+1. Places Extension APIを使用して、現在の場所周辺の `getNearbyPointsOfInterest``PlacesPoi` オブジェクトのリストを取得します。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -75,7 +78,7 @@ iOSで、次の手順を実行します。
    };
    ```
 
-1. 取得したオブジェクトからデータを抽 `PlacesPOI` 出し、POIの監視を開始します。
+1. 取得したオブジェクトからデータを抽出し、それらのPOIを監視する `PlacesPOI` 開始。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -100,17 +103,17 @@ iOSで、次の手順を実行します。
    ```
 
 
-この `getNearbyPointsOfInterest` APIを呼び出すと、現在の場所の周りの場所を取得するネットワーク呼び出しが発生します。
+この `getNearbyPointsOfInterest` APIを呼び出すと、現在の場所を取得するネットワーク呼び出しが発生します。
 
 >[!IMPORTANT]
 >
->APIは、個別に呼び出すか、ユーザーの場所が大幅に変更された場合にのみ呼び出す必要があります。
+>APIは、個別に、またはユーザーの場所が大幅に変更された場合にのみ呼び出す必要があります。
 
 ## ジオフェンスイベントの投稿
 
 ### iOS
 
-iOSでは、Places APIをデリゲ `processGeofenceEvent` ートで呼び出し `CLLocationManager` ます。 このAPIは、ユーザーが特定の地域に入ったか出たかを通知します。
+iOSでは、 `processGeofenceEvent` Places APIを `CLLocationManager` delegateで呼び出します。 このAPIは、ユーザーが特定の領域に入ったか出たかを通知します。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -124,7 +127,7 @@ iOSでは、Places APIをデリゲ `processGeofenceEvent` ートで呼び出し 
 
 ### Android
 
-Androidで、Geofenceブロードキャスト受信 `processGeofence` 機の適切なトランジションイベントと共にメソッドを呼び出します。 入口/出口の重複を防ぐために、受け取ったジオフェンスのリストをキュレーションする必要がある場合があります。
+Androidで、Geofence放送受信機で適切なトランジションイベントと共に `processGeofence` メソッドを呼び出します。 重複の入口/出口を防ぐために、受け取ったジオフェンスのリストをキュレーションする必要がある場合があります。
 
 ```java
 void onGeofenceReceived(final Intent intent) {
