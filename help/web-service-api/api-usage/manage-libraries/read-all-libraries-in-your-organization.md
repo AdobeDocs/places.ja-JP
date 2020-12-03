@@ -3,6 +3,9 @@ title: 組織内のすべてのライブラリを読み取る
 description: Places REST APIを使用して、組織内のすべてのライブラリを読み取ります。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 5%
 
 ---
 
@@ -39,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-ap
 
 >[!IMPORTANT]
 >
->やなどの変数を実際 `<API KEY>`の値 `<TOKEN>,` に置 `<ORGID>` き換えます。
+>やなどの変数は、実際の値に置き換え `<API KEY>`てく `<TOKEN>,``<ORGID>` ださい。
