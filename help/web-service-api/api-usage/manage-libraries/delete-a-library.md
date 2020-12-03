@@ -3,13 +3,16 @@ title: ライブラリの削除
 description: Places REST APIを使用してライブラリを削除します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
 
 # ライブラリの削除 {#delete-a-library}
 
-ライブラリを削除できるDELETEメソッド。
+ライブラリを削除できるDELETE方法。
 
 ## リクエスト
 
@@ -43,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->、、などの変数を `<lIBRARYID>`実際の値 `<API KEY>`に `<TOKEN>`置き換 `<ORGID>`えてください。
+>、、などの変数 `<lIBRARYID>`を実際の値 `<API KEY>``<TOKEN>``<ORGID>`に置き換えます。
 
