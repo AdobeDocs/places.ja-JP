@@ -3,13 +3,16 @@ title: ライブラリのランクを取得する
 description: Places REST APIを使用してライブラリのランクを取得します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 7%
 
 ---
 
 
 # ライブラリのランクを取得する {#get-library-rank}
 
-ライブラリのランク付けを可能にするGETメソッド。
+ライブラリをランク付けできるGETメソッド。
 
 ## リクエスト
 
@@ -39,5 +42,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->、などの変数を `<API KEY>`実際の `<TOKEN>`値に `<ORGID>` 置き換えます。
+>、 `<API KEY>`、などの変数を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
 
