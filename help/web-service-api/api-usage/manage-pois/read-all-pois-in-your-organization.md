@@ -1,13 +1,16 @@
 ---
-title: 組織内のすべてのPOIを読む
+title: 組織内のすべてのPOIを読み取る
 description: Places REST APIを使用して、組織内のすべてのPOIを読み取ります。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 5%
 
 ---
 
 
-# 組織内のすべてのPOIを読む {#read-all-pois-org}
+# 組織内のすべてのPOIを読み取る {#read-all-pois-org}
 
 組織内のすべてのPOIを返すGETメソッド。
 
@@ -39,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key
 
 >[!IMPORTANT]
 >
->とを `<API KEY>`実際の `<TOKEN>`値に置 `<ORGID>` き換えます。
+>と `<API KEY>`を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
