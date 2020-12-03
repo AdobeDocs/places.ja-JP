@@ -3,13 +3,16 @@ title: 複数のPOIの作成
 description: バッチAPIを使用して複数のPOIを作成します。
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 7%
 
 ---
 
 
 # 複数のPOIの作成 {#create-multiple-pois}
 
-複数のPOIを作成できるPOSTメソッド。
+複数のPOIを作成できるPOST方法。
 
 ## リクエスト
 
@@ -45,7 +48,7 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate' 
 
 >[!IMPORTANT]
 >
->、、お `<API KEY>`よびを実 `<TOKEN>`数値で `<ORGID>``<PATHTOBATCHCREATEJSONFILE>` 置き換えます。
+>、 `<API KEY>`、 `<TOKEN>`およびを実数値 `<ORGID>``<PATHTOBATCHCREATEJSONFILE>` に置き換えます。
 
 ## サンプルJSONファイル
 
