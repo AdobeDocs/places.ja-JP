@@ -14,7 +14,7 @@ ht-degree: 6%
 
 プレースモニタ拡張機能を使用するには、次のタスクを実行します。
 
-## Experience Platform LaunchでのPlaces Monitor拡張のインストール
+## Experience Platform LaunchでのPlaces Monitor Extensionのインストール
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. タブで、 **[!UICONTROL Catalog]** 拡張機能を探し、「インストー **[!UICONTROL Places Monitor]** ル ****」をクリックします。
@@ -31,8 +31,7 @@ Places Monitor拡張機能の設定タスクはありません。
 
 AndroidまたはiOSアプリケーションにプレースモニター拡張機能を追加する手順は、以下のとおりです。
 
-Places Monitor拡張機能のその他のプラットフォームサポートには、次のものがあります。
-**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+Places Monitor拡張機能のその他のプラットフォームサポートには、次のものがあります。**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
 
 **[ネイティブ・プレース・モニターに反応](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
 
