@@ -1,42 +1,45 @@
 ---
-title: アクティブな地域の監視なしでPlacesサービスを使用
-description: このセクションでは、アクティブな地域の監視を行わずにPlaces Serviceを使用する方法について説明します。
+title: Places Serviceを地域の監視なしで使用
+description: このセクションでは、アクティブな地域監視を行わずにPlaces Serviceを使用する方法について説明します。
 translation-type: tm+mt
 source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 1%
 
 ---
 
 
-# アクティブな地域の監視なしでPlacesサービスを使用 {#use-places-without-active-monitoring}
+# Places Serviceを地域の監視なしで使用 {#use-places-without-active-monitoring}
 
-アプリケーションの使用例では、アクティブな領域の監視が必要でない場合があります。 Places Serviceは、引き続き、ユーザーの場所データを他のExperience Platform製品と統合するために使用できます。
+アプリケーションの使用例では、アクティブな地域の監視が必要でない場合があります。 引き続きPlaces Serviceを使用して、ユーザーの場所データを他のExperience Platform製品と統合できます。
 
 ## 前提条件
 
-開発者は、デバイスプラットフォームのオペレーティングシステムが提供するAPIを使用してターゲットの場所を収集します。
+開発者は、ターゲットプラットフォームのオペレーティングシステムが提供するAPIを使用してデバイスの場所を収集します。
 
 >[!TIP]
 >
->アプリの使用例でアクティブな地域の監視が必要な場合は、「場所モニター拡張機能の使 [用」を参照してください](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+>アプリの使用例でアクティブな地域の監視が必要な場合は、「場所モニター拡張機能の [使用](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)」を参照してください。
 
-アクティブな地域監視なしでPlaces Serviceを使用するには：
+アクティブな地域の監視を行わずにPlaces Serviceを使用するには：
 
-## 1.ユーザーの場所の収集
+## 1.ユーザーの場所を収集する
 
-アプリの開発者は、 `CoreLocation.framework` (iOS)またはGoogle Play Services(Android)が提供するAPIを使用して、デバイスの現在の場所を `Location` 収集する必要があります。
+アプリの開発者は、(iOS)またはGoogle Play Services(Android)が提供するAPIを使用して `CoreLocation.framework``Location` 、デバイスの現在の場所を収集する必要があります。
 
 詳しくは、次のドキュメントを参照してください。
 
 - [CoreLocation](https://developer.apple.com/documentation/corelocation) (Apple)
 - [Google Play Services](https://developer.android.com/training/location) (Google)のロケーションAPI
 
-## 2.SDKから近くの目標地点を取得する
+## 2. SDKから近くの目標地点を取得する
 
-ユーザーの場所を取得した後、SDKに渡して、近くのPOIのリストを取得できます。
+ユーザーの場所を取得したら、それをSDKに渡して、近くのPOIのリストを取得できます。
 
 ### Android
 
-以下に、Androidでの実装例を示します [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5)。
+以下に、Androidでの実装例を示します。この実装では、次のものを使用し [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5)ます。
 
 ```java
 public class LocationBroadcastReceiver extends BroadcastReceiver {
@@ -82,7 +85,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-iOSの実装例を示します。 コードは、次の内のメソッドの実 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 装を示していま [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)す。
+iOSでの実装例を示します。 コードは、次の [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc)[`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -98,7 +101,7 @@ iOSの実装例を示します。 コードは、次の内のメソッドの実 
 
 ### Swift
 
-iOSの実装例を示します。 コードは、次の内のメソッドの実 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 装を示していま [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)す。
+iOSでの実装例を示します。 コードは、次の [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager)[`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -112,31 +115,31 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.場所データをAnalyticsリクエストに添付
+## 3. Analyticsリクエストに場所データを添付
 
-Places SDKは、 `getNearbyPointsOfInterest` APIを呼び出すことで、デバイスに関連するすべてのPOIデータを、Launchのデータ要素を介して使用できるようにします。 「データの添付」 [ルールを使用すると](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 、Analyticsに対する今後のリクエストに場所データを自動的に追加できます。 これにより、デバイスの場所が収集された時点でAnalyticsに対して1回限りの呼び出しを行う必要がなくなります。
+Places SDKは、 `getNearbyPointsOfInterest` APIを呼び出すことで、デバイスに関連するすべてのPOIデータを、Launchのデータ要素から利用できるようにします。 「 [データの添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 」ルールを使用すると、今後Analyticsにリクエストする際に、自動的に場所データを追加できます。 これにより、デバイスの場所が収集された時点でAnalyticsに対して1回限りの呼び出しを行う必要がなくなります。
 
-このトピ [ックについて詳しくは](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) 、「Analyticsリクエストの場所のコンテキスト」を参照してください。
+このトピックについて詳しくは、 [Analyticsリクエストの場所のコンテキスト](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) （英語のみ）を参照してください。
 
 ## オプション — ユーザーがPOIにいる場合に入口イベントをトリガーします。
 
 >[!TIP]
 >
->場所データを取り込む推奨方法は、場所データをAnalytics [リクエストに添付することです](#attach-places-data-to-your-analytics-requests)。
+>場所データを取り込むための推奨される方法は、場所データをAnalyticsリクエストに [添付すること](#attach-places-data-to-your-analytics-requests)です。
 >
->使用事例で、SDKによってトリガ [ーされる領域エントリのイベント](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) が必要な場合は、以下に示すように手動で行う必要があります。
+>使用事例で、SDKによってトリガーされる [地域エントリイベント](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) が必要な場合は、以下に示すように、手動で行う必要があります。
 
-APIから返されるリストには `getNearbyPointsOfInterest` 、ユーザーが現 [在POI内にいるかどうかを示す](places-ext-aep-sdks/places-extension/cust-places-objects.md) 、カスタムオブジェクトが含まれています。 ユーザーがPOIにいる場合は、SDKがその地域のエントリイベントをトリガーできます。
+APIから返されるリストには、ユーザーが現在POI内にいるかどうかを示す `getNearbyPointsOfInterest` カスタムオブジェクト [](places-ext-aep-sdks/places-extension/cust-places-objects.md) が含まれています。 ユーザーがPOIにいる場合は、SDKでその地域のエントリイベントをトリガーするように設定できます。
 
 >[!IMPORTANT]
 >
->1回の訪問でアプリが複数の入口イベントをトリガーしないようにするには、ユーザーが入力したことを知っている地域のリストを保持します。 SDKから近くのPOIの応答を処理する場合は、領域がリストにない場合にのみ、エントリイベントをトリガーします。
+>1回の訪問で複数の入口イベントがトリガーされないようにするには、ユーザーが入力した地域のリストを維持します。 SDKから近くのPOIの応答を処理する場合、リストに領域がない場合にのみエントリイベントをトリガーします。
 >
->次のコードの例では、(iOS) `NSUserDefaults` と `SharedPreferences` (Android)を使用して地域のリストを管理します。
+>以下のコードの例では、 `NSUserDefaults` (iOS)と `SharedPreferences` (Android)を使用して地域のリストを管理しています。
 
 ### Android
 
-次のコード例は、のコールバックで提供された結果の処理を示し `getNearbyPointsOfInterest`ています `List<PlacesPOI>`。
+次のコードの例は、のコールバックで提供された結果の処理を示し `getNearbyPointsOfInterest`ます。a `List<PlacesPOI>`:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -174,7 +177,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Objective-C
 
-次のコード例は、のコールバックで提供された結果の処理を示し `getNearbyPointsOfInterest:limit:callback:errorCallback:`ていま `NSArray<ACPPlacesPoi *> *`す。
+次のコードの例は、のコールバックで提供された結果の処理を示してい `getNearbyPointsOfInterest:limit:callback:errorCallback:`ます。例 `NSArray<ACPPlacesPoi *> *`:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -208,7 +211,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Swift
 
-次のコード例は、のコールバックで提供された結果の処理を示し `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`ていま `[ACPPlacesPoi]`す。
+次のコードの例は、のコールバックで提供された結果の処理を示してい `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`ます。例 `[ACPPlacesPoi]`:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -239,13 +242,13 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完全なサンプル実装
 
-以下のコード例は、デバイスの現在の場所を取得し、必要な入口イベントをトリガーし、1回の訪問で同じ場所の複数の入口を取得しないようにする方法を示しています。
+以下のコードサンプルでは、デバイスの現在の場所を取得し、必要なエントリイベントをトリガーし、1回の訪問で同じ場所に対して複数のエントリを取得しないようにする方法を示します。
 
-このコードサンプルには、ユーザーがPOIにいる [ときにエントリイベントをトリガーするオプションの手順が含まれます](#trigger-entry-events-when-the-user-is-in-a-poi)。
+このコードのサンプルには、ユーザーがPOIにいる場合にエントリイベントを [トリガーするオプションの手順が含まれます](#trigger-entry-events-when-the-user-is-in-a-poi)。
 
 >[!IMPORTANT]
 >
->これらのスニペットは **一例に過ぎ** ません。 開発者は、機能の実装方法を決定する必要があり、決定では、ターゲットのオペレーティングシステムが推奨するベストプラクティスを検討する必要があります。
+>スニペットは **ただの例で** す。 開発者は、機能の実装方法を決定する必要があり、ターゲットのオペレーティングシステムで推奨されるベストプラクティスを考慮する必要があります。
 
 ### Android
 
@@ -408,6 +411,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-エントリイベントをトリガーするので、SDKでPlaces Serviceエントリイベントをトリガーするほかに、POIを定義するすべてのデータを、Experience Platform Launchを介して残りのSDKで使用する `data elements` ことができます。 エクスペリエンスプラットフォ `rules`ームの起動を使用すると、SDKで処理される受信イベントにPlaces Serviceデータを動的に添付できます。 例えば、ユーザーが存在するPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
+Places ServiceエントリイベントをSDKでトリガーするだけでなく、エントリイベントがトリガーされるので、POIを定義するすべてのデータを、Experience Platform Launch内の残りのSDKで使用でき `data elements` ます。 Experience Platform Launch `rules`を使用すると、SDKで処理される受信イベントにPlaces Serviceデータを動的に添付できます。 例えば、ユーザーが存在するPOIのメタデータを添付し、そのデータをコンテキストデータとしてAnalyticsに送信できます。
 
-詳しくは、他のアドビソリューシ [ョンとのPlaces Serviceの使用を参照してください](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。
+詳細については、「Places Serviceを他のAdobeソリューションと共に [使用する](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)」を参照してください。
