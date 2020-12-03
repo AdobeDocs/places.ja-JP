@@ -3,13 +3,16 @@ title: ライブラリの更新
 description: Places REST APIを使用してライブラリを更新します。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 8%
 
 ---
 
 
 # ライブラリの更新 {#update-a-library}
 
-ライブラリを更新できるPUTメソッド。
+ライブラリを更新できるPUT方法。
 
 ## リクエスト
 
@@ -45,5 +48,5 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->、、などの変数を `<lIBRARYID>`実際の値 `<API KEY>`に `<TOKEN>`置き換 `<ORGID>` えてください。
+>、、などの変数 `<lIBRARYID>`を実際の値 `<API KEY>``<TOKEN>``<ORGID>` に置き換えます。
 
