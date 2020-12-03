@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Places拡張機能を使用すると、ユーザの場所に基づいて操作を行うことができます。 この拡張機能は、PlacesクエリサービスAPIへのインターフェイスです。 GPS座標とジオフェンス領域のイベントを含むイベントをリッスンすると、この拡張は、ルールエンジンで処理される新しいイベントをディスパッチします。 また、Places拡張は、APIから取得したアプリデータに最も近いPOIのリストを取得し、配信します。 APIから返される領域はキャッシュと永続性に保存されるので、オフライン処理に制限があります。
 
-## Adobe Experience Platform起動時のPlaces拡張機能のインストール
+## Places拡張機能をAdobe Experience Platform Launchにインストールする
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. タブで、 **[!UICONTROL Catalog]** 拡張機能を探してをクリックし **[!UICONTROL Places]****[!UICONTROL Install]**&#x200B;ます。
