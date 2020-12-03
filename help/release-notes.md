@@ -18,10 +18,10 @@ ht-degree: 3%
 
    * Places and Places Monitor拡張が追加され、 [React Nativeアプリケーションに対応](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
    * Cordovaアプリケーション用に、場所と場所のモニターの拡張機能が追加され [ました。](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * 詳しくは、次を参照してください。 [Places拡張子の使用](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * 詳しくは、次を参照してください。 [Places拡張子の使用](https://docs.adobe.com/content/help/ja-JP/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
-## 2020年5月12日
+## 2020 年 5 月 12 日
 
 * **Places Service**
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 
       * ログ機能の向上
 
-## 2020年5月5日
+## 2020 年 5 月 5 日
 
 
 * **PlacesMonitor 2.1.3**
@@ -58,7 +58,7 @@ ht-degree: 3%
    * Places extensionは、コアSDKのイベントハブにバージョン情報をレポートするようになりました。
    * デバイスのPOIメンバーシップ情報のデフォルトの有効期間は、収集された時点から1時間になります。 詳しくは、「Placesメンバーシップの有効期間の [変更」を参照してください。](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## 2020 年 1 月 27 日
+## 2020年1月27日
 
 * **PlacesMonitor 2.2.0**
 
@@ -99,16 +99,16 @@ ht-degree: 3%
 
       * 複数のポッドプロジェクトオプションを使用するCocoapodsプロジェクトのインポートステートメントを修正しました。
 
-## 2019年11月23日
+## 2019 年 11 月 23 日
 
 * **PlacesMonitor 2.1.1**
 
    * **Android**
 
-      * モニターはAndroidデバイスの起動を認識し、必要に応じて、デバイスの現在の場所に基づいてジオフェンスをOSに再登録します。
+      * モニターは、Androidデバイスの起動を認識し、必要に応じて、デバイスの現在の場所に基づいてジオフェンスをOSに再登録します。
       * 入口/出口イベントが破棄されることがある競合状態を修正しました。
 
-## 2019 年 9 月 11 日
+## 2019年10月10日
 
 * **PlacesMonitor 2.1.0**
 
@@ -169,7 +169,7 @@ ht-degree: 3%
 
 * APIの使用を更新し、エラーシナリオをより効率的に処理できるようにしました。 `getNearbyPointsOfInterest`
 
-## 2019 年 7 月 25 日
+## 2019年7月25日
 
 このリリースでは、次の更新が行われました。
 
@@ -181,7 +181,7 @@ ht-degree: 3%
 
 * ACPPlaces `getNearbyPointsOfInterest` APIの使用を更新し、エラーシナリオをより効率的に処理できるようにしました。
 
-## 2019 年 7 月 22 日
+## 2019 年 7 月 23 日
 
 このリリースでは、次の更新が行われました。
 
@@ -192,7 +192,7 @@ ht-degree: 3%
 * コールバックがインターネット上でエラーコードを返し `getNearbyPointsOfInterest` ていたバグ `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` を修正しました。
 * `getNearbyPointsOfInterest` API （errorCallbackなし）は、近くの目標地点を取得中にエラーが発生した場合に、空のpoiリストで `successCallback` 呼び出されます。
 
-## 2019 年 7 月 19 日
+## 2019年7月20日
 
 このリリースでは、次の更新が行われました。
 
@@ -200,7 +200,7 @@ ht-degree: 3%
 
 共有状態、アプリ内メモリ、およびPlaces関連のすべてのデータを消去する新しいAPIが追加されました `NSUserDefaults`。
 
-## 2019 年 6 月 26 日
+## 2019 年 25 月 7 日
 
 このリリースでは、次の更新が行われました。
 
@@ -258,11 +258,11 @@ Android用プレースモニターの初回リリース。
 * getNearByPlacesに新しいAPIが導入されました。このAPIは、errorCallbackを持ち、エラーの理由を示すerrorCodeで呼び出されます。
 * Places拡張は、設定が取得されるまでイベントをキューに入れます。
 * 環境対応設定のサポートを追加しました。
-* バグ修正： 地域の入口/出口イベントのキーを修正。
+* バグ修正：地域の入口/出口イベントのキーを修正。
 * 前回の既知の場所のストレージに、ユーザーのプライバシーステータスが適切に反映されるようになりました。
 
 
-## 2019 年 4 月 10 日
+## 2019年4月9日
 
 このリリースでは、次の更新が行われました。
 
@@ -284,7 +284,7 @@ iOS用Places Monitorの最初のリリース。
 
 ### ベータリリース
 
-これは、顧客が実際の場所データに対してユーザーの体験を豊かにするツールのセットであるPlaces Serviceの最初のリリースです。 最初のリリースでは、主にモバイルアプリで、Adobe Experience Platformの起動を通じてカスタム位置データを取得し、そのデータに基づいて動作できるようにする使用例が挙げられます。
+これは、顧客が実際の場所データに対してユーザーの体験を豊かにするツールのセットであるPlaces Serviceの最初のリリースです。 最初のリリースでは、主にモバイルアプリで、カスタムの場所データを取得し、Adobe Experience Platform Launch経由でそのデータを操作できるようにする使用例があります。
 
 ### 主な特長
 
@@ -325,4 +325,4 @@ Places APIについて詳しくは、 [WebサービスAPIを参照してくだ�
 
 #### Analytics の統合
 
-Analytics拡張機能は、ユーザーがPOI（パッシブコール）を使用している場合に、Places Serviceデータベースの場所コンテキストデータを、送信されるすべてのAnalytics呼び出しに自動的に追加するように更新中です。 また、この更新により、POIの入口または出口（アクティブな呼び出し）で直接Analyticsトラッキングの呼び出しを実行するルールの作成も可能になります。
+ユーザーがPOI（受動的な呼び出し）を受け取った場合、Analyticsの拡張機能は、Places Serviceデータベースの場所コンテキストデータを、発信するすべてのAnalytics呼び出しに自動的に追加するように更新されています。 また、この更新により、AnalyticsでPOIの入口または出口（アクティブな呼び出し）で直接呼び出しを追跡するルールを作成できるようになります。
