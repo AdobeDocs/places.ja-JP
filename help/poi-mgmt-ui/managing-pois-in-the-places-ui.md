@@ -4,13 +4,13 @@ description: Places Service UIでは、既存のPOIの編集、削除、フィ�
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '407'
 ht-degree: 7%
 
 ---
 
 
-# 既存のPOIの管理 {#managing-existing-pois}
+# 既存のPOIの管理{#managing-existing-pois}
 
 POIとライブラリは、PlacesデータベースでPlaces UIを使用して作成、管理します。
 
@@ -20,8 +20,8 @@ POIとライブラリは、PlacesデータベースでPlaces UIを使用して�
 1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストのようなアイコンをクリックします。
 1. 編集するPOIを見つけます。
-1. をクリック **[!UICONTROL ...]** し、を選択し **[!UICONTROL View Details]**&#x200B;ます。
-1. 情報を更新し、をクリックし **[!UICONTROL Save]**&#x200B;ます。
+1. **[!UICONTROL をクリック…]**&#x200B;を選択し、「**[!UICONTROL 表示の詳細]**」を選択します。
+1. 情報を更新し、「**[!UICONTROL 保存]**」をクリックします。
 
 ## POIの削除
 
@@ -29,7 +29,7 @@ POIとライブラリは、PlacesデータベースでPlaces UIを使用して�
 1. Adobe IDを使用してPlaces Serviceにログインします。
 1. 右上で、バレットリストのようなアイコンをクリックします。
 1. 削除するPOIを見つけます。
-1. をクリック **[!UICONTROL ...]** し、を選択し **[!UICONTROL Delete]**&#x200B;ます。
+1. **[!UICONTROL をクリック…]**&#x200B;を選択し、**[!UICONTROL 削除]**&#x200B;を選択します。
 
 ## 市区町村、都道府県、国、メタデータでPOIをフィルター
 
@@ -45,11 +45,11 @@ POIとライブラリは、PlacesデータベースでPlaces UIを使用して�
 
    * プロパティ別：
 
-      a.「プロパティ」ドロップダウンリストで、 **[!UICONTROL Country]**、、 **[!UICONTROL State]**&#x200B;またはを選択し **[!UICONTROL City]**&#x200B;ます。
+      a.「プロパティ」ドロップダウンリストで、「**[!UICONTROL 国]**」、「**[!UICONTROL 州]**」、または「**[!UICONTROL 市区町村]**」を選択します。
 
       b.次の行に値を入力します。
 
-      例えば、を選択して「」 **[!UICONTROL State]** と入力でき **[!UICONTROL California]**&#x200B;ます。
+      例えば、「**[!UICONTROL 州]**」を選択し、「**[!UICONTROL カリフォルニア]**」と入力します。
 
    * メタデータあり：
 
