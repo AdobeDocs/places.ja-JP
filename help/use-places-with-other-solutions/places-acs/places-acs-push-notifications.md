@@ -4,13 +4,13 @@ description: この節では、Places ServiceをCampaign Standardでプッシュ
 translation-type: tm+mt
 source-git-commit: fd469358845e14c47a58b40bb18c9144828a8996
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 1%
+source-wordcount: '979'
+ht-degree: 3%
 
 ---
 
 
-# Placesサービスでのプッシュ通知 {#push-notifications}
+# Placesサービスを使用したプッシュ通知{#push-notifications}
 
 この節では、過去の地域情報を使用して、Adobe Campaign Standard経由で配信されるターゲットのプッシュ通知を行う方法について説明します。
 
@@ -18,14 +18,14 @@ ht-degree: 1%
 
 開始する前に、次のタスクを実行します。
 
-* Adobe Experience PlatformモバイルSDKを使用して設定したモバイルアプリケーション( [Adobe Campaign Standard拡張を含む](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard))がある。
+* [Adobe Campaign Standard拡張子](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)を含む、Adobe Experience PlatformモバイルSDKを使用してモバイルアプリを設定します。
 
-* アプリに [Adobe Experience PlatformモバイルSDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) を統合します。
-* 追加 [](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) Adobe Campaign Standard拡張機能をモバイルアプリ設定に追加します。
+* [Adobe Experience PlatformモバイルSDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk)をアプリに統合します。
+* モバ追加イルアプリ設定の[Adobe Campaign Standard拡張機能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)。
 
-* [Places Service POI管理インターフェイスでPOI](/help/poi-mgmt-ui/create-a-poi-ui.md) を作成します。
+* [Places Service POI管理インターフェイスで](/help/poi-mgmt-ui/create-a-poi-ui.md) POIを作成します。
 
-* Places拡張機能を有効にしてインスト [ールします](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+* [場所の拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)を有効にしてインストールします。
 
 
 ## Experience Platform Launchでのデータ要素の作成
@@ -34,37 +34,37 @@ Places拡張機能とPlaces Monitor拡張機能がアプリケーションで正
 
 データ要素を作成するには：
 
-1. Experience Platform Launchモバイルプロパティで、 **[!UICONTROL Data Elements]** タブをクリックし、をクリックし **[!UICONTROL Add Data Element]**&#x200B;ます。
-1. In the **[!UICONTROL Extension]** drop-down list, select **[!UICONTROL Places Service]**.
-1. ドロップダウン **[!UICONTROL Data Element Type]** リストで、を選択し **[!UICONTROL Name]**&#x200B;ます。
-1. 右側のウィンドウで、ユーザーが現在いるPOIの名前を取得 **[!UICONTROL Current POI]** するかどうかを選択できます。
+1. Experience Platform Launchのモバイルプロパティで、「**[!UICONTROL データ要素]**」タブをクリックし、「**[!UICONTROL データ要素追加]**」をクリックします。
+1. **[!UICONTROL 拡張機能]**&#x200B;ドロップダウンリストで、「**[!UICONTROL サービスを配置]**」を選択します。
+1. 「**[!UICONTROL データ要素タイプ]**」ドロップダウンリストから、「**[!UICONTROL 名前]**」を選択します。
+1. 右側のウィンドウで、「**[!UICONTROL 現在のPOI]**」を選択して、ユーザーが現在配置されているPOIの名前を取得できます。
 
-   **[!UICONTROL Last Entered]** ユーザーが最後に入力したPOIの名前を取得し、ユーザーが最後に退出したPOIの名前を **[!UICONTROL Last Exited]** 入力します。 この例では、データ要素の名前(例：「 **[!UICONTROL Last Entered]** and clicked」)を選択 **[!UICONTROL Last Entered POI Name]** し、入力しました **[!UICONTROL Save]**。
+   **[!UICONTROL Last]** Enterrievesは、ユーザーが最後に入力したPOIの名前を取得し、 **[!UICONTROL Last]** Exitedは、ユーザーが最後に残したPOIの名前を提供します。この例では、「**[!UICONTROL 最後に入力した値]**」を選択し、データ要素の名前を入力しました（例：**[!UICONTROL 最後に入力したPOI名]**）。「**[!UICONTROL 保存]**」をクリックしました。
 
    ![&quot;Campaign Standard内のプッシュメッセージ&quot;](/help/assets/ACS_Push1.png)
 
-1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
+1. 上記の手順1 ～ 4を繰り返し、*最後に入力したPOI緯度*、*最後に入力したPOI経度*、*最後に入力したPOI半径*&#x200B;のデータ要素を作成します。
 
-Places Serviceのデータ要素に加えて、 *App IDと* Experience CloudIDのMobile Coreデータ要素を作成します **。
+Places Serviceのデータ要素に加えて、*App ID*&#x200B;および&#x200B;*Experience CloudID*&#x200B;用のMobile Coreデータ要素を作成します。
 
 ## 場所のデータをAdobe Campaign Standardに送信するルールを作成する
 
-Experience Platform Launch内のルールを使用すると、イベントトリガーに基づいて複雑なマルチソリューションワークフローを作成できます。 ルールを使用すると、新しいルールを作成したり、既存のルールを変更したりできます。また、モバイルアプリケーションに更新を動的にデプロイすることもできます。 次の例では、ユーザーが地域フェンスのPOIに入るとルールがトリガーされます。 ルールがトリガーされた後、Campaign Standardに更新が送信され、Experience CloudIDに基づいて、特定のユーザーの特定のPOIへのエントリを記録します。
+Experience Platform Launch内のルールを使用すると、イベントのトリガーに基づいて複雑で複数のソリューションのワークフローを作成できます。 ルールを使用すると、新しいルールを作成したり、既存のルールを変更したりできます。また、モバイルアプリケーションに更新を動的にデプロイすることもできます。 次の例では、ユーザーが地域フェンスのPOIに入るとルールがトリガーされます。 ルールがトリガーされた後、Campaign Standardに更新が送信され、Experience CloudIDに基づいて、特定のユーザーの特定のPOIへのエントリを記録します。
 
-1. Experience Platform Launchモバイルプロパティの **[!UICONTROL Rules]** タブで、をクリックし **[!UICONTROL Add Rule]**&#x200B;ます。
-1. セクションの下で、をクリック **[!UICONTROL Events]** し、拡張子 **[!UICONTROL +]****[!UICONTROL Places Service]** として選択します。
-1. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
-1. ルールに名前を付けます(例： **ユーザー入力POI**)。
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
-1. セクションは空白のままにし **[!UICONTROL Conditions]** てください。
+1. Experience Platform Launchのモバイルプロパティの「**[!UICONTROL ルール]**」タブで、「**[!UICONTROL ルール]**」追加をクリックします。
+1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL +]**」をクリックし、「**[!UICONTROL サービス]**&#x200B;を拡張子として配置」を選択します。
+1. **[!UICONTROL イベントタイプ]**&#x200B;に対して、**[!UICONTROL POIを入力]**&#x200B;を選択します。
+1. ルールに名前を付けます（例：**ユーザーがPOI**&#x200B;を入力した）。
+1. 「**[!UICONTROL 変更を保存]**」をクリックします。
+1. 「**[!UICONTROL 条件]**」セクションは空白のままにします。
 
    このセクションでは、このルールをいつ実行するかをフィルターまたは制限できます。
 
-1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL +]**.
-1. ドロップダウン **[!UICONTROL Extension]** リストでを選択し、ドロップダウンリスト **[!UICONTROL Mobile Core]** で **[!UICONTROL Action Type]** を選択し **[!UICONTROL Send Postback]**&#x200B;ます。
-1. では、Campaign Standard **[!UICONTROL URL]**&#x200B;の場所のエンドポイントを作成する必要があります。
+1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL +]**」をクリックします。
+1. 「**[!UICONTROL 拡張機能]**」ドロップダウンリストで「**[!UICONTROL モバイルコア]**」を選択し、「**[!UICONTROL アクションタイプ]**」ドロップダウンリストで「**[!UICONTROL ポストバックを送信]**」を選択します。
+1. **[!UICONTROL URL]**&#x200B;で、Campaign Standardの場所のエンドポイントを作成する必要があります。
 
-   URLは、のようになり `https:///rest/head/mobileAppV5//locations/`ます。
+   URLは`https:///rest/head/mobileAppV5//locations/`のようになります。
 キャンペーンサーバーおよびpKey用に以前に作成した正しいデータ要素を使用していることを確認します。
 
 1. ボックスをクリックして投稿の本文を追加し、次の内容を送信します。
@@ -83,8 +83,8 @@ Experience Platform Launch内のルールを使用すると、イベントトリ
    ```
 
 1. 前の節で作成したデータ要素を使用していることを確認します。
-1. に、 **[!UICONTROL Content Type]**&#x200B;と入力し **[!UICONTROL application/json]**&#x200B;ます。
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL コンテンツタイプ]**」に、「**[!UICONTROL application/json]**」と入力します。
+1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 >[!IMPORTANT]
 >
@@ -96,16 +96,16 @@ Experience Platform Launch内のルールを使用すると、イベントトリ
 
 キャンペーンに場所のデータが入力されたので、POIをオーディエンスセグメントツールとして使用できます。
 
-1. Adobe Campaign Standardインスタンスで、をクリックし **[!UICONTROL Create Push Notification]**&#x200B;ます。
-1. プッシュ通知タイプに対して、を選択し **[!UICONTROL Send push to Campaign profiles]**&#x200B;ます。
-1. をクリック **[!UICONTROL Next]** し、一般的な詳細を入力します。
-1. オーディエンス画面で、をクリックし **[!UICONTROL Count]** て、プッシュ通知を送信する推定ユーザー数を指定します。
+1. Adobe Campaign Standardインスタンスで、「**[!UICONTROL プッシュ通知を作成]**」をクリックします。
+1. プッシュ通知タイプとして、「**[!UICONTROL キャンペーンプロファイルにプッシュを送信]**」を選択します。
+1. 「**[!UICONTROL 次へ]**」をクリックし、一般的な詳細を入力します。
+1. オーディエンス画面で、「**[!UICONTROL カウント]**」をクリックして、プッシュ通知を送信する推定ユーザー数を指定します。
 
    >[!TIP]
    >
    >この例では、アプリケーションがテストされる3台のインストール済みデバイスがあるので、カウントは3になります。
 
-1. 左側のペインで、 **[!UICONTROL Profile]** タブを展開し、 **[!UICONTROL POI location]** フィルターをメイン領域にドラッグします。
+1. 左側のウィンドウで、「**[!UICONTROL プロファイル]**」タブを展開し、**[!UICONTROL POI位置]**&#x200B;フィルターをメイン領域にドラッグします。
 1. POIフィルタウィンドウで、ターゲットするPOIの正確な名前を入力します。
 
    >[!TIP]
@@ -114,13 +114,13 @@ Experience Platform Launch内のルールを使用すると、イベントトリ
 
    ![&quot;ACSでのプッシュメッセージ2&quot;](/help/assets/ACS_push2.png)
 
-1. 「**[!UICONTROL Confirm]**」をクリックします。
+1. 「**[!UICONTROL 確認]**」をクリックします。
 1. 上部でカウントを再度実行して、オーディエンスのサイズ変更を確認します。
 
    カウントの更新が表示されない場合は、エントリをトリガーしたデバイスがないPOI名を入力した可能性があります。 様々なテストデバイスからのPOIエントリの一覧が見られるので、この状況ではSlackWebフックを持つことは有用です。
 
 1. 追加のPOI位置フィルターーをドラッグして、メッセージに複数のPOIを含めることができます。
-1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
+1. 「**[!UICONTROL 次へ]**」をクリックして、配信用のプッシュ通知の作成を終了します。
 
    ![&quot;ACSでのプッシュメッセージ3&quot;](/help/assets/ACS_push3.png)
 
