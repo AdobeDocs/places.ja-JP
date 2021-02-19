@@ -4,15 +4,15 @@ description: POIを一括アップロードする方法について説明しま�
 translation-type: tm+mt
 source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 
-# Bulk upload of POIs {#bulk-upload-pois}
+# POIのバルクアップロード{#bulk-upload-pois}
 
-Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CSVファイルを使用して新しいPOIを一括アップロードできます。 必要なデータ列を示し、オプションのカスタムメタデータを追加する方法を示すサンプルスプレッドシートテンプレートが用意されています。
+Places Serviceの「**POIを読み込み**」ボタンを使用して、CSVファイルを使用して新しいPOIを一括アップロードできます。 必要なデータ列を示し、オプションのカスタムメタデータを追加する方法を示すサンプルスプレッドシートテンプレートが用意されています。
 
 ![一括インポート画面](/help/assets/Bulk-import.png)
 
@@ -24,19 +24,19 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 ## Python APIスクリプト
 
-一連のPythonスクリプトが作成され、Web Service APIを使用して.csvファイルからPOIデータベースへのPOIのバッチインポートを簡略化しました。 これらのスクリプトは、このオープンソース [gitレポートからダウンロードできます](https://github.com/adobe/places-scripts)。
+一連のPythonスクリプトが作成され、Web Service APIを使用して.csvファイルからPOIデータベースへのPOIのバッチインポートを簡略化しました。 これらのスクリプトは、このオープンソース[git repo](https://github.com/adobe/places-scripts)からダウンロードできます。
 
-これらのスクリプトを実行する前に、WebサービスAPIにアクセスする場合は、 *統合の概要と前提条件の* 「ユーザーアクセスの [前提条件](/help/web-service-api/adobe-i-o-integration.md)」を参照してください。
+これらのスクリプトを実行する前に、WebサービスAPIにアクセスするための&#x200B;*ユーザーアクセスの前提条件*&#x200B;について、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)を参照してください。
 
 スクリプトに関する情報を次に示します。
 
 >[!TIP]
 >
->この情報は、 [gitリポジトリのお読みくださいファイルにも含まれています](https://github.com/adobe/places-scripts)。
+>この情報は、[git repo](https://github.com/adobe/places-scripts)のreadmeファイルにも含まれています。
 
 ## CSVファイル
 
-サンプルの.csvファイル( `places_sample.csv`)は、このパッケージの一部で、必要なヘッダーとサンプルデータの行を含みます。 これらのヘッダはすべて小文字で、Placesデータベースで使用される予約済みのメタデータキーに対応しています。 .csvファイルに追加した列は、POIごとにキー/値のペアとして別々のメタデータセクションにあるPOIデータベースに追加され、ヘッダー値がキーとして使用されます。
+サンプルの.csvファイル`places_sample.csv`は、このパッケージの一部で、必要なヘッダーとサンプルデータの行が含まれています。 これらのヘッダはすべて小文字で、Placesデータベースで使用される予約済みのメタデータキーに対応しています。 .csvファイルに追加した列は、POIごとにキー/値のペアとして別々のメタデータセクションにあるPOIデータベースに追加され、ヘッダー値がキーとして使用されます。
 
 使用する必要がある列と値のリストを次に示します。
 
@@ -66,7 +66,7 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 * 色。Places Service UIマップのPOIの位置を表すピンの色として使用されます。
    * 有効な値は、「」、「#3E76D0」、「#AA99E8」、「#DC2ABA」、「#FC685B」、「#FC962E」、「#F6C436」、「#BECE5D」、「#61B56」です。b、#3DC8DE、および&quot;&quot;を追加します。
-   * 値を空白のままにした場合、Places Service UIではデフォルトの色として青が使用されます。
+   * 値を空白のままにすると、Places Service UIではデフォルトの色として青が使用されます。
 
       値は、青(#3E76D0)、紫(#AA99E8)、フスキア(#DC2ABA)、オレンジ(#FC685B)、淡いオレンジ(#FC962E)、黄(#F6C436)、明るい(#BECE5D)、緑(#61B56B)、ライトブルー(#3DC8DE)です。
 
@@ -84,37 +84,37 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 ## スクリプトの実行
 
-1. Gitリポジトリからローカルディレクトリ [にファイルをダウンロードし](https://github.com/adobe/places-scripts) ます。
-1. テキストエディターで、 `config.py` ファイルを開き、次のタスクを入力します。
+1. [git repo](https://github.com/adobe/places-scripts)からローカルディレクトリにファイルをダウンロードします。
+1. テキストエディターで`config.py`ファイルを開き、次のタスクを実行します。
 
    a.次の変数値を文字列として編集します。
 
    * `csv_file_path`
 
-      これは、 `.csv` ファイルへのパスです。
+      これは`.csv`ファイルへのパスです。
 
    * `access_code`
 
-      これは、AdobeIMSへの呼び出しから取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      これは、AdobeIMSへの呼び出しから取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の&#x200B;*ユーザーアクセスの前提条件*&#x200B;を参照してください。
 
    * `org_id`
 
-      POIのインポート先となるExperience CloudorgID。 組織IDの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      POIのインポート先となるExperience CloudorgID。 組織IDの取得方法について詳しくは、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の&#x200B;*ユーザーアクセスの前提条件*&#x200B;を参照してください。
 
    * `api_key`
 
-      これは、Places REST APIキーで、Adobe I/Oプレイス統合から取得します。 APIキーの取得方法について詳しくは、 *統合の概要と前提条件の「ユーザーアクセスの* 前提条件 [」を参照してください](/help/web-service-api/adobe-i-o-integration.md)。
+      これは、Places REST APIキーで、Adobe I/Oプレイス統合から取得します。 APIキーの取得方法について詳しくは、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の&#x200B;*ユーザーアクセスの前提条件*&#x200B;を参照してください。
    b.変更を保存します。
 
-1. ターミナルウィンドウで、ディレクトリに移動し `…/places-scripts/import/` ます。
-1. と入力 `python ./places_import.py` し、 **[!UICONTROL enter]** (**[!UICONTROL return]**)キーを押します。
+1. ターミナルウィンドウで`…/places-scripts/import/`ディレクトリに移動します。
+1. `python ./places_import.py`と入力し、**[!UICONTROL enter]** (**[!UICONTROL return]**)キーを押します。
 
 
 ## CSVチェックの事前インポート
 
 スクリプトは、最初に.csvファイルに対して次のチェックを完了します。
 
-* フ `.csv` ァイルが指定されたかどうか。
+* `.csv`ファイルが指定されたかどうか。
 * ファイルパスが有効かどうか。
 * 予約済みのメタデータヘッダを含めるかどうか。
 
@@ -130,4 +130,4 @@ Placesサービスの「 **POIを** 読み込み」ボタンを使用して、CS
 
 ## 単体テスト
 
-単体テストは `tests.py` ファイル内にあり、各プル要求の前に実行し、すべてを満たす必要があります。 新しいコードを使用して、テストを追加する必要があります。 テストを実行するには、ディレクトリに移動し、 `…/places-scripts/import/` ターミナル `python ./places_import.py` に入力します。
+ユニットテストは`tests.py`ファイル内にあり、各プル要求の前に実行し、すべての処理を完了する必要があります。 新しいコードを使用して、テストを追加する必要があります。 テストを実行するには、`…/places-scripts/import/`ディレクトリに移動し、ターミナルに`python ./places_import.py`と入力します。
