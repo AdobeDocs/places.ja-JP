@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# POIの管理の概要 {#manage-pois}
+# POIの管理の概要{#manage-pois}
 
 Places Service REST APIを使用して、次のタスクを完了できます。
 
