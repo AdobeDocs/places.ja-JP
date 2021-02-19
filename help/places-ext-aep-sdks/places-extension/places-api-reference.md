@@ -10,7 +10,7 @@ ht-degree: 32%
 ---
 
 
-# Places APIリファレンス {#places-api-reference}
+# APIリファレンスを配置{#places-api-reference}
 
 Places拡張機能のAPIリファレンスに関する情報を次に示します。
 
@@ -20,9 +20,9 @@ Places拡張機能のAPIリファレンスに関する情報を次に示しま�
 
 ### ProcessGeofence(Android)
 
-指定されたの領域 `Geofence` イベントを処理し `transitionType`ます。
+指定された`transitionType`の`Geofence`リージョンイベントを処理します。
 
-からを渡 `transitionType` し `GeofencingEvent.getGeofenceTransition()`ます。 現在、 `Geofence.GEOFENCE_TRANSITION_ENTER` およびがサポートさ `Geofence.GEOFENCE_TRANSITION_EXIT` れています。
+`GeofencingEvent.getGeofenceTransition()`から`transitionType`を渡します。 現在、`Geofence.GEOFENCE_TRANSITION_ENTER`と`Geofence.GEOFENCE_TRANSITION_EXIT`がサポートされています。
 
 **構文**
 
@@ -34,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **例**
 
-Android Geofenceイベントの受信用に登録さ `IntentService` れているユーザーで、このメソッドを呼び出します。
+Android Geofenceイベントの受信用に登録されている`IntentService`で、このメソッドを呼び出します。
 
 このメソッドのコードサンプルを次に示します。
 
@@ -60,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent(iOS)
 
-このメソッドは、 `CLLocationManager` delegateで呼び出す必要があります。このメソッドは、ユーザーが特定の領域に入ったか出たかを知らせます。
+このメソッドは、`CLLocationManager`デリゲートで呼び出す必要があります。これは、ユーザーが特定の領域に入ったか出たかを示します。
 
 **構文**
 
@@ -87,7 +87,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessGeofencingEvent(Android)
 
-すべて `Geofences` を同時に処理 `GeofencingEvent` します。
+`GeofencingEvent`内のすべての`Geofences`を同時に処理します。
 
 **構文**
 
@@ -97,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **例**
 
-Android Geofenceイベントの受信用に登録さ `IntentService` れているユーザーでこのメソッドを呼び出す
+Android Geofenceイベントの受信に登録されている`IntentService`で、このメソッドを呼び出します。
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -259,7 +259,7 @@ Places拡張機能によって、既知のデバイスの場所を要求しま�
 
 >[!TIP]
 >
->Places拡張機能では、への呼び出しによって提供された場所についてのみ認識され `GetNearbyPointsOfInterest`ます。
+>Places拡張機能は、`GetNearbyPointsOfInterest`への呼び出しによって提供された場所についてのみ知っています。
 
 
 ### GetLastKnownLocation(Android)
@@ -386,7 +386,7 @@ Places拡張で認証状態を設定します。
 表示されるステータスは、[場所]共有状態に保存され、参照用にのみ表示されます。
 このメソッドを呼び出しても、このデバイスの実際の場所の認証状態には影響しません。
 
-デバイスの認証状態が変更されると、 `locationManager:didChangeAuthorizationStatus:` メソッドが呼び出 `CLLocationManagerDelegate` されます。 このメソッド内から、新しい `CLAuthorizationStatus` 値をACPPlaces `setAuthorizationStatus:` APIに渡す必要があります。
+デバイス認証の状態が変わると、`CLLocationManagerDelegate`の`locationManager:didChangeAuthorizationStatus:`メソッドが呼び出されます。 このメソッド内から、新しい`CLAuthorizationStatus`値をACPPlaces `setAuthorizationStatus:` APIに渡す必要があります。
 
 **構文**
 
