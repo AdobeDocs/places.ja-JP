@@ -30,7 +30,7 @@ Places Service製品コンテキストは、すべてのExperience Cloud組織�
 
 * Admin Console内のPlaces ServiceおよびExperience Platform Launch製品コンテキストの下に、ユーザーとして表示されていることを確認します。
 
-   詳しくは、「 *Experience Platform Launchへのユーザーの* 追加」および「サービス [(](/help/places-gain-access.md)よくある質問)」を参照してください。
+   詳しくは、[よくある質問](/help/places-gain-access.md)の&#x200B;*「Experience Platform Launchにユーザーを追加し、サービスを配置する」を参照してください。*
 
 
 ### 2. POIの作成
@@ -39,11 +39,11 @@ Places Service製品コンテキストは、すべてのExperience Cloud組織�
 
 * Places Serviceユーザーインターフェイスの使用
 
-   For more information, see [Places Service overview](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md).
+   詳しくは、「[Places Serviceの概要](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md)」を参照してください。
 
 * Places WebサービスのAPIを使用する。
 
-   詳しくは、 [Web Service APIを参照してください](/help/web-service-api/places-web-services.md)。
+   詳しくは、[Web Service API](/help/web-service-api/places-web-services.md)を参照してください。
 
 
 ### 3. Places拡張機能とPlaces Monitor拡張機能を設定する
