@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
 
-# ライブラリのランクを取得する {#get-library-rank}
+# ライブラリのランクを取得{#get-library-rank}
 
 ライブラリをランク付けできるGETメソッド。
 
@@ -42,5 +42,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->、 `<API KEY>`、などの変数を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
+>`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
 
