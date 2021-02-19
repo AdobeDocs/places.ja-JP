@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## V4 SDKのtrackLocationからの移行
 
-v4 SDKから移行する際に、 `trackLocation` APIの置き換えを探している場合は、「Active Region Monitoringを使用しないPlaces Serviceを [使用する](use-places-without-active-monitoring.md)」のトピックを参照してください。
+v4 SDKから移行する際に、`trackLocation` APIの置き換えを探している場合は、「Use Places Service without Active Region Monitoring](use-places-without-active-monitoring.md)」を参照してください。[
 
 ## サイズと信頼性
 
@@ -24,7 +24,7 @@ Adobeや他のサービスの使用に関係なく、モバイルアプリから
 
 また、Wi-Fiがオフになったり、使用できなくなったりするなどのハードウェア条件、GPS信号の障害に対するデバイスの位置に基づいて、精度と信頼性を低下させることができる。 例えば、山地帯、都市の設定、屋内地域は、iOSおよびAndroidオペレーティングシステムで位置の正確性を低下させることができます。
 
-## 終了イベントがトリガする方法
+## 終了イベントのトリガー方法
 
 プレースモニター(SDK)は、近くのPOIの新しいリストを取得すると、各POIの地域をオペレーティングシステムに登録します。 現在は、デバイスが監視対象の領域の1つの境界（入口または出口）を越えたときにSDKに通知する必要があります。 SDKは、イベントが発生したことをオペレーティングシステムがSDKに通知した場合にのみ、終了イベントをトリガーします。 この通知の主な理由は、場所データの時間の感度です。
 
