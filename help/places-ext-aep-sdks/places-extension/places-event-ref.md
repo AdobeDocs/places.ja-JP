@@ -10,7 +10,7 @@ ht-degree: 29%
 ---
 
 
-# 配置イベント参照 {#places-event-reference}
+# イベント参照を配置{#places-event-reference}
 
 Places拡張で処理されるイベントのリストを以下に示します。
 
@@ -47,7 +47,7 @@ Places拡張で処理されるイベントのリストを以下に示します�
 | キー | 値のタイプ | 必須 | デフォルト値 | 説明 |
 | :--- | :--- | :--- | :--- | :--- |
 | latitude | double | true | n/a | 近くのPOIを検索する際の中心の緯度の値を保持します。 |
-| longitude | double | true | n/a | 近くのPOIを検索する中心の経度値を保持します。 |
+| longitude | 重複 | true | n/a | 近くのPOIを検索する中心の経度値を保持します。 |
 | radius | 整数 | false | なし | 周辺のPOIを検索する際に使用する半径（メートル単位）。 |
 | count | 整数 | false | 10 | 結果の応答イベントに返すPOIの最大数。 |
 
