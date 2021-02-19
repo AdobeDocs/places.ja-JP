@@ -9,7 +9,7 @@ ht-degree: 7%
 ---
 
 
-# カスタム配置オブジェクト {#places-objects}
+# カスタム配置オブジェクト{#places-objects}
 
 Places APIで使用されるカスタムネイティブクラスを次に示します。
 
