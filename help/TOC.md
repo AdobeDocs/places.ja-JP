@@ -18,7 +18,7 @@ ht-degree: 19%
 + [リリースノート](release-notes.md)
 + [はじめに](getting-started.md)
 + [Placesサービスへのアクセス権を取得](places-gain-access.md)
-+ PlacesサービスUI {#poi-mgmt-ui}
++ Places Service UI {#poi-mgmt-ui}
    + [PlacesサービスUIの概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [POIの作成](poi-mgmt-ui/create-a-poi-ui.md)
    + [以前に作成したPOIの管理](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
@@ -28,10 +28,10 @@ ht-degree: 19%
 + WebサービスAPI {#web-service-api}
    + [WebサービスAPIの概要](web-service-api/places-web-services.md)
    + [統合の前提条件](web-service-api/adobe-i-o-integration.md)
-   + APIの使用 {#api-usage}
+   + APIの使用{#api-usage}
       + [APIの使用の概要](web-service-api/api-usage/api-usage-overview.md)
       + [ヘッダーとパラメーター](web-service-api/api-usage/headers-and-parameters.md)
-      + ライブラリの管理 {#manage-libraries}
+      + ライブラリの管理{#manage-libraries}
          + [ライブラリの管理の概要](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [ライブラリの作成](web-service-api/api-usage/manage-libraries/create-a-library.md)
          + [ライブラリの読み取り](web-service-api/api-usage/manage-libraries/read-a-library.md)
@@ -54,23 +54,23 @@ ht-degree: 19%
             + [複数のPOIの更新](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [複数のPOIの削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリAPI](web-service-api/api-usage/query-apis.md)
-+ モバイルSDK用の拡張機能 {#places-ext-aep-sdks}
++ モバイルSDKの拡張{#places-ext-aep-sdks}
    + Places 拡張機能 {#places-extension}
       + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places APIリファレンス](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [配置イベント参照](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [カスタム配置オブジェクト](places-ext-aep-sdks/places-extension/cust-places-objects.md)
-   + 配置モニタ拡張 {#places-monitor-extension}
+   + モニターの拡張{#places-monitor-extension}を配置
       + [配置モニタ拡張](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
       + [「Places Monitor」拡張機能の使用](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Places Monitor APIリファレンス](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [独自の監視ソリューションでPlaces Serviceを使用](using-your-own-monitor.md)
 + [Places Serviceを地域の監視なしで使用](use-places-without-active-monitoring.md)
-+ Experience Platform Launchワークフローの一部としてPlaces Serviceを使用 {#use-places-launch-workflow}
++ Experience Platform Launchワークフロー{#use-places-launch-workflow}の一部としてPlaces Serviceを使用
    + [Experience Platform Launchワークフローの一部としてPlaces Serviceを使用](use-places-launch-workflow/places-launch-workflow.md)
    + [データ要素の定義](use-places-launch-workflow/define-data-elements.md)
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
-+ 他のAdobeソリューションでPlaces Serviceを使用 {#use-places-with-other-solutions}
++ 他のAdobeソリューションと共にPlacesサービスを使用{#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [Adobe Analyticsでプレイスサービスを使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [POIの入口データと出口データをAnalyticsに送信](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
