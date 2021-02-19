@@ -4,7 +4,7 @@ description: Places拡張機能を使用すると、ユーザの場所に基づ�
 translation-type: tm+mt
 source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '700'
 ht-degree: 5%
 
 ---
@@ -16,22 +16,22 @@ Places拡張機能を使用すると、ユーザの場所に基づいて操作�
 
 ## Places拡張機能をAdobe Experience Platform Launchにインストールする
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. タブで、 **[!UICONTROL Catalog]** 拡張機能を探してをクリックし **[!UICONTROL Places]****[!UICONTROL Install]**&#x200B;ます。
+1. Experience Platform Launchで、「**[!UICONTROL 拡張子]**」タブをクリックします。
+1. 「**[!UICONTROL カタログ]**」タブで、**[!UICONTROL 場所]**&#x200B;拡張子を探し、**[!UICONTROL インストール]**&#x200B;をクリックします。
 1. このプロパティで使用する場所ライブラリを選択します。 これらは、アプリケーションでアクセスできるライブラリです。
-1. 「**[!UICONTROL Save]**」をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
-   をクリックする **[!UICONTROL Save]**&#x200B;と、Experience PlatformSDKは、選択したライブラリ内のPOIをPlaces Servicesで検索します。 POIデータは、アプリケーションの構築時にライブラリのダウンロードには含まれませんが、POIの場所ベースのサブセットは、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
+   「**[!UICONTROL 保存]**」をクリックすると、Experience PlatformSDKは、選択したライブラリ内のPOIをPlaces Servicesで検索します。 POIデータは、アプリケーションの構築時にライブラリのダウンロードには含まれませんが、POIの場所ベースのサブセットは、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーのGPS座標に基づきます。
 
 1. 公開プロセスを完了して、SDK設定を更新します。
 
-   Experience Platform Launchでの公開について詳しくは、 [公開を参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)。
+   Experience Platform Launchでの公開について詳しくは、[公開](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)を参照してください。
 
-### Configure the Places extension {#configure-places-extension}
+### Places拡張子を設定{#configure-places-extension}
 
 ![](//help/assets/places-extension.png)
 
-## アプリケ追加ーションの場所拡張 {#add-places-to-app}
+## アプリ追加のPlaces拡張子{#add-places-to-app}
 
 Places拡張機能は、AndroidおよびiOSアプリに追加できます。 iOSまたはAndroidアプリケーションに場所を追加する手順は、次のとおりです。 プレース拡張は、次のプラットフォームでも利用できます。 以下のプラットフォームのいずれかを使用して開発する場合、アプリケーションに場所を追加する方法については、付属のリンクを参照してください。
 
@@ -66,14 +66,14 @@ Javaを使用してPlaces拡張をアプリに追加するには：
 
 Objective-CまたはSwiftを使用してPlaces拡張をアプリに追加するには：
 
-1. プ追加ロジェクトに配置および [モバイルコア](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) ライブラリを追加します。 次のポッドを `Podfile`
+1. プロジェクト追加に配置し、[モバイルコア](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)ライブラリを配置します。 `Podfile`に次のポッドを追加する必要があります。
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   また、Cocoapodsを使用していない場合は、GithubのリリースページからMobile CoreとPlacesライブラリを手動で含めることも [できます](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
+   または、Cocoapodsを使用していない場合は、Githubの[リリースページ](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/)からMobile CoreとPlacesライブラリを手動で含めることもできます。
 
 1. Cocoapodsの更新：
 
@@ -97,13 +97,13 @@ Objective-CまたはSwiftを使用してPlaces拡張をアプリに追加する�
    import ACPPlaces
    ```
 
-### Places拡張のMobile Coreへの登録 {#register-places-mobile-core}
+### Places拡張をMobile Coreに登録{#register-places-mobile-core}
 
 Places拡張機能をAndroidおよびiOSのMobile Coreに登録する必要があります。
 
 #### Android
 
-アプリの `OnCreate` メソッドで、Places拡張を登録します。
+アプリの`OnCreate`メソッドで、Places拡張を登録します。
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,7 +125,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-アプリの `application:didFinishLaunchingWithOptions:` メソッドで、Places拡張を他のSDK登録呼び出しに登録します。
+アプリの`application:didFinishLaunchingWithOptions:`メソッドで、Places拡張を他のSDK登録呼び出しに登録します。
 
 **Objective-C**
 
@@ -137,7 +137,7 @@ public class PlacesTestApp extends Application {
 }
 ```
 
-**Swift**
+**スウィフト**
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -147,15 +147,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Placesメンバーシップの有効期間の変更 {#places-ttl}
+### Placesメンバーシップの有効期限の変更{#places-ttl}
 
 特にデバイスがバックグラウンドで場所の更新を受け取っていない場合、場所データはすぐに古くなる可能性があります。
 
-構成設定を設定して、デバイス上のPlacesメンバーシップデータの有効期間を制御し `places.membershipttl` ます。 渡される値は、Places状態がデバイスに対して有効なままである秒数を表します。
+`places.membershipttl`構成設定を設定して、デバイス上のPlacesメンバーシップデータの有効期間を制御します。 渡される値は、Places状態がデバイスに対して有効なままである秒数を表します。
 
 #### Android
 
-コールバック内で、を呼び出す前に、必要な変更を加えて設定を `MobileCore.start()` 更新し `lifecycleStart`ます。
+`MobileCore.start()`のコールバック内で、`lifecycleStart`を呼び出す前に、必要な変更を加えて設定を更新します。
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,7 +189,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-の `ACPCore``start:` メソッドのコールバックの最初の行で、 `updateConfiguration:`
+`ACPCore`の`start:`メソッドのコールバックの最初の行で、`updateConfiguration:`を呼び出します。
 
 **Objective-C**
 
@@ -210,7 +210,7 @@ public class PlacesTestApp extends Application {
 }
 ```
 
-**Swift**
+**スウィフト**
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -231,7 +231,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## 設定キー
 
-実行時にSDK設定をプログラムで更新するには、次の情報を使用してPlaces拡張の設定値を変更します。 詳しくは、 [設定APIリファレンスを参照してください](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
+実行時にSDK設定をプログラムで更新するには、次の情報を使用してPlaces拡張の設定値を変更します。 詳しくは、[設定APIリファレンス](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)を参照してください。
 
 | キー | 必須 | 説明 |
 | :--- | :--- | :--- |
