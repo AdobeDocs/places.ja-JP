@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Placesサービスの概要 {#places-service-overview}
+# Placesサービスの概要{#places-service-overview}
 
 POIは、Places Service UIを使用して、Places Serviceデータベース内で作成および管理されます。
 
-* ライブラリを作成または変更するには、ライブラリの [管理を参照してください](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)。
-* POIを作成または変更するには、POIの [管理を参照してください](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md)。
+* ライブラリを作成または変更する方法については、[ライブラリの管理](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)を参照してください。
+* POIを作成または変更する方法については、[POIの管理](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md)を参照してください。
