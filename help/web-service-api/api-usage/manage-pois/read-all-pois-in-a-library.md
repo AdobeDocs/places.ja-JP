@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
-# ライブラリのすべてのPOIを読み取る {#read-all-pois-library}
+# ライブラリ{#read-all-pois-library}のPOIをすべて読み取る
 
 ライブラリ内のすべてのPOIを返すGETメソッド。
 
@@ -168,5 +168,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->「」、「」、「」を実際の値 `<API KEY>``<TOKEN>``<ORGID>` に置き換えます。
+>「, `<API KEY>`, `<TOKEN>`, and `<ORGID>`」を実際の値に置き換えます。
 
