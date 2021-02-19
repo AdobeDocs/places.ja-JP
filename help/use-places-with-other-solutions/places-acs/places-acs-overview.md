@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Campaign Standardでプレイスサービスを使用 {#location-service-acs}
+# Places ServiceとAdobe Campaign Standard{#location-service-acs}を使用
 
 Campaign StandardでPlaces Serviceを使用する場合、次のメッセージタイプを使用できます。
 
