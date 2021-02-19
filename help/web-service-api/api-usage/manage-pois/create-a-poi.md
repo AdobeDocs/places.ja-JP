@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
 
-# POIの作成 {#create-a-poi}
+# POIの作成{#create-a-poi}
 
 POIを作成できるPOST方法。
 
@@ -97,4 +97,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->「,」 `<API KEY>`、「,」、およびを実際の値に置き換えるこ `<TOKEN>``<SINGLEPOIDATA>` とを忘れないでください。
+>`<API KEY>`、`<TOKEN>`、&#39;,&#39;、`<SINGLEPOIDATA>`は必ず実際の値に置き換えてください。
