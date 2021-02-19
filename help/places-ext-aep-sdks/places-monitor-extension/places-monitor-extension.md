@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 配置モニタ拡張 {#places-monitor-extension}
+# モニターの拡張{#places-monitor-extension}を配置
 
 プレースモニター拡張機能は、オペレーティングシステムとのやり取りを処理し、ユーザーに最も近いPOIを登録および監視します。 この拡張機能は、Places拡張から登録する必要があるPOIを取得し、入口および出口の通知をPlaces拡張に渡します。 これらの通知は、Experience Platform Launchルールでイベントとして使用できます。
 
