@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# POIの読み取り {#read-a-poi}
+# POIを読み取る{#read-a-poi}
 
 POIの詳細を返すGETメソッドです。
 
@@ -70,5 +70,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->、 `<POIID>`、 `<API KEY>`およびを実際の値 `<TOKEN>``<ORIGIN>` に置き換えます。
+>`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORIGIN>`を実際の値に置き換えます。
 
