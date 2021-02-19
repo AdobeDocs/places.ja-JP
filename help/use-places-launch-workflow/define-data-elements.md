@@ -4,13 +4,13 @@ description: この節では、場所のExperience Platform Launchでデータ�
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
 
 
-# Define a data element {#define-data-elements}
+# データ要素{#define-data-elements}を定義
 
 次の情報は、データ要素と、データ要素を作成して発行する方法を理解するのに役立ちます。
 
@@ -30,32 +30,32 @@ Places拡張子を使用して、次のターゲットから値を参照でき�
 
 各POIには、次のデータ参照が含まれます。
 
-* **[!UICONTROL Category]**:POIのカテゴリ
-* **[!UICONTROL City]**:ポイ市
-* **[!UICONTROL Country]**:ポイの国
+* **[!UICONTROL カテゴリ]**:POIのカテゴリ
+* **[!UICONTROL 市区町村]**:ポイ市
+* **[!UICONTROL 国]**:ポイの国
 * **[!UICONTROL Latitude]**:POIの緯度
-* **[!UICONTROL Longitude]**:POIの経度
-* **[!UICONTROL Metadata]**:POIのカスタムメタデータ
-* **[!UICONTROL Name]**:POI名
-* **[!UICONTROL Radius]**:陰核心半径
-* **[!UICONTROL Region ID]**:POIのID
-* **[!UICONTROL Region/State]**:POIの地域、都道府県、州
+* **[!UICONTROL 経度]**:POIの経度
+* **[!UICONTROL メタデータ]**:POIのカスタムメタデータ
+* **[!UICONTROL 名前]**:POI名
+* **[!UICONTROL 半径]**:陰核心半径
+* **[!UICONTROL 地域ID]**:POIのID
+* **[!UICONTROL 地域/州]**:POIの地域、都道府県、州
 
 ### データ要素の作成
 
-1. アプリのプロパティページで、 **[!UICONTROL Data Elements]** タブをクリックします。
+1. アプリのプロパティページで、「**[!UICONTROL データ要素]**」タブをクリックします。
 
-1. 「**[!UICONTROL Create New Data Element]**」をクリックします。
+1. 「**[!UICONTROL 新規データ要素を作成]**」をクリックします。
 
-1. インストールされている拡張機能のリストで、を検索し **[!UICONTROL Places]**&#x200B;ます。
+1. インストールされている拡張機能のリストで、**[!UICONTROL 場所]**&#x200B;を探します。
 
-1. ドロップダウン **[!UICONTROL Data Element Type]** リストで、このデータ要素のデータ参照を選択します。
+1. 「**[!UICONTROL データ要素タイプ]**」ドロップダウンリストで、このデータ要素のデータ参照を選択します。
 
 1. POIターゲットを選択します。
 
 1. このデータ要素がカスタムメタデータ参照の場合は、メタデータキーを選択します。
 
-1. データ要素の名前を入力し、をクリックし **[!UICONTROL Save]**&#x200B;ます。
+1. データ要素の名前を入力し、「**[!UICONTROL 保存]**」をクリックします。
 
    ![データ要素の作成](/help/assets/create-de-7-v3.png)
 
@@ -66,8 +66,8 @@ Places拡張子を使用して、次のターゲットから値を参照でき�
 
 ![データ要素の使用](/help/assets/use-de-v2.png)
 
-ルールコンポーネントにデータ要素ピッカーが存在しない場合は、データ要素名をトークンでラップして、データ要素を使用でき **[!UICONTROL %%]** ます。
-例えば、データ要素名がである場合 **[!UICONTROL Last POI City]**&#x200B;は、テキスト入力 **[!UICONTROL LAST POI City]** にを追加できます。
+ルールコンポーネントにデータ要素ピッカーが存在しない場合は、データ要素名を&#x200B;**[!UICONTROL %]**トークンでラップして、データ要素を使用できます。
+例えば、データ要素名が**[!UICONTROL 最後のPOI都市]**&#x200B;の場合、テキスト入力に&#x200B;**[!UICONTROL 最後のPOI都市]**&#x200B;を追加できます。
 
 
 ## データ要素の発行
