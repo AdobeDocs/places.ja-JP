@@ -20,7 +20,7 @@ ht-degree: 10%
 
 プレースサービスでは次のことが可能です。
 
-* 他のAdobe Experience Cloudソリューションと共に活用できるPOIのデータベースを作成し、管理します。
+* 他のAdobe Experience Cloudソリューションで利用できるPOIのデータベースを作成し、管理します。
 * カスタムメタデータをPOIに添付して、追加の属性を指定することで、より豊かで意味のあるものにします。
 * マップ上のPOIを視覚化して、空間的なコンテキストを簡単に理解し、メタデータ属性を追加/編集します。
 * 場所でトリガーされるルールとメタデータに基づく条件を定義するには、Adobe Experience Platform LaunchでSDKを設定します。
@@ -30,7 +30,7 @@ ht-degree: 10%
 
 場所の使い方を次に示します。
 
-* 誰かがPOIに入ったらリアルタイムで通知を送信します。 *「おい。スタジアムへようこそ」*
+* 誰かがPOIに入ったらリアルタイムの通知を送る&#x200B;*&quot;おい…スタジアムへようこそ。&quot;*
 * 自社の店舗と競合他社の店舗の足のトラフィックを分析する。
 * 場所のコンテキストを持つオーディエンスプロファイルを使用して、オフラインの動作に基づいてオーディエンスをセグメント化します。
 * 関連する場合は、ストア内での体験を持つターゲット。
@@ -41,7 +41,7 @@ Places Serviceは、次のコンポーネントで構成されます。
 
 * **Webサービス**
 
-   Places REST APIを使用して、POIの作成と管理を行うことができます。 REST APIについて詳しくは、「ライブラリの [管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) 」および「POIの [管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)」を参照してください。
+   Places REST APIを使用して、POIの作成と管理を行うことができます。 REST APIについて詳しくは、[ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
 
 * **POI管理インターフェイス**
 
@@ -49,35 +49,35 @@ Places Serviceは、次のコンポーネントで構成されます。
 
 * **Places 拡張機能**
 
-   モバイルアプリの位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、 [Places拡張機能を参照してください](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+   モバイルアプリの位置コンテキストを統合するためのマルチプラットフォームモバイルAPIインターフェイス。 SDKについて詳しくは、[場所拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)を参照してください。
 
 * **ルールの起動**
 
-   入口アクションと出口イベントのアクションをトリガーできる、地域インテリジェントな起動ルール。 また、このルールを使用すると、条件の地域属性を使用してエクスペリエンスをパーソナライズすることもできます。
+   入口操作と出口イベントを使用してトリガー操作を可能にする、地域インテリジェントな起動ルール。 また、このルールを使用すると、条件の地域属性を使用してエクスペリエンスをパーソナライズすることもできます。
 
 * **配置モニタ拡張**
 
-   モバイルアプリに埋め込むことができるマルチプラットフォームモバイルSDK。ユーザーの位置の変更を自動的に監視し、場所ルールをトリガーできます。 詳しくは、「 [配置モニター拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)」を参照してください。
+   モバイルアプリに埋め込んで、ユーザーの場所の変更やトリガーの場所のルールを自動的に監視できる、マルチプラットフォームモバイルSDK。 詳しくは、[モニター拡張子](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)を配置を参照してください。
 
 ## 用語
 
 このドキュメントで使用される一般的な用語を以下に示します。
 
-* 目標 **地点(POI)** は、組織が関心を持つ地域です。
+* **目標地点(POI)**&#x200B;は、組織が関心を持つ地域です。
 
    POIは、名前、半径、住所、カテゴリ、メタデータタグなどの属性を使用して定義できます。
 
-* ジオフェンス **は** 、POIの一種です。
+* **ジオフェンス**&#x200B;はPOIの一種です。
 
    このPOIタイプは、緯度と経度の座標で定義される仮想的な地理的境界です。
 
-* **ビーコンは** 、POIの一種です。
+* **ビーコン**&#x200B;はPOIの一種です。
 
    このPOIタイプは、低電力のBluetooth信号を発することによって位置を表す物理デバイスです。 ビーコンのサポートは、今後のリリースで提供される予定です。
 
 * **ライブラリ** は POI の集まりで、1 つではなく POI のセットへ簡単にルールを付加できるようにグループ化されています。
 
-* 拡張 **機能** とは、モバイルアプリにPlaces SDKを統合するために必要なExperience Platform Launch拡張機能です。
+* **拡張子**&#x200B;は、Places SDKをモバイルアプリに統合するために必要なExperience Platform Launch拡張子です。
 
    他のモバイルSDKと共に、エクスペリエンスに場所のコンテキストを追加するために使用される拡張機能。
 
@@ -87,8 +87,8 @@ Places Serviceは、次のコンポーネントで構成されます。
 
 * **orgID** は Adobe Experience Platform をまたいで組織を表す ID です。
 
-   詳しくは、orgIDの [検索を参照してください](https://forums.adobe.com/thread/2339895)。
+   詳しくは、[orgIDの検索](https://forums.adobe.com/thread/2339895)を参照してください。
 
-* **Experience CloudID** サービスは、Experience Cloud内のすべてのソリューションにわたって訪問者を識別する、汎用の永続的なIDを提供します。
+* **Experience CloudID**&#x200B;サービスは、Experience Cloud内のすべてのソリューションで訪問者を識別する、汎用の永続的なIDを提供します。
 
    詳しくは、[概要](https://docs.adobe.com/content/help/ja-JP/id-service/using/intro/overview.html)を参照してください。
