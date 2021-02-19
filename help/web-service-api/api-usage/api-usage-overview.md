@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# APIの使用の概要 {#api-usage-overview}
+# API使用の概要{#api-usage-overview}
 
 Places REST APIを使用してPOIとライブラリを管理するには、次の節を参照してください。
 
