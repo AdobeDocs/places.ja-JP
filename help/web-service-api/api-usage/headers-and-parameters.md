@@ -10,7 +10,7 @@ ht-degree: 17%
 ---
 
 
-# Headers and parameters {#headers-and-parameters}
+# ヘッダーとパラメーター{#headers-and-parameters}
 
 Places Service REST APIで使用可能なヘッダーとパラメーターの詳細を次に示します。
 
@@ -40,7 +40,7 @@ Places Service REST APIで使用可能なヘッダーとパラメーターの詳
 | パラメーター | 説明 | タイプ | 制限 | リクエストまたは応答 | 例 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `data` | Poiデータ | 一連のPOIの詳細 | なし | both |  |
-| `id` | POIのID | assigned | なし | 回答 | `"id": "1455462b-7f9c-4220-9f42-5bbce777a0d1"` |
+| `id` | POIのID | assigned | なし | response | `"id": "1455462b-7f9c-4220-9f42-5bbce777a0d1"` |
 | `name` | POIの名前 | 文字列 | 512 文字 | both, optional\* | `"name": "My Favorite Place"` |
 | `description` | POIの説明 | 文字列 | 512 文字 | both, optional\* | `"description": "This is a very good place."` |
 | `location` | POIのタイプと座標の配列 | 配列（混在） | なし | both | `"location": {"type": "Point", "coordinates": [-122.201007, 37.604713]` |
@@ -57,5 +57,5 @@ Places Service REST APIで使用可能なヘッダーとパラメーターの詳
 | `metadata` | POI用のキー/値のペアの配列 | array(string) | key:256文字、値：256文字、最大10組 | both, optional* | `"metadata": {"region": "Equator"}` |
 | `lib_id` | POIが属するライブラリのID | なし | なし | 両方、必須 | `"lib_id": "ac7a0b25-c6c2-43ba-bbc6-2b1777b80fe9"` |
 
-* パラメータ値が含まれていない場合、値はデータベース `empty` 内のに設定されます。 既存のキーと値のペアが含まれていない場合、そのPOIのキーと値のペアはデータベースから削除されます。
+* パラメータ値が含まれていない場合、値はデータベース内で`empty`に設定されます。 既存のキーと値のペアが含まれていない場合、そのPOIのキーと値のペアはデータベースから削除されます。
 
