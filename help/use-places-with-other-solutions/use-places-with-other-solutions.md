@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 他のAdobeソリューションとPlaces Serviceを使用 {#use-places-other-solutions}
+# 他のAdobeソリューションと共にPlaces Serviceを使用{#use-places-other-solutions}
 
 それ自体では、Places Serviceを使用して場所データを収集することは、アプリでは役に立ちません。 他のAdobeソリューションに提供する場合、場所データから実際の価値を得る開始が必要です。 このプロセスでは、場所データを使用して、カスタムエクスペリエンスを提供し、十分な情報に基づいた決定を行うことができます。
 
