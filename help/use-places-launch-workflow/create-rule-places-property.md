@@ -4,13 +4,13 @@ description: '配置SDKは、現在の場所を追跡し、現在の場所の周
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 7%
+source-wordcount: '927'
+ht-degree: 14%
 
 ---
 
 
-# 入口ルールと出口ルールの作成 {#create-entry-exit-rules}
+# 入口と出口のルールを作成{#create-entry-exit-rules}
 
 Places拡張機能とPlaces Monitor拡張機能をモバイルアプリケーションにインストールすると、場所の入口データや出口イベントを含む、トリガーまたは条件付きの場所データを、Adobe Experience Platform Launchでルールを作成できます。
 
@@ -31,7 +31,7 @@ Places拡張機能とPlaces Monitor拡張機能をモバイルアプリケーシ
 
 ### サービス条件を配置
 
-条件は、イベントに関連付けられたデータ、またはそのインスタンスの拡張の共有状態が、アクションを実行するために満たす必要がある条件を定義します。 例えば、サンフランシスコの町のみの喫茶店への入口に対してアクションをトリガーする条件を設定できます。
+条件は、イベントに関連付けられたデータ、またはそのインスタンスの拡張の共有状態が、アクションを実行するために満たす必要がある条件を定義します。 例えば、サンフランシスコ市内の喫茶店への入口に対するアクションをトリガーする条件を設定できます。
 
 配置SDKは次の状態を維持します。
 
@@ -55,7 +55,7 @@ Places拡張機能とPlaces Monitor拡張機能をモバイルアプリケーシ
 
 >[!CAUTION]
 >
->この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。For more information about creating POIs and libraries, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md) and *Create a Library* in [Manage multiple libraries](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。POIとライブラリの作成について詳しくは、[POI](/help/poi-mgmt-ui/create-a-poi-ui.md)を作成するおよび&#x200B;*複数のライブラリを管理する](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)の[ライブラリを作成するを参照してください。*
 
 以下の手順は、サンフランシスコで喫茶店に入ったときにSlackに投稿を返すルールの作成方法の例です。
 
@@ -71,64 +71,64 @@ Places拡張機能とPlaces Monitor拡張機能をモバイルアプリケーシ
 
 Experience Platform Launchでデータ要素を作成するには：
 
-1. 「 **データ要素** 」タブをクリックします。
-1. Click **Add Data Element**.
-1. 名前を入力します(例： **現在の喫茶店名**)。
-1. 「 **拡張子** 」ドロップダウンリストで、「 **場所**— ベータ版」を選択します。
+1. 「**データ要素**」タブをクリックします。
+1. 「**追加データ要素**」をクリックします。
+1. 名前を入力します（例：**現在のコーヒーショップ名**）。
+1. 「**拡張子**」ドロップダウンリストで、「**場所 — ベータ版**」を選択します。
 1. 「**データ要素**」で「**市区町村**」を選択します。
-1. 右側のウィンドウで、「 **現在のPOI**」を選択します。
+1. 右側のウィンドウで、「**現在のPOI**」を選択します。
 1. 「**保存**」をクリックします。
 
 ### Places ServiceのExperience Platform Launchでのルールの作成
 
 ![ルールの作成](/help/assets/placesrule.png)
 
-1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
+1. Experience Platform Launch で、「**[!UICONTROL ルール]**」タブをクリックします。
 1. 「**[!UICONTROL Add Rule]**」をクリックします。
-1. ルールの名前を入力します(例： **[!UICONTROL Track entry for coffee shop in SF]**)。
+1. ルールの名前を入力します（例：**[!UICONTROL SF]**&#x200B;の喫茶店のトラックエントリ）。
 
 ### イベントの作成
 
-1. In the Events section, click **[!UICONTROL + Add]**. イベントは、ルールをいつ実行するかを決定します。
-1. In the **[!UICONTROL Extension]** drop-down list, select **[!UICONTROL Places – Beta]**.
-1. In the **[!UICONTROL Event Type]** drop-down list, select **[!UICONTROL Enter POI]**.
-1. に、 **[!UICONTROL Name]**&#x200B;イベントの名前を入力します(例： **[!UICONTROL Entering a coffee shop]**)。
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「イベント」セクションで、**[!UICONTROL +追加]**&#x200B;をクリックします。 イベントは、ルールをいつ実行するかを決定します。
+1. 「**[!UICONTROL 拡張子]**」ドロップダウンリストで、「**[!UICONTROL 場所 — ベータ版]**」を選択します。
+1. **[!UICONTROL イベントタイプ]**&#x200B;ドロップダウンリストで、「**[!UICONTROL POI を入力]**」を選択します。
+1. 「**[!UICONTROL 名前]**」に、イベントの名前を入力します（例：「**[!UICONTROL コーヒーショップへの来店]**」）。
+1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 ### 条件の作成
 
-1. In the Conditions section, click **[!UICONTROL +Add]**. 条件は、アクションを実行するために満たす必要がある条件を決定します。
-1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
-1. In the **[!UICONTROL Extension]** drop-down list, select **[!UICONTROL Places – Beta]**.
-1. 「**[!UICONTROL Condition Type]**」で、「**[!UICONTROL City]**」を選択します。
-1. 例えば、条件名を入力し **[!UICONTROL Coffee shop in SF]**&#x200B;ます。
-1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「条件」セクションで、**[!UICONTROL +追加]**&#x200B;をクリックします。 条件は、アクションを実行するために満たす必要がある条件を決定します。
+1. 「**[!UICONTROL 論理タイプ]**」で「標準」を選択し、条件が満たされた場合にアクションを実行できます。
+1. 「**[!UICONTROL 拡張子]**」ドロップダウンリストで、「**[!UICONTROL 場所 — ベータ版]**」を選択します。
+1. 「**[!UICONTROL 条件タイプ]**」で「**[!UICONTROL 市区町村]**」を選択します。
+1. 条件名を入力します。例えば、SF ]**の**[!UICONTROL &#x200B;喫茶店を入力します。
+1. 右側のウィンドウで「**[!UICONTROL 現在の POI]**」をクリックし、ドロップダウンリストで「**[!UICONTROL サンフランシスコ]**」を市区町村の 1 つとして選択します。
+1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 ### アクションの作成
 
-1. 「**[!UICONTROL Actions]**」セクションで、「**[!UICONTROL + Add]**」をクリックします。
-1. ドロップダウン **[!UICONTROL Extension]** リストで、デフォルトの **[!UICONTROL Mobile Core]** オプションを選択したままにします。
-1. 例えば、アクションタイプを選択し **[!UICONTROL Send Postback]**&#x200B;ます。
+1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL +追加]**」をクリックします。
+1. 「**[!UICONTROL 拡張機能]**」ドロップダウンリストで、デフォルトの「**[!UICONTROL モバイルコア]**」オプションを選択したままにします。
+1. アクションのタイプを選択します（例：**[!UICONTROL ポストバックを送信]**）。
 
-   a.に、Slack **[!UICONTROL URL]**&#x200B;のポストバックURLを入力します(例： `https://hooks.slack.com/services/`)。
+   a.**[!UICONTROL URL]**&#x200B;に、SlackのポストバックURLを入力します（例：`https://hooks.slack.com/services/`）。
 
-   b.投稿の本文を送信するには、チェックボックスをオンにし **[!UICONTROL Add Post Body]** ます。
+   b.投稿の本文を送信するには、「**[!UICONTROL 投稿の本文]**」追加チェックボックスをオンにします。
 
-   c.で、投稿本文 **[!UICONTROL Post Body]**&#x200B;を追加します。例： `{ "text": "A customer has entered" }`
+   c. **[!UICONTROL 投稿本文]**&#x200B;に投稿本文を追加します。例：`{ "text": "A customer has entered" }`
 
-   c.例えば、コンテンツタイプを入力し **[!UICONTROL application/json]**&#x200B;ます。
+   c.コンテンツタイプを&#x200B;**[!UICONTROL application/json]**&#x200B;のように入力します。
 
-   d.例えば、タイムアウト値を選択し **[!UICONTROL 5]**&#x200B;ます。
+   d.タイムアウト値を選択します（例：**[!UICONTROL 5]**）。
 
-1. 「**[!UICONTROL Keep Changes]**」をクリックします。
+1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 ### ルールを発行する
 
-1. ルールをアクティブ化するには、発行する必要があります。 Experience Platform Launchでのルールの発行について詳しくは、 [発行を参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)。
+1. ルールをアクティブ化するには、発行する必要があります。 Experience Platform Launchでのルールの発行について詳しくは、[発行](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html)を参照してください。
 
 ### 入口と出口を越えた考え方
 
-Places Service Geo-fenceのエントリと出口を使用してExperience Platform Launch内のルールをトリガーするのは非常に強力ですが、場所データを他のイベントが実行する条件として使用することもできます。 例えば、アプリ内の特定のtrackAction呼び出しイベントに基づいて、モバイルコア追跡アクションイベントトリガーを起動する準備ができているとします。 このイベントに基づいて、アクションが実行される前に、追加の場所条件をイベントに配置できます。 例えば、購入 `trackAction` イベントが発生した場合にアプリ内調査を開き、ユーザーの現在の場所に特定のPlaces Serviceメタデータが含まれている場合にの **** み表示します。
+Places ServiceのGeoFenceのエントリと出口をExperience Platform Launchでトリガールールに使用することは非常に強力ですが、場所データを他のイベントが実行できる条件として使用することもできます。 例えば、アプリ内の特定のtrackAction呼び出しイベントに基づいて起動する準備ができたMobileコア追跡アクションイベントトリガーを設定できます。 このイベントに基づいて、アクションが実行される前に、追加の場所条件をイベントに配置できます。 例えば、購入`trackAction`イベントが発生したが、現在の場所に特定のPlaces Serviceメタデータが含まれている場合は&#x200B;**のみ**&#x200B;のアプリ内調査を開きます。
 
 ![条件を作る](/help/assets/places-condition.png)
