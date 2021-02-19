@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 独自のモニタの使用 {#using-your-monitor}
+# 独自のモニタ{#using-your-monitor}を使用する
 
 また、Places拡張APIを使用して、監視サービスを使用し、Places Serviceと統合することもできます。
 
@@ -24,7 +24,7 @@ iOSで、次の手順を実行します。
 
 1. iOSのコアロケーションサービスから取得した場所の更新をPlaces拡張に渡します。
 
-1. Places拡張APIを使用して、現在の場所周辺の `getNearbyPointsOfInterest``ACPPlacesPoi` オブジェクトの配列を取得します。
+1. `getNearbyPointsOfInterest`拡張APIを使用して、現在の場所の`ACPPlacesPoi`オブジェクトの配列を取得します。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -34,7 +34,7 @@ iOSで、次の手順を実行します。
    }
    ```
 
-1. 取得したオブジェクトから情報を抽出し、それらのPOIを監視する `ACPPlacesPOI` 開始。
+1. 取得した`ACPPlacesPOI`オブジェクトから情報を抽出し、それらのPOIを監視する開始を取得します。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -60,7 +60,7 @@ iOSで、次の手順を実行します。
 
 1. Google PlayサービスまたはAndroidロケーションサービスから取得した場所の更新をPlaces Extensionに渡します。
 
-1. Places Extension APIを使用して、現在の場所周辺の `getNearbyPointsOfInterest``PlacesPoi` オブジェクトのリストを取得します。
+1. `getNearbyPointsOfInterest` Places Extension APIを使用して、現在の場所の`PlacesPoi`オブジェクトのリストを取得します。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -78,7 +78,7 @@ iOSで、次の手順を実行します。
    };
    ```
 
-1. 取得したオブジェクトからデータを抽出し、それらのPOIを監視する `PlacesPOI` 開始。
+1. 取得した`PlacesPOI`オブジェクトからデータを抽出し、それらのPOIを監視する開始を取得します。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -103,7 +103,7 @@ iOSで、次の手順を実行します。
    ```
 
 
-この `getNearbyPointsOfInterest` APIを呼び出すと、現在の場所を取得するネットワーク呼び出しが発生します。
+`getNearbyPointsOfInterest` APIを呼び出すと、現在の場所の周りの場所を取得するネットワーク呼び出しが発生します。
 
 >[!IMPORTANT]
 >
@@ -113,7 +113,7 @@ iOSで、次の手順を実行します。
 
 ### iOS
 
-iOSでは、 `processGeofenceEvent` Places APIを `CLLocationManager` delegateで呼び出します。 このAPIは、ユーザーが特定の領域に入ったか出たかを通知します。
+iOSでは、`processGeofenceEvent` Places APIを`CLLocationManager`デリゲートに呼び出します。 このAPIは、ユーザーが特定の領域に入ったか出たかを通知します。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -127,7 +127,7 @@ iOSでは、 `processGeofenceEvent` Places APIを `CLLocationManager` delegate�
 
 ### Android
 
-Androidで、Geofence放送受信機で適切なトランジションイベントと共に `processGeofence` メソッドを呼び出します。 重複の入口/出口を防ぐために、受け取ったジオフェンスのリストをキュレーションする必要がある場合があります。
+Androidで、Geofenceブロードキャスト受信機の適切なトランジションイベントと共に`processGeofence`メソッドを呼び出します。 重複の入口/出口を防ぐために、受け取ったジオフェンスのリストをキュレーションする必要がある場合があります。
 
 ```java
 void onGeofenceReceived(final Intent intent) {
