@@ -14,13 +14,13 @@ ht-degree: 1%
 
 メッセージングにMobile Services Extensionを使用する前に、次の前提条件を確認します。
 
-* 目標地点はPlaces Serviceで作成されました。 For more information, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
+* 目標地点はPlaces Serviceで作成されました。 詳しくは、[POIの作成](/help/poi-mgmt-ui/create-a-poi-ui.md)を参照してください。
 
    >[!IMPORTANT]
    >
-   >Places Serviceには、従来のMobile Services UIの外部に存在する組織のPOIデータベースが新たに追加され、改善されました。 Mobile Service *Manage Placess* ページナビゲーションにあるPOIは、SDKバージョン4でのみ機能します。
+   >Places Serviceには、従来のMobile Services UIの外部に存在する組織のPOIデータベースが新たに追加され、改善されました。 Mobile Service *プレース*&#x200B;の管理ページナビゲーションにあるPOIは、SDKのバージョン4でのみ機能します。
 
-* 以前のバージョンのSDK用のレガシーMobile Services UIの場所 *POI管理の* 管理ページを次に示します。
+* 以前のバージョンのSDK用のレガシーMobile Services UIの&#x200B;*場所の管理* POI管理ページを示します。
 
    ![レガシーUI](/help/assets/legacy-location-v4-ui.png)
 
@@ -30,15 +30,15 @@ ht-degree: 1%
 
 * ACP SDKは、Places Service拡張および/またはPlaces Monitor拡張を使用して正しく設定されます。
 
-   つまり、モバイルアプリのExperience Platform Launchルールエンジンで、イベントや条件としてデータを使用できます。 詳しくは、「 [Places拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md) 」または「 [Places Monitor拡張子](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)」を参照してください。
+   つまり、モバイルアプリのExperience Platform Launchルールエンジンで、イベントや条件としてデータを使用できます。 詳しくは、[拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)または[モニター拡張子](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)を配置を参照してください。
 
 * モバイルアプリのACP SDKに対するExperience Platform Launchルールの作成と公開について説明します。
 
-   For more information, see [Rules engine](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
+   詳しくは、[ルールエンジン](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)を参照してください。
 
 * Experience Platform Launchデータ要素は、ルールエンジンで使用されるPlaces拡張データから作成されます。
 
-   For more information, see [Data elements](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
+   詳しくは、[データ要素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)を参照してください。
 
 ## レポート
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 
 * PlacesサービスのデータがAdobe Analyticsレポートスイートに正常に送信されました。
 
-   詳しくは、「Adobe Analyticsでプレースサービスを [使用する](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)」を参照してください。
+   詳しくは、[Adobe Analyticsとのプレースサービスの使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)を参照してください。
 
 * Mobile Servicesのレポートについて理解します。
 
-   For more information, see [Reports](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
+   詳しくは、[レポート](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html)を参照してください。
 
 ## レポート可視化
 
