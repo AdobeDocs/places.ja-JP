@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# ライブラリの削除 {#delete-a-library}
+# ライブラリの削除{#delete-a-library}
 
 ライブラリを削除できるDELETE方法。
 
@@ -46,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->、、などの変数 `<lIBRARYID>`を実際の値 `<API KEY>``<TOKEN>``<ORGID>`に置き換えます。
+>`<lIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
 
