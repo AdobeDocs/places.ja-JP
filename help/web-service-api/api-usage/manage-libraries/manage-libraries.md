@@ -9,7 +9,7 @@ ht-degree: 5%
 
 ---
 
-# ライブラリの管理の概要 {#manage-libraries}
+# ライブラリの管理の概要{#manage-libraries}
 
 Places Service REST APIを使用して、次のタスクを完了できます。
 
