@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -18,7 +18,7 @@ Experience Platform Launch はルールベースのシステムで、ユーザ�
 
 ## データ要素
 
-データ要素は、データディクショナリやデータマップの構成要素です。 データ要素を使用して、マーケティングや広告のテクノロジー全体でデータを収集、整理、配信できます。
+データ要素 は、データディクショナリまたはデータマップの構築ブロックです。 データ要素を使用して、マーケティングや広告のテクノロジー全体でデータを収集、整理、配信できます。
 
 データ要素は変数で、この変数の値はクエリ文字列、URL、cookieの値、JavaScript変数などにマップできます。 Experience Platform Launchでは、変数名でこの値を参照できます。 データ要素のコレクションは、ルール(イベント、条件、アクション)の作成に使用できる定義済みデータのディクショナリになり、データディクショナリはExperience Platform Launch全体で共有され、Places拡張と共に使用できます。
 
