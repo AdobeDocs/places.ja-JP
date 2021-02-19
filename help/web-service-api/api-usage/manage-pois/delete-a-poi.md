@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
 
-# POIの削除 {#delete-a-poi}
+# POIの削除{#delete-a-poi}
 
 POIを削除できるDELETE方法。
 
@@ -46,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->、 `<POIID>`、 `<API KEY>`およびを実際の値 `<TOKEN>``<ORGID>` に置き換えます。
+>`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。
 
