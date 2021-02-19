@@ -5,13 +5,13 @@ translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 
 
-# 複数のPOIの削除 {#delete-multiple-pois}
+# 複数のPOIを削除{#delete-multiple-pois}
 
 複数のPOIを削除できるPOST方法。
 
@@ -49,11 +49,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete' 
 
 >[!IMPORTANT]
 >
->、 `<API KEY>`、 `<TOKEN>`およびを実数値 `<ORGID>``<PATHTOBATCHDELETEJSONFILE>` に置き換えます。
+>`<API KEY>`、`<TOKEN>`、`<ORGID>`、`<PATHTOBATCHDELETEJSONFILE>`を実数で置き換えます。
 
 ## サンプルJSONファイル
 
-次に、 `batchDelete` APIのサンプルJSONファイルを示します。
+以下に、`batchDelete` APIのサンプルJSONファイルを示します。
 
 ```text
 {​"ids":["31a49d5c-c6ad-46ae-b88d-a6912a8a6b2f","6a78a729-7973-4373-9199-36da18cc5b8c","74eaa3da-2464-4298-9b6d-5376fa7ea00f"]​}
