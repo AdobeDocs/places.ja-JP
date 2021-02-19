@@ -109,7 +109,7 @@ GET https://query.places.adobe.com/placesedgequery
 }
 ```
 
-下のPOI `places.pois` は、発信者からPOIの端までの距離で分類される。 の下のPOIには呼び出し元が `places.userWithin` 含まれ、これらのPOIはランク順に並べられ、次に半径が増えます。
+`places.pois`の下のPOIは、発信者からPOIの端までの距離で並べ替えられます。 `places.userWithin`の下のPOIには呼び出し元が含まれ、これらのPOIはランク順に並べられ、その後半径が大きくなります。
 
 ## サンプル呼び出し
 
