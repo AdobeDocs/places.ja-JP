@@ -10,11 +10,11 @@ ht-degree: 0%
 ---
 
 
-# PlacesサービスUIの概要 {#management-ui-overview}
+# Places Service UIの概要{#management-ui-overview}
 
 POIとライブラリは、Places Service UIを使用してPlaces Serviceデータベースで作成、管理されます。
 
-* ライブラリの作成や複数のライブラリの管理については、ライブラリの [管理を参照してください](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)。
-* POIを作成するには、POIの [作成を参照してください](/help/poi-mgmt-ui/create-a-poi-ui.md)。
-* 複数のPOIを管理するには、「以前に作成したPOIの [管理](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md)」を参照してください。
-* POIの一括インポートを実行するには、POIの [一括インポートを参照してください](/help/poi-mgmt-ui/bulk-upload-pois.md)。
+* ライブラリの作成や複数のライブラリの管理については、[ライブラリの管理](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md)を参照してください。
+* POIの作成については、[POIの作成](/help/poi-mgmt-ui/create-a-poi-ui.md)を参照してください。
+* 複数のPOIを管理するには、[以前に作成したPOIの管理](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md)を参照してください。
+* POIの一括インポートを実行するには、[POIの一括インポート](/help/poi-mgmt-ui/bulk-upload-pois.md)を参照してください。
