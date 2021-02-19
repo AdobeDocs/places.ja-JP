@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Places Monitor APIリファレンス {#places-api-reference}
+# モニタAPIリファレンスを配置{#places-api-reference}
 
 ## Register Places Monitor Extension
 
@@ -30,7 +30,7 @@ public static void registerExtension();
 
 #### 例
 
-Experience PlatformSDKの残りの部分を初期化する `onCreate` メソッドで、このメソッドを呼び出します。
+Experience PlatformSDKの残りの部分を初期化する`onCreate`メソッドでこのメソッドを呼び出します。
 
 ```java
 public class MobileApp extends Application {
@@ -61,7 +61,7 @@ Objective-Cの構文を次に示します。
 
 #### 例
 
-This method should be called in the `didFinishLaunchingWithOptions` delegate method of the `AppDelegate`.
+このメソッドは、`AppDelegate`の`didFinishLaunchingWithOptions` delegateメソッドで呼び出す必要があります。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -120,7 +120,7 @@ NSString *placesMonitorVersion = [ACPPlacesMonitor extensionVersion];
 
 ### 開始(Android)
 
-デバイスの場所を使用する権限がユーザーによって付与されていない場合、 `start` APIへの最初の呼び出しによって、ユーザーに権限を求めるメッセージが表示されます。
+デバイスの場所を使用する権限がユーザーによって付与されていない場合は、`start` APIへの最初の呼び出しによって、ユーザーに許可を求めるメッセージが表示されます。
 
 このAPIの構文とコード例を次に示します。
 
@@ -142,15 +142,15 @@ PlacesMonitor.start();
 >
 >監視を開始するには、ロケーションサービスに必要な認証が必要です。
 >
->* Places Serviceの認証がアプリケーションに提供されていない場合、最初の `start` APIの呼び出しでは、アプリケーションに対して設定されたPlaces Serviceを使用するように承認が要求されます。
->* デバイスの機能に応じて、認証が提供されている場合は、プレースモニターは現在設定されている場所に基づいてユーザーの場所を追跡し `ACPPlacesMonitorMode`ます。 デフォルトでは、モニタはを使用 `ACPPlacesMonitorModeSignificantChanges`します。
+>* Places Serviceの認証がアプリケーションに提供されていない場合、`start` APIへの最初の呼び出しは、アプリケーションに対して設定されているPlaces Serviceを使用するための認証を要求します。
+>* デバイスの機能に応じて、認証が提供されている場合、プレースモニターは、現在設定されている`ACPPlacesMonitorMode`に基づいてユーザーの場所を追跡します。 デフォルトでは、モニターは`ACPPlacesMonitorModeSignificantChanges`を使用します。
 
 
 >[!CAUTION]
 >
 >SDKの初期化が終了する前に開始の監視の呼び出しが行われた場合は、無視される場合があります。
 
-に提供されたコールバックからを呼び出すことで、SDKの初期化 `start` が完了したことを確認でき `ACPCore::start:`ます。
+`ACPCore::start:`に提供されたコールバックから`start`を呼び出すことで、SDKの初期化が完了したことを確認できます。
 
 このAPIの構文とコード例を次に示します。
 
@@ -258,7 +258,7 @@ PlacesMonitor.updateLocation();
 >
 >このAPIは、Android 10以降のデバイスでのみ有効です。
 >
->ユーザーに表示される適切な認証プロンプトを設定するには、このAPIを `PlacesMonitor.start()`このメソッドを呼び出すと、アクティブに監視しながら、場所の権限レベルが要求された権限の値にアップグレードされます。 要求された認証レベルが既にアプリケーションユーザーによって提供または拒否されている場合、またはアクセス許可をから `ALWAYS_ALLOW` にダウングレードしようとした場合、このメソッドは無効 `WHILE_USING_APP`です。
+>ユーザーに表示する適切な認証プロンプトを設定するには、このAPIを`PlacesMonitor.start()`の前に呼び出します。 このメソッドを呼び出すと、アクティブに監視しながら、場所の権限レベルが要求された権限の値にアップグレードされます。 要求された認証レベルが既に提供または拒否されている場合、または`ALWAYS_ALLOW`から`WHILE_USING_APP`に権限をダウングレードしようとした場合、このメソッドは無効です。
 
 場所の権限は、次のいずれかの値に設定できます。
 
@@ -282,7 +282,7 @@ PlacesMonitor.updateLocation();
 
 >[!IMPORTANT]
 >
->アプリユーザーに `WHILE_USING_APP` 権限が付与された場合、ジオフェンスはオペレーティングシステムに登録されません。 その結果、プレースモニター拡張機能によって、バックグラウンドで発生している地域で入口/出口イベントがトリガーされることはありません。
+>アプリケーションユーザーに`WHILE_USING_APP`権限が与えられた場合、ジオフェンスはオペレーティングシステムに登録されません。 その結果、プレースモニター拡張機能は、バックグラウンドで発生している地域でのトリガーの入口/出口イベントを行いません。
 
 このAPIの構文とコード例を次に示します。
 
@@ -294,7 +294,7 @@ public static void setLocationPermission(final PlacesMonitorLocationPermission p
 
 #### 例
 
-権限をリクエストするには、次の手順に従い `WHILE_USING_APP` ます。
+`WHILE_USING_APP`権限をリクエストするには：
 
 ```java
 // set the location permission
@@ -303,7 +303,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.WHILE_USING_
 PlacesMonitor.start()
 ```
 
-権限にアップグレードするには、次の手順に従い `ALWAYS_ALLOW` ます。
+`ALWAYS_ALLOW`権限にアップグレードするには：
 
 ```java
 // upgrade the permission level
@@ -314,23 +314,23 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 このAPIは、ユーザーに対してプロンプトが表示される場所の認証要求のタイプを設定します。
 
-ユーザーに表示される適切な認証プロンプトを設定するには、を呼び出す `SetRequestAuthorizationLevel` 前にを呼び出し `[ACPPlacesMonitor start]`ます。 ユーザーに表示する適切な認証プロンプトを設定するには、このAPIを `[ACPPlacesMonitor start]`アクティブな監視中にこのメソッドを呼び出すと、場所の認証レベルが要求された認証値にアップグレードされます。 要求された認証レベルが、アプリケーションユーザーによって既に提供または拒否されている場合、またはから `ACPPlacesRequestAuthorizationLevelAlways``ACPPlacesRequestAuthorizationLevelWhenInUse` 認証へのアクセス許可がダウングレードされている場合は、このメソッドは無効です。
+ユーザーに表示する適切な認証プロンプトを設定するには、`[ACPPlacesMonitor start]`を呼び出す前に`SetRequestAuthorizationLevel`を呼び出します。 ユーザーに表示する適切な認証プロンプトを設定するには、このAPIを`[ACPPlacesMonitor start]`の前に呼び出します。 アクティブな監視中にこのメソッドを呼び出すと、場所の認証レベルが要求された認証値にアップグレードされます。 要求された認証レベルが、既にアプリケーションユーザーによって提供または拒否されている場合、または`ACPPlacesRequestAuthorizationLevelAlways`から`ACPPlacesRequestAuthorizationLevelWhenInUse`への権限のダウングレードがある場合、このメソッドは無効です。
 
 認証レベルは、次のいずれかの値に設定できます。
 
 * `ACPPlacesRequestAuthorizationLevelWhenInUse`
 
-   アプリの使用中にPlaces Serviceを使用するユーザーの権限を要求します。 ユーザープロンプトには、アプリのInfo.plistファイルの `NSLocationWhenInUseUsageDescription` キーのテキストが含まれ、このメソッドを呼び出す場合はそのキーの存在が必要です。 詳しくは、requestWhenInUseAuthorizationに関する [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)。
+   アプリの使用中にPlaces Serviceを使用するユーザーの権限を要求します。 ユーザープロンプトには、アプリのInfo.plistファイルの`NSLocationWhenInUseUsageDescription`キーのテキストが含まれ、このメソッドを呼び出す場合はそのキーの存在が必要です。 詳しくは、requestWhenInUseAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)の[Appleのドキュメントを参照してください。
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   アプリがバックグラウンドにある場合でも、この列挙を使用してPlaces Serviceを要求します。 アプリのInfo.plistに `NSLocationAlwaysUsageDescription` および `NSLocationWhenInUseUsageDescription` キーが必要です。 これらのキーは、ユーザープロンプトで表示されるテキストを定義します。 詳しくは、requestAlwaysAuthorizationに関する [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
+   アプリがバックグラウンドにある場合でも、この列挙を使用してPlaces Serviceを要求します。 アプリのInfo.plistに`NSLocationAlwaysUsageDescription`キーと`NSLocationWhenInUseUsageDescription`キーが必要です。 これらのキーは、ユーザープロンプトで表示されるテキストを定義します。 詳しくは、requestAlwaysAuthorization](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)の[Appleのドキュメントを参照してください。
 
 `ACPPlacesRequestAuthorizationLevelAlways` は、デフォルトのリクエスト認証値です。
 
 >[!IMPORTANT]
 >
->権限の使用を承認したアプリケーションは、バックグラウンドで発生している地域の入口/出口イベントをトリガーしません。 `ACPPlacesRequestAuthorizationLevelWhenInUse`
+>`ACPPlacesRequestAuthorizationLevelWhenInUse`権限の使用を承認したアプリケーションは、バックグラウンドで発生している地域でトリガーの入口/出口イベントを行いません。
 
 このAPIの構文とコード例を次に示します。
 
@@ -342,7 +342,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 #### 例
 
-権限をリクエストするには、次の手順に従い `ACPPlacesRequestAuthorizationLevelWhenInUse` ます。
+`ACPPlacesRequestAuthorizationLevelWhenInUse`権限をリクエストするには：
 
 ```objective-c
 // set the request authorization level
@@ -351,7 +351,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 [ACPPlacesMonitor start];
 ```
 
-認証にアップグレードするには、次の手順に従い `ACPPlacesRequestAuthorizationLevelAlways` ます。
+`ACPPlacesRequestAuthorizationLevelAlways`認証にアップグレードするには：
 
 ```objective-c
 // set the request authorization level
@@ -364,11 +364,11 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 * `ACPPlacesMonitorModeContinuous`
 
-   監視拡張機能は、場所をより頻繁に受信し、処理します。 この監視方法は、大量の電力を消費しますが、高い精度を提供します。 詳しくは、継続的な監視に関する [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1423750-startupdatinglocation)。
+   監視拡張機能は、場所をより頻繁に受信し、処理します。 この監視方法は、大量の電力を消費しますが、高い精度を提供します。 詳しくは、[継続的な監視に関するAppleのドキュメント](https://developer.apple.com/documentation/corelocation/cllocationmanager/1423750-startupdatinglocation)を参照してください。
 
 * `ACPPlacesMonitorModeSignificantChanges`
 
-   監視拡張機能は、デバイスが以前に処理された場所からかなり離れた場所に移動した後にのみ、場所の更新を受信して処理します。 この監視方法は、継続的な監視方法よりも消費電力が少なくなります。 詳しくは、重要な監視に関する [Appleのドキュメントを参照してください](https://developer.apple.com/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati)
+   監視拡張機能は、デバイスが以前に処理された場所からかなり離れた場所に移動した後にのみ、場所の更新を受信して処理します。 この監視方法は、継続的な監視方法よりも消費電力が少なくなります。 詳しくは、[重要な監視に関するAppleのドキュメント](https://developer.apple.com/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati)を参照してください
 
 ### SetPlacesMonitorMode(iOS)
 
