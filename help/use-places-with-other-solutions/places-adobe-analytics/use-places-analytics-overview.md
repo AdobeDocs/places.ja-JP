@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Analyticsでプレイスサービスを使用 {#places-with-aa}
+# Places ServiceとAdobe Analytics{#places-with-aa}を使用
 
 Adobe Analyticsでプレースサービスを使用すると、次のタスクを完了できます。
 
