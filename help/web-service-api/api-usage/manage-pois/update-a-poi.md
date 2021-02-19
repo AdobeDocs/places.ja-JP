@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
 
-# POIの更新 {#update-a-poi}
+# POIの更新{#update-a-poi}
 
 POIを更新できるPUT方法。
 
@@ -48,4 +48,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->、 `<POIID>`、 `<API KEY>`、 `<TOKEN>`およびを実際の値 `<ORGID>``<SINGLEPOIDATA>` に置き換えます。
+>`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`、`<SINGLEPOIDATA>`を実際の値に置き換えます。
