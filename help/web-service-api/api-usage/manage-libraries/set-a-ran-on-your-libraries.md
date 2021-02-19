@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
-# ライブラリにランクを設定する {#set-rank-on-libraries}
+# ライブラリにランクを設定{#set-rank-on-libraries}
 
 すべてのライブラリにランク順を設定できるPUT方法。
 
@@ -48,5 +48,5 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->、 `<API KEY>`、などの変数を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
+>`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
 
