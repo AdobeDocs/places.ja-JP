@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
-# 組織内のすべてのPOIを読み取る {#read-all-pois-org}
+# 組織内のすべてのPOIを読む{#read-all-pois-org}
 
 組織内のすべてのPOIを返すGETメソッド。
 
@@ -42,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key
 
 >[!IMPORTANT]
 >
->と `<API KEY>`を実際の値 `<TOKEN>``<ORGID>` に置き換えます。
+>`<API KEY>`、`<TOKEN>`および`<ORGID>`を実際の値に置き換えます。
