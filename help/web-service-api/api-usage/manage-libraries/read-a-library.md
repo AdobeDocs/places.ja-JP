@@ -5,13 +5,13 @@ translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
 
-# ライブラリの読み取り {#read-a-library}
+# ライブラリを読む{#read-a-library}
 
 ライブラリの詳細を返すGETメソッド。
 
@@ -92,5 +92,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->、 `<LIBRARYID>`、 `<API KEY>`およびを実際の値 `<TOKEN>``<ORGID>` に置き換えます。
+>`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。
 
