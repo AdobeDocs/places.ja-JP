@@ -2,7 +2,7 @@
 title: 'Placesサービスへのアクセス権を取得 '
 description: このセクションでは、Places Serviceにユーザーを追加し、Experience Platform LaunchがPlaces Serviceにアクセスできるようにする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 26538602a73e806a4822705c7a3aa44d76351030
+source-git-commit: ecf50d67d4c08e79d9c3be64480f27d435fd7fcb
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 10%
@@ -49,7 +49,7 @@ Experience Platform Launchを初めて追加する場合は、次の手順を実
 
 1. 「**[!UICONTROL プラットフォーム]**」で、「**[!UICONTROL 管理]**」をクリックします。
 
-   リストに&#x200B;**管理**&#x200B;が表示されない場合は、管理者ではありません。 この手順を実行するには、組織管理者に問い合わせる必要があります。
+   リストに&#x200B;**[!UICONTROL 管理]**&#x200B;が表示されない場合は、管理者ではありません。 この手順を実行するには、組織管理者に問い合わせる必要があります。
 
 1. Experience Cloud管理ページの&#x200B;**[!UICONTROL Admin Console]**&#x200B;カードで、**[!UICONTROL Take me there]**&#x200B;をクリックします。
 
@@ -182,6 +182,6 @@ Web Service APIへのアクセスも必要なユーザーの場合は、開発�
 
 1. 「**[!UICONTROL この製品]**&#x200B;のプロファイルを選択してください」ドロップダウンリストで、「Places Service」プロファイルを選択します。
 
-1. 「**保存**」をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
-ユーザーには、Experience Platform Launch へのアクセス権があることを通知する電子メールが届きます。ユーザーは、この組織の[Experience Platform Launch](https://launch.adobe.com)または[プレースサービス](https://places.adobe.com) UIにログインできます。 「**開発者の追加**」手順の手順 4 を完了すると、ユーザーは [Adobe I/O コンソール](https://console.adobe.io)にログインして、Places 統合を作成し、Places REST API を使用することもできます。
+ユーザーには、Experience Platform Launch へのアクセス権があることを通知する電子メールが届きます。ユーザーは、この組織の[Experience Platform Launch](https://launch.adobe.com)または[プレースサービス](https://places.adobe.com) UIにログインできます。 「**[!UICONTROL 開発者の追加]**」手順の手順 4 を完了すると、ユーザーは [Adobe I/O コンソール](https://console.adobe.io)にログインして、Places 統合を作成し、Places REST API を使用することもできます。
