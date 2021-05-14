@@ -61,3 +61,4 @@ If you submit a pull request with significant changes to documentation and code 
 
 * **Change sent to author**：保留中のプルリクエストの通知が作成者に送信されました。
 * **ready- to- merge**：プルリクエストレビューチームによるレビューの準備ができました。
+
