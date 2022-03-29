@@ -4,8 +4,8 @@ description: Places 拡張機能を使用すると、ユーザーの場所に基
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,9 +96,9 @@ Objective-C または Swift を使用して Places 拡張機能をアプリに�
    import ACPPlaces
    ```
 
-### Places 拡張機能の Mobile Core への登録 {#register-places-mobile-core}
+### Places 拡張機能のMobile Core への登録 {#register-places-mobile-core}
 
-Android およびiOSで、Places 拡張機能を Mobile Core に登録する必要があります。
+Places 拡張機能を Android およびiOSのMobile Core に登録する必要があります。
 
 #### Android
 

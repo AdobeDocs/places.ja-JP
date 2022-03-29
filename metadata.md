@@ -1,21 +1,20 @@
 ---
 cloud: Experience Cloud
 product: places service
-solution: Experience Platform, Data Collection
+solution: Data Collection
 type: Documentation
-solution-title: ラーニングとサポート
-solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud.html
-getting-started-title: はじめに
+solution-title: Learn & Support
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
+getting-started-title: Getting Started
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
-tutorials-title: チュートリアル
+tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-git-repo: https://git.corp.adobe.com/AdobeDocs/places.ja-JP
+git-repo: https://github.com/AdobeDocs/places.ja-JP
 index: true
-translation-type: tm+mt
-source-git-commit: 12283d11829ee70a808bc11d2bc1241cb1770ac3
+source-git-commit: 832888ab4b45aa054069a69eaf4c8b9cc059d9a7
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +23,7 @@ ht-degree: 87%
 
 # 社内用のメタデータ
 
-metadata.md ファイルにはリポジトリー内のユーザーガイド TOC.md ファイルから渡される repo-level メタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
 
 | メタデータ | 説明 |
 |--- |--- |
