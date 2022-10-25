@@ -2,9 +2,9 @@
 title: Places Service
 description: Places Service は、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスにすることができます。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '673'
 ht-degree: 10%
 
 ---
@@ -51,10 +51,6 @@ Places Service は、次のコンポーネントで構成されます。
 * **ルールを起動**
 
    入口イベントと出口イベントでアクションをトリガー化できる、地域インテリジェントな Launch ルールです。 また、条件で地域属性を使用してエクスペリエンスをパーソナライズすることもできます。
-
-* **Places 監視拡張機能**
-
-   モバイルアプリに埋め込んで、ユーザーの場所の変更とトリガー場所のルールを自動的に監視できる、マルチプラットフォームモバイル SDK です。 詳しくは、 [Places 監視拡張機能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## 用語
 

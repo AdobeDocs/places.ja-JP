@@ -1,105 +1,91 @@
 ---
-title: Placesサービスのテストと検証
-description: この節では、Places Serviceのテストおよび検証方法に関する情報を提供します。
-translation-type: tm+mt
-source-git-commit: 954bd9a12ede841d189138dfbe3d65ad4c1bd3c3
+title: Places Service のテストと検証
+description: この節では、Places Service のテストと検証の方法に関する情報を提供します。
+exl-id: 8dad6619-566b-4aea-b29c-a89192a66441
+source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1731'
 ht-degree: 2%
 
 ---
 
+# Recommendationsを使用して Places Service をテスト {#test-validate-loc-svc}
 
-# プレースサービスをテストするRecommendations{#test-validate-loc-svc}
+多くの顧客や組織が世界中で POI を定義するので、Places Service がアプリケーションとどのようにやり取りするかをシミュレートしテストする方法を持つことが重要です。 この情報は、定義した POI とユーザーの現在の場所に基づいて正しくトリガーされる Places Service のエントリと出口をテストし、検証する方法を理解するのに役立ちます。
 
-多くの顧客や組織は世界中でPOIを定義するので、Places Serviceがアプリケーションとどのように相互作用するかをシミュレートし、テストする方法を持つことが重要です。 この情報は、定義されたPOIとユーザーの現在の場所に基づいて正しくトリガーされているPlaces Serviceの入口と出口をテストし、検証する方法を理解するのに役立ちます。
-
-環境変数は位置信号と精度の要因になる可能性があるので、まず開発者ツールとシミュレーションした位置エントリをローカルで操作して、ベースライン結果を確立することをお勧めします。 目標は、すべての場所のイベントが正しく機能していることを検証することです。 場所のイベントが正しく検証されると、ソリューションの統合(Analytics、ターゲット、キャンペーンなど)をテストできます。 テストアクティビティを支援するために、ポストバックを含むSlackWebフックを設定し、個々の開発環境にGPXファイルを読み込む必要があります。
+環境変数は位置信号と精度の要因になる可能性があるので、まず開発者ツールとシミュレーションされた位置エントリを使用してローカルで作業し、ベースライン結果を確立することをお勧めします。 目標は、すべてのロケーションイベントが正しく機能していることを検証することです。 場所のイベントが正しく検証されたら、ソリューションの統合（Analytics、Target、Campaign など）をテストできます。 テストアクティビティを支援するには、ポストバックを使用してSlackWeb フックを設定し、個々の開発環境に GPX ファイルを読み込む必要があります。
 
 >[!IMPORTANT]
 >
->この計画では、POIが[Places Service UI](https://places.adobe.com)に作成済みであり、Places拡張機能とPlaces Monitor拡張機能の最新バージョンがインストールされ、正しく構成されていることを前提としています。 詳しくは、[拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)と[モニター拡張子](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)を配置を参照してください。
+>この計画では、POI が [Places Service UI](https://places.adobe.com) と、Places 拡張機能の最新バージョンがインストールされ、正しく設定されています。 アクティブな地域の監視を行う場合は、地域の監視ソリューションが実装されていると想定します。 詳しくは、 [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md), [CoreLocation ドキュメント](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) (iOSの場合 )、または [Android ロケーションドキュメント](https://developer.android.com/training/location/geofencing).
 
 | 手順 | 説明 | 期待される結果 |
 |--- |--- |--- |
-| 1 | Androidに対して正しいマニフェストキーが入力され、追跡場所へのアクセス権が付与されていることを確認します。 詳しくは、[マニフェスト追加](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.html#add-permissions-to-the-manifest)に対する権限を参照してください。 | 確認済み |
-| 1a | 場所の更新がiOSで設定されていることを確認します。 また、iOSで適切なplist keysが設定されていて、場所を追跡するユーザー権限を要求できることを確認してください。 詳しくは、「[バックグラウンドで場所を更新できるようにする」を参照してください。](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.html#enable-location-updates-background) | 確認済み |
-| 2 | iOSに対して設定されている監視モードを確認します。 連続モードでは、精度と持続性が向上しますが、バッテリーの寿命が大幅に低下します。 詳しくは、「[監視モード（iOSのみ）」を参照してください。](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.html#monitoring-mode-ios-only) | 重要な変更または継続的な変更 |
-| 3 | 複数のPOIライブラリを使用する場合は、[Experience Platform Launch用の場所]で適切なライブラリが選択されていることを確認します。 | 確認済み |
-| 4 | Mobile CoreおよびPlaces/Places Monitorの最新バージョンが、GradleまたはCocoaPodを使用してアプリにバンドルされていることを確認します。 | 確認済み — 最近の更新について詳しくは、[リリースノートを参照してください。](/help/release-notes.md) |
-| 5 | テスト用に正しい環境が設定されていることを確認します。 起動環境IDは、起動の開発環境と一致する必要があります。 | 確認済み |
-| 6 | テストするPOIごとにGPXファイルを作成します。 GPXファイルは、ローカル開発環境で、場所のエントリをシミュレートするために使用できます。 GPXファイルの作成と使用について詳しくは、次を参照してください。<br>[iOSシミュレーター用のGPXファイル[closed]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[モバイルアプリでのロケーションテスト](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPXファイルが作成され、アプリケーションプロジェクトに読み込まれます。 |
-| 7 | 他の操作を行わないと、Android StudioまたはXCodeからアプリケーションを起動し、適切なアラートを確認して、トラッキング場所へのアクセスをリクエストできます。 「*常に許可*」権限をクリックします。<br><br>デバイスシミュレーターを使用する代わりに、コンピューターに接続された実際のデバイスを使用することをお勧めします。 | 場所の要求プロンプトは、IDEを介して読み込まれたアプリケーションで表示する必要があります |
-| 8 | 場所の権限が受け入れられたら、 配置SDKはデバイスの現在の場所を取得し、配置モニター拡張は開始で現在の場所から最も近い20個のPOIを監視します | 表の下のログサンプルを参照してください。 |
-| 9 | XCodeまたはAndroid Studioで異なる場所を切り替えると、特定のPOIに対するエントリイベントが生成されます。 POIへのエントリ時に、以下のログが必要になります。 | 表の下のログサンプルを参照してください。 |
-| 10 | プレースモニターが近くのPOIを見つけたら、場所をpingアウトしてテストする必要があります。 「起動」で、ジオフェンスのエントリに基づいて、トリガーへの場所拡張を使用する新しいルールを作成します。 次に、Mobile Coreを使用してポストバックを送信する新しいアクションを作成します。 SlackのWebフックアプリを作成すると、場所のエントリと出口を確認できます。 SlackWebhookアプリの作成について詳しくは、[受信Webhookを使用したメッセージの送信を参照してください。](https://api.slack.com/messaging/webhooks) |  |
-| 10a | 「Launch」で、Places拡張のデータ要素が以下を含めて追加されていることを確認します。<br>現在のPOI名<br>現在のPOI lat<br>現在のPOI long<br>最後に入力されたPOI lant<br>最後に入力されたPOI lat<br>最後に入力されたPOI name<br>最後に出力したPOIのPOのPOI>Timestamp<br><br><br> |  |
-| 10b | イベント=場所= POIと入力して新しいルールを作成する |  |
-| 10c | アクションの作成=モバイルコア→ポストバック |  |
-| 10d | SlackアプリのWebフックURLを使用します(例：https://hooks.slack.com/services/TKN5FKS68/BNFP7SVD....)。 |  |
-| 10e | 投稿の本文は次のようになります。`{text: User is in POI -  {%%Last Entered POI Name%%} in {%%Last Entered POI City%%} additional information: Radius:{%%Last Entered POI Radius%%} Timestamp: {%%timestamp%%}}`. <br>ここで作成した特定のデータ要素を使用していることを確認します。 |  |
-| 10f | 「起動」で、新しいデータ要素およびルールの変更をすべて発行してください。 （起動インターフェイスの右上で、作業用開発ライブラリを選択する必要があります）。 |  |
-| 11 | 開発者IDEでGPXの場所をフリップして、アプリケーションを起動し、再びテストします。 | 開発環境で異なる場所を選択すると、各POIのエントリがSlack通知に表示されます。 |
-|  | **簡易概要**<br>&#x200B;ポイントこのテストのすべては、特定のPOIの場所に移動することなく、ローカルで実行できます。検証テストは、アプリケーションが正しく設定され、その場所に対する正しい権限を受け取っていることを確認するのに役立ちます。 <br><br>また、この検証により、定義したPOIがPlaces Monitor拡張機能で正しく動作していることを確認できます。この手順の後、キャンペーンでのメッセージのテストを開始し、POIの入口と出口に基づいて適切なメッセージが表示されるかどうかを確認します。 |  |
-|  | **Placesサービスを使用したAdobe Campaign Standardのアプリ内メッセージのテスト」を参照してください。** |  |
-| 12 | メインキャンペーンダッシュボードで、新しいアプリ内メッセージ（タイプ=ブロードキャスト）を設定します。 |  |
-| 12a | 「トリガー」で、「**配置イベントタイプ — 入口」をトリガー**&#x200B;として選択します。 |  |
-| 12b | 「**[!UICONTROL カスタムメタデータを追加のフィルターとして配置]**」を選択します。POIの種類を使用=最後に入力されたPOIを使用します。<br>POIタイプとして **[!UICONTROL 「]** Last  **[!UICONTROL Enteredas」を使用します。これは、ほとんどの場合、]** Last  **[!UICONTROL Enteredは]**&#x200B;現在のPOIと同じなのです。<br><br>**[!UICONTROL 現在の&#x200B;]**POIは、重複するPOIジオフェンスがある場合にのみ使用します。この場合、これらのPOIをRANKEDに設定する必要があります。その後、**[!UICONTROL &#x200B;現在のPOI ]**には、ユーザーが現在参加している可能性のある2 ～ 3つのジオフェンスのうち、上位のPOIが表示されます。 |  |
-| 12c | メッセージを受信するPOIを絞り込むのに役立つカスタムメタデータキーを選択します。 |  |
-| 12d | 頻度と期間については、1 ～ 2日に制限し、条件が気に入らない場合は、短い期間でトリガーの有効期限が切れるようにします。 |  |
-| 12e | 「常に/1回」または「クリックスルーまで」では、「*常に*」を選択して、複数の場所でテストできるようにします。 | 適切なメタデータ条件を満たす場所の変更をシミュレートすると、アプリ内メッセージが常に表示されます。 |
-| 12f | 表示に対して、「ローカル通知」以外のオプションを選択します。 これにより、前景でアプリを使用してテストする際に、見やすくなります)。 |  |
+| 1 | Android がトラッキングロケーションへのアクセス権を付与するために、適切なマニフェストキーが入力されていることを確認します。 | 確認済み |
+| 1a | 場所の更新がiOSで設定されていることを確認します。 また、場所を追跡するためのユーザー権限をリクエストするために、iOSで適切な plist キーが設定されていることを確認してください。 | 確認済み |
+| 2 | iOSに設定されている監視モードを確認します。 連続モードでは、精度と永続性が向上しますが、バッテリの寿命が大幅に短縮されます。 | 大幅な変更または継続的な変更 |
+| 3 | 複数の POI ライブラリを使用する場合は、Places 拡張機能で適切なライブラリがExperience Platform Launchされていることを確認します。 | 確認済み |
+| 4 | Mobile Core および Places の最新バージョンの拡張機能が、Gradle または CocoaPods を介してアプリにバンドルされていることを確認します。 | 確認済み — 最近の更新について詳しくは、 [リリースノート。](/help/release-notes.md) |
+| 5 | テスト用に正しい環境が設定されていることを確認します。 Launch 環境 ID は、Launch 開発環境と一致する必要があります。 | 確認済み |
+| 6 | テストする各 POI の GPX ファイルを作成します。 GPX ファイルは、場所のエントリをシミュレートするローカル開発環境で使用できます。 GPX ファイルの作成と使用について詳しくは、次を参照してください。 <br>[iOS Simulator の GPX ファイル [ 閉じました ]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[モバイルアプリでの場所のテスト](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX ファイルが作成され、アプリケーションプロジェクトに読み込まれます。 |
+| 7 | 他の操作を行わなくても、Android Studio または XCode からアプリケーションを起動し、適切なアラートを表示して、トラッキング場所のアクセスをリクエストできます。 次をクリック： *常に許可* 権限。<br><br>デバイスシミュレーターを使用する代わりに、コンピューターに接続された実際のデバイスを使用することをお勧めします。 | IDE を介して読み込まれたアプリケーションに、場所の要求プロンプトが表示されます |
+| 8 | 場所権限が許可された後。 Places SDK はデバイスの現在の場所を取得し、地域監視コードは、現在の場所から最も近い 20 個の POI の監視を開始する必要があります | 表の下のログサンプルを参照してください。 |
+| 9 | XCode または Android Studio の異なる場所を切り替えると、特定の POI のエントリイベントが発生する必要があります。 POI へのエントリ時には、次のログが必要になります。 | 表の下のログサンプルを参照してください。 |
+| 10 | 地域モニターが近くの POI を見つけたら、場所 ping を送信してテストする必要があります。 Launch で、 Places 拡張機能を使用してジオフェンスエントリに基づくトリガーを作成する新しいルールを作成します。 次に、Mobile Core を使用してポストバックを送信し、新しいアクションを作成します。 SlackWebhook アプリを作成すると、場所のエントリと出口を確認できます。 SlackWebhook アプリの作成について詳しくは、 [受信ウェブフックを使用してメッセージを送信する。](https://api.slack.com/messaging/webhooks) |  |
+| 10a | Launch で、Places 拡張機能に次のデータ要素を追加したことを確認します。 <br>現在の POI 名<br>現在の POI 緯度<br>現在の POI が長い<br>最終入力日<br>最後に入力した値<br>最終入力日時（長）<br>最後の出口名<br>前回の離脱<br>最後の終了（長）<br>タイムスタンプ |  |
+| 10b | Event = Places → POI を入力を使用して新しいルールを作成します。 |  |
+| 10c | アクションの作成= Mobile Core → Postback |  |
+| 10d | Slackアプリの Webhook URL を使用します ( 例：https://hooks.slack.com/services/TKN5FKS68/BNFP7SVD.....)。 |  |
+| 10e | 投稿の本文は次のようになります。 `{text: User is in POI -  {%%Last Entered POI Name%%} in {%%Last Entered POI City%%} additional information: Radius:{%%Last Entered POI Radius%%} Timestamp: {%%timestamp%%}}`. <br>ここで作成した特定のデータ要素を使用していることを確認します。 |  |
+| 10f | Launch で、すべての新しいデータ要素およびルールの変更を公開するようにしてください。 （Launch インターフェイスの右上にある作業用開発ライブラリを選択する必要があります）。 |  |
+| 11 | 開発者 IDE で GPX の場所を反転して、アプリケーションを起動し、再びテストします。 | 開発環境で異なるSlackを選択すると、各 POI のエントリを示すロケーション通知が表示されるようになりました。 |
+|  | **クイックサマリポイント**<br>&#x200B;特定の POI の場所に移動する必要なく、このテストをすべてローカルで実行できます。 検証テストは、アプリケーションが正しく設定され、その場所に対する正しい権限を受け取っていることを確認するのに役立ちます。 <br><br>また、この検証は、定義された POI がお使いの地域監視の実装で正しく機能しているかどうかの信頼性を提供します。  この手順の後、Campaign でのメッセージのテストを開始し、POI の入口と出口に基づいて適切なメッセージが表示されるかどうかを確認します。 |  |
+|  | **Places Service を使用したAdobe Campaign Standardのアプリ内メッセージのテスト** |  |
+| 12 | メインの Campaign ダッシュボードで、新しいアプリ内メッセージを設定します（タイプ= broadcast）。 |  |
+| 12a | 「トリガー」で、 **Places イベントタイプ —トリガーとしての入口**. |  |
+| 12b | 選択 **[!UICONTROL Places カスタムメタデータ]** 追加のフィルターとして、「POI タイプ=最後に入力された POI 」を使用します。<br>当社は **[!UICONTROL 最終入力日]** を POI タイプとして使用するのは、ほとんどの場合、 **[!UICONTROL 最終入力日]** は、 **[!UICONTROL 現在の POI]**. <br><br>**[!UICONTROL 現在の POI ]**は、重複する POI ジオフェンスがある場合にのみ使用してください。 この場合、これらの POI をランク付けし、**[!UICONTROL &#x200B;現在の POI ]**は、ユーザーが現在いる可能性のある 2 つまたは 3 つのジオフェンスのうち、上位のランクの POI を表示します。 |  |
+| 12c | メッセージを受け取る POI を絞り込むのに役立つカスタムメタデータキーを選択します。 |  |
+| 12d | 頻度と期間は、1 ～ 2 日に制限します。これにより、条件が望ましくない場合は、短い期間でトリガーの有効期限が切れます。 |  |
+| 12e | 「常に/1 回」または「クリックスルーまで」で、 *常に* 複数の場所でテストできるようにします。 | 適切なメタデータ条件を満たす場所の変更をシミュレートすると、アプリ内メッセージが常に表示されます。 |
+| 12f | 表示の場合は、「ローカル通知」以外のオプションを選択します。 これにより、アプリをフォアグラウンドでテストする際に、より簡単に確認できます )。 |  |
 | 12g | アプリ内メッセージを準備/確認し、デプロイします。 |  |
-| 13 | 開発環境で、新しいキャンペーンルールをダウンロードするには、を終了して、もう一度アプリケーションを起動します。 | 新しいキャンペーンルールファイルをデバイスにダウンロードするには、アプリケーションを再び完全に起動する必要があることを忘れないでください。 |
-| 14 | 開発アプリケーションで、以前に作成したGPXファイルを使用して場所を切り替えます。 | 以前に設定した条件に基づいて、アプリ内メッセージが表示されます。 |
-| 15 | 次のテストでは、基本的に前と同じ手順をコピーしますが、今回はローカル通知をテストします。 | 結果として、一致する条件が満たされるたびにローカル通知が表示されます。 |
-| 16 | 新しいアプリ内メッセージを設定します（タイプ=ブロードキャスト）。 |  |
-| 16a | 「トリガー」で、「**[!UICONTROL イベントタイプ]** - **[!UICONTROL エントリ」をトリガー]**&#x200B;として配置します。 |  |
-| 16b | 追加のフィルターとして「配置」カスタムメタデータを選択します。**[!UICONTROL POIタイプ]** = **[!UICONTROL 最後に入力されたPOI]**&#x200B;を使用します。 |  |
-| 16c | メッセージを受信するPOIを絞り込むのに役立つカスタムメタデータキーを選択します。 |  |
-| 16d | 頻度と期間については、1 ～ 2日のみにして、条件が気に入らない場合に短い期間でトリガーの有効期限が切れるようにします。 |  |
-| 16e | 「常に/1回」または「クリックスルーまで」の場合は、**[!UICONTROL ALWAYS]**&#x200B;です。 |  |
-| 16f | 表示タイプとして、「**[!UICONTROL ローカル通知]**」を選択します。 |  |
+| 13 | 開発環境で、新しいキャンペーンルールをダウンロードするには、終了してアプリケーションを再度起動します。 | 新しい Campaign ルールファイルをデバイスにダウンロードするには、アプリケーションを再度完全に起動する必要があります。 |
+| 14 | 開発アプリケーションで、以前に作成した GPX ファイルを使用して場所を切り替えます。 | 設定した前の条件に基づいて、アプリ内メッセージが表示されます。 |
+| 15 | 次のテストでは、基本的に以前と同じ手順をコピーしますが、今回は LOCAL NOTIFICATION をテストします。 | 期待される結果は、一致する条件が満たされるたびにローカル通知が表示されることです。 |
+| 16 | 新しい In-App-Message を設定します（タイプ= broadcast）。 |  |
+| 16a | 「トリガー」で、 **[!UICONTROL Places イベントタイプ]** - **[!UICONTROL エントリをトリガー]**. |  |
+| 16b | 追加のフィルターとして「 Places カスタムメタデータ」を選択します（を使用）。 **[!UICONTROL POI タイプ]** = **[!UICONTROL 最後に入力した POI]**. |  |
+| 16c | メッセージを受け取る POI を絞り込むのに役立つカスタムメタデータキーを選択します。 |  |
+| 16d | 頻度と期間については、1 ～ 2 日のみを保持し、条件が望ましくない場合は、短い期間でトリガーの有効期限が切れるようにします。 |  |
+| 16e | 「常に/1 回」または「クリックスルーまで」の場合、 **[!UICONTROL 常に]**. |  |
+| 16f | 表示タイプとして、「 」を選択します。 **[!UICONTROL ローカル通知]**. |  |
 | 16g | アプリ内メッセージを準備/確認し、デプロイします。 |  |
-| 17 | 開発者環境で、デバイスを接続し、ビルドの&#x200B;**[!UICONTROL Play]**&#x200B;キーを押します。 その場所が機能していることを確認したら、アプリケーションをバックグラウンドにして、XcodeまたはAndroid Studioで場所の切り替えを続行します。 場所の変更を示すコンソールの読み取りは引き続き表示され、トリガーで設定された条件に応じてローカル通知が表示されます。 （1 ～ 2秒の遅延が生じる場合があります）。 | 結果として、一致条件が満たされるたびにローカル通知が表示されます。 |
-|  | **要約** <br>ポイントこの段階では、地元の環境でPOIエントリが見られるはずです。また、POI作業に基づくキャンペーンからのメッセージも確認する必要があります。 エラーが発生した場合は、Slack通知が発生しなかったかどうかを確認します。 Slackメッセージがない場合は、アプリケーションコンソールを確認してください。これは、新しい場所のエントリが記録されていない可能性があるためです。 結果が成功した場合は、アプリケーションが正しく動作していること、およびプレースサービスとキャンペーンのメッセージングサービスも正しく動作していることを確認できます。 |  |
-|  | **オンサイト** <br>テスト場所でテストする場合、大きく変わる必要はありません。スラックポストバックを有効にしておくと、デバイスがその場所に対して入口と出口を得ているかどうかを把握するのに役立ちます。 |  |
-| 18 | Wi-Fiとセルラーが無効になっているデバイスでテストを実施し、POI領域で1回だけ有効にします。 | エラーが発生した場合は、Slackでジオフェンスのエントリと通知を取得するかどうかをメモしてください。 Slack通知のタイムスタンプは何ですか。 |
-| 19 | セルラーのみを有効にし、wi-fiをオフにしてテストを実行します。 |  |
-| 20 | 携帯電話とWi-Fiの両方をオンにしてテストを実施します。 |  |
-|  | **サマリ** <br>POINTOnサイトでのテストは、開発テストに近い結果が得られます。POIジオフェンスでの滞在時間、セル信号の可用性、近くのWiFiアクセスポイントの強さなど、ユーザーの場所の決定に影響を及ぼす環境要因がいくつかあることに注意してください。 |  |
+| 17 | 開発者環境で、デバイスに接続し、 **[!UICONTROL 再生]** をビルドに追加します。 その場所が機能していることを確認したら、アプリケーションをバックグラウンドにして、Xcode または Android Studio で場所の切り替えを続行します。 場所の変更を示すコンソール読み取りアウトが引き続き表示され、トリガーで設定した条件に応じて、ローカル通知も表示されます。 （1 ～ 2 秒の遅延が生じる場合があります）。 | 期待される結果は、一致する条件を満たすたびにローカル通知が表示されることです。 |
+|  | **概要ポイント** <br>この段階では、ローカル環境に POI エントリが表示されます。 また、POI の仕組みに基づくキャンペーンからのメッセージも表示されます。 エラーが発生した場合は、Slack通知が発生しなかったかどうかを確認します。 Slackメッセージがない場合は、新しい場所のエントリが記録されていない可能性があるので、アプリケーションコンソールを確認します。 結果が正常に完了した場合は、アプリケーションが正しく実行されていること、および Places Service と Campaign のメッセージングサービスも正しく動作していることを確認できます。 |  |
+|  | **オンサイトテスト** <br>場所でテストする際には、それほど変更しないでください。 Slack ポストバックをアクティブにしておくと、デバイスがその場所のエントリと終了を取得しているかどうかを把握するのに役立ちます。 |  |
+| 18 | Wi-Fi および携帯電話が無効になっているデバイスでテストを実施し、POI 地域で 1 回有効にします。 | エラーが発生した場合は、ジオフェンスのエントリと通知をSlackで受け取るかどうかをメモしておきます。 タイムスタンプ通知のSlackとは |
+| 19 | 携帯電話のみを有効にし、Wi-Fi をオフにしてテストを実施します。 |  |
+| 20 | 携帯電話と Wi-Fi の両方をオンにしてテストを実施します。 |  |
+|  | **概要ポイント** <br>オンサイトテストは、開発テストと密接に一致する必要があります。 POI ジオフェンスでの滞在時間、セル信号の可用性、周辺の Wi-Fi アクセスポイントの強さなど、ユーザーの場所の決定に役立つ環境要因が存在することに注意してください。 |  |
 
 ## ログサンプル
 
-**手順8：場所の更新中にiOSおよびAndroidのログが** 予期される
+**手順 8 :** 場所の更新中に予期されるiOSおよび Android のログ
 
 **iOS**
 
 ```
-[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Authorization status changed: Always
 [AdobeExperienceSDK DEBUG <Places>]: Requesting 20 nearby POIs for device location (<lat>, <longitude>)
-[AdobeExperienceSDK DEBUG <Places>]: Response from Places Query Service contained <n> nearby POIs
-[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Received a new list of POIs from Places: (
-<ACPPlacePoi: 0x600002b75a40> Name: <poi name>; ID:<poi id>; Center: (<lat>, <long>); Radius: <radius>
-..
-..)   
+[AdobeExperienceSDK DEBUG <Places>]: Response from Places Query Service contained <n> nearby POIs   
 ```
 
 **Android**
 
 ```
-PlacesMonitor - All location settings are satisfied to monitor location
-PlacesMonitor - PlacesMonitorInternal : New location obtained: <latitude> <longitude> Attempting to get the near by pois
-PlacesExtension - Dispatching nearby places event with n POIs
-PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
-PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
-PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
-...
-...
-PlacesMonitor - Successfully added n fences for monitoring
+PlacesExtension - Dispatching nearby places event with n POIs   
 ```
 
-**手順9:イベント** 中にiOSおよびAndroidのログが発生する
+**手順 9 :** イベント中に予期されるiOSおよび Android のログ
 
 **iOS**
 

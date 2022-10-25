@@ -1,62 +1,60 @@
 ---
-title: Places ServiceとMobile Servicesのメッセージングの使用
-description: この節では、Places ServiceとMobile Servicesを使用したメッセージングの使用方法を示します。
-translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+title: Places Service と Mobile Services を使用したメッセージの送信
+description: ここでは、Places Service を Mobile Services と共に使用してメッセージを送信する方法について説明します。
+exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
 
-
 # Adobe Mobile Services {#places-mobile-services}
 
-メッセージングにMobile Services Extensionを使用する前に、次の前提条件を確認します。
+Mobile Services 拡張機能をメッセージに使用する前に、次の前提条件を確認します。
 
-* 目標地点はPlaces Serviceで作成されました。 詳しくは、[POIの作成](/help/poi-mgmt-ui/create-a-poi-ui.md)を参照してください。
+* Places Service に目標地点が作成されました。 詳しくは、 [POI の作成](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
    >[!IMPORTANT]
    >
-   >Places Serviceには、従来のMobile Services UIの外部に存在する組織のPOIデータベースが新たに追加され、改善されました。 Mobile Service *プレース*&#x200B;の管理ページナビゲーションにあるPOIは、SDKのバージョン4でのみ機能します。
+   >Places Service には、従来の Mobile Services UI 以外に存在する、組織のための新しく改善された POI データベースが含まれています。 Mobile Service にある POI *配置の管理* ページナビゲーションは、SDK バージョン 4 でのみ機能します。
 
-* 以前のバージョンのSDK用のレガシーMobile Services UIの&#x200B;*場所の管理* POI管理ページを示します。
+* こちらが *場所を管理* 以前のバージョンの SDK 用のレガシー Mobile Services UI の POI 管理ページ：
 
-   ![レガシーUI](/help/assets/legacy-location-v4-ui.png)
+   ![レガシー UI](/help/assets/legacy-location-v4-ui.png)
 
-* Places Service UIは次のとおりです。
+* 次に、Places Service UI を示します。
 
-   ![Places Service POI管理UI](/help/assets/places-ui.png)
+   ![Places Service POI 管理 UI](/help/assets/places-ui.png)
 
-* ACP SDKは、Places Service拡張および/またはPlaces Monitor拡張を使用して正しく設定されます。
+* ACP SDK は、Places 拡張機能で適切に構成されています。
 
-   つまり、モバイルアプリのExperience Platform Launchルールエンジンで、イベントや条件としてデータを使用できます。 詳しくは、[拡張子](/help/places-ext-aep-sdks/places-extension/places-extension.md)または[モニター拡張子](/help/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)を配置を参照してください。
+   つまり、データは、モバイルアプリのイベントルールエンジンで、Experience Platform Launchや条件として使用できます。 詳しくは、 [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-* モバイルアプリのACP SDKに対するExperience Platform Launchルールの作成と公開について説明します。
+* モバイルアプリで ACP SDK に対するExperience Platform Launch・ルールを作成し、公開する方法を説明します。
 
-   詳しくは、[ルールエンジン](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)を参照してください。
+   詳しくは、 [ルールエンジン](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine).
 
-* Experience Platform Launchデータ要素は、ルールエンジンで使用されるPlaces拡張データから作成されます。
+* Experience Platform Launchデータ要素は、ルールエンジンで使用される Places 拡張機能データから作成されます。
 
-   詳しくは、[データ要素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)を参照してください。
+   詳しくは、 [データ要素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements).
 
 ## レポート
 
 レポートを使用する前に、次の前提条件を満たします。
 
-* PlacesサービスのデータがAdobe Analyticsレポートスイートに正常に送信されました。
+* Places Service のデータがAdobe Analytics Report Suite に正常に送信されました。
 
-   詳しくは、[Adobe Analyticsとのプレースサービスの使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)を参照してください。
+   詳しくは、 [Adobe Analyticsでの Places Service の使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md).
 
-* Mobile Servicesのレポートについて理解します。
+* Mobile Services のレポートについて説明します。
 
-   詳しくは、[レポート](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html)を参照してください。
+   詳しくは、 [レポート](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
-## レポート可視化
+## レポートのビジュアライゼーション
 
-Adobe Analyticsに送信されるPlaces Serviceデータを使用して、Mobile Serviceレポートを実行できます。 次の例では、POIの1つにエントリがある場合にイベントが送信されます。 このレポートでは、POIエントリイベントのフィルターが追加され、すぐに使用できるユーザーレポートに表示されます。
+Adobe Analyticsに送信される Places Service データを使用して、Mobile Services レポートを実行できます。 次の例では、ユーザーがいずれかの POI にエントリを持つ場合にイベントが送信されます。 このレポートでは、標準のユーザーレポートに POI エントリイベントのフィルターが追加されています。
 
-![レポートの視覚化](/help/assets/report-visualize.png)
+![レポートのビジュアライゼーション](/help/assets/report-visualize.png)
 
-Places Serviceデータを視覚化する際の柔軟性は、Adobe Analyticsのインターフェースでも追加できます。
-
+Places Service データを視覚化する柔軟性が向上したのは、Adobe Analyticsインターフェイスです。
