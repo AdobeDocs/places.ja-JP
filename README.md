@@ -1,32 +1,31 @@
 ---
-source-git-commit: 8688bd4a613b71f205909588bd2a3391e1cc8793
+source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
-# 記事の投稿
+# 記事のコントリビューション
 
 アドビのコミュニティや、ドキュメントチーム以外のアドビ従業員からのコンテンツのコントリビューションを歓迎します。
 
 ## アドビオープンソース行動規範
 
-このプロジェクトでは、[Adobe Open Source Code of Actions](code-of-conduct.md) または. NET Foundation [Code の実施を採用してい](https://dotnetfoundation.org/code-of-conduct)ます。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、[アドビのオープンソースの行動規範](code-of-conduct.md)または [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)（英語）を採用しています。詳しくは、[コントリビューション](contributing.md)の記事を参照してください。
 
-## アドビのコンテンツへの投稿について
+## アドビのコンテンツへのコントリビューションについて
 
-「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
-投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
+コントリビューションの方法は、誰がどのような変更をコントリビューションするかに応じて異なります。
 
-### マイナーな変更またはリクエスト
+### 軽微な変更またはリクエスト
 
 リクエストを送信するには、記事内の「**Log an issue**」リンクをクリックして、GitHub で問題を開きます。タイトルと説明を指定し、「**Submit new issue**」をクリックします。
 
-マイナーアップデートをリクエストするには、記事の「**Edit this page**」リンクをクリックして、GitHub でソース記事を開きます。GitHub の UI を使用して、更新をおこないます。詳しくは、全般的な事項について説明した[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+マイナーアップデートをリクエストするには、記事の「**Edit this page**」リンクをクリックして、GitHub でソース記事を開きます。GitHub の UI を使用して、更新をおこないます。詳しくは、全般的な事項について説明した[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
-このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
+このリポジトリー内のドキュメントやコード例に対して提案される軽微な変更や補足説明には、アドビの利用規約が適用されます。
 
 ### コミュニティメンバーによる大きな変更または新規記事
 
@@ -38,27 +37,26 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### アドビの従業員による大きな変更
 
-[!UICONTROL Adobe Experience Cloud] ソリューションの製品チームのテクニカルライター、プログラムマネージャーまたは開発者が、業務として技術記事の執筆やコントリビューションをする場合は、`https://git.corp.adobe.com/AdobeDocs` にあるプライベートリポジトリを使用する必要があります。『[内部共同作業ガイド](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)』を参照してください。
+[!UICONTROL Adobe Experience Cloud] ソリューションの製品チームのテクニカルライター、プログラムマネージャーまたは開発者が、業務として技術記事の執筆やコントリビューションをする場合は、`https://git.corp.adobe.com/AdobeDocs` にあるプライベートリポジトリを使用する必要があります。『[内部共同作業ガイド](https://experienceleague.adobe.com/docs/collaborative-doc-instructions/collaboration-guide/home.html?lang=ja)』を参照してください。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## ツールとセットアップ
 
-コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
+コミュニティのコントリビューターは、基本的な編集をするときには GitHub の UI を使用し、大きな変更を加えるときにはリポジトリーをフォークします。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
-## markdown を使用してトピックをフォーマットする方法
+## Markdown を使用してトピックをフォーマットする方法
 
-このリポジトリのすべての記事は GitHub フレーズダウンダウンを使用します。マークダウンについて詳しくない場合は、以下を参照してください。
+このリポジトリーの記事はいずれも GitHub Flavored Markdown（GFM）を使用して書かれています。Markdown について詳しくない場合は、以下を参照してください。
 
-* [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown の基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)（英語）
+* [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)（英語）
 
 ## ラベル
 
-公開リポジトリでは、自動ラベルがプルリクエストに割り当てられ、プルリクエストワークフローの管理と、プルリクエストの処理状況の把握に役立つようになります。
+公開リポジトリーでは、プルリクエストに以下のような自動ラベルが割り当てられ、プルリクエストワークフローの管理とプルリクエストの処理状況の把握に役立ちます。
 
 * **Change sent to author**：保留中のプルリクエストの通知が作成者に送信されました。
 * **ready- to- merge**：プルリクエストレビューチームによるレビューの準備ができました。
-
