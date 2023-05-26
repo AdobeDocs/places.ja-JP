@@ -5,7 +5,7 @@ exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -71,7 +71,7 @@ Places SDK は、次の状態を管理します。
 データ要素を「Experience Platform Launch」で作成するには：
 
 1. 次をクリック： **データ要素** タブをクリックします。
-1. クリック **データ要素を追加**.
+1. 「**データ要素の追加**」をクリックします。
 1. 名前を入力します（例： ）。 **現在のコーヒーショップ名**.
 1. 内 **拡張** ドロップダウンリストで、「 **Places — ベータ**.
 1. 「**データ要素**」で「**市区町村**」を選択します。

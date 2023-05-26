@@ -1,18 +1,17 @@
 ---
 title: ライブラリの削除
-description: Places REST APIを使用してライブラリを削除します。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Places REST API を使用してライブラリを削除します。
+exl-id: ad45ea38-9e12-43d7-b05f-17d3e40abaf5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 8%
 
 ---
 
+# ライブラリの削除 {#delete-a-library}
 
-# ライブラリの削除{#delete-a-library}
-
-ライブラリを削除できるDELETE方法。
+DELETEを削除するためのライブラリメソッド。
 
 ## リクエスト
 
@@ -36,9 +35,9 @@ DELETE https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURLコマンド
+## CURL コマンド
 
-このAPIをテストするには、次のCURLコマンドを使用します。
+この API をテストするには、次の CURL コマンドを使用します。
 
 ```text
 curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->`<lIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
-
+>次のような変数を置き換える `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`、および `<ORGID>`を実際の値に置き換えます。

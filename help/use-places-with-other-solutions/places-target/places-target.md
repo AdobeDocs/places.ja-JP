@@ -1,84 +1,83 @@
 ---
 title: Adobe Target
-description: ここでは、Places ServiceをAdobe Targetで使用する方法について説明します。
-translation-type: tm+mt
-source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
+description: この節では、Places Service をAdobe Targetで使用する方法について説明します。
+exl-id: 6ee91fca-ea48-4de2-8dcf-87981813c678
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 3%
 
 ---
 
+# Adobe Targetでの Places Service の使用 {#places-target}
 
-# Places ServiceとAdobe Target{#places-target}を使用
+このドキュメントは、Places 拡張機能がアプリケーションに実装されていることを前提としています。 Places 拡張機能の実装について不明な点がある場合は、 [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-このドキュメントは、アプリケーションにPlaces拡張機能が実装されていることを前提としています。 Places拡張機能の導入に関するヘルプが必要な場合は、[Places extensions](/help/places-ext-aep-sdks/places-extension/places-extension.md)を参照してください。
+Places 拡張機能が入口と出口に対するイベントを送信したら、Launch のルールを利用して、Places Service データをAdobe Target SDK イベントに添付できます。 Launch で目的のプロパティを選択し、次のタスクを実行することで、このタイプのルールを作成できます。
 
-Places拡張機能が入口と出口のイベントを送信した後、「開始のルール」を利用して、Places ServiceデータをAdobe TargetSDKイベントに添付できます。 「起動」で目的のプロパティを選択し、次のタスクを実行して、このタイプのルールを作成できます。
+## 1.ルールを作成する
 
-## 1.ルールの作成
-
-1. 「**[!UICONTROL ルール]**」タブで、「**[!UICONTROL 新しいルールを作成]**」をクリックします。
+1. の **[!UICONTROL ルール]** タブ、クリック **[!UICONTROL 新規ルールの作成]**.
 
    次の情報に留意してください。
 
-   * このプロパティに対する既存のルールがない場合、ボタンは画面の中央に表示されます。
-   * プロパティにルールが含まれている場合、ボタンは画面の右上に表示されます。
+   * このプロパティに対するルールが存在しない場合、ボタンは画面の中央に表示されます。
+   * プロパティにルールが設定されている場合、ボタンは画面の右上に表示されます。
 
-## 2.イベントを選択します。
+## 2.イベントの選択
 
 1. ルールに意味のある名前を付け、ルールのリストで簡単に認識できるようにします。
 
-   この例では、ルールの名前は「**[!UICONTROL Attach Places Service Data to Places Content Requested]**」です。
+   この例では、ルールの名前は **[!UICONTROL Places サービスデータを要求されたターゲットコンテンツに添付]**.
 
-1. 「**[!UICONTROL イベント]**」セクションで、「**[!UICONTROL 追加]**」をクリックします。
-1. 「**[!UICONTROL 拡張子]**」ドロップダウンリストから、**[!UICONTROL Adobe Target]**&#x200B;を選択します。
-1. **[!UICONTROL イベントタイプ]**&#x200B;ドロップダウンリストから、「**[!UICONTROL 要求されたコンテンツ]**」を選択します。
+1. 以下 **[!UICONTROL イベント]** セクションで、 **[!UICONTROL 追加]**.
+1. 次の **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Adobe Target]**.
+1. 次の **[!UICONTROL イベントタイプ]** ドロップダウンリストで、「 **[!UICONTROL リクエストされたコンテンツ]**.
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 ![イベントの追加](/help/assets/ad-setEvent_target.png)
 
-## 3.追加条件
+## 3.条件の追加
 
 >[!IMPORTANT]
 >
->ルールに条件を追加する場合は、この手順を実行します。 それ以外の場合は、下の&#x200B;*アクション*&#x200B;の定義に進みます。
+>ルールに条件を追加する場合は、この手順を実行します。 それ以外の場合は、スキップして *アクションの定義* 下
 
-次の例では、条件を作成して、アプリを5回以上起動したユーザーのみにルールがトリガーされるようにしています。
+次の例では、アプリを 5 回以上起動したユーザーに対してのみルールをトリガーする条件が作成されます。
 
-1. 「**[!UICONTROL 条件]**」セクションで、「**[!UICONTROL 追加]**」をクリックします。
-1. 「**[!UICONTROL 拡張子]**」ドロップダウンリストから、「**[!UICONTROL モバイルコア]**」を選択します。
-1. 「**[!UICONTROL 条件のタイプ]**」ドロップダウンリストから、「**[!UICONTROL 起動回数]**」を選択します。
-1. 右側のウィンドウで、「**[!UICONTROL User has launched the app launched than or equal to 5 than]**」という条件になるように、ドロップダウンリストと数値コントロールを変更します。
+1. 以下 **[!UICONTROL 条件]** セクションで、 **[!UICONTROL 追加]**.
+1. 次の **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Mobile Core]**.
+1. 次の **[!UICONTROL 条件タイプ]** ドロップダウンリストで、「 **[!UICONTROL 起動回数]**.
+1. 右側のウィンドウで、ドロップダウンリストと数値コントロールを変更し、条件が **[!UICONTROL ユーザーがアプリを 5 回以上起動しました]**.
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![条件を追加する](/help/assets/ad-setCondition_target.png)
+![条件の追加](/help/assets/ad-setCondition_target.png)
 
-## 4.アクションの定義
+## 4.アクションを定義する
 
-1. 「**[!UICONTROL アクション]**」セクションで、「**[!UICONTROL 追加]**」をクリックします。
-1. 「**[!UICONTROL 拡張子]**」ドロップダウンリストから、「**[!UICONTROL モバイルコア]**」を選択します。
-1. 「**[!UICONTROL アクションタイプ]**」ドロップダウンリストから、「**[!UICONTROL データの添付]**」を選択します。
-1. 右側のウィンドウの&#x200B;**[!UICONTROL JSON Payload]**&#x200B;フィールドに、このイベントに追加するデータを入力します。
+1. 以下 **[!UICONTROL アクション]** セクションで、 **[!UICONTROL 追加]**.
+1. 次の **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Mobile Core]**.
+1. 次の **[!UICONTROL アクションタイプ]** ドロップダウンリストで、「 **[!UICONTROL データを添付]**.
+1. 右側のウィンドウの **[!UICONTROL JSON ペイロード]** 「 」フィールドで、このイベントに追加するデータを入力します。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-右側のウィンドウで、フリーフォームJSONペイロードを追加し、このイベントをリッスンする拡張機能がこのペイロードを聞く前に、SDKイベントにデータを追加できます。
+右側のウィンドウで、このイベントをリッスンする拡張機能が聞く前に、SDK イベントにデータを追加するフリーフォーム JSON ペイロードを追加できます。
 
-次の例では、ターゲットイベントで処理されるリクエストごとに、`poiCity`と`poiName`の値が&#x200B;**[!UICONTROL mboxparameters]**&#x200B;に追加されます。 新しいキーの値は、このイベントの処理時にSDKによって動的に決定されます。
+次の例では、 `poiCity` および `poiName` 値が **[!UICONTROL mboxparameters]** Target イベントで処理されるリクエストごとに 新しいキーの値は、このイベントの処理時に SDK によって動的に決定されます。
 
 >[!TIP]
 >
->このJSONペイロードは、`request`オブジェクトに特別な表記を使用します。 元のイベントでは、`request`は匿名オブジェクトの配列です。 データの添付を使用して配列内のすべてのオブジェクトにデータを添付する場合、配列を含むことがわかっているキーの`[*]`表記は、配列内のすべてのオブジェクトにペイロードを適用します。
+>この JSON ペイロードは、 `request` オブジェクト。 元のイベントで `request` は、匿名オブジェクトの配列です。 [ データをアタッチ ] を使用して配列内のすべてのオブジェクトにデータをアタッチする場合、 `[*]` 配列を含むことがわかっているキーの表記を使用すると、その配列内のすべてのオブジェクトにペイロードが適用されます。
 >
->`request[*]`の表記は、`request`配列&#x200B;_内の各オブジェクトに対して_&#x200B;と読み出すことができます。
+>の表記 `request[*]` ～として大声で読み上げられる _( `request` 配列_.
 
-![動作を定義する](/help/assets/ad-setAction-target.png)
+![アクションの定義](/help/assets/ad-setAction-target.png)
 
-## 5.ルールを保存し、プロパティを再構築します
+## 5.ルールを保存し、プロパティを再構築します。
 
-設定が完了したら、ルールが次の図のように表示されることを確認します。
+設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![完了規則](/help/assets/ad-ruleComplete-target.png)
+![完了ルール](/help/assets/ad-ruleComplete-target.png)
 
 1. **[!UICONTROL 保存]**&#x200B;をクリックします。
-1. Launchプロパティを再構築し、正しい環境に展開します。
+1. Launch プロパティを再構築し、正しい環境にデプロイします。

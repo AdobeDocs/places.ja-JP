@@ -5,7 +5,7 @@ user-guide-description: Places Service は、場所を認識するモバイル�
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 

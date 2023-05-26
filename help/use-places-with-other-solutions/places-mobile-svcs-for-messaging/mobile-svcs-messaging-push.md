@@ -1,39 +1,38 @@
 ---
 title: プッシュ通知
-description: この節では、Places Serviceをプッシュ通知で使用する方法を示します。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+description: この節では、Places Service でプッシュ通知を使用する方法について説明します。
+exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
 
 ---
 
-
 # プッシュ通知
 
-Mobile Servicesを使用すると、プッシュ通知をAdobe Analyticsセグメントに送信できます。 Places Serviceでは、POIとの過去のインタラクションを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去30日間にストアにいたユーザーにメッセージを送信できます。
+Mobile Services を使用すると、Adobe Analyticsセグメントにプッシュ通知を送信できます。 Places Service では、POI との過去のインタラクションを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去 30 日間にいずれかの店舗にいたユーザーにメッセージを送信できます。
 
-開始する前に、次のタスクが完了していることを確認します。
+開始する前に、次の作業を完了していることを確認します。
 
-* プレースサービスのデータはAdobe Analyticsで処理されています。
+* Places Service のデータがAdobe Analyticsで処理されました。
 
-   これは、モバイルアプリがPlaces Serviceデータをレポートスイートに正常に送信し、そのデータをセグメント化に使用できることを意味します。
+   つまり、モバイルアプリは Places Service のデータをレポートスイートに正常に送信し、そのデータをセグメント化に使用できることを意味します。
 
-* Mobile Servicesのプッシュ通知チャネルが設定されています。
+* Mobile Services でプッシュ通知チャネルが設定されています。
 
    詳しくは、「[プッシュメッセージの作成](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/prerequisites-push-messaging.html)」を参照してください。
 
-* Mobile ServicesのAnalyticsセグメントにプッシュ通知を送信する方法を説明します。
+* Mobile Services で Analytics セグメントにプッシュ通知を送信する方法を説明します。
 
    詳しくは、「[プッシュメッセージの作成](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/push-messages/t-create-push-message.html)」を参照してください。
 
-## 通知の送信
+## 通知を送信
 
-*プッシュ通知を作成*&#x200B;ワークフローの&#x200B;**[!UICONTROL オーディエンス]**&#x200B;タブで、次のいずれかの方法でこのメッセージのオーディエンスを作成できます。
+の **[!UICONTROL 対象ユーザ]** タブ *プッシュ通知の作成* ワークフローでは、次のいずれかの方法で、このメッセージのオーディエンスを作成できます。
 
-* **[!UICONTROL 分析セグメント]**&#x200B;ドロップダウンリストで、以前に作成したAdobe Analyticsセグメントを選択します。
+* 内 **[!UICONTROL Analytics セグメント]** ドロップダウンリストから、以前に作成したAdobe Analyticsセグメントを選択します。
 
-* 「**[!UICONTROL カスタムセグメント]**」セクションで、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
+* 内 **[!UICONTROL カスタムセグメント]** の節では、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
 
 ![プッシュメッセージの設定](/help/assets/push-set-up.png)

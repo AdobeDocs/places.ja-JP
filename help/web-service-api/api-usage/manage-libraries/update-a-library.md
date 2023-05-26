@@ -1,18 +1,17 @@
 ---
 title: ライブラリの更新
-description: Places REST APIを使用してライブラリを更新します。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Places REST API を使用してライブラリを更新します。
+exl-id: 37ca2be2-39e1-4f8e-87c2-ef4cb366db0d
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 10%
 
 ---
 
+# ライブラリの更新 {#update-a-library}
 
-# ライブラリの更新{#update-a-library}
-
-ライブラリを更新できるPUT方法。
+PUTを更新するためのライブラリメソッド。
 
 ## リクエスト
 
@@ -38,9 +37,9 @@ PUT https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 {       "id": "449f08f3-eff5-4658-9329-2d9687af777e",       "name": "Really facinating places",      "customerID": "777F20F55BACA09E0A495D8F@AdobeOrg",       "poiCount": 0  }
 ```
 
-## CURLコマンド
+## CURL コマンド
 
-このAPIをテストするには、次のCURLコマンドを使用します。
+この API をテストするには、次の CURL コマンドを使用します。
 
 ```text
 curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '{"name":"Updated Library Name"}' -H "Content-Type: application/json"
@@ -48,5 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->`<lIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
-
+>次のような変数を置き換える `<lIBRARYID>`, `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。

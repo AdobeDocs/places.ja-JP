@@ -1,18 +1,17 @@
 ---
-title: POIの削除
-description: Places REST APIを使用してPOIを削除します。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: POI の削除
+description: Places REST API を使用して POI を削除します。
+exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 9%
 
 ---
 
+# POI の削除 {#delete-a-poi}
 
-# POIの削除{#delete-a-poi}
-
-POIを削除できるDELETE方法。
+POI を削除するためのDELETEメソッド。
 
 ## リクエスト
 
@@ -36,9 +35,9 @@ DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURLコマンド
+## CURL コマンド
 
-次のCURLコマンドを使用してAPIをテストします。
+次の CURL コマンドを使用して API をテストします。
 
 ```text
 curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。
-
+>置換 `<POIID>`, `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。

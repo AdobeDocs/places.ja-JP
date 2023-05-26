@@ -1,8 +1,7 @@
 ---
-title: カスタム配置オブジェクト
-description: Places APIで使用されるカスタムネイティブクラスに関する情報です。
+title: Custom Places オブジェクト
+description: Places API で使用されるカスタムネイティブクラスに関する情報です。
 exl-id: deb16ba3-bd59-42b1-85ec-0f7de17f91f8
-translation-type: tm+mt
 source-git-commit: 2f666081fa01c11e832b94c83f2fe2c66eb51766
 workflow-type: tm+mt
 source-wordcount: '38'
@@ -10,9 +9,9 @@ ht-degree: 5%
 
 ---
 
-# カスタム配置オブジェクト{#places-objects}
+# Custom Places オブジェクト {#places-objects}
 
-Places APIで使用されるカスタムネイティブクラスを次に示します。
+Places API で使用されるカスタムネイティブクラスを次に示します。
 
 ## iOS
 

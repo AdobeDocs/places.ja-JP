@@ -1,17 +1,15 @@
 ---
 title: ライブラリの読み取り
-description: Places REST APIを使用してライブラリを読み取ります。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Places REST API を使用してライブラリを読み取ります。
+exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 8%
 
 ---
 
-
-
-# ライブラリを読む{#read-a-library}
+# ライブラリの読み取り {#read-a-library}
 
 ライブラリの詳細を返すGETメソッド。
 
@@ -82,9 +80,9 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 }
 ```
 
-## CURLコマンド
+## CURL コマンド
 
-次のCURLコマンドを使用してAPIをテストします。
+次の CURL コマンドを使用して API をテストします。
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -92,5 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。
-
+>置換 `<LIBRARYID>`, `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。

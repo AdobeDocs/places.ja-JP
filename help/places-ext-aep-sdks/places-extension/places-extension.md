@@ -4,8 +4,8 @@ description: Places 拡張機能を使用すると、ユーザーの場所に基
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 5%
 
 ---
 
@@ -96,9 +96,9 @@ Objective-C または Swift を使用して Places 拡張機能をアプリに�
    import ACPPlaces
    ```
 
-### Places 拡張機能のMobile Core への登録 {#register-places-mobile-core}
+### Places 拡張機能の Mobile Core への登録 {#register-places-mobile-core}
 
-Places 拡張機能を Android およびiOSのMobile Core に登録する必要があります。
+Android およびiOSで、Places 拡張機能を Mobile Core に登録する必要があります。
 
 #### Android
 
@@ -236,4 +236,4 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 | :--- | :--- | :--- |
 | `places.libraries` | ○ | モバイルアプリ用の Places 拡張機能ライブラリ。 ライブラリ ID と、モバイルアプリがサポートするライブラリの名前を指定します。 |
 | `places.endpoint` | ○ | デフォルトの Places クエリサービスエンドポイント。ライブラリと POI に関する情報の取得に使用されます。 |
-| `places.membershipttl` | × | デフォルト値の 3600（1 時間あたりの秒数）。 デバイスの Places メンバーシップ情報が有効である期間（秒）を示します。 |
+| `places.membershipttl` | いいえ | デフォルト値の 3600（1 時間あたりの秒数）。 デバイスの Places メンバーシップ情報が有効である期間（秒）を示します。 |

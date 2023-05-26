@@ -1,74 +1,73 @@
 ---
-title: Analytics Workspaceの場所データに関するレポート
-description: この節では、Analytics Workspaceの場所データをレポートする方法について説明します。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+title: Analytics Workspace での場所データのレポート
+description: この節では、Analytics Workspace で場所データをレポートする方法について説明します。
+exl-id: 45ca3c80-71b7-41de-9b00-645504061935
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 8%
 
 ---
 
+# Analytics Workspace での場所データのレポート {#places-in-workspace}
 
-# Analytics Workspace {#places-in-workspace}の場所データに関するレポート
-
-このドキュメントは、Analytics Workspaceでの場所データのレポート方法の例を示します。 各手順には、概要レベルの概要が含まれ、他のドキュメントページを参照することで詳細が提供されます。
+このドキュメントでは、Analytics Workspace でロケーションデータをレポートする方法の例を示します。 各ステップには、概要レベルの概要と、他のドキュメントページを参照することで提供される詳細が含まれます。
 
 ## 前提条件
 
-このドキュメントでは、次の項目を想定しています。
+このドキュメントでは、次の点を前提としています。
 
-1. Places拡張機能がアプリケーションに実装されます。
+1. Places 拡張機能は、アプリケーションに実装されます。
 
-   Places拡張機能の実装について詳しくは、[Places extensions](/help/places-ext-aep-sdks/places-extension/places-extension.md)を参照してください。
+   Places 拡張機能の実装について詳しくは、 [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-1. Adobe Analyticsのユーザーは管理者で、処理ルールにアクセスできます。
+1. Adobe Analyticsユーザーは管理者で、処理ルールにアクセスできます。
 
    処理ルールについて詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
 
-1. Launchプロパティで、目的のPlaces Service変数に対してデータ要素が作成されています。
+1. Launch プロパティでは、必要な Places Service 変数用にデータ要素が作成されています。
 
-   Launchのデータ要素について詳しくは、[データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
+   Launch のデータ要素について詳しくは、 [データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md).
 
 
-## 1.開始ルールの作成
+## 1. Launch ルールを作成する
 
-デバイスがPOIに入ったときにSDKからAnalyticsにデータを送信するルールを作成します。 この種のルールの作成については、[Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)へのPOIエントリおよび出口データの送信ページで説明しています。
+デバイスが POI に入ったときに SDK が Analytics にデータを送信するルールを作成します。 この種のルールの作成については、 [POI 入口および出口データを Analytics に送信](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) ページ。
 
-この例では、ルールのアクションに、Analyticsリクエストに対して次の値が定義されています。
+この例では、ルールのアクションで、Analytics リクエストに対して次の値が定義されています。
 
-* **** Actionsには、「 **[!UICONTROL Places Entry]**」という値が指定されます。
+* **[!UICONTROL アクション]** が **[!UICONTROL 場所の入口]**.
 
-* コンテキストデータキー&#x200B;**[!UICONTROL poi.name]**&#x200B;は、データ要素&#x200B;**[!UICONTROL {%%POI Name%%}]**&#x200B;の値に設定されます。
+* コンテキストデータキー **[!UICONTROL poi.name]** がデータ要素の値に設定されている **[!UICONTROL {%%POI 名%%}]**.
 
 ![&quot;アクションを設定&quot;](/help/assets/pt-setAction.png)
 
-## 2. Analytics変数の作成
+## 2. Analytics 変数を作成する
 
-コンテキストデータをマッピングする（手順1で送信）には、まずAnalyticsレポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[コンバージョン変数(eVar)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)を参照してください。
+コンテキストデータ（手順 1 で送信）をマッピングするには、まず Analytics レポートスイート用に変数を作成する必要があります。 Analytics での変数の作成について詳しくは、 [コンバージョン変数 (eVar)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html).
 
-この例では、コンバージョン変数&#x200B;**[!UICONTROL Evar2]**&#x200B;が作成され、**[!UICONTROL Places POI Name]**&#x200B;という名前が付けられています。 レポートで公開する場所変数ごとに、追加の変数を作成する必要があります。
+この例では、コンバージョン変数 **[!UICONTROL Evar2]**、が作成され、という名前が付けられました。 **[!UICONTROL 場所 POI 名]**. レポートで表示する各ロケーション変数に対して、追加の変数を作成する必要があります。
 
-![「analytics変数の作成」](/help/assets/aa-evar.png)
+![「analytics 変数の作成」](/help/assets/aa-evar.png)
 
-## 3.処理ルールの作成
+## 3.処理ルールを作成する
 
-この手順は、コンテキストデータ（手順1）をAnalytics変数にマッピングする場合に必要です（手順2）。 処理ルールの作成について詳しくは、[処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)を参照してください。
+この手順は、コンテキストデータ（手順 1）を Analytics 変数（手順 2）にマッピングするために必要です。 処理ルールの作成について詳しくは、 [処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-この例では、コンテキストデータ値&#x200B;**[!UICONTROL poi.name]**&#x200B;を&#x200B;**[!UICONTROL Places POI Name (eVar2)]**&#x200B;にマップする処理ルールが作成されています。 作成した場所変数ごとに、追加の処理ルールを作成する必要があります。
+この例では、コンテキストデータ値をマッピングする処理ルールが作成されています **[!UICONTROL poi.name]** into **[!UICONTROL 場所 POI 名 (eVar2)]**. 場所変数を作成するたびに、追加の処理ルールを作成する必要があります。
 
 ![「処理ルールの作成」](/help/assets/aa-processing-rule.png)
 
-## 4. Workspaceでレポートを生成する
+## 4. Workspace でレポートを生成する
 
-この手順では、Analytics Workspaceで手順1 ～ 3で収集されたデータを表示するための基本的なレポートを示します。 Analytics Workspaceの使用方法について詳しくは、[Analytics Workspaceの概要](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html)を参照してください。
+この手順では、手順 1 ～ 3 で収集したデータを表示するための、Analytics Workspace の基本レポートを示します。 Analytics Workspace の使用方法について詳しくは、 [Analytics Workspace の概要](https://docs.adobe.com/content/help/ja-JP/analytics/analyze/analysis-workspace/home.html).
 
-この例では、レポートに次の設定が含まれます。
+この例では、レポートの設定は次のようになります。
 
-* 指標 — **[!UICONTROL 回数]**
+* 指標 — **[!UICONTROL 発生件数]**
 
 * Dimension- **[!UICONTROL アクション名]**
 
-   * Dimension別に分類 — **[!UICONTROL POI名]**&#x200B;を配置
+   * Dimension別 — **[!UICONTROL 場所 POI 名]**
 
-![「ワークスペースでのレポートの作成」](/help/assets/aa-workspace.png)
+![&quot;workspace でのレポートの作成&quot;](/help/assets/aa-workspace.png)

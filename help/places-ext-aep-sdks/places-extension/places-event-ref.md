@@ -1,18 +1,17 @@
 ---
-title: 配置イベント参照
-description: 'Places拡張で処理されるイベントのリストです。 '
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+title: Places イベント参照
+description: Places 拡張機能で処理されるイベントのリストです。
+exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 29%
 
 ---
 
+# Places イベント参照 {#places-event-reference}
 
-# イベント参照を配置{#places-event-reference}
-
-Places拡張で処理されるイベントのリストを以下に示します。
+以下に、Places 拡張機能で処理されるイベントの一覧を示します。
 
 ## GetCurrentPointsOfInterest
 
@@ -24,13 +23,13 @@ Places拡張で処理されるイベントのリストを以下に示します�
 
 **イベントの説明**
 
-このイベントは、デバイスが現在配置されているPOIを取得する要求です。
+このイベントは、デバイスが現在存在する POI を取得するリクエストです。
 
 **データペイロードの定義**
 
-なし
+n/a
 
-## GetNichroedPointsOfInterest
+## GetNicherPointsOfInterest
 
 **イベントの詳細**
 
@@ -40,16 +39,16 @@ Places拡張で処理されるイベントのリストを以下に示します�
 
 **イベントの説明**
 
-このイベントは、現在のデバイスの場所と設定済みのPlacesライブラリを考慮して、近くのPOIを取得する要求です。
+このイベントは、現在のデバイスの場所と設定済みの Places ライブラリを考慮して、近くの POI を取得するリクエストです。
 
 **データペイロードの定義**
 
 | キー | 値のタイプ | 必須 | デフォルト値 | 説明 |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | true | n/a | 近くのPOIを検索する際の中心の緯度の値を保持します。 |
-| longitude | 重複 | true | n/a | 近くのPOIを検索する中心の経度値を保持します。 |
-| radius | 整数 | false | なし | 周辺のPOIを検索する際に使用する半径（メートル単位）。 |
-| count | 整数 | false | 10 | 結果の応答イベントに返すPOIの最大数。 |
+| latitude | double | true | n/a | 近くの POI の検索の中心の緯度値が格納されます。 |
+| longitude | double | true | n/a | 近くの POI の検索の中心の経度値を保持します。 |
+| 半径 | 整数 | false | n/a | 近くの POI の検索で使用される半径（メートル単位）。 |
+| count | 整数 | false | 10 | 結果の応答イベントで返される POI の最大数。 |
 
 ## ProcessRegionEvent
 
@@ -61,16 +60,15 @@ Places拡張で処理されるイベントのリストを以下に示します�
 
 **イベントの説明**
 
-このイベントにより、Places拡張でジオフェンスの入口または出口イベントが処理されます。
+このイベントにより、Places 拡張機能がジオフェンスのエントリまたは終了イベントを処理します。
 
 **データペイロードの定義**
 
 | キー | 値のタイプ | 必須 | 説明 |
 | :--- | :--- | :--- | :--- |
-| regionid | 文字列 | true | イベントを生成する地域のID。 |
-| regioneventtype | int | true | 生成される地域イベントのタイプ。 1は入口、2は出口です。 |
+| 地域 | 文字列 | true | イベントを生成する地域の ID。 |
+| regioneventtype | int | true | 生成される地域イベントのタイプ。 1 は入口、2 は出口です。 |
 
-## Places拡張機能によってディスパッチされるイベント
+## Places 拡張機能によってディスパッチされるイベント
 
 この情報は現在進行中です。
-

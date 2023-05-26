@@ -1,18 +1,17 @@
 ---
 title: ライブラリの作成
-description: Places REST APIを使用してライブラリを作成します。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: Places REST API を使用してライブラリを作成します。
+exl-id: 155cc6e6-9254-4389-bb02-e526d15908f4
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 22%
 
 ---
 
-
 # ライブラリの作成 {#create-a-library}
 
-ライブラリを作成できるPOST方法。
+POSTを作成するためのライブラリメソッド。
 
 ## リクエスト
 
@@ -38,9 +37,9 @@ POST https://api-places.adobe.io/places/placesapi/v1/libraries
 {       "id": "449f08f3-eff5-4658-9329-2d9687af777e",       "name": "Facinating places",      "customerID": "777F20F55BACA09E0A495D8F@AdobeOrg",       "poiCount": 0  }
 ```
 
-## CURLコマンド
+## CURL コマンド
 
-このAPIをテストするには、次のCURLコマンドを使用します。
+この API をテストするには、次の CURL コマンドを使用します。
 
 ```text
 curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '{"name":"New Library Name"}' -H "Content-Type: application/json"
@@ -48,5 +47,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。
-
+>次のような変数を置き換える `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。

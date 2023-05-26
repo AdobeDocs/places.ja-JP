@@ -1,18 +1,17 @@
 ---
-title: APIの使用の概要
-description: この節では、Placesサービスで使用できるREST APIについて説明します。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: API 使用の概要
+description: この節では、Places Service で使用できる REST API に関する情報を提供します。
+exl-id: f2823ea5-9fbf-45b7-8206-6cb82ca22ecf
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
+# API 使用の概要 {#api-usage-overview}
 
-# API使用の概要{#api-usage-overview}
-
-Places REST APIを使用してPOIとライブラリを管理するには、次の節を参照してください。
+Places REST API を使用して POI とライブラリを管理するには、次の節を参照してください。
 
 * [ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)
-* [POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)
+* [POI の管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)
