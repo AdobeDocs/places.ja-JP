@@ -1,7 +1,7 @@
 ---
-source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## アドビのコンテンツへのコントリビューションについて
 
-[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
+[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 コントリビューションの方法は、誰がどのような変更をコントリビューションするかに応じて異なります。
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 リクエストを送信するには、記事内の「**Log an issue**」リンクをクリックして、GitHub で問題を開きます。タイトルと説明を指定し、「**Submit new issue**」をクリックします。
 
-マイナーアップデートをリクエストするには、記事の「**Edit this page**」リンクをクリックして、GitHub でソース記事を開きます。GitHub の UI を使用して、更新をおこないます。詳しくは、全般的な事項について説明した[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
+マイナーアップデートをリクエストするには、記事の「**Edit this page**」リンクをクリックして、GitHub でソース記事を開きます。GitHub の UI を使用して、更新をおこないます。詳しくは、全般的な事項について説明した[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 このリポジトリー内のドキュメントやコード例に対して提案される軽微な変更や補足説明には、アドビの利用規約が適用されます。
 
@@ -45,7 +45,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 コミュニティのコントリビューターは、基本的な編集をするときには GitHub の UI を使用し、大きな変更を加えるときにはリポジトリーをフォークします。
 
-詳しくは、[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 ## Markdown を使用してトピックをフォーマットする方法
 

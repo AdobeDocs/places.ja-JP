@@ -2,10 +2,10 @@
 title: リリースノート
 description: Places Service のリリースノートです。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 3%
+source-wordcount: '1490'
+ht-degree: 2%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 * **Places and Places Monitor の拡張機能**
 
-   * Places と Places 監視の拡張機能がに追加されました [React ネイティブアプリケーション](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * Places と Places 監視の拡張機能がに追加されました [Cordova アプリケーション](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * 詳しくは、以下を参照してください。 [Places 拡張機能の使用](https://docs.adobe.com/content/help/ja-JP/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * Places と Places 監視の拡張機能がに追加されました。 [React ネイティブアプリケーション](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * Places と Places 監視の拡張機能がに追加されました。 [Cordova アプリケーション](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * 詳しくは、以下を参照してください。 [Places 拡張機能の使用](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020 年 5 月 13 日
@@ -113,13 +113,13 @@ ht-degree: 3%
 
    * **iOS**
 
-      * 新しい API、 `setRequestAuthorizationLevel`：ユーザーに表示される場所認証要求のタイプを設定します。
+      * 新しい API、 `setRequestAuthorizationLevel`：ユーザーに対して要求される場所の認証要求のタイプを設定します。
+
+
    * **Android**
 
       * 新しい API、 `setLocationPermission`：ユーザーに表示される場所権限リクエストのタイプを設定します。
       * Places モニターで Android 10 がサポートされるようになりました。
-
-
 
 ## 2019 年 8 月 9 日
 
@@ -162,11 +162,11 @@ Places UI の更新の一覧を次に示します。
 * 場所権限のリクエストによって生成されたコールバックの処理では、PlacesActivity を拡張する必要がなくなりました。
 * 既存の API が変更され、デベロッパーは、デバイスからすべての Places データをクリアできるようになりました。
 
-   古い API: `public static void stop();`
+  古い API: `public static void stop();`
 
-   新しい API: `public static void stop (final boolean clearData);`
+  新しい API: `public static void stop (final boolean clearData);`
 
-* の使用を更新しました `getNearbyPointsOfInterest` エラーシナリオをより効果的に処理する API。
+* の使用を更新しました。 `getNearbyPointsOfInterest` エラーシナリオをより効果的に処理する API。
 
 ## 2019年7月25日（PT）
 
@@ -176,9 +176,9 @@ Places UI の更新の一覧を次に示します。
 
 * デバイスからすべての Places データをクリアするには、次の手順を実行します。
 
-   ACPPlacesMonitor で、既存の API を置き換える `+ (void) stop;` と`+ (void) stop: (BOOL) clearData;`.
+  ACPPlacesMonitor で、既存の API を置き換える `+ (void) stop;` 次を使用`+ (void) stop: (BOOL) clearData;`.
 
-* ACPPlace の使用を更新しました `getNearbyPointsOfInterest` エラーシナリオをより効果的に処理する API。
+* ACPPlaces の使用を更新しました。 `getNearbyPointsOfInterest` エラーシナリオをより効果的に処理する API。
 
 ## 2019年7月22日
 
@@ -191,7 +191,7 @@ Places UI の更新の一覧を次に示します。
 * の問題を修正しました。 `getNearbyPointsOfInterest` コールバックがエラーコードを返していました `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` インターネットに接続されていません。
 * `getNearbyPointsOfInterest` API（errorCallback を除く）は、 `successCallback` 近くの目標地点を取得中にエラーが発生した場合に、空の poi リストで呼び出されます。
 
-## 2019年7月19日
+## 2019年7月19日（PT）
 
 このリリースでは、次の更新がおこなわれました。
 
@@ -199,7 +199,7 @@ Places UI の更新の一覧を次に示します。
 
 共有状態、アプリ内メモリ、および `NSUserDefaults`.
 
-## 2019年6月25日
+## 2019 年 6 月 26 日
 
 このリリースでは、次の更新がおこなわれました。
 
@@ -207,7 +207,7 @@ Places UI の更新の一覧を次に示します。
 
 * コード内ドキュメントやログの改善など、QOL の改善がおこなわれました。
 
-## 2019年6月17日
+## 2019 年 6 月 18 日
 
 このリリースでは、次の更新がおこなわれました。
 
@@ -233,7 +233,7 @@ Places UI での次の問題を修正しました。
 * UI で許容される最小半径を 10 m に増やしました。
 * フィールド内のすべての数値を削除すると、半径フィールドが 20 m にリセットされる問題を修正しました。
 
-## 2019年5月17日（PT）
+## 2019 年 5 月 18 日
 
 このリリースでは、次の更新がおこなわれました。
 
@@ -258,7 +258,7 @@ Places モニタの詳細については、ここをクリックしてくださ�
 * Places 拡張機能は、設定が取得されるまでイベントをキューに追加するようになりました。
 * 環境対応設定のサポートを追加しました。
 * バグ修正：地域の入口/出口イベントのキーを修正しました。
-* 最新の既知の場所のストレージは、ユーザーのプライバシーステータスを適切に順守するようになりました
+* 最新の既知の場所のストレージが、ユーザーのプライバシーステータスを適切に順守するようになりました。
 
 
 ## 2019年4月9日（PT）
@@ -283,7 +283,7 @@ Places モニターは、OS レベルのロケーション API を管理し、Pl
 
 ### ベータリリース
 
-これは、顧客が実際の場所のデータを使用してユーザーのエクスペリエンスを強化できる一連のツールである、Places Service の最初のリリースです。 最初のリリースでは、モバイルアプリがカスタムの場所データを取得し、Adobe Experience Platform Launchを通じてそのデータに基づいて動作できるようにすることが主な使用例です。
+これは、顧客が実際の場所のデータを使用してユーザーエクスペリエンスを強化できる一連のツールである、Places Service の最初のリリースです。 最初のリリースでは、モバイルアプリがカスタムの場所データを取得し、Adobe Experience Platform Launchを通じてそのデータに基づいて動作できるようにすることが主な使用例です。
 
 ### 主な特長
 
@@ -316,7 +316,7 @@ Places API を使用して、次の操作を実行できます。
 * 独自の UI を作成するか、既存の POI データベースと統合します。
 * Places API バッチエンドポイントを使用して、POI を一括読み込みます。
 
-   付属の Python ユーティリティを使用して一括インポートを完了できます。
+  付属の Python ユーティリティを使用して一括インポートを完了できます。
 
 Places API について詳しくは、 [Web サービス API](/help/web-service-api/places-web-services.md).
 

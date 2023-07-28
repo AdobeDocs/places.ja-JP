@@ -1,17 +1,17 @@
 ---
 title: Places Service プロパティのルールの作成
-description: Places SDK は現在の場所を追跡し、現在の場所に関する設定済みの POI を監視し、これらの POI の入口イベントと出口イベントを追跡します。
+description: Places SDK は、現在の場所を追跡し、現在の場所に関する設定済みの POI を監視し、これらの POI の入口イベントと出口イベントを追跡します。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '922'
 ht-degree: 15%
 
 ---
 
 # 入口ルールと出口ルールの作成 {#create-entry-exit-rules}
 
-Places 拡張機能と地域監視ソリューションをモバイルアプリケーションにインストールすると、場所の入口イベントや出口イベントを含む、場所のデータをトリガーまたは条件付きにするルールをAdobe Experience Platform Launchで作成できます。
+Places 拡張機能と地域監視ソリューションをモバイルアプリケーションにインストールすると、場所の入口イベントや出口イベントを含む、場所のデータをトリガーまたは条件付きでトリガーするルールをAdobe Experience Platform Launchで作成できます。
 
 ## ルール
 
@@ -50,19 +50,19 @@ Places SDK は、次の状態を管理します。
 
 アクションは、実行されたイベントに対してルールが満たされた場合にアプリが実行する動作を定義します。 例えば、顧客が POI を入力する際に、モバイルデバイスに表示するようこそメッセージを設定できます。
 
-## ルールを作成します。例
+## ルールの作成：例
 
 >[!CAUTION]
 >
->この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。POI とライブラリの作成について詳しくは、 [POI の作成](/help/poi-mgmt-ui/create-a-poi-ui.md) および *ライブラリの作成* in [複数のライブラリを管理](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
+>この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。POI とライブラリの作成について詳しくは、 [POI の作成](/help/poi-mgmt-ui/create-a-poi-ui.md) および *ライブラリの作成* in [複数のライブラリを管理](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 以下の手順は、サンフランシスコで喫茶店に入ったときにSlackに投稿を返すルールを作成する方法の例です。
 
 イベント、条件およびアクションは、次の方法で定義されます。
 
-* **イベント**:場所エントリイベント。
+* **イベント**：場所エントリイベント。
 * **条件**：**現在の POI** の市区町村はサンフランシスコ
-* **アクション**:顧客が入力したSlackショップの名前をコーヒーにポストバックを送信します。
+* **アクション**：顧客が入力したSlackショップの名前をコーヒー店にポストバックを送信します。
 
 ### 前提条件
 
@@ -73,7 +73,7 @@ Places SDK は、次の状態を管理します。
 1. 次をクリック： **データ要素** タブをクリックします。
 1. 「**データ要素の追加**」をクリックします。
 1. 名前を入力します（例： ）。 **現在のコーヒーショップ名**.
-1. 内 **拡張** ドロップダウンリストで、「 **Places — ベータ**.
+1. Adobe Analytics の **拡張** ドロップダウンリストで、「 **Places — ベータ版**.
 1. 「**データ要素**」で「**市区町村**」を選択します。
 1. 右側のウィンドウで、「 」を選択します。 **現在の POI**.
 1. 「**保存**」をクリックします。
@@ -84,12 +84,12 @@ Places SDK は、次の状態を管理します。
 
 1. Experience Platform Launch で、「**[!UICONTROL ルール]**」タブをクリックします。
 1. 「**[!UICONTROL Add Rule]**」をクリックします。
-1. ルールの名前を入力します（例： ）。 **[!UICONTROL SF でコーヒーショップのエントリを追跡]**.
+1. ルールの名前を入力します（例： ）。 **[!UICONTROL SF でコーヒーショップのエントリを追跡する]**.
 
 ### イベントの作成
 
 1. 「イベント」セクションで、 **[!UICONTROL +追加]**. イベントは、ルールを実行するタイミングを決定します。
-1. 内 **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Places — ベータ]**.
+1. Adobe Analytics の **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Places — ベータ版]**.
 1. **[!UICONTROL イベントタイプ]**&#x200B;ドロップダウンリストで、「**[!UICONTROL POI を入力]**」を選択します。
 1. 「**[!UICONTROL 名前]**」に、イベントの名前を入力します（例：「**[!UICONTROL コーヒーショップへの来店]**」）。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
@@ -98,7 +98,7 @@ Places SDK は、次の状態を管理します。
 
 1. 「条件」セクションで、 **[!UICONTROL +追加]**. 条件は、アクションを実行するために満たす必要がある条件を決定します。
 1. 「**[!UICONTROL 論理タイプ]**」で「標準」を選択し、条件が満たされた場合にアクションを実行できます。
-1. 内 **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Places — ベータ]**.
+1. Adobe Analytics の **[!UICONTROL 拡張]** ドロップダウンリストで、「 **[!UICONTROL Places — ベータ版]**.
 1. 「**[!UICONTROL 条件タイプ]**」で「**[!UICONTROL 市区町村]**」を選択します。
 1. 条件名を入力します（例： ）。 **[!UICONTROL SF のコーヒーショップ]**.
 1. 右側のウィンドウで「**[!UICONTROL 現在の POI]**」をクリックし、ドロップダウンリストで「**[!UICONTROL サンフランシスコ]**」を市区町村の 1 つとして選択します。
@@ -106,25 +106,25 @@ Places SDK は、次の状態を管理します。
 
 ### アクションの作成
 
-1. 内 **[!UICONTROL アクション]** セクションで、 **[!UICONTROL +追加]**.
-1. 内 **[!UICONTROL 拡張]** ドロップダウンリストをデフォルトのままにする **[!UICONTROL Mobile Core]** オプションが選択されています。
-1. アクションタイプを選択します（例： ）。 **[!UICONTROL ポストバックを送信]**.
+1. Adobe Analytics の **[!UICONTROL アクション]** セクションで、 **[!UICONTROL +追加]**.
+1. Adobe Analytics の **[!UICONTROL 拡張]** ドロップダウンリストをデフォルトのままにする。 **[!UICONTROL Mobile Core]** オプションが選択されています。
+1. アクションタイプを選択します。例： **[!UICONTROL ポストバックを送信]**.
 
-   a.In **[!UICONTROL URL]**、Slackのポストバック URL を入力します。例： `https://hooks.slack.com/services/`.
+   a.の場合 **[!UICONTROL URL]**、Slackのポストバック URL を入力します。例： `https://hooks.slack.com/services/`.
 
-   b.投稿の本文を送信するには、 **[!UICONTROL POST 本文を追加]** チェックボックスをオンにします。
+   b.投稿本文を送信するには、 **[!UICONTROL POST 本文を追加]** 」チェックボックスをオンにします。
 
    c.イン **[!UICONTROL POST 本文]**、次のように post 本文を追加します。 `{ "text": "A customer has entered" }`
 
    c.例えばコンテンツタイプを入力します。 **[!UICONTROL application/json]**.
 
-   d.タイムアウト値を選択します（例： ）。 **[!UICONTROL 5]**.
+   d.タイムアウト値を選択します。例： **[!UICONTROL 5]**.
 
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
 ### ルールを発行する
 
-1. ルールをアクティブ化するには、公開する必要があります。 ルールの公開について詳しくは、Experience Platform Launch [公開](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html).
+1. ルールをアクティブ化するには、公開する必要があります。 ルールの公開について詳しくは、Experience Platform Launch [公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja).
 
 ### 入口と出口を越えた思考
 

@@ -6,12 +6,12 @@ type: Documentation
 solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.ja-JP
 index: true
-source-git-commit: 832888ab4b45aa054069a69eaf4c8b9cc059d9a7
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 94%

@@ -2,9 +2,9 @@
 title: アプリ内通知
 description: この節では、Places Service とアプリ内メッセージの使用方法について説明します。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Mobile Services では、Analytics に送信される場所データを、アプ
 
 ### 前提条件
 
-開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの動作について理解します。 詳しくは、 [アプリ内メッセージを作成します。](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
+開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの動作について理解します。 詳しくは、 [アプリ内メッセージを作成します。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
 
 ##  Experience Platform Launch でのルール
 
@@ -41,11 +41,11 @@ Mobile Services では、Analytics に送信される場所データを、アプ
 
 * 位置データをトリガーイベントとして使用する。
 
-   例えば、ユーザーが POI に入ると Analytics にデータを送信できます。
+  例えば、ユーザーが POI に入ると Analytics にデータを送信できます。
 
 * 位置データをトリガーイベントの条件として使用する。
 
-   例えば、様々な POI の天気に対して Places Service でカスタムメタデータタグを作成した場合、そのメタデータをルール条件のパラメーターとして使用できます。 この条件は、前述の POI エントリイベントで使用できますが、イベントに対するコンテキストとしても使用できます。
+  例えば、様々な POI の天気に対して Places Service でカスタムメタデータタグを作成した場合、そのメタデータをルール条件のパラメーターとして使用できます。 この条件は、前述の POI エントリイベントで使用できますが、イベントに対するコンテキストとしても使用できます。
 
 適切なイベントおよび条件パラメーターを使用してルールを設定したら、Analytics にデータを送信するアクションを設定して、ルールの設定を完了します。
 
@@ -54,7 +54,7 @@ Mobile Services では、Analytics に送信される場所データを、アプ
 アクションを作成するには：
 
 1. を選択します。 **[!UICONTROL Adobe Analytics]** 拡張子。
-1. 内 **[!UICONTROL アクションタイプ]** ドロップダウンリストで、「 **[!UICONTROL 追跡。]**
+1. Adobe Analytics の **[!UICONTROL アクションタイプ]** ドロップダウンリストで、「 **[!UICONTROL 追跡。]**
 1. アクションの名前を入力します。
 1. 右側のウィンドウで、 **[!UICONTROL コンテキストデータ]**」で、キー値ペアを選択して、Analytics に送信されるコンテキストデータを設定します。
 
@@ -62,7 +62,7 @@ Mobile Services では、Analytics に送信される場所データを、アプ
 
 >[!TIP]
 >
->Analytics の処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、「[処理ルール](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)」を参照してください。の例では、 *アクションの作成*&#x200B;を呼び出した場合、アクションは `poiname` Analytics に送信される POI エントリイベントを説明するコンテキストとして。
+>Analytics の処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、「[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)」を参照してください。の例では、 *アクションの作成*&#x200B;を呼び出した場合、アクションは `poiname` Analytics に送信される POI エントリイベントを説明するコンテキストとして。
 
 ![アクションの作成](/help/assets/configure-action.png)
 
@@ -77,12 +77,12 @@ Mobile Services では、Analytics に送信される場所データを、アプ
 * 入口や出口など、場所固有のアクションの使用。
 * コンテキストデータとして送信される POI メタデータを使用して、オーディエンスのターゲットを絞り込みます。
 
-   このオプションは、入口などの場所固有のアクションと共に使用することも、起動やボタンクリックなどの別のイベントへのコンテキストとして使用することもできます。
+  このオプションは、入口などの場所固有のアクションと共に使用することも、起動やボタンクリックなどの別のイベントへのコンテキストとして使用することもできます。
 
-   以下は、 **[!UICONTROL Adobe]** 名前：
+  以下は、 **[!UICONTROL Adobe]** 名前：
 
-   ![トリガーパラメーター](/help/assets/trigger-parameters.png)
+  ![トリガーパラメーター](/help/assets/trigger-parameters.png)
 
 * Places Service の見出しのパラメーター ( *トリガーと特性* Mobile Services のページは、Places Service のデータでは動作しません。
 
-   これらのパラメーターは、Mobile Services で作成された従来の Places Service データベースに対してのみ使用されます。
+  これらのパラメーターは、Mobile Services で作成された従来の Places Service データベースに対してのみ使用されます。

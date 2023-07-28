@@ -1,10 +1,10 @@
 ---
 title: Places データでExperience Platform Launchルールとデータ要素を使用する。
 description: ルールおよびデータ要素と Places データに関する情報です。
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 47%
+source-wordcount: '255'
+ht-degree: 41%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 47%
 
 ## ルール
 
-Experience Platform Launch はルールベースのシステムで、ユーザーの操作と関連データを探します。ルールで概要が示されている条件が満たされると、ルールは指定した拡張機能、スクリプトまたは HTML をトリガーします。ルールを構築して、異なる製品を 1 つのソリューションに統合するマーケティングおよび広告技術のデータと機能を統合できます。ルールの詳細については、「[ルール](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/manage-resources/rules.html)」と「[ルールの作成](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/manage-resources/rules.html#ルールの作成)」を参照してください。
+Experience Platform Launch はルールベースのシステムで、ユーザーの操作と関連データを探します。ルールで概要が示されている条件が満たされると、ルールは指定した拡張機能、スクリプトまたは HTML をトリガーします。ルールを構築して、異なる製品を 1 つのソリューションに統合するマーケティングおよび広告技術のデータと機能を統合できます。ルールの詳細については、「[ルール](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja)」と「[ルールの作成](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#create-a-rule)」を参照してください。
 
 ## データ要素
 
@@ -21,5 +21,5 @@ Experience Platform Launch はルールベースのシステムで、ユーザ�
 
 データ要素は変数で、この変数の値は、クエリ文字列、URL、Cookie 値、JavaScript 変数などにマッピングできます。 Experience Platform Launchでは、変数名でこの値を参照できます。 データ要素のコレクションは、ルール (Experience Platform Launch、条件、アクション ) の作成に使用できる、定義済みデータのディクショナリになり、データディクショナリはイベント全体で共有され、Places 拡張機能と共に使用できます。
 
-データ要素について詳しくは、「[データ要素](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/manage-resources/data-elements.html)」および「[データ要素の作成](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)」を参照してください。
+データ要素について詳しくは、「[データ要素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja)」および「[データ要素の作成](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja#create-a-data-element)」を参照してください。
 

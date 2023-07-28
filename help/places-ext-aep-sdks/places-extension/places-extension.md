@@ -2,9 +2,9 @@
 title: Places 拡張機能
 description: Places 拡張機能を使用すると、ユーザーの場所に基づいて行動できます。
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '697'
 ht-degree: 5%
 
 ---
@@ -16,15 +16,15 @@ Places 拡張機能を使用すると、ユーザーの場所に基づいて行�
 ## Adobe Experience Platform Launchでの Places 拡張機能のインストール
 
 1. Experience Platform Launchで、 **[!UICONTROL 拡張機能]** タブをクリックします。
-1. の **[!UICONTROL カタログ]** タブで、 **[!UICONTROL 場所]** 拡張機能を選択し、「 **[!UICONTROL インストール]**.
+1. 次の日： **[!UICONTROL カタログ]** タブで、 **[!UICONTROL 場所]** 拡張機能を選択し、「 」をクリックします。 **[!UICONTROL インストール]**.
 1. このプロパティで使用する Places ライブラリを選択します。 これらは、アプリでアクセス可能なライブラリです。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-   クリック時 **[!UICONTROL 保存]**&#x200B;を指定した場合、Experience PlatformSDK は、選択したライブラリ内の POI について Places サービスを検索します。 アプリの構築時に、POI データはライブラリのダウンロードに含まれませんが、POI の場所に基づくサブセットが実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーの GPS 座標に基づきます。
+   クリック時 **[!UICONTROL 保存]**&#x200B;を指定した場合、Experience PlatformSDK は、選択したライブラリ内の POI について Places サービスを検索します。 アプリの構築時に、POI データはライブラリのダウンロードに含まれませんが、POI の場所に基づくサブセットが、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーの GPS 座標に基づきます。
 
 1. 公開プロセスを完了して、SDK 設定を更新します。
 
-   Experience Platform Launchでの公開について詳しくは、 [公開](https://docs.adobe.com/content/help/ja-JP/launch/using/reference/publish/overview.html).
+   Experience Platform Launchでの公開について詳しくは、 [公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja).
 
 ### Places 拡張機能の設定 {#configure-places-extension}
 
@@ -236,4 +236,4 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 | :--- | :--- | :--- |
 | `places.libraries` | ○ | モバイルアプリ用の Places 拡張機能ライブラリ。 ライブラリ ID と、モバイルアプリがサポートするライブラリの名前を指定します。 |
 | `places.endpoint` | ○ | デフォルトの Places クエリサービスエンドポイント。ライブラリと POI に関する情報の取得に使用されます。 |
-| `places.membershipttl` | いいえ | デフォルト値の 3600（1 時間あたりの秒数）。 デバイスの Places メンバーシップ情報が有効である期間（秒）を示します。 |
+| `places.membershipttl` | × | デフォルト値の 3600（1 時間あたりの秒数）。 デバイスの Places メンバーシップ情報が有効である期間（秒）を示します。 |
