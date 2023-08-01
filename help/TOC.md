@@ -2,7 +2,8 @@
 audience: end-user
 user-guide-title: Places Service ガイド
 user-guide-description: Places Service は、場所を認識するモバイルアプリで場所のコンテキストを理解できるようにする位置情報サービスです。
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+feature: Places
+source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 22%
@@ -14,8 +15,8 @@ ht-degree: 22%
 
 + [Places Service の概要](home.md)
 + [リリースノート](release-notes.md)
-+ [はじめに](getting-started.md)
-+ [Places Service へのアクセス権を取得](places-gain-access.md)
++ [Destination SDK の](getting-started.md)
++ [Places Service へのアクセス権を取得する](places-gain-access.md)
 + Places Service UI {#poi-mgmt-ui}
    + [Places Service UI の概要](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [POI の作成](poi-mgmt-ui/create-a-poi-ui.md)
@@ -52,16 +53,16 @@ ht-degree: 22%
             + [複数の POI を更新](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [複数の POI を削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリ API](web-service-api/api-usage/query-apis.md)
-+ モバイル SDK の拡張機能 {#places-ext-aep-sdks}
++ Mobile SDK の拡張機能 {#places-ext-aep-sdks}
    + Places 拡張機能 {#places-extension}
       + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places API リファレンス](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [Places イベント参照](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [Custom Places オブジェクト](places-ext-aep-sdks/places-extension/cust-places-objects.md)
-+ [独自の監視ソリューションで Places Service を使用](using-your-own-monitor.md)
-+ [アクティブな地域の監視なしで Places Service を使用](use-places-without-active-monitoring.md)
-+ Places Service をワークフローの一部としてExperience Platform Launch {#use-places-launch-workflow}
-   + [Places Service をワークフローの一部としてExperience Platform Launch](use-places-launch-workflow/places-launch-workflow.md)
++ [独自の監視ソリューションで Places Service を使用する](using-your-own-monitor.md)
++ [アクティブな地域の監視なしで Places Service を使用する](use-places-without-active-monitoring.md)
++ Places Service をワークフローの一部としてExperience Platform Launchする {#use-places-launch-workflow}
+   + [Places Service をワークフローの一部としてExperience Platform Launchする](use-places-launch-workflow/places-launch-workflow.md)
    + [データ要素の定義](use-places-launch-workflow/define-data-elements.md)
    + [入口ルールと出口ルールの作成](use-places-launch-workflow/create-rule-places-property.md)
 + Places Service を他のAdobeソリューションと共に使用 {#use-places-with-other-solutions}
