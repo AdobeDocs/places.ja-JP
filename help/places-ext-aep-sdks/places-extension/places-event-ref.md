@@ -1,8 +1,9 @@
 ---
 title: Places イベント参照
 description: Places 拡張機能で処理されるイベントのリストです。
+feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 29%
@@ -66,7 +67,7 @@ n/a
 
 | キー | 値のタイプ | 必須 | 説明 |
 | :--- | :--- | :--- | :--- |
-| 地域 | 文字列 | true | イベントを生成する地域の ID。 |
+| regionid | 文字列 | true | イベントを生成する地域の ID。 |
 | regioneventtype | int | true | 生成される地域イベントのタイプ。 1 は入口、2 は出口です。 |
 
 ## Places 拡張機能によってディスパッチされるイベント

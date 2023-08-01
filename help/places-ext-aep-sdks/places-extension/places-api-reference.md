@@ -1,8 +1,9 @@
 ---
 title: Places API リファレンス
 description: Places の API リファレンスに関する情報です。
+feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
@@ -86,7 +87,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessGeofencingEvent (Android)
 
-すべてを処理 `Geofences` 内 `GeofencingEvent` 同時に
+すべてを処理 `Geofences` （内） `GeofencingEvent` 同時に。
 
 **構文**
 
@@ -164,7 +165,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 );
 ```
 
-### GetNixeredPointsOfInterest (iOS)
+### GetNicherPointsOfInterest (iOS)
 
 **構文**
 
@@ -349,7 +350,7 @@ Places.clear();
 [ACPPlaces clear];
 ```
 
-## 場所の認証状態を設定
+## 場所の認証状態を設定する
 
 ### setAuthorizationStatus (Android)
 
@@ -385,7 +386,7 @@ Places 拡張機能で認証ステータスを設定します。
 提供されたステータスは「Places」共有状態に保存され、参照用にのみ表示されます。
 このメソッドを呼び出しても、このデバイスの実際の位置認証状態には影響しません。
 
-デバイスの認証ステータスが変更されると、 `locationManager:didChangeAuthorizationStatus:` メソッド `CLLocationManagerDelegate` が呼び出されます。 このメソッド内から、新しい `CLAuthorizationStatus` 値を ACPPlaces に設定 `setAuthorizationStatus:` API
+デバイスの認証ステータスが変更されると、 `locationManager:didChangeAuthorizationStatus:` メソッド `CLLocationManagerDelegate` が呼び出されます。 このメソッド内から、新しい `CLAuthorizationStatus` 値を ACPPlaces に設定 `setAuthorizationStatus:` API.
 
 **構文**
 
