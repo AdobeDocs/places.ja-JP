@@ -3,9 +3,9 @@ audience: end-user
 user-guide-title: Places Service ガイド
 user-guide-description: Places Service は、場所を認識するモバイルアプリで場所のコンテキストを理解できるようにする位置情報サービスです。
 feature: Places
-source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '290'
 ht-degree: 22%
 
 ---
@@ -54,11 +54,7 @@ ht-degree: 22%
             + [複数の POI を削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリ API](web-service-api/api-usage/query-apis.md)
 + Mobile SDK の拡張機能 {#places-ext-aep-sdks}
-   + Places 拡張機能 {#places-extension}
-      + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
-      + [Places API リファレンス](places-ext-aep-sdks/places-extension/places-api-reference.md)
-      + [Places イベント参照](places-ext-aep-sdks/places-extension/places-event-ref.md)
-      + [Custom Places オブジェクト](places-ext-aep-sdks/places-extension/cust-places-objects.md)
+   + [Places 拡張機能](places-ext-aep-sdks/places-extension/places-extension.md)
 + [独自の監視ソリューションで Places Service を使用する](using-your-own-monitor.md)
 + [アクティブな地域の監視なしで Places Service を使用する](use-places-without-active-monitoring.md)
 + Places Service をワークフローの一部としてExperience Platform Launchする {#use-places-launch-workflow}

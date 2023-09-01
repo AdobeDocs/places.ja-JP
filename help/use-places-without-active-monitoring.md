@@ -1,15 +1,15 @@
 ---
-title: アクティブな地域の監視なしで Places Service を使用
+title: アクティブな地域の監視なしで Places Service を使用する
 description: この節では、アクティブな地域監視を行わずに Places Service を使用する方法について説明します。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
-# アクティブな地域の監視なしで Places Service を使用 {#use-places-without-active-monitoring}
+# アクティブな地域の監視なしで Places Service を使用する {#use-places-without-active-monitoring}
 
 アプリケーションの使用例では、アクティブな地域の監視が必要ない場合があります。 Places Service は、引き続き、ユーザーの位置データを他のExperience Platform製品と統合するために使用できます。
 
@@ -19,18 +19,18 @@ ht-degree: 1%
 
 >[!TIP]
 >
->アプリの使用例でアクティブな地域の監視が必要な場合は、 [独自の監視ソリューションで Places Service を使用](/help/using-your-own-monitor.md).
+>アプリの使用例でアクティブな地域の監視が必要な場合は、 [独自の監視ソリューションで Places Service を使用する](/help/using-your-own-monitor.md).
 
 アクティブな地域監視を行わずに Places Service を使用するには、次の手順に従います。
 
-## 1.ユーザーの場所を収集します
+## 1.ユーザーの場所を収集する
 
 アプリ開発者は、 `CoreLocation.framework` (iOS) または `Location` Google Play Services(Android) が提供する API。
 
 詳しくは、次のドキュメントを参照してください。
 
-- [CoreLocation](https://developer.apple.com/documentation/corelocation) (Apple)
-- [Google Play Services のロケーション API](https://developer.android.com/training/location) (Google)
+- [CoreLocation](https://developer.apple.com/documentation/corelocation) (APPLE)
+- [Google Play Services のロケーション API](https://developer.android.com/training/location) (GOOGLE)
 
 ## 2. SDK から近くの目標地点を取得する
 
@@ -84,7 +84,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-iOSの実装例を示します。 コードは、 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) メソッド [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
+iOSの実装例を示します。 コードは、 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) メソッドを [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +100,7 @@ iOSの実装例を示します。 コードは、 [`locationManager:didUpdateLoc
 
 ### Swift
 
-iOSの実装例を示します。 コードは、 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) メソッド [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
+iOSの実装例を示します。 コードは、 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) メソッドを [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -116,7 +116,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Places データを Analytics リクエストに添付する
 
-を `getNearbyPointsOfInterest` API、Places SDK は、デバイスに関連するすべての POI データを、Launch のデータ要素を介して使用できるようにします。 を使用する [データを添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを今後の Analytics へのリクエストに自動的に追加できます。 これにより、デバイスの場所を収集する際に、Analytics に 1 回限りの呼び出しをおこなう必要がなくなります。
+を呼び出す `getNearbyPointsOfInterest` API、Places SDK は、デバイスに関連するすべての POI データを、Launch のデータ要素を介して使用できるようにします。 次を使用： [データを添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを今後の Analytics へのリクエストに自動的に追加できます。 これにより、デバイスの場所を収集する際に、Analytics に 1 回限りの呼び出しをおこなう必要がなくなります。
 
 詳しくは、 [Analytics リクエストにロケーションコンテキストを追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) このトピックの詳細については、を参照してください。
 
@@ -126,9 +126,9 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 >
 >Places データを取り込む推奨される方法は、次のとおりです。 [Places データを Analytics リクエストに添付する](#attach-places-data-to-your-analytics-requests).
 >
->使用例で [地域入口イベント](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) SDK でトリガーするには、次に示すように、手動でおこなう必要があります。
+>使用例で [地域入口イベント](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) SDK でトリガーするには、次に示すように、手動でおこなう必要があります。
 
-が返すリスト `getNearbyPointsOfInterest` API に含まれる [カスタムオブジェクト](places-ext-aep-sdks/places-extension/cust-places-objects.md) これは、ユーザーが現在 POI 内にいるかどうかを示します。 ユーザーが POI 内にいる場合、SDKトリガーをその地域のエントリイベントにすることができます。
+が返すリスト `getNearbyPointsOfInterest` API に含まれる [カスタムオブジェクト](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) これは、ユーザーが現在 POI 内にいるかどうかを示します。 ユーザーが POI 内にいる場合、SDKトリガーをその地域のエントリイベントにすることができます。
 
 >[!IMPORTANT]
 >
@@ -247,7 +247,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 >[!IMPORTANT]
 >
->スニペット **のみ** 例 開発者は、機能を実装する方法を決定する必要があり、決定では、ターゲットのオペレーティングシステムで推奨されるベストプラクティスを考慮する必要があります。
+>スニペットは **のみ** 例。 開発者は、機能を実装する方法を決定する必要があり、決定では、ターゲットのオペレーティングシステムで推奨されるベストプラクティスを考慮する必要があります。
 
 ### Android
 
@@ -410,6 +410,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-POI を定義するすべてのデータは、SDK で Places Service エントリイベントをトリガーするのに加えて、エントリイベントがトリガーされるので、を介して他の SDK でも使用できます `data elements` Experience Platform Launch Experience Platform Launch `rules`を使用すると、SDK で処理される受信イベントに Places Service データを動的に添付できます。 例えば、ユーザーがいる POI のメタデータをアタッチし、そのデータをコンテキストデータとして Analytics に送信できます。
+POI を定義するすべてのデータは、SDK で Places Service エントリイベントをトリガーするのに加えて、エントリイベントがトリガーされるので、を介して他の SDK でも使用できます `data elements` Experience Platform Launch。 Experience Platform Launch `rules`を使用すると、SDK で処理される受信イベントに Places Service データを動的に添付できます。 例えば、ユーザーがいる POI のメタデータをアタッチし、そのデータをコンテキストデータとして Analytics に送信できます。
 
 詳しくは、 [他の Places Service とのAdobe](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).

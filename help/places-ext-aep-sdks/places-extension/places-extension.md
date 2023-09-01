@@ -3,107 +3,111 @@ title: Places 拡張機能
 description: Places 拡張機能を使用すると、ユーザーの場所に基づいて行動できます。
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 5%
+source-wordcount: '37'
+ht-degree: 10%
 
 ---
 
 # Places 拡張機能 {#places-extension}
 
-Places 拡張機能を使用すると、ユーザーの場所に基づいて行動できます。 この拡張機能は、Places クエリサービス API へのインターフェイスです。 GPS 座標とジオフェンス地域のイベントを含むイベントをリッスンすると、この拡張機能は、ルールエンジンで処理される新しいイベントをディスパッチします。 また、Places 拡張機能は、API から取得したアプリデータに最も近い POI のリストを取得し、配信します。 API から返される領域はキャッシュと永続性に保存され、オフラインでの処理が制限されます。
+Adobe開発者ポータルに移動して、 [Places SDK 拡張機能](https://developer.adobe.com/client-sdks/documentation/places/).
 
-## Adobe Experience Platform Launchでの Places 拡張機能のインストール
+<!-- 
 
-1. Experience Platform Launchで、 **[!UICONTROL 拡張機能]** タブをクリックします。
-1. 次の日： **[!UICONTROL カタログ]** タブで、 **[!UICONTROL 場所]** 拡張機能を選択し、「 」をクリックします。 **[!UICONTROL インストール]**.
-1. このプロパティで使用する Places ライブラリを選択します。 これらは、アプリでアクセス可能なライブラリです。
-1. 「**[!UICONTROL 保存]**」をクリックします。
+The Places extension allows you to act based on the location of your users. This extension is the interface to the Places Query Service APIs. By listening for events that contain GPS coordinates and geofence region events, this extension dispatches new events that are processed by the Rules Engine. The Places extension also retrieves and delivers a list of the nearest POI for the app data that retrieves from the APIs. The regions returned by the APIs are stored in cache and persistence, which allows limited offline processing.
 
-   クリック時 **[!UICONTROL 保存]**&#x200B;を指定した場合、Experience PlatformSDK は、選択したライブラリ内の POI について Places サービスを検索します。 アプリの構築時に、POI データはライブラリのダウンロードに含まれませんが、POI の場所に基づくサブセットが、実行時にエンドユーザーのデバイスにダウンロードされ、ユーザーの GPS 座標に基づきます。
+## Install the Places extension in Adobe Experience Platform Launch
 
-1. 公開プロセスを完了して、SDK 設定を更新します。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. On the **[!UICONTROL Catalog]** tab, locate the **[!UICONTROL Places]** extension, and click **[!UICONTROL Install]**.
+1. Select the Places libraries you want to use in this property. These are the libraries that will be accessible in your app.
+1. Click **[!UICONTROL Save]**.
 
-   Experience Platform Launchでの公開について詳しくは、 [公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja).
+    When you click **[!UICONTROL Save]**, the Experience Platform SDK searches the Places Services for POIs in the libraries that you selected. The POI data is not included in the download of the library when you build the app, but a location-based subset of POIs is downloaded to the end user's device at runtime and is based on the user's GPS coordinates.
 
-### Places 拡張機能の設定 {#configure-places-extension}
+1. Complete the publishing process to update the SDK configuration.
 
-![](/help/assets/places-extension.png)
+   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
-## Places 拡張機能をアプリに追加する {#add-places-to-app}
+### Configure the Places extension {#configure-places-extension}
 
-Places 拡張機能は、Android およびiOSアプリに追加できます。 Places をiOSまたは Android アプリケーションに追加する手順は、以下のとおりです。 Places 拡張機能は、以下のプラットフォームでも使用できます。 これらのプラットフォームの 1 つを使用して開発する場合、アプリケーションに Places を追加するには、付属のリンクを参照してください。
+  ![](/help/assets/places-extension.png)
 
-**[Cordova Places プラグイン](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
+## Add the Places extension to your app {#add-places-to-app}
 
-**[React Native Places プラグイン](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+You can add the Places extension to your Android and iOS apps. The steps to add Places to your iOS or Android application can be seen below. Places extensions are also available for the following platforms below. For adding Places to your application when developing with one of these platforms see the accompanying links:
 
-**[Flatter Places プラグイン](https://github.com/adobe/flutter-acpplaces_monitor)**
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)** 
 
-**[Xamarin Places プラグイン](https://github.com/adobe/xamarin-acpcore)**
+**[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)** 
+
+**[Flutter Places Plugin](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places Plugin](https://github.com/adobe/xamarin-acpcore)**
 
 
 ### Android
 
-Java を使用して Places 拡張機能をアプリに追加するには、次の手順を実行します。
+To add the Places extension to your app by using Java:
 
-1. アプリの gradle ファイルを使用して、Places 拡張機能をプロジェクトに追加します。
+1. Add the Places extension to your project using your app's gradle file.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. Places 拡張機能をアプリケーションのメインアクティビティに読み込みます。
+1. Import the Places extension in your application's main activity.
 
-   ```java
-   import com.adobe.marketing.mobile.Places;
-   ```
+    ```java
+    import com.adobe.marketing.mobile.Places;
+    ```
 
 
 ### iOS
 
-Objective-C または Swift を使用して Places 拡張機能をアプリに追加するには：
+To add Places extension to your app by using Objective-C or Swift:
 
-1. 場所を追加し、 [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) ライブラリをプロジェクトに追加します。 次のポッドを `Podfile`:
+1. Add the Places and [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) libraries to your project. You will need to add the following pods to your `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   また、Cocoapods を使用していない場合は、アドビの [リリースページ](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) を GitHub に設定します。
+   Alternatively, if you are not using Cocoapods, you can manually include the Mobile Core and the Places libraries from our [releases page](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) on Github.
 
-1. Cocoapods を更新します。
+1. Update your Cocoapods:
 
    ```objective-c
    pod update
    ```
 
-1. Xcode を開き、AppDelegate クラスで、Core ヘッダーと Places ヘッダーを読み込みます。
+1. Open Xcode, and in your AppDelegate class, import the Core and the Places headers:
 
-   **Objective-C**
+    **Objective-C**
 
-   ```objective-c
-   #import "ACPCore.h"
-   #import "ACPPlaces.h"
-   ```
+    ```objective-c
+    #import "ACPCore.h"
+    #import "ACPPlaces.h"
+    ```
 
-   **Swift**
+    **Swift**
 
-   ```swift
-   import ACPCore
-   import ACPPlaces
-   ```
+    ```swift
+    import ACPCore
+    import ACPPlaces
+    ```
 
-### Places 拡張機能の Mobile Core への登録 {#register-places-mobile-core}
+### Register the Places extension with Mobile Core {#register-places-mobile-core}
 
-Android およびiOSで、Places 拡張機能を Mobile Core に登録する必要があります。
+You need to register the Places extension with Mobile Core in Android and iOS.
 
 #### Android
 
-アプリの `OnCreate` メソッドを使用して、Places 拡張機能を登録します。
+In your App's `OnCreate` method register the Places extensions:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,7 +129,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-アプリの `application:didFinishLaunchingWithOptions:` メソッドを使用して、 Places 拡張機能を他の SDK 登録呼び出しに登録します。
+In your App's `application:didFinishLaunchingWithOptions:` method, register the Places extension with your other SDK registration calls:
 
 **Objective-C**
 
@@ -147,15 +151,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### Places メンバーシップの有効期間の変更 {#places-ttl}
+### Modifying Places membership time-to-live {#places-ttl}
 
-特に、デバイスがバックグラウンドの場所の更新を受け取っていない場合は、場所データがすぐに古くなる可能性があります。
+Location data can quickly become stale, especially if the device is not receiving background location updates.
 
-デバイス上の Places メンバーシップデータの有効期間を制御するには、 `places.membershipttl` 設定を行います。 渡された値は、Places 状態がデバイスで有効である状態を保持する秒数を表します。
+Control the time-to-live for Places membership data on the device by setting the `places.membershipttl` configuration setting. The value passed in represents the number of seconds that the Places state will remain valid for the device.
 
 #### Android
 
-のコールバック内 `MobileCore.start()` を呼び出す前に、必要な変更を加えて設定を更新します。 `lifecycleStart`:
+Inside the callback of `MobileCore.start()` update the configuration with the necessary changes prior to calling `lifecycleStart`:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,7 +193,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-のコールバックの最初の行 `ACPCore`&#39;s `start:` メソッド、呼び出し `updateConfiguration:`
+On the first line in the callback of `ACPCore`'s `start:` method, call `updateConfiguration:`
 
 **Objective-C**
 
@@ -229,12 +233,14 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-## 設定キー
+## Configuration keys
 
-実行時にプログラムによって SDK 設定を更新するには、次の情報を使用して、Places 拡張機能の設定値を変更します。 詳しくは、 [設定 API リファレンス](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
+To update the SDK configuration programmatically at runtime, use the following information to change your Places extension configuration values. For more information, see [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
-| キー | 必須 | 説明 |
+| Key | Required | Description |
 | :--- | :--- | :--- |
-| `places.libraries` | ○ | モバイルアプリ用の Places 拡張機能ライブラリ。 ライブラリ ID と、モバイルアプリがサポートするライブラリの名前を指定します。 |
-| `places.endpoint` | ○ | デフォルトの Places クエリサービスエンドポイント。ライブラリと POI に関する情報の取得に使用されます。 |
-| `places.membershipttl` | × | デフォルト値の 3600（1 時間あたりの秒数）。 デバイスの Places メンバーシップ情報が有効である期間（秒）を示します。 |
+| `places.libraries` | Yes | The Places extension libraries for the mobile app. It specifies the library ID and the name of the library that the mobile app supports. |
+| `places.endpoint` | Yes | The default Places Query Service endpoint, which is used to get information about libraries and POIs. |
+| `places.membershipttl` | No | Default value of 3600 (seconds in an hour). Indicates how long, in seconds, Places membership information for the device will remain valid. |
+
+-->
