@@ -2,10 +2,10 @@
 title: Places Service
 description: Places Service は、モバイルユーザーのエンゲージメントを理解するための重要なコンテキストです。 このコンテキストを使用すると、モバイルアプリ開発者はアプリのデザインを強化し、よりパーソナライズされた魅力的なエクスペリエンスにすることができます。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 10%
+source-wordcount: '663'
+ht-degree: 9%
 
 ---
 
@@ -85,3 +85,4 @@ Places Service は、次のコンポーネントで構成されます。
 * The **Experience CloudID** サービスは、Experience Cloud内のすべてのソリューションにわたって訪問者を識別する、永続的な汎用 ID を提供します。
 
   詳しくは、[概要](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=ja)を参照してください。
+
