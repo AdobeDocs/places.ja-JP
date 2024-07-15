@@ -1,6 +1,6 @@
 ---
-title: Places 拡張機能を使用した SDK の設定
-description: Places 拡張機能を使用して SDK を設定し、モバイルアプリで場所認識を有効にすることができます。
+title: SDK を Places 拡張機能で設定します
+description: Places 拡張機能を使用して SDK を設定し、モバイルアプリで位置認識を有効にできます。
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
 source-wordcount: '123'
@@ -9,22 +9,22 @@ ht-degree: 0%
 ---
 
 
-# Places 拡張機能を持つ SDK の設定 {#configure-sdk-places-extension}
+# SDK と Places 拡張機能の設定 {#configure-sdk-places-extension}
 
-モバイルアプリでロケーション認識を有効にするには、Places 拡張機能を使用して SDK を設定します。 SDK の設定を含む詳しい情報については、 [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+モバイルアプリで位置認識を有効にするには、Places 拡張機能を使用して SDK を設定します。 SDK 設定を含む詳細については、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 ## Places 拡張機能の設定
 
-Places 拡張機能を設定するには、次の手順を実行します。
+Places 拡張機能を設定するには：
 
-1. Launch で Places 拡張機能を設定します。
+1. Launch の Places 拡張機能を設定します。
 
-   詳しくは、 *Launch での Places 拡張機能の設定* in [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   詳しくは、*Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) の「Launch での Places 拡張機能の設定* を参照し [ ください。
 
-1. Places 拡張機能をモバイルアプリに追加します。
+1. モバイルアプリに Places 拡張機能を追加します。
 
-   詳しくは、 *Places 拡張機能をアプリに追加する* in [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   詳しくは、*Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) の [ アプリへの Places 拡張機能の追加* を参照してください。
 
-1. Places を Mobile Core 拡張機能に登録します。
+1. Mobile Core 拡張機能で Places を登録します。
 
-   詳しくは、 *Mobile Core での Places の登録* in [Places 拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+   詳しくは、*Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) の [Mobile Core で Places を登録* を参照してください。

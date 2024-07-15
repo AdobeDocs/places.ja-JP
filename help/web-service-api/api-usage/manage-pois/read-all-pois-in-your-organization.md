@@ -5,7 +5,7 @@ exl-id: 8068a2bc-ce1c-4f3b-8a0c-c38998c1c2e2
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/pois
 
 ## CURL コマンド
 
-この API をテストするには、次の CURL コマンドを使用します。
+次の CURL コマンドを使用して、この API をテストします。
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key
 
 >[!IMPORTANT]
 >
->置換 `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>`<API KEY>`、`<TOKEN>`、`<ORGID>` を実際の値に置き換えます。

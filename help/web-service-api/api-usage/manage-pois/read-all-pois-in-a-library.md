@@ -1,15 +1,15 @@
 ---
-title: ライブラリ内のすべての POI の読み取り
+title: ライブラリ内のすべての POI を読み取る
 description: Places REST API を使用して、ライブラリ内のすべての POI を読み取ります。
 exl-id: 08544909-661c-4a14-84e0-bacd0241a844
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
-# ライブラリ内のすべての POI の読み取り {#read-all-pois-library}
+# ライブラリ内のすべての POI を読み取る {#read-all-pois-library}
 
 ライブラリ内のすべての POI を返すGETメソッド。
 
@@ -167,4 +167,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->&quot;, `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>&quot;、`<API KEY>`、`<TOKEN>`、`<ORGID>` を実際の値に置き換えます。

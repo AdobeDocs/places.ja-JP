@@ -5,13 +5,13 @@ exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 11%
+ht-degree: 6%
 
 ---
 
 # POI の更新 {#update-a-poi}
 
-POI を更新するためのPUTメソッド。
+POI を更新できるPUT方式。
 
 ## リクエスト
 
@@ -39,7 +39,7 @@ PUT https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 
 ## CURL コマンド
 
-この API をテストするには、次の CURL コマンドを使用します。
+次の CURL コマンドを使用して、この API をテストします。
 
 ```text
 curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '<SINGLEPOIDATA>' -H "Content-Type: application/json"
@@ -47,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->置換 `<POIID>`, `<API KEY>`, `<TOKEN>`, `<ORGID>`、および `<SINGLEPOIDATA>` を実際の値に置き換えます。
+>`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>` および `<SINGLEPOIDATA>` を実際の値に置き換えます。

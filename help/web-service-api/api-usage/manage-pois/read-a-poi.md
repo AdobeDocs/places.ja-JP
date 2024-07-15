@@ -1,15 +1,15 @@
 ---
-title: POI を読む
+title: POI を読み取る
 description: Places REST API を使用して POI を読み取ります。
 exl-id: 19eb73c4-5101-47a9-8c79-bc4790ecf472
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
-# POI を読む {#read-a-poi}
+# POI を読み取る {#read-a-poi}
 
 POI の詳細を返すGETメソッド。
 
@@ -69,4 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->置換 `<POIID>`, `<API KEY>`, `<TOKEN>`、および `<ORIGIN>` を実際の値に置き換えます。
+>`<POIID>`、`<API KEY>`、`<TOKEN>`、および `<ORIGIN>` を実際の値に置き換えます。

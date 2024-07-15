@@ -1,18 +1,18 @@
 ---
 title: Places 拡張機能
-description: Places 拡張機能を使用すると、ユーザーの場所に基づいて行動できます。
+description: 場所の拡張機能を使用すると、ユーザーの場所に基づいてアクションを実行できます。
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 10%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
 
 # Places 拡張機能 {#places-extension}
 
-Adobe開発者ポータルに移動して、 [Places SDK 拡張機能](https://developer.adobe.com/client-sdks/documentation/places/).
+Adobe開発者ポータルに移動し、[Places SDK 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/places/) のドキュメントを表示します。
 
 <!-- 
 

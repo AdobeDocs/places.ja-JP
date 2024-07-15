@@ -1,88 +1,88 @@
 ---
 title: アプリ内通知
-description: この節では、Places Service とアプリ内メッセージの使用方法について説明します。
+description: この節では、アプリ内メッセージで Places Service を使用する方法について説明します。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 3%
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
 # アプリ内通知 {#places-push-messaging}
 
-次の情報は、Places Service イベントからイベントに対してアプリ内トリガーを設定する方法を示しています。
+次の情報は、Places Service イベントからトリガーするアプリ内メッセージを設定する方法を示しています。
 
 >[!IMPORTANT]
 >
->メッセージは、Analytics ヒットに含まれている必要があります。
+>メッセージは、Analytics ヒット上にある必要があります。
 
 ## アプリ内メッセージ
 
-Mobile Services では、Analytics に送信される場所データを、アプリ内メッセージのトリガーイベントや条件として使用できます。 アプリ内メッセージが SDK から実行され、Analytics でデータが処理されるのを待つ必要がない場合、トリガーが発生するとすぐにリアルタイムでメッセージが表示される可能性があります。
+Mobile Services では、Analytics に送信される場所データをアプリ内メッセージのトリガーイベントや条件として使用できます。 アプリ内メッセージが SDK から発生し、Analytics によってデータが処理されるのを待つ必要がない場合は、トリガーが発生するとすぐに、メッセージがリアルタイムで表示されます。
 
 ### ローカル通知
 
-使用可能なアプリ内メッセージのタイプの一覧を次に示します。
+使用可能なアプリ内メッセージタイプのリストを以下に示します。
 
 * フルスクリーン
 * アラート
 * ローカル通知
 
-これらのタイプは、SDK によってトリガーされるので、アプリ内メッセージです。 ローカル通知は、アプリがバックグラウンドになっているときに表示されるので、プッシュ通知のように見えます。 また、アプリがバックグラウンドになっている間にユーザーが POI に入るか POI を終了すると、これらの通知がリアルタイムで配信されます。
+これらのタイプは、SDK によってトリガーされるので、アプリ内メッセージです。 ローカル通知は、アプリがバックグラウンドにある場合に表示されるため、プッシュ通知のように見えます。 また、これらの通知は、アプリがバックグラウンドにある間に、ユーザーが POI に入ったり出たりしたときにリアルタイムの通知も配信します。
 
 ### 前提条件
 
-開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの動作について理解します。 詳しくは、 [アプリ内メッセージを作成します。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
+開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[ アプリ内メッセージの作成 ](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja) を参照してください。
 
-##  Experience Platform Launch でのルール
+## Experience Platform Launchのルール
 
-アプリ内Experience Platform Launchトリガールールの一部として Analytics に使用できるデータを送信するメッセージルールを作成できます。 使用事例に応じて、Experience Platform Launchルール内の Places 拡張機能のデータを、イベントや条件として使用できます。
+アプリ内メッセージExperience Platform Launchルールの一部として使用できるデータを Analytics に送信するトリガールールを作成できます。 Experience Platform Launchルールの Places 拡張機能のデータは、使用例に応じてイベントまたは条件（あるいはその両方）として使用できます。
 
-* 位置データをトリガーイベントとして使用する。
+* 場所データをトリガーイベントとして使用する。
 
-  例えば、ユーザーが POI に入ると Analytics にデータを送信できます。
+  例えば、ユーザーが POI に入ったときに Analytics にデータを送信できます。
 
-* 位置データをトリガーイベントの条件として使用する。
+* 場所データをトリガーイベントの条件として使用する。
 
-  例えば、様々な POI の天気に対して Places Service でカスタムメタデータタグを作成した場合、そのメタデータをルール条件のパラメーターとして使用できます。 この条件は、前述の POI エントリイベントで使用できますが、イベントに対するコンテキストとしても使用できます。
+  例えば、様々な POI の天気に関するカスタムメタデータタグを場所サービスで作成した場合、そのメタデータをルール条件のパラメーターとして使用できます。 この条件は、前述の POI エントリイベントで使用できますが、任意のイベントのコンテキストとして使用することもできます。
 
-適切なイベントおよび条件パラメーターを使用してルールを設定したら、Analytics にデータを送信するアクションを設定して、ルールの設定を完了します。
+ルールに適切なイベントパラメーターと条件パラメーターが設定されたら、Analytics にデータを送信するようにアクションを設定して、ルールの設定を完了します。
 
 ## アクションの作成
 
 アクションを作成するには：
 
-1. を選択します。 **[!UICONTROL Adobe Analytics]** 拡張子。
-1. Adobe Analytics の **[!UICONTROL アクションタイプ]** ドロップダウンリストで、「 **[!UICONTROL 追跡。]**
+1. **[!UICONTROL Adobe Analytics]** 拡張機能を選択します。
+1. **[!UICONTROL アクションタイプ]** ドロップダウンリストで、「**[!UICONTROL トラック]**」を選択します。
 1. アクションの名前を入力します。
-1. 右側のウィンドウで、 **[!UICONTROL コンテキストデータ]**」で、キー値ペアを選択して、Analytics に送信されるコンテキストデータを設定します。
+1. 右側のパネルの **[!UICONTROL コンテキストデータ]** で、キーと値のペアを選択して、Analytics に送信されるコンテキストデータを設定します。
 
-例えば、 `poiname` をキーとして、 `{%%Last Entered POI Name}` を値として使用します。
+例えば、キーとして `poiname` を選択し、値として `{%%Last Entered POI Name}` を選択できます。
 
 >[!TIP]
 >
->Analytics の処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、「[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)」を参照してください。の例では、 *アクションの作成*&#x200B;を呼び出した場合、アクションは `poiname` Analytics に送信される POI エントリイベントを説明するコンテキストとして。
+>Analytics の処理ルールを設定すると、このコンテキストデータを取得できます。 詳しくは、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) を参照してください。 *アクションを作成* の例では、アクションは、Analytics に送信される POI エントリイベントを記述するコンテキストとして `poiname` を送信します。
 
-![アクションの作成](/help/assets/configure-action.png)
+![ アクションの作成 ](/help/assets/configure-action.png)
 
-次に、完全なルールの例を示します。
+完全なルールの例を次に示します。
 
-![完了ルール](/help/assets/create-a-rule.png)
+![ 完了したルール ](/help/assets/create-a-rule.png)
 
 ## Mobile Services でのアプリ内メッセージの作成
 
-トリガーパラメーターの一部として、次のいずれかの方法で、Places Service からのデータを使用してメッセージのオーディエンスを作成できます。
+トリガーパラメーターの一部として、次のいずれかの方法で Places サービスからのデータを使用してメッセージのオーディエンスを作成できます。
 
-* 入口や出口など、場所固有のアクションの使用。
+* 入口や出口などの場所固有のアクションを使用します。
 * コンテキストデータとして送信される POI メタデータを使用して、オーディエンスのターゲットを絞り込みます。
 
-  このオプションは、入口などの場所固有のアクションと共に使用することも、起動やボタンクリックなどの別のイベントへのコンテキストとして使用することもできます。
+  このオプションは、エントリなどの場所固有のアクションと組み合わせて使用することも、ローンチやボタンクリックなどの別のイベントのコンテキストとして使用することもできます。
 
-  以下は、 **[!UICONTROL Adobe]** 名前：
+  次に、**[!UICONTROL Adobe]** が名前に含まれる POI に入ったユーザーを歓迎するアプリ内メッセージの設定方法の例を示します。
 
-  ![トリガーパラメーター](/help/assets/trigger-parameters.png)
+  ![トリガーパラメーター ](/help/assets/trigger-parameters.png)
 
-* Places Service の見出しのパラメーター ( *トリガーと特性* Mobile Services のページは、Places Service のデータでは動作しません。
+* Mobile Services の *トリガーと特性* ページの Places Service 見出しのパラメーターは、Places Service からのデータでは機能しません。
 
-  これらのパラメーターは、Mobile Services で作成された従来の Places Service データベースに対してのみ使用されます。
+  これらのパラメーターは、Mobile Services で作成された従来の Places Service データベースに対してのみ使用します。

@@ -1,5 +1,5 @@
 ---
-title: ライブラリにランクを設定する
+title: ライブラリのランクの設定
 description: Places REST API を使用して、ライブラリにランクを設定します。
 exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
@@ -9,9 +9,9 @@ ht-degree: 7%
 
 ---
 
-# ライブラリにランクを設定する {#set-rank-on-libraries}
+# ライブラリのランクの設定 {#set-rank-on-libraries}
 
-すべてのPUTにランク順を設定できるライブラリメソッド。
+すべてのライブラリにランク順を設定できるPUT方式。
 
 ## リクエスト
 
@@ -47,4 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->次のような変数を置き換える `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>変数（`<API KEY>`、`<TOKEN>`、`<ORGID>` など）を実際の値に置き換えます。

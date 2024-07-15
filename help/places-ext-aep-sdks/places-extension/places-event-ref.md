@@ -1,18 +1,18 @@
 ---
-title: Places イベント参照
-description: Places 拡張機能で処理されるイベントのリストです。
+title: 場所イベント参照
+description: Places 拡張機能で処理されるイベントのリスト。
 feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
 source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 29%
+source-wordcount: '247'
+ht-degree: 16%
 
 ---
 
-# Places イベント参照 {#places-event-reference}
+# 場所イベント参照 {#places-event-reference}
 
-以下に、Places 拡張機能で処理されるイベントの一覧を示します。
+以下は、Places 拡張機能で処理されるイベントのリストです。
 
 ## GetCurrentPointsOfInterest
 
@@ -20,36 +20,36 @@ ht-degree: 29%
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| 場所 | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
+| PLACES | REQUEST_コンテンツ | `requestgetuserwithinplaces` | True |
 
 **イベントの説明**
 
-このイベントは、デバイスが現在存在する POI を取得するリクエストです。
+このイベントは、デバイスが現在配置されている POI を取得するためのリクエストです。
 
-**データペイロードの定義**
+**データペイロード定義**
 
-n/a
+該当なし
 
-## GetNicherPointsOfInterest
+## GetNearcomerPointsOfInterest
 
 **イベントの詳細**
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| 場所 | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
+| PLACES | REQUEST_コンテンツ | `requestgetnearbyplaces` | True |
 
 **イベントの説明**
 
 このイベントは、現在のデバイスの場所と設定済みの Places ライブラリを考慮して、近くの POI を取得するリクエストです。
 
-**データペイロードの定義**
+**データペイロード定義**
 
-| キー | 値のタイプ | 必須 | デフォルト値 | 説明 |
+| キー | 値タイプ | 必須 | デフォルト値 | 説明 |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | double | true | n/a | 近くの POI の検索の中心の緯度値が格納されます。 |
-| longitude | double | true | n/a | 近くの POI の検索の中心の経度値を保持します。 |
-| 半径 | 整数 | false | n/a | 近くの POI の検索で使用される半径（メートル単位）。 |
-| count | 整数 | false | 10 | 結果の応答イベントで返される POI の最大数。 |
+| 緯度 | double | true | 該当なし | 近接する POI の検索の中心の緯度の値を保持します。 |
+| 経度 | double | true | 該当なし | 近接する POI の検索の中心となる経度の値を保持します。 |
+| 半径 | 整数 | 偽 | 該当なし | 近隣の POI の検索で使用される半径（メートル）。 |
+| count | 整数 | 偽 | 10 | 結果の応答イベントで返される POI の最大数。 |
 
 ## ProcessRegionEvent
 
@@ -57,19 +57,19 @@ n/a
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| 場所 | REQUEST_CONTENT | `requestprocessregionevent` | False |
+| PLACES | REQUEST_コンテンツ | `requestprocessregionevent` | False |
 
 **イベントの説明**
 
-このイベントにより、Places 拡張機能がジオフェンスのエントリまたは終了イベントを処理します。
+このイベントにより、Places 拡張機能はジオフェンスのエントリまたは離脱イベントを処理します。
 
-**データペイロードの定義**
+**データペイロード定義**
 
-| キー | 値のタイプ | 必須 | 説明 |
+| キー | 値タイプ | 必須 | 説明 |
 | :--- | :--- | :--- | :--- |
 | regionid | 文字列 | true | イベントを生成する地域の ID。 |
-| regioneventtype | int | true | 生成される地域イベントのタイプ。 1 は入口、2 は出口です。 |
+| regioneventtype | int | true | 生成される地域イベントのタイプ。 入口の場合は 1、出口の場合は 2。 |
 
-## Places 拡張機能によってディスパッチされるイベント
+## Places 拡張機能によってディスパッチされたイベント
 
 この情報は現在進行中です。

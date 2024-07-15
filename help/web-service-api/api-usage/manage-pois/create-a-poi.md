@@ -5,13 +5,13 @@ exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
 # POI の作成 {#create-a-poi}
 
-POI を作成できるPOSTメソッド。
+POI を作成できるPOST方式。
 
 ## リクエスト
 
@@ -88,7 +88,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 
 ## CURL コマンド
 
-この API をテストするには、次の CURL コマンドを使用します。
+次の CURL コマンドを使用して、この API をテストします。
 
 ```text
 curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '<SINGLEPOIDATA>' -H "Content-Type: application/json"
@@ -96,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->必ず置き換えてください `<API KEY>`, `<TOKEN>`, &#39;,&#39;および `<SINGLEPOIDATA>` を実際の値に置き換えます。
+>`<API KEY>`、`<TOKEN>`、&#39;、&#39;および `<SINGLEPOIDATA>` は必ず実際の値に置き換えてください。

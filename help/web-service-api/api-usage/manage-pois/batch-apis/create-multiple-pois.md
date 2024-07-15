@@ -1,17 +1,17 @@
 ---
-title: 複数の POI を作成
+title: 複数の POI の作成
 description: バッチ API を使用して複数の POI を作成します。
 exl-id: d1d6f7de-5914-432f-9d3c-17cf3cba784a
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 14%
+ht-degree: 5%
 
 ---
 
-# 複数の POI を作成 {#create-multiple-pois}
+# 複数の POI の作成 {#create-multiple-pois}
 
-複数の POI を作成できるPOSTメソッド。
+複数の POI を作成できるPOST方式。
 
 ## リクエスト
 
@@ -39,7 +39,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate
 
 ## CURL コマンド
 
-この API をテストするには、次の CURL コマンドを使用します。
+次の CURL コマンドを使用して、この API をテストします。
 
 ```text
 curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' --data-binary "@<PATHTOBATCHCREATEJSONFILE>" -H "Content-Type: application/json"
@@ -47,11 +47,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchCreate' 
 
 >[!IMPORTANT]
 >
->置換 `<API KEY>`, `<TOKEN>`, `<ORGID>`、および `<PATHTOBATCHCREATEJSONFILE>` 実際の値を持つ
+>`<API KEY>`、`<TOKEN>`、`<ORGID>`、`<PATHTOBATCHCREATEJSONFILE>` を実際の値に置き換えます。
 
 ## サンプル JSON ファイル
 
-次に、 `batchCreate` API:
+`batchCreate` API 用のサンプル JSON ファイルを次に示します。
 
 ```text
 {    "createPOIRequests": [{            "name": "Sample POI 1",            "description": "1",            "location": {                "type": "Point",                "coordinates": [0.0, 0.0]            },            "radius": 25,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "red",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 2",            "description": "2",            "location": {                "type": "Point",                "coordinates": [0.025, 0.025]            },            "radius": 50,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "blue",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        },        {            "name": "Sample POI 3",            "description": "3",            "location": {                "type": "Point",                "coordinates": [0.05, 0.05]            },            "radius": 100,            "country": "Ghana",            "state": "Ghana",            "city": "Accra",            "street": "",            "category": "cafe",            "icon": "nice",            "color": "green",            "metadata": {                "region": "Equator"            },            "lib_id" : "42b4d03c-672c-4deb-83e0-134ef070c2af"        }    ]}

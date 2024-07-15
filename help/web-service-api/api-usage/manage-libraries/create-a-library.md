@@ -5,13 +5,13 @@ exl-id: 155cc6e6-9254-4389-bb02-e526d15908f4
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
 # ライブラリの作成 {#create-a-library}
 
-POSTを作成するためのライブラリメソッド。
+ライブラリを作成できるPOST方式。
 
 ## リクエスト
 
@@ -39,7 +39,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/libraries
 
 ## CURL コマンド
 
-この API をテストするには、次の CURL コマンドを使用します。
+次の CURL コマンドを使用して、この API をテストします。
 
 ```text
 curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '{"name":"New Library Name"}' -H "Content-Type: application/json"
@@ -47,4 +47,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->次のような変数を置き換える `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>変数（`<API KEY>`、`<TOKEN>`、`<ORGID>` など）を実際の値に置き換えます。

@@ -1,15 +1,15 @@
 ---
-title: Places データでExperience Platform Launchルールとデータ要素を使用する。
-description: ルールおよびデータ要素と Places データに関する情報です。
+title: Places データでExperience Platform Launch・ルールとデータ要素を使用します。
+description: ルールとデータ要素および場所データに関する情報。
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 41%
+source-wordcount: '229'
+ht-degree: 37%
 
 ---
 
 
-# Places データでのExperience Platform Launchルールとデータ要素の使用
+# 場所データでのExperience Platform Launch・ルールおよびデータ要素の使用
 
 ## ルール
 
@@ -17,9 +17,9 @@ Experience Platform Launch はルールベースのシステムで、ユーザ�
 
 ## データ要素
 
-データ要素は、データディクショナリまたはデータマップの構築ブロックです。 データ要素を使用して、マーケティングおよび広告テクノロジーをまたいでデータを収集、整理、配信できます。
+データ要素は、データディクショナリまたはデータマップの構成要素です。 データ要素を使用して、マーケティングおよび広告テクノロジー全体でデータを収集、整理、配信できます。
 
-データ要素は変数で、この変数の値は、クエリ文字列、URL、Cookie 値、JavaScript 変数などにマッピングできます。 Experience Platform Launchでは、変数名でこの値を参照できます。 データ要素のコレクションは、ルール (Experience Platform Launch、条件、アクション ) の作成に使用できる、定義済みデータのディクショナリになり、データディクショナリはイベント全体で共有され、Places 拡張機能と共に使用できます。
+データ要素は変数です。この変数の値は、クエリ文字列、URL、cookie 値、JavaScript変数などにマッピングできます。 Experience Platform Launchでは、この値を変数名で参照できます。 データ要素のコレクションは、ルール（イベント、条件、アクション）の作成に使用できる、定義済みデータのディクショナリになり、Experience Platform Launch全体で共有され、場所拡張機能で使用できます。
 
-データ要素について詳しくは、「[データ要素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja)」および「[データ要素の作成](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja#create-a-data-element)」を参照してください。
+データ要素について詳しくは、「[データ要素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ja)」および「[データ要素の作成](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)」を参照してください。
 

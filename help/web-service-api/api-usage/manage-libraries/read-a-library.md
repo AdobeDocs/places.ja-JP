@@ -1,15 +1,15 @@
 ---
-title: ライブラリの読み取り
+title: ライブラリを読み取る
 description: Places REST API を使用してライブラリを読み取ります。
 exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
-# ライブラリの読み取り {#read-a-library}
+# ライブラリを読み取る {#read-a-library}
 
 ライブラリの詳細を返すGETメソッド。
 
@@ -90,4 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->置換 `<LIBRARYID>`, `<API KEY>`, `<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。

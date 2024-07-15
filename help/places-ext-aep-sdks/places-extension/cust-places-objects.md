@@ -1,6 +1,6 @@
 ---
 title: Custom Places オブジェクト
-description: Places API で使用されるカスタムネイティブクラスに関する情報です。
+description: Places API で使用されるカスタムネイティブクラスに関する情報。
 feature: Mobile SDK
 exl-id: deb16ba3-bd59-42b1-85ec-0f7de17f91f8
 source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9

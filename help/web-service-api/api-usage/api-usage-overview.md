@@ -1,6 +1,6 @@
 ---
-title: API 使用の概要
-description: この節では、Places Service で使用できる REST API に関する情報を提供します。
+title: API 使用状況の概要
+description: ここでは、Places Service で使用できる REST API について説明します。
 exl-id: f2823ea5-9fbf-45b7-8206-6cb82ca22ecf
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# API 使用の概要 {#api-usage-overview}
+# API 使用状況の概要 {#api-usage-overview}
 
 Places REST API を使用して POI とライブラリを管理するには、次の節を参照してください。
 
