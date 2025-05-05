@@ -23,7 +23,7 @@ ht-degree: 3%
 
 1. Adobe Analytics ユーザーは管理者で、処理ルールにアクセスできます。
 
-   処理ルールについて詳しくは、「[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)」を参照してください。
+   処理ルールについて詳しくは、「[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja)」を参照してください。
 
 1. Launch プロパティで、目的とする Places Service 変数のデータ要素が作成されています。
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 ## 3.処理ルールの作成
 
-この手順は、コンテキストデータ（手順 1）を Analytics 変数（手順 2）にマッピングするために必要です。 処理ルールの作成について詳しくは、[ 処理ルールの概要 ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) を参照してください。
+この手順は、コンテキストデータ（手順 1）を Analytics 変数（手順 2）にマッピングするために必要です。 処理ルールの作成について詳しくは、[ 処理ルールの概要 ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja) を参照してください。
 
 この例では、コンテキストデータ値 **[!UICONTROL poi.name]** を **[!UICONTROL Places POI Name （eVar2）]** にマッピングする処理ルールを作成しました。 作成する場所変数ごとに、追加の処理ルールを作成する必要があります。
 

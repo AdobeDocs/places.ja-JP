@@ -54,7 +54,7 @@ Places SDK は次の状態を維持します。
 
 >[!CAUTION]
 >
->この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。POI とライブラリの作成について詳しくは、[ 複数のライブラリの管理 ](/help/poi-mgmt-ui/create-a-poi-ui.md) の [POI の作成 *および* ライブラリの作成 ](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html) を参照してください。
+>この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。POI とライブラリの作成について詳しくは、[ 複数のライブラリの管理 ](/help/poi-mgmt-ui/create-a-poi-ui.md) の [POI の作成 *および* ライブラリの作成 ](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=ja) を参照してください。
 
 以下の手順は、サンフランシスコのコーヒーショップに入ったときにSlackに投稿を返すルールを作成する方法の例です。
 
@@ -124,7 +124,7 @@ Experience Platform Launchにデータ要素を作成するには：
 
 ### ルールのPublish
 
-1. ルールをアクティベートするには、ルールを公開する必要があります。 Experience Platform Launchでのルールの公開について詳しくは、「[ 公開 ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)」を参照してください。
+1. ルールをアクティベートするには、ルールを公開する必要があります。 Experience Platform Launchでのルールの公開について詳しくは、「[ 公開 ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)」を参照してください。
 
 ### 開業・廃業を超えた思考
 
