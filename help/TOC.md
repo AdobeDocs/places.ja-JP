@@ -53,7 +53,7 @@ ht-degree: 19%
             + [複数の POI を更新](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [複数の POI を削除](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [クエリ API](web-service-api/api-usage/query-apis.md)
-+ Mobile SDK {#places-ext-aep-sdks} ールの拡張機能
++ Mobile SDK ールの拡張機能 {#places-ext-aep-sdks}
    + [Places 拡張機能 ](places-ext-aep-sdks/places-extension/places-extension.md)
 + [独自の監視ソリューションで Places Service を使用](using-your-own-monitor.md)
 + [アクティブな地域の監視なしで Places Service を使用](use-places-without-active-monitoring.md)

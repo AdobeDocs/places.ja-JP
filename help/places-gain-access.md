@@ -94,4 +94,4 @@ Places Service REST API にもアクセスする必要があるユーザーの�
 3. プロファイル内で、「**開発者**」タブをクリックします。
 4. 青い **開発者を追加** ボタンをクリックして、ユーザーに AdobeID と名前を入力し、「保存」をクリックして追加を完了します。
 
-上記の手順が完了すると、**[!UICONTROL Adobe Experience Platformおよび**[!UICONTROL  Adobe Experience Platform データ収集 ]**へのアクセス権があることを知らせるメールが届き]** す。 その後、この組織の [Adobe Experience Cloud](https://experience.adobe.com) にログインし、Places Service と Data Collection にアクセスできます。 **[!UICONTROL 開発者を追加]** 手順も完了すると、ユーザーは [Adobe Developer Console](https://developer.adobe.com/console/home) にログインしてプロジェクトを作成し、Places Service REST API へのアクセスを提供できます。
+上記の手順が完了すると、**[!UICONTROL Adobe Experience Platformおよび**&#x200B;[!UICONTROL &#x200B; Adobe Experience Platform データ収集 &#x200B;]&#x200B;**へのアクセス権があることを知らせるメールが届き]** す。 その後、この組織の [Adobe Experience Cloud](https://experience.adobe.com) にログインし、Places Service と Data Collection にアクセスできます。 **[!UICONTROL 開発者を追加]** 手順も完了すると、ユーザーは [Adobe Developer Console](https://developer.adobe.com/console/home) にログインしてプロジェクトを作成し、Places Service REST API へのアクセスを提供できます。
