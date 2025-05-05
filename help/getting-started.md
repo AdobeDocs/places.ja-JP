@@ -17,7 +17,7 @@ ht-degree: 1%
 Test of different youtube link for exl
 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/41647)
+>[!VIDEO](https://video.tv.adobe.com/v/3455113?captions=jpn)
 
 ## Places Service の使用
 
