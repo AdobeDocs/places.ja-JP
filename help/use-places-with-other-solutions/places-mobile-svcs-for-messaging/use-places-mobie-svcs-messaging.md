@@ -13,7 +13,7 @@ ht-degree: 1%
 
 メッセージングに Mobile Services 拡張機能を使用する前に、次の前提条件を確認してください。
 
-* POI が Places Service に作成されました。 詳しくは、[POI の作成 ](/help/poi-mgmt-ui/create-a-poi-ui.md) を参照してください。
+* POI が Places Service に作成されました。 詳しくは、[POI の作成 &#x200B;](/help/poi-mgmt-ui/create-a-poi-ui.md) を参照してください。
 
   >[!IMPORTANT]
   >
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 * 旧バージョンの SDK 用の、レガシー Mobile Services UI の *Manage Places* POI 管理ページを次に示します。
 
-  ![ レガシー UI](/help/assets/legacy-location-v4-ui.png)
+  ![&#x200B; レガシー UI](/help/assets/legacy-location-v4-ui.png)
 
 * 次に Places Service UI を示します。
 
@@ -29,15 +29,15 @@ ht-degree: 1%
 
 * ACP SDK が Places 拡張機能で適切に設定されている。
 
-  つまり、データは、モバイルアプリのExperience Platform Launchルールエンジンでイベントや条件として使用できます。 詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+  つまり、データは、モバイルアプリのExperience Platform Launchルールエンジンでイベントや条件として使用できます。 詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 * モバイルアプリでExperience Platform Launchルールを作成し、ACP SDK に公開する方法を理解します。
 
-  詳しくは、[ ルールエンジン ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine) を参照してください。
+  詳しくは、[&#x200B; ルールエンジン &#x200B;](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine) を参照してください。
 
 * Experience Platform Launchデータ要素は、ルールエンジンで使用される Places 拡張機能データから作成されます。
 
-  詳しくは、[ データ要素 ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements) を参照してください。
+  詳しくは、[&#x200B; データ要素 &#x200B;](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements) を参照してください。
 
 ## レポート
 
@@ -45,16 +45,16 @@ ht-degree: 1%
 
 * Places Service データをAdobe Analytics レポートスイートに正常に送信しました。
 
-  詳しくは、[Adobe Analyticsで Places Service を使用する ](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) を参照してください。
+  詳しくは、[Adobe Analyticsで Places Service を使用する &#x200B;](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) を参照してください。
 
 * Mobile Services のレポートについて理解します。
 
-  詳しくは、[ レポート ](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja) を参照してください。
+  詳しくは、[&#x200B; レポート &#x200B;](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja) を参照してください。
 
 ## レポートビジュアライゼーション
 
 Adobe Analyticsに送信される Places Service データを使用して、Mobile Service レポートを実行できます。 次の例では、ユーザーがいずれかの POI にエントリを持つと、イベントが送信されます。 このレポートでは、標準のユーザーレポートに POI エントリイベントのフィルターが追加されました。
 
-![ レポートのビジュアライゼーション ](/help/assets/report-visualize.png)
+![&#x200B; レポートのビジュアライゼーション &#x200B;](/help/assets/report-visualize.png)
 
 Places Service データを柔軟に視覚化できる機能が、Adobe Analytics インターフェイスで利用できます。

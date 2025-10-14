@@ -20,16 +20,16 @@ ht-degree: 2%
 * モバイルアプリケーションを、[Adobe Campaign Standard extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) を含むAdobe Experience Platform Mobile SDK で設定します。
 
 * [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) をアプリに組み込みます。
-* [Adobe Campaign Standard拡張機能 ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) をモバイルアプリ設定に追加します。
+* [Adobe Campaign Standard拡張機能 &#x200B;](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) をモバイルアプリ設定に追加します。
 
-* Places Service POI 管理インターフェイスでの [POI の作成 ](/help/poi-mgmt-ui/create-a-poi-ui.md)。
+* Places Service POI 管理インターフェイスでの [POI の作成 &#x200B;](/help/poi-mgmt-ui/create-a-poi-ui.md)。
 
-* [Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を有効にしてインストールします。
+* [Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を有効にしてインストールします。
 
 
 ## Experience Platform Launchでのデータ要素の作成
 
-アプリケーションで Places 拡張機能と地域モニタリングソリューション（[CoreLocation ドキュメント ](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)for iOS、または [Android location ドキュメント ](https://developer.android.com/training/location/geofencing)）が正しく動作していることを確認したら、Experience Platform Launchでデータ要素を作成する必要があります。 データ要素を使用すると、Mobile SDK イベントハブを通じて拡張機能から提供された情報を読み取り、クライアントアプリケーションからデータを取得するためのエイリアスとして機能できます。 Places 拡張機能からデータを取得し、Places Service 情報を Campaign に送信するには、いくつかのデータ要素を作成する必要があります。
+アプリケーションで Places 拡張機能と地域モニタリングソリューション（[CoreLocation ドキュメント &#x200B;](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)for iOS、または [Android location ドキュメント &#x200B;](https://developer.android.com/training/location/geofencing)）が正しく動作していることを確認したら、Experience Platform Launchでデータ要素を作成する必要があります。 データ要素を使用すると、Mobile SDK イベントハブを通じて拡張機能から提供された情報を読み取り、クライアントアプリケーションからデータを取得するためのエイリアスとして機能できます。 Places 拡張機能からデータを取得し、Places Service 情報を Campaign に送信するには、いくつかのデータ要素を作成する必要があります。
 
 データ要素を作成するには：
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
    **[!UICONTROL 最終入力済み]** ユーザーが最後に入力した POI の名前を取得し、**[!UICONTROL 最終離脱済み]** ユーザーが最後に残した POI の名前を提供します。 この例では、「最終入力 **[!UICONTROL を選択し、]** 最終入力 POI 名 **&#x200B;**&#x200B;などのデータ要素の名前を入力して **[!UICONTROL 保存]** をクリックしました。
 
-   ![ 「Campaign Standardでのプッシュメッセージ」 ](/help/assets/ACS_Push1.png)
+   ![&#x200B; 「Campaign Standardでのプッシュメッセージ」 &#x200B;](/help/assets/ACS_Push1.png)
 
 1. 上記の手順 1～4 を繰り返し、*最終入力 POI 緯度*、*最終入力 POI 経度*、および *最終入力 POI 半径* のデータ要素を作成します。
 
@@ -110,7 +110,7 @@ Campaign に場所データが入力されたので、POI をオーディエン�
    >
    >ユーザーが前回この POI を訪問してからの経過時間を指定するために、追加の選択を行うことができます。
 
-   ![ 「ACS のプッシュメッセージ 2」 ](/help/assets/ACS_push2.png)
+   ![&#x200B; 「ACS のプッシュメッセージ 2」 &#x200B;](/help/assets/ACS_push2.png)
 
 1. 「**[!UICONTROL 確認]**」をクリックします。
 1. 上部のカウントを再度実行して、オーディエンスサイズの変化を確認します。
@@ -120,6 +120,6 @@ Campaign に場所データが入力されたので、POI をオーディエン�
 1. 追加の POI 場所フィルターをドラッグして、メッセージに複数の POI を含めることができます。
 1. 「**[!UICONTROL 次へ]**」をクリックして、配信用のプッシュ通知の作成を終了します。
 
-   ![ 「ACS のプッシュメッセージ 3」 ](/help/assets/ACS_push3.png)
+   ![&#x200B; 「ACS のプッシュメッセージ 3」 &#x200B;](/help/assets/ACS_push3.png)
 
 Adobe Campaign Standardで Places Service を使用すると、ジオフェンスの入口と出口に基づいてメッセージをセグメント化し、ユーザーをターゲットにする強力なツールを利用できます。 この統合により、よりパーソナライズされたコンテキストに沿ったユースケースを作成できます。

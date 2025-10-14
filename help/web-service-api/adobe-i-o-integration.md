@@ -20,7 +20,7 @@ ht-degree: 1%
 * あなたは組織に追加されました。
 * Adobe Experience Platform内のプロファイルに追加されています。
 
-  詳しくは、*Places Service へのアクセス権の取得 [ の「Places Service およびExperience Platform Launchプロファイルへのユーザーまたは開発者の追加* を参照してください ](/help/places-gain-access.md)。
+  詳しくは、*Places Service へのアクセス権の取得 [&#x200B; の「Places Service およびExperience Platform Launchプロファイルへのユーザーまたは開発者の追加* を参照してください &#x200B;](/help/places-gain-access.md)。
 
 ### REST API リクエスト
 
@@ -31,13 +31,13 @@ Places Service REST API への各リクエストには、次の項目が必要�
 * クライアント秘密鍵
 * ベアラートークン
 
-[Adobe Developer コンソール ](https://developer.adobe.com/console) を含むプロジェクトは、次の項目を提供します。
+[Adobe Developer コンソール &#x200B;](https://developer.adobe.com/console) を含むプロジェクトは、次の項目を提供します。
 
 * Places Service API のプロジェクトを作成するには、以下の *Places Service プロジェクトの作成* の節を参照してください。
 
 >[!IMPORTANT]
 >
->[Adobe Developer コンソール ](https://developer.adobe.com/console) にログインできない場合、または Places Service が *統合を作成* ページで利用できない場合は、[Web サービス API の概要 ](/help/web-service-api/places-web-services.md) の *組織の要件* を参照してください。
+>[Adobe Developer コンソール &#x200B;](https://developer.adobe.com/console) にログインできない場合、または Places Service が *統合を作成* ページで利用できない場合は、[Web サービス API の概要 &#x200B;](/help/web-service-api/places-web-services.md) の *組織の要件* を参照してください。
 
 ## Places Service API プロジェクトの作成
 

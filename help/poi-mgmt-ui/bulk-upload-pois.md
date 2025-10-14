@@ -13,25 +13,25 @@ ht-degree: 0%
 
 Places Service の **POI を読み込み** ボタンを使用すると、CSV ファイルを使用して新しい POI を一括アップロードできます。 必要なデータ列と、オプションのカスタムメタデータを追加する方法を示す、サンプルのスプレッドシートテンプレートが用意されています。
 
-![ 一括読み込み画面 ](/help/assets/Bulk-import.png)
+![&#x200B; 一括読み込み画面 &#x200B;](/help/assets/Bulk-import.png)
 
 一括読み込みと一括編集のプロセスを示す次のビデオを参照してください。
 
 <!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
 
-[Places Service の一括 POI 読み込みと編集 ](https://www.youtube.com/watch?v=75qVtirsXhg)
+[Places Service の一括 POI 読み込みと編集 &#x200B;](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API スクリプト
 
-Web サービス API を使用して、.csv ファイルから POI データベースへの POI のバッチインポートを簡素化するために、一連の Python スクリプトが作成されました。 これらのスクリプトは、このオープンソース [git リポジトリ ](https://github.com/adobe/places-scripts) からダウンロードできます。
+Web サービス API を使用して、.csv ファイルから POI データベースへの POI のバッチインポートを簡素化するために、一連の Python スクリプトが作成されました。 これらのスクリプトは、このオープンソース [git リポジトリ &#x200B;](https://github.com/adobe/places-scripts) からダウンロードできます。
 
-これらのスクリプトを実行する前に、Web サービス API にアクセスするには、*統合の概要と前提条件* の [ ユーザーアクセスの前提条件 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+これらのスクリプトを実行する前に、Web サービス API にアクセスするには、*統合の概要と前提条件* の [&#x200B; ユーザーアクセスの前提条件 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
 スクリプトの詳細を次に示します。
 
 >[!TIP]
 >
->この情報は、[git リポジトリ ](https://github.com/adobe/places-scripts) の Readme ファイルにも記載されています。
+>この情報は、[git リポジトリ &#x200B;](https://github.com/adobe/places-scripts) の Readme ファイルにも記載されています。
 
 ## CSV ファイル
 
@@ -75,7 +75,7 @@ Web サービス API を使用して、.csv ファイルから POI データベ�
 
      アイコンの値は、次の図に表示される順序で一覧表示されます。
 
-     ![UI のアイコン ](/help/assets/UI_icons.png)
+     ![UI のアイコン &#x200B;](/help/assets/UI_icons.png)
 
    * 値が空白の場合、UI ではデフォルトのアイコンとして星が使用されます。
 
@@ -83,7 +83,7 @@ Web サービス API を使用して、.csv ファイルから POI データベ�
 
 ## スクリプトの実行
 
-1. [git リポジトリー ](https://github.com/adobe/places-scripts) からローカルディレクトリにファイルをダウンロードします。
+1. [git リポジトリー &#x200B;](https://github.com/adobe/places-scripts) からローカルディレクトリにファイルをダウンロードします。
 1. テキストエディターで、`config.py` ファイルを開き、次のタスクを実行します。
 
    a.次の変数値を文字列として編集します。
@@ -94,15 +94,15 @@ Web サービス API を使用して、.csv ファイルから POI データベ�
 
    * `access_code`
 
-     これは、コールトゥAdobe IMSから取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、*統合の概要および前提条件* の [ ユーザーアクセスの前提条件 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+     これは、コールトゥAdobe IMSから取得されたアクセスコードです。 このアクセスコードの取得方法について詳しくは、*統合の概要および前提条件* の [&#x200B; ユーザーアクセスの前提条件 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
    * `org_id`
 
-     POI の読み込み先のExperience Cloud orgID。 組織 ID の取得方法について詳しくは、*統合の概要と前提条件* の [ ユーザーアクセスの前提条件 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+     POI の読み込み先のExperience Cloud orgID。 組織 ID の取得方法について詳しくは、*統合の概要と前提条件* の [&#x200B; ユーザーアクセスの前提条件 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
    * `api_key`
 
-     これは、Adobe I/Oの Places Integration から取得した Places REST API キーです。 API キーの取得方法について詳しくは、*統合の概要と前提条件* の [ ユーザーアクセスの前提条件 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+     これは、Adobe I/Oの Places Integration から取得した Places REST API キーです。 API キーの取得方法について詳しくは、*統合の概要と前提条件* の [&#x200B; ユーザーアクセスの前提条件 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
    b.変更を保存します。
 

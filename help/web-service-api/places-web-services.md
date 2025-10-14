@@ -29,13 +29,13 @@ Web サービス API を使用する前に、次の要件が満たされてい�
 
 * Places Service が組織でプロビジョニングされており、ユーザーとして適切なアクセス権を持っています。
 
-  詳しくは、*統合の概要と前提条件* の [ ユーザーアクセスの前提条件 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+  詳しくは、*統合の概要と前提条件* の [&#x200B; ユーザーアクセスの前提条件 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
 * Places Service がプロビジョニングされ、アクセス権を持ったら、Places Service のAdobe統合を作成します。
 
-  詳しくは、*統合の概要と前提条件* の [Places Service 統合の作成 ](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
+  詳しくは、*統合の概要と前提条件* の [Places Service 統合の作成 &#x200B;](/help/web-service-api/adobe-i-o-integration.md) を参照してください。
 
 追加情報:
 
-* 使用可能な API とその使用方法について詳しくは、[ ライブラリの管理 ](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) および [POI の管理 ](/help/web-service-api/api-usage/manage-pois/manage-pois.md) を参照してください。
-* これらの API のヘッダーとパラメーターについて詳しくは、[ ヘッダーとパラメーター ](/help/web-service-api/api-usage/headers-and-parameters.md) を参照してください。
+* 使用可能な API とその使用方法について詳しくは、[&#x200B; ライブラリの管理 &#x200B;](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) および [POI の管理 &#x200B;](/help/web-service-api/api-usage/manage-pois/manage-pois.md) を参照してください。
+* これらの API のヘッダーとパラメーターについて詳しくは、[&#x200B; ヘッダーとパラメーター &#x200B;](/help/web-service-api/api-usage/headers-and-parameters.md) を参照してください。

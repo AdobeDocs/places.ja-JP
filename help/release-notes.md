@@ -15,9 +15,9 @@ ht-degree: 2%
 
 * **Places and Places Monitor 拡張機能**
 
-   * Places and Places Monitor 拡張機能が [React Native アプリケーションに追加されました ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * [Cordova アプリケーション ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova) 用の場所および場所モニター拡張機能が追加されました
-   * 詳しくは、[Places 拡張機能の使用 ](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html) を参照してください。
+   * Places and Places Monitor 拡張機能が [React Native アプリケーションに追加されました &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * [Cordova アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova) 用の場所および場所モニター拡張機能が追加されました
+   * 詳しくは、[Places 拡張機能の使用 &#x200B;](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html) を参照してください。
 
 
 ## 2020 年 5 月 12 日（Pt）
@@ -294,7 +294,7 @@ Places Monitor は OS レベルの Location API を管理し、Places 拡張機�
 目標地点（POI）を表示および管理できる管理 UI がリリースされました。 また、POI をライブラリに整理することもできます。 市区町村、状態、カテゴリなどの標準のメタデータに加えて、POI にカスタムメタデータを追加する機能もサポートしています。
 
 * UI を表示するには、[https://places.adobe.com](https://places.adobe.com) に移動します。
-* UI を使い始めるには、[ はじめに ](/help/getting-started.md) を参照してください。
+* UI を使い始めるには、[&#x200B; はじめに &#x200B;](/help/getting-started.md) を参照してください。
 
 #### Places 拡張機能
 
@@ -306,7 +306,7 @@ Places 拡張機能で次の操作を行います。
 * POI のエントリまたは終了時にトリガーとなるルールイベント。
 * ユーザーの現在の POI を指すデータ要素を作成します。
 
-Places 拡張機能について詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+Places 拡張機能について詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 #### Places API
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
    半径は最小距離で、推奨値は 100 メートルです。
 
-   ![POI の定義 ](/help/assets/define_poi.png)
+   ![POI の定義 &#x200B;](/help/assets/define_poi.png)
 
 1. オプション手順：
 1. 次の手順はオプションです。

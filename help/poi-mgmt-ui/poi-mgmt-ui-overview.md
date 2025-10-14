@@ -13,7 +13,7 @@ ht-degree: 0%
 
 POI とライブラリは、Places Service UI を使用して、Places Service データベースで作成および管理されます。
 
-* ライブラリを作成する、または複数のライブラリを管理するには、[ ライブラリを管理 ](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md) を参照してください。
-* POI を作成するには、[POI の作成 ](/help/poi-mgmt-ui/create-a-poi-ui.md) を参照してください。
-* 複数の POI を管理するには、[ 以前に作成した POI の管理 ](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md) を参照してください。
-* POI の一括読み込みを実行するには、[POI の一括読み込み ](/help/poi-mgmt-ui/bulk-upload-pois.md) を参照してください。
+* ライブラリを作成する、または複数のライブラリを管理するには、[&#x200B; ライブラリを管理 &#x200B;](/help/poi-mgmt-ui/manage-libraries-in-the-places-ui.md) を参照してください。
+* POI を作成するには、[POI の作成 &#x200B;](/help/poi-mgmt-ui/create-a-poi-ui.md) を参照してください。
+* 複数の POI を管理するには、[&#x200B; 以前に作成した POI の管理 &#x200B;](/help/poi-mgmt-ui/managing-pois-in-the-places-ui.md) を参照してください。
+* POI の一括読み込みを実行するには、[POI の一括読み込み &#x200B;](/help/poi-mgmt-ui/bulk-upload-pois.md) を参照してください。

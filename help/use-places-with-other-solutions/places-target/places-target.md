@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Adobe Targetでの Places Service の使用 {#places-target}
 
-このドキュメントでは、アプリケーションに Places 拡張機能が実装されていることを前提としています。 Places 拡張機能の実装に関するヘルプが必要な場合は、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+このドキュメントでは、アプリケーションに Places 拡張機能が実装されていることを前提としています。 Places 拡張機能の実装に関するヘルプが必要な場合は、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 Places 拡張機能によって入口と出口のイベントが送信されたら、Launch のルールを活用して、Places Service データをAdobe Target SDK イベントに添付できます。 Launch で目的のプロパティを選択した状態で、次のタスクを実行して、このタイプのルールを作成できます。
 
@@ -35,7 +35,7 @@ Places 拡張機能によって入口と出口のイベントが送信された�
 1. **[!UICONTROL イベントタイプ]** ドロップダウンリストから「**[!UICONTROL リクエストされたコンテンツ]**」を選択します。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![ イベントを追加 ](/help/assets/ad-setEvent_target.png)
+![&#x200B; イベントを追加 &#x200B;](/help/assets/ad-setEvent_target.png)
 
 ## 3.条件を追加
 
@@ -51,7 +51,7 @@ Places 拡張機能によって入口と出口のイベントが送信された�
 1. 右側のペインで、ドロップダウンリストと数値コントロールを変更して、条件が **[!UICONTROL ユーザーはアプリを 5 回以上起動しました]** となるようにします。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![ 条件を追加 ](/help/assets/ad-setCondition_target.png)
+![&#x200B; 条件を追加 &#x200B;](/help/assets/ad-setCondition_target.png)
 
 ## 4. アクションを定義する
 
@@ -71,13 +71,13 @@ Places 拡張機能によって入口と出口のイベントが送信された�
 >
 >`request[*]` の表記は、（`request` 配列内の各オブジェクトに対して _として読み上げることができ_ す。
 
-![ アクションの定義 ](/help/assets/ad-setAction-target.png)
+![&#x200B; アクションの定義 &#x200B;](/help/assets/ad-setAction-target.png)
 
 ## 5. ルールを保存し、プロパティを再構築する
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![ 完了したルール ](/help/assets/ad-ruleComplete-target.png)
+![&#x200B; 完了したルール &#x200B;](/help/assets/ad-ruleComplete-target.png)
 
 1. **[!UICONTROL 保存]**&#x200B;をクリックします。
 1. Launch プロパティを再構築し、正しい環境にデプロイします。

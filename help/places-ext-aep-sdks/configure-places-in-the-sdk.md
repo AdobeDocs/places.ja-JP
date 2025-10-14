@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # SDK と Places 拡張機能の設定 {#configure-sdk-places-extension}
 
-モバイルアプリで位置認識を有効にするには、Places 拡張機能を使用して SDK を設定します。 SDK 設定を含む詳細については、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+モバイルアプリで位置認識を有効にするには、Places 拡張機能を使用して SDK を設定します。 SDK 設定を含む詳細については、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 ## Places 拡張機能の設定
 

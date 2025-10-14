@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->アプリのユースケースでアクティブな地域の監視が必要な場合は、[ 独自のモニタリングソリューションで Use Places Service](/help/using-your-own-monitor.md) を参照してください。
+>アプリのユースケースでアクティブな地域の監視が必要な場合は、[&#x200B; 独自のモニタリングソリューションで Use Places Service](/help/using-your-own-monitor.md) を参照してください。
 
 アクティブなリージョンの監視を行わずに Places Service を使用する手順は、次のとおりです。
 
@@ -116,19 +116,19 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3. Analytics リクエストに Places データを添付する
 
-`getNearbyPointsOfInterest` API を呼び出すことで、Places SDK は Launch のデータ要素を介して、デバイスに関連するすべての POI データを利用可能にします。 [ データを添付 ](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Analytics に対する今後のリクエストで場所データを自動的に追加できます。 これにより、デバイスの場所を収集する際に Analytics に 1 回限りのコールを行う必要がなくなります。
+`getNearbyPointsOfInterest` API を呼び出すことで、Places SDK は Launch のデータ要素を介して、デバイスに関連するすべての POI データを利用可能にします。 [&#x200B; データを添付 &#x200B;](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Analytics に対する今後のリクエストで場所データを自動的に追加できます。 これにより、デバイスの場所を収集する際に Analytics に 1 回限りのコールを行う必要がなくなります。
 
-このトピックについて詳しくは、[Analytics リクエストへの場所コンテキストの追加 ](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) を参照してください。
+このトピックについて詳しくは、[Analytics リクエストへの場所コンテキストの追加 &#x200B;](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) を参照してください。
 
 ## オプション – ユーザーが POI に参加している場合のトリガーエントリイベント
 
 >[!TIP]
 >
->Places データをキャプチャする推奨の方法は、[Analytics リクエストに Places データを添付する ](#attach-places-data-to-your-analytics-requests) ことです。
+>Places データをキャプチャする推奨の方法は、[Analytics リクエストに Places データを添付する &#x200B;](#attach-places-data-to-your-analytics-requests) ことです。
 >
->ユースケースで SDK で [ 地域エントリイベント ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) をトリガーする必要がある場合は、以下に示すように手動で行う必要があります。
+>ユースケースで SDK で [&#x200B; 地域エントリイベント &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) をトリガーする必要がある場合は、以下に示すように手動で行う必要があります。
 
-`getNearbyPointsOfInterest` API によって返されるリストには、ユーザーが現在 POI 内にいるかどうかを示す [ カスタムオブジェクト ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) が含まれます。 ユーザーが POI 内にいる場合、SDK トリガーをそのリージョンのエントリイベントにすることができます。
+`getNearbyPointsOfInterest` API によって返されるリストには、ユーザーが現在 POI 内にいるかどうかを示す [&#x200B; カスタムオブジェクト &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) が含まれます。 ユーザーが POI 内にいる場合、SDK トリガーをそのリージョンのエントリイベントにすることができます。
 
 >[!IMPORTANT]
 >
@@ -243,7 +243,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 以下のコードサンプルは、デバイスの現在の場所を取得する方法、必要なエントリイベントをトリガーする方法、1 回の訪問で同じ場所に対して複数のエントリを取得しないようにする方法を示しています。
 
-このコードサンプルには、[ ユーザーが POI にいるときにエントリイベントをトリガーする ](#trigger-entry-events-when-the-user-is-in-a-poi) というオプションの手順が含まれています。
+このコードサンプルには、[&#x200B; ユーザーが POI にいるときにエントリイベントをトリガーする &#x200B;](#trigger-entry-events-when-the-user-is-in-a-poi) というオプションの手順が含まれています。
 
 >[!IMPORTANT]
 >
@@ -412,4 +412,4 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 SDK で Places Service エントリイベントをトリガーするだけでなく、エントリイベントのトリガーにより、POI を定義するすべてのデータをExperience Platform Launchの `data elements` を介して SDK の残りの部分で使用できます。 Experience Platform Launch `rules` を使用すると、SDK で処理される受信イベントに Places Service データを動的に関連付けることができます。 例えば、ユーザーが配置されている POI のメタデータを添付し、そのデータをコンテキストデータとして Analytics に送信できます。
 
-詳しくは、「[ 他のAdobeソリューションでの Places Service の使用 ](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)」を参照してください。
+詳しくは、「[&#x200B; 他のAdobeソリューションでの Places Service の使用 &#x200B;](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)」を参照してください。

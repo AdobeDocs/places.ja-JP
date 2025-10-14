@@ -11,17 +11,17 @@ ht-degree: 1%
 
 # Places Service へのアクセス権の取得 {#adding-user-launch-places}
 
-Places Service がデータ収集 UI 内で使用できるようになりました。 データ収集には、[Adobe Experience Cloud ホーム ](https://experience.adobe.com) のクイックアクセスメニューからアクセスできます。
+Places Service がデータ収集 UI 内で使用できるようになりました。 データ収集には、[Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com) のクイックアクセスメニューからアクセスできます。
 
-![ クイックアクセスメニュー ](/help/assets/quickaccess.png)
+![&#x200B; クイックアクセスメニュー &#x200B;](/help/assets/quickaccess.png)
 
 また、Adobe Experience Platform メニューからデータ収集にアクセスすることもできます。
 
-![Experience Platform メニュー ](/help/assets/solutionaccessmenu.png)
+![Experience Platform メニュー &#x200B;](/help/assets/solutionaccessmenu.png)
 
 ユーザー ID にアクセス権がある場合、以下に示すように、データ収集のデータ管理の下の左側のパネルに Places Service アイコンが表示されます。
 
-![ データ収集の左パネル ](/help/assets/places_in_data_collection.png)
+![&#x200B; データ収集の左パネル &#x200B;](/help/assets/places_in_data_collection.png)
 
 この場所に Places Service が表示されない場合は、Admin Consoleの管理者に連絡して、組織のAdobe Experience Platformにユーザー ID を追加してください。
 
@@ -46,10 +46,10 @@ Places Service がデータ収集 UI 内で使用できるようになりまし�
 
 ### 1. Adobe Experience PlatformとAdobe Experience Platform Data Collection がプロビジョニングされていることを確認します
 
-1. Experience Cloud組織（[Adobe Experience Cloud ホーム ](https://experience.adobe.com) にログインします。
+1. Experience Cloud組織（[Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com) にログインします。
 1. 右上のExperience Cloudシェル切り替えボタンをクリックして、ドロップダウンメニューを表示します。
 
-   ![ シェルスイッチャー ](/help/assets/places_shell_switcher1.png)
+   ![&#x200B; シェルスイッチャー &#x200B;](/help/assets/places_shell_switcher1.png)
 
 1. リストの下部にある [**[!UICONTROL Admin Console]**] をクリックします。 （**[!UICONTROL Admin Console]** へのリンクは、「クイックアクセス」セクションにもあります）。
 

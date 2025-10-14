@@ -35,4 +35,4 @@ Mobile Services を使用すると、Adobe Analytics セグメントにプッシ
 
 * 「**[!UICONTROL カスタムセグメント]**」セクションで、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
 
-![ プッシュメッセージの設定 ](/help/assets/push-set-up.png)
+![&#x200B; プッシュメッセージの設定 &#x200B;](/help/assets/push-set-up.png)

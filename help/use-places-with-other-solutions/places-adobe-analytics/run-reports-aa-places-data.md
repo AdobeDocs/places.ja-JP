@@ -13,7 +13,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->このドキュメントは、アプリケーションに Places Service が実装されていることを前提としています。 Places Service の実装について詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+>このドキュメントは、アプリケーションに Places Service が実装されていることを前提としています。 Places Service の実装について詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 Places Service が入口イベントと出口イベントを送信した後、Experience Platform Launchでルールを作成し、Places Service データをすべてのAdobe Analytics イベントに添付できます。 このタイプのルールを作成するには、Launch でプロパティを選択し、次の手順を実行します。
 
@@ -39,7 +39,7 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
 これで、このルールに含めるトリガーを決定できます。 この例では、トリガーはすべての `TrackAction` 呼び出しに基づいています。 イベントを設定したら、「**[!UICONTROL 変更を保持]**」をクリックします。
 
-![ イベントの作成」 ](/help/assets/ad-setEvent_use-analytics-data.png)
+![&#x200B; イベントの作成」 &#x200B;](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.条件を追加
@@ -60,7 +60,7 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![ 「条件の作成」 ](/help/assets/ad-setCondition_use-analytics-data.png)
+![&#x200B; 「条件の作成」 &#x200B;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4. アクションを定義する
 
@@ -78,13 +78,13 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
 次の例では、`poi.city` と `poi.name` の値を Analytics イベントのコンテキストデータに追加します。 新しいキーの値は、このイベントの処理時に SDK によって動的に決定されます。
 
-![ 「アクションを作成」 ](/help/assets/ad-setAction_use-analytics-data.png)
+![&#x200B; 「アクションを作成」 &#x200B;](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5. ルールを保存し、プロパティを再構築する
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![ 「ルールは完了しました。」 ](/help/assets/ad-ruleComplete_use-analytics-data.png)
+![&#x200B; 「ルールは完了しました。」 &#x200B;](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. **[!UICONTROL 保存]**&#x200B;をクリックします。
 

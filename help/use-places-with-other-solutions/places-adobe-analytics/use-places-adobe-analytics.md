@@ -14,7 +14,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->この節では、アプリケーションに Places Service が実装されていることを前提としています。 Places Service の実装について詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+>この節では、アプリケーションに Places Service が実装されていることを前提としています。 Places Service の実装について詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 Places Service が入口イベントと出口イベントを送信した後、Experience Platform Launchでルールを作成して、Places Service データをAdobe Analyticsに送信できます。 このタイプのルールを作成するには、Launch でプロパティを選択し、次の手順を実行します。
 
@@ -41,7 +41,7 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-   ![ イベントを選択」 ](/help/assets/pt-selectEvent.png)
+   ![&#x200B; イベントを選択」 &#x200B;](/help/assets/pt-selectEvent.png)
 
 
 ## 3.条件を追加
@@ -62,7 +62,7 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-   ![ 「条件を設定」 ](/help/assets/pt-setCondition.png)
+   ![&#x200B; 「条件を設定」 &#x200B;](/help/assets/pt-setCondition.png)
 
 
 ## 4. アクションを定義する
@@ -81,13 +81,13 @@ Places Service が入口イベントと出口イベントを送信した後、Ex
 
    次の例では、このエントリイベントをトリガーした POI の名前と同じ `poi.name` の追加のコンテキストデータを持つ `TrackAction` 呼び出しが Analytics に送信されます。
 
-   ![ 「アクションを設定」 ](/help/assets/pt-setAction.png)
+   ![&#x200B; 「アクションを設定」 &#x200B;](/help/assets/pt-setAction.png)
 
 ## 5. ルールを保存し、プロパティを再構築する
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![ 「ルールが作成されました」 ](/help/assets/pt-ruleComplete.png)
+![&#x200B; 「ルールが作成されました」 &#x200B;](/help/assets/pt-ruleComplete.png)
 
 1. **[!UICONTROL 保存]**&#x200B;をクリックします。
 

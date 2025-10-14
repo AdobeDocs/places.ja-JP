@@ -32,7 +32,7 @@ POI とライブラリは、場所 UI を使用して、場所データベース
 
 ## 都市、州、国またはメタデータでの POI のフィルタリング
 
-![POI のフィルタリング ](/help/assets/filter_poi.png)
+![POI のフィルタリング &#x200B;](/help/assets/filter_poi.png)
 
 1. Adobe IDを使用して Places Service UI にログインします。
 1. 右上のフィルタリングアイコンをクリックします。

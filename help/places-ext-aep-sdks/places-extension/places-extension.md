@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Places 拡張機能 {#places-extension}
 
-Adobe開発者ポータルに移動し、[Places SDK 拡張機能 ](https://developer.adobe.com/client-sdks/documentation/places/) のドキュメントを表示します。
+Adobe開発者ポータルに移動し、[Places SDK 拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/) のドキュメントを表示します。
 
 <!-- 
 

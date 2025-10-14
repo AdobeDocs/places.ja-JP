@@ -29,7 +29,7 @@ Places Service 製品コンテキストは、すべてのExperience Cloud組織�
 
 * Admin Consoleの Places Service およびExperience Platform Launchプロダクトコンテキストでユーザーとしてリストされていることを確認します。
 
-  詳しくは、*よくある質問 [ の「Experience Platform Launchおよび Places Service へのユーザーの追加* を参照してください ](/help/places-gain-access.md)。
+  詳しくは、*よくある質問 [&#x200B; の「Experience Platform Launchおよび Places Service へのユーザーの追加* を参照してください &#x200B;](/help/places-gain-access.md)。
 
 
 ### 2. POI の作成
@@ -38,7 +38,7 @@ Places Service 製品コンテキストは、すべてのExperience Cloud組織�
 
 * Places Service ユーザーインターフェイスの使用。
 
-  詳しくは、[Places Service の概要 ](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md) を参照してください。
+  詳しくは、[Places Service の概要 &#x200B;](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md) を参照してください。
 
 * Places Web サービスの API を使用。
 
@@ -55,6 +55,6 @@ Places 拡張機能の設定について詳しくは、次の情報を参照し�
 
 アクティブ領域の監視を行う場合は、オペレーティングシステムを直接実装する必要があります。 詳しくは、次のドキュメントを参照してください。
 
-* iOS - [CoreLocation ドキュメント ](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
+* iOS - [CoreLocation ドキュメント &#x200B;](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
 
-* Android - [ 場所に関するドキュメント ](https://developer.android.com/training/location/geofencing)
+* Android - [&#x200B; 場所に関するドキュメント &#x200B;](https://developer.android.com/training/location/geofencing)

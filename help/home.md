@@ -38,7 +38,7 @@ Places Service は、次のコンポーネントで構成されています。
 
 * **Web サービス**
 
-  POI は、Places REST API を使用して作成および管理できます。 REST API について詳しくは、[ ライブラリの管理 ](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) および [POI の管理 ](/help/web-service-api/api-usage/manage-pois/manage-pois.md) を参照してください。
+  POI は、Places REST API を使用して作成および管理できます。 REST API について詳しくは、[&#x200B; ライブラリの管理 &#x200B;](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) および [POI の管理 &#x200B;](/help/web-service-api/api-usage/manage-pois/manage-pois.md) を参照してください。
 
 * **POI 管理インターフェイス**
 
@@ -46,7 +46,7 @@ Places Service は、次のコンポーネントで構成されています。
 
 * **Places 拡張機能**
 
-  モバイルアプリに場所のコンテキストを統合するためのマルチプラットフォームモバイル API インターフェイス。 SDK について詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+  モバイルアプリに場所のコンテキストを統合するためのマルチプラットフォームモバイル API インターフェイス。 SDK について詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
 
 * **ローンチルール**
 
@@ -80,7 +80,7 @@ Places Service は、次のコンポーネントで構成されています。
 
 * **orgID** は Adobe Experience Platform をまたいで組織を表す ID です。
 
-  詳しくは、[orgID の検索 ](https://forums.adobe.com/thread/2339895) を参照してください。
+  詳しくは、[orgID の検索 &#x200B;](https://forums.adobe.com/thread/2339895) を参照してください。
 
 * **Experience CloudID** サービスは、Experience Cloud内のすべてのソリューションで訪問者を特定する永続的な汎用 ID を提供します。
 

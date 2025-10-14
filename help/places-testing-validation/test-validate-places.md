@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->このプランでは、POI が [Places Service UI](https://places.adobe.com) で作成され、最新バージョンの Places 拡張機能がインストールされ、正しく設定されていることを前提としています。 また、アクティブ領域の監視を行う場合は、領域の監視ソリューションが実装されていることを前提としています。 詳しくは、[Places 拡張機能 ](/help/places-ext-aep-sdks/places-extension/places-extension.md)、iOSの [CoreLocation ドキュメント ](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)、または [Androidの場所のドキュメント ](https://developer.android.com/training/location/geofencing) を参照してください。
+>このプランでは、POI が [Places Service UI](https://places.adobe.com) で作成され、最新バージョンの Places 拡張機能がインストールされ、正しく設定されていることを前提としています。 また、アクティブ領域の監視を行う場合は、領域の監視ソリューションが実装されていることを前提としています。 詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md)、iOSの [CoreLocation ドキュメント &#x200B;](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)、または [Androidの場所のドキュメント &#x200B;](https://developer.android.com/training/location/geofencing) を参照してください。
 
 | 手順 | 説明 | 期待される結果 |
 |--- |--- |--- |
@@ -25,13 +25,13 @@ ht-degree: 1%
 | 1a | iOSで場所の更新が設定されていることを確認します。 また、場所を追跡する権限をリクエストする適切なプリストキーがiOSで設定されていることも確認します。 | 確認済み |
 | 2 | iOSに設定されているモニタリングモードを確認します。 この連続モードにより、精度と持続性が向上しますが、バッテリー寿命も大幅に低下します。 | 重要な変更または継続的な変更 |
 | 3 | 複数の POI ライブラリを使用する場合は、Experience Platform Launch用に場所の拡張機能で適切なライブラリが選択されていることを確認します。 | 確認済み |
-| 4 | Mobile Core および Places 拡張機能の最新バージョンが Gradle または CocoaPods を介してアプリにバンドルされていることを確認します。 | 確認済み – 最近の更新について詳しくは、[ リリースノート ](/help/release-notes.md) を参照してください。 |
+| 4 | Mobile Core および Places 拡張機能の最新バージョンが Gradle または CocoaPods を介してアプリにバンドルされていることを確認します。 | 確認済み – 最近の更新について詳しくは、[&#x200B; リリースノート &#x200B;](/help/release-notes.md) を参照してください。 |
 | 5 | テスト用に正しい環境が設定されていることを確認します。 Launch 環境 ID は、Launch 開発環境と一致する必要があります。 | 確認済み |
-| 6 | テストする POI ごとに GPX ファイルを作成します。 GPX ファイルは、ローカル開発環境で場所の入力をシミュレートするために使用できます。 GPX ファイルの作成と使用については、以下を参照してください。<br>[iOS Simulator 用 GPX ファイル [closed]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[ モバイルアプリでの場所テスト ](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX ファイルが作成され、アプリプロジェクトに読み込まれます。 |
+| 6 | テストする POI ごとに GPX ファイルを作成します。 GPX ファイルは、ローカル開発環境で場所の入力をシミュレートするために使用できます。 GPX ファイルの作成と使用については、以下を参照してください。<br>[iOS Simulator 用 GPX ファイル [closed]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[&#x200B; モバイルアプリでの場所テスト &#x200B;](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX ファイルが作成され、アプリプロジェクトに読み込まれます。 |
 | 7 | 他に何もしなくても、Android Studio または XCode からアプリケーションを起動し、トラッキング場所へのアクセスをリクエストするための適切なアラートを確認できます。 *常に許可* 権限をクリックします。<br><br> デバイスシミュレーターを使用する代わりに、コンピューターに接続されている実際のデバイスを使用することをお勧めします。 | IDE を介して読み込まれたアプリケーションで、場所要求のプロンプトが表示されます。 |
 | 8 | 場所の権限が承認されたら、 Places SDK はデバイスの現在の場所を取得し、地域モニタリングコードは現在の場所から最も近い 20 個の POI の監視を開始する必要があります | テーブルの下のログサンプルを参照してください。 |
 | 9 | XCode またはAndroid Studio で異なる場所を切り替えると、特定の POI のエントリイベントが生成されます。 以下のログは、POI へのエントリで想定されています。 | テーブルの下のログサンプルを参照してください。 |
-| 10 | 地域モニターが近くの POI を見つけたら、場所の ping を送信してテストする必要があります。 Launch で、ジオフェンスのエントリに基づいて、トリガーへの場所拡張を使用する新しいルールを作成します。 次に、Mobile Core を使用してポストバックを送信し、新しいアクションを作成します。 Slackの Webhook アプリを作成すると、場所の入口と出口を確認できます。 SlackWebhook アプリの作成について詳しくは、[ 受信 Webhook を使用したメッセージの送信 ](https://api.slack.com/messaging/webhooks) を参照してください。 |  |
+| 10 | 地域モニターが近くの POI を見つけたら、場所の ping を送信してテストする必要があります。 Launch で、ジオフェンスのエントリに基づいて、トリガーへの場所拡張を使用する新しいルールを作成します。 次に、Mobile Core を使用してポストバックを送信し、新しいアクションを作成します。 Slackの Webhook アプリを作成すると、場所の入口と出口を確認できます。 SlackWebhook アプリの作成について詳しくは、[&#x200B; 受信 Webhook を使用したメッセージの送信 &#x200B;](https://api.slack.com/messaging/webhooks) を参照してください。 |  |
 | 10a | Launch で、次を含む Places 拡張機能のデータ要素を追加したことを確認します。<br> 現在の POI 名 <br> 現在の POI 名 <br> 現在の POI 名 long<br> 最終入力名 <br> 最終入力日 lat<br> 最終入力日 long<br> 最終離脱名 <br> 最終離脱日 lat<br> 最終離脱日 long<br> タイムスタンプ |  |
 | 10b | イベント = Places → Enter POI で新しいルールを作成 |  |
 | 10c | アクションの作成= Mobile Core → ポストバック |  |

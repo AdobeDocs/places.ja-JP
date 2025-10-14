@@ -33,7 +33,7 @@ Mobile Services では、Analytics に送信される場所データをアプリ
 
 ### 前提条件
 
-開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[ アプリ内メッセージの作成 ](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja) を参照してください。
+開始する前に、Mobile Services でアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[&#x200B; アプリ内メッセージの作成 &#x200B;](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja) を参照してください。
 
 ## Experience Platform Launchのルール
 
@@ -62,13 +62,13 @@ Mobile Services では、Analytics に送信される場所データをアプリ
 
 >[!TIP]
 >
->Analytics の処理ルールを設定すると、このコンテキストデータを取得できます。 詳しくは、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja) を参照してください。 *アクションを作成* の例では、アクションは、Analytics に送信される POI エントリイベントを記述するコンテキストとして `poiname` を送信します。
+>Analytics の処理ルールを設定すると、このコンテキストデータを取得できます。 詳しくは、[&#x200B; 処理ルール &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja) を参照してください。 *アクションを作成* の例では、アクションは、Analytics に送信される POI エントリイベントを記述するコンテキストとして `poiname` を送信します。
 
-![ アクションの作成 ](/help/assets/configure-action.png)
+![&#x200B; アクションの作成 &#x200B;](/help/assets/configure-action.png)
 
 完全なルールの例を次に示します。
 
-![ 完了したルール ](/help/assets/create-a-rule.png)
+![&#x200B; 完了したルール &#x200B;](/help/assets/create-a-rule.png)
 
 ## Mobile Services でのアプリ内メッセージの作成
 
@@ -81,7 +81,7 @@ Mobile Services では、Analytics に送信される場所データをアプリ
 
   次に、**[!UICONTROL Adobe]** が名前に含まれる POI に入ったユーザーを歓迎するアプリ内メッセージの設定方法の例を示します。
 
-  ![トリガーパラメーター ](/help/assets/trigger-parameters.png)
+  ![トリガーパラメーター &#x200B;](/help/assets/trigger-parameters.png)
 
 * Mobile Services の *トリガーと特性* ページの Places Service 見出しのパラメーターは、Places Service からのデータでは機能しません。
 
