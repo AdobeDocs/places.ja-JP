@@ -36,7 +36,7 @@ metadata.md ファイルには、リポジトリー内にあるユーザーガ�
 | tutorials-title | チュートリアルが適切でない場合はほとんど使用されません |
 | tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
 | mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| git-repo | https://github.com/AdobeDocs/places.ja-JP |
 | index | set index=no for soft launch |
 
 TOC.md ファイル内
