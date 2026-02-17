@@ -9,4 +9,4 @@ ht-degree: 0%
 
 このリポジトリは GitHub Cloud に移行されました。
 
-<https://github.com/Adobe-Enterprise-Docs/places.en>
+<https://github.com/Adobe-Enterprise-Docs/places.ja-JP>
