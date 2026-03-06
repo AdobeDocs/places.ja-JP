@@ -7,14 +7,14 @@ landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=ja
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/ja#recommended/solutions/experience-platform
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.ja-JP
 index: true
-source-git-commit: 896a596bfbfb8c97c55263fc3596d957e4ac52c7
+source-git-commit: 4fb4fa8bbf060afaf6a42a31c2936f42ec1044f2
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 98%
@@ -38,7 +38,7 @@ metadata.md ファイルには、リポジトリー内にあるユーザーガ�
 | tutorials-title | チュートリアルが適切でない場合はほとんど使用されません |
 | tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
 | mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です |
-| git-repo | https://github.com/AdobeDocs/places.ja-JP |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | set index=no for soft launch |
 
 TOC.md ファイル内
