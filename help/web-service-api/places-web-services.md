@@ -3,10 +3,15 @@ title: Web サービス APIの概要
 description: Places Serviceは、Adobeのお客様が、位置情報を利用して、適切な場所で適切なユーザーに適切なタイミングで適切な体験を提供することで、Adobe Experience CloudとAdobe Experience Platformのソリューションを簡単に組み合わせることができる一連のサービスです。
 exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
 TQID: https://experienceleague.adobe.com/jP7iQH7X85UZROjsa3XzuN0bJZjjKffODFGGji7XZfQ
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 336
@@ -42,5 +47,5 @@ Web サービス APIを使用する前に、次の要件が満たされている
 
 追加情報:
 
-* 使用可能なAPIとその使用方法について詳しくは、[ ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
-* これらのAPIのヘッダーとパラメーターについて詳しくは、[ ヘッダーとパラメーター](/help/web-service-api/api-usage/headers-and-parameters.md)を参照してください。
+* 使用可能なAPIとその使用方法について詳しくは、[&#x200B; ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
+* これらのAPIのヘッダーとパラメーターについて詳しくは、[&#x200B; ヘッダーとパラメーター](/help/web-service-api/api-usage/headers-and-parameters.md)を参照してください。

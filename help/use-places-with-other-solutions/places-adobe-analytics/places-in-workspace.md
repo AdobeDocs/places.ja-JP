@@ -3,10 +3,21 @@ title: Analytics Workspaceでの位置情報に関するレポート
 description: この節では、Analytics Workspaceでの位置情報のレポート方法について説明します。
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
 TQID: https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: c20d46e7-1c7d-476c-a50e-3961d4dce35fid: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 483
@@ -32,7 +43,7 @@ ht-degree: 6%
 
 1. Launch プロパティでは、目的のPlaces サービス変数に対してデータ要素が作成されています。
 
-   Launchのデータ要素について詳しくは、[ データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
+   Launchのデータ要素について詳しくは、[&#x200B; データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
 
 
 ## &#x200B;1. 起動ルールの作成
@@ -49,7 +60,7 @@ ht-degree: 6%
 
 ## &#x200B;2. Analytics変数の作成
 
-コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[ コンバージョン変数（eVar） ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
+コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[&#x200B; コンバージョン変数（eVar） &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
 
 この例では、コンバージョン変数&#x200B;**[!UICONTROL Evar2]**&#x200B;が作成され、**[!UICONTROL Places POI Name]**&#x200B;という名前が付けられています。 レポートで公開する場所の変数ごとに、追加の変数を作成する必要があります。
 

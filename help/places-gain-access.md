@@ -3,10 +3,21 @@ title: Places サービスへのアクセス権を取得
 description: この節では、Places サービスとExperience Platform Launchにユーザーを追加して、ユーザーがPlaces サービスにアクセスできるようにする方法について説明します。
 exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
 TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
-feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: b64298cc-90cc-46b7-8917-ee391f1c7516id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f5efb499-54f9-432b-ac5c-599dbac103afid: f6ff4d13-7b5c-4533-8556-95e76673d4cb
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: b64298cc-90cc-46b7-8917-ee391f1c7516
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+  - id: f5efb499-54f9-432b-ac5c-599dbac103af
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 919
@@ -16,9 +27,9 @@ ht-degree: 2%
 
 # Places サービスへのアクセス権を取得 {#adding-user-launch-places}
 
-Places サービスは、データ収集UI内で使用できるようになりました。 [Adobe Experience Cloud ホーム ](https://experience.adobe.com)のクイックアクセスメニューからData Collectionにアクセスできます。
+Places サービスは、データ収集UI内で使用できるようになりました。 [Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com)のクイックアクセスメニューからData Collectionにアクセスできます。
 
-![ クイックアクセスメニュー](/help/assets/quickaccess.png)
+![&#x200B; クイックアクセスメニュー](/help/assets/quickaccess.png)
 
 Adobe Experience Platform メニューからデータ収集にアクセスすることもできます。
 
@@ -26,13 +37,13 @@ Adobe Experience Platform メニューからデータ収集にアクセスする
 
 ユーザーIDにアクセス権がある場合、次に示すように、データ収集のデータ管理の下の左側のパネルにPlaces サービスアイコンが表示されます。
 
-![ データ収集の左側のパネル ](/help/assets/places_in_data_collection.png)
+![&#x200B; データ収集の左側のパネル &#x200B;](/help/assets/places_in_data_collection.png)
 
 この場所にPlaces サービスが表示されない場合は、組織内の管理者に連絡して、Admin ConsoleのAdobe Experience PlatformにユーザーIDを追加してください。
 
 ## Places サービスおよびExperience Adobe Experience Platform Data Collectionへのアクセスにユーザーを追加する
 
-PlacesがAdobe Experience Platformに含まれるようになりました。 [Places サービス ](https://experience.adobe.com/#/data-collection/places)へのアクセスを許可するには、Admin Console as a userのAdobe Experience Platformに追加する必要があります。 モバイルプロパティを設定し、Experience Platform SDKでPlacesを使用するために必要な権限を持つAdobe Experience Platform Data Collectionへのアクセス権をユーザーに付与するには、Admin ConsoleのAdobe Experience Platform Data Collectionにも追加し、Adobe Experience Platform Data Collectionに対する次の権限を付与する必要があります。
+PlacesがAdobe Experience Platformに含まれるようになりました。 [Places サービス &#x200B;](https://experience.adobe.com/#/data-collection/places)へのアクセスを許可するには、Admin Console as a userのAdobe Experience Platformに追加する必要があります。 モバイルプロパティを設定し、Experience Platform SDKでPlacesを使用するために必要な権限を持つAdobe Experience Platform Data Collectionへのアクセス権をユーザーに付与するには、Admin ConsoleのAdobe Experience Platform Data Collectionにも追加し、Adobe Experience Platform Data Collectionに対する次の権限を付与する必要があります。
 
 * プロパティ権限のすべての権限：
    * 承認
@@ -51,10 +62,10 @@ PlacesがAdobe Experience Platformに含まれるようになりました。 [Pl
 
 ### &#x200B;1. Adobe Experience PlatformとAdobe Experience Platform Data Collectionがプロビジョニングされていることを確認します
 
-1. Experience Cloudにログインします。[Adobe Experience Cloud ホーム ](https://experience.adobe.com)。
+1. Experience Cloudにログインします。[Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com)。
 1. 右上のExperience Cloud シェルスイッチャーをクリックして、ドロップダウンメニューを表示します。
 
-   ![ シェルスイッチャー](/help/assets/places_shell_switcher1.png)
+   ![&#x200B; シェルスイッチャー](/help/assets/places_shell_switcher1.png)
 
 1. リストの下部にある「**[!UICONTROL Admin Console]**」をクリックします。 （**[!UICONTROL Admin Console]**&#x200B;へのリンクは、「クイックアクセス」セクションにも表示されます）。
 

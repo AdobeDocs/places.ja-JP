@@ -3,10 +3,28 @@ title: アクティブな地域モニタリングなしでPlaces サービスを
 description: この節では、アクティブな地域モニタリングなしでPlaces サービスを使用する方法について説明します。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
 TQID: https://experienceleague.adobe.com/xUmdMOa5CvDZSxKFeyse-3vHsUwvm2s04-sIG0FnnCs
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: bef6f891-2e8a-425e-8f99-7ddf22070daaid: c93393a4-e558-47e1-992e-c91ed4d480ceid: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: b572b7ff-a413-4173-b2b4-d7d3874f1b9bid: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: ee602049-8a18-43df-9299-a689a025a371
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: b572b7ff-a413-4173-b2b4-d7d3874f1b9b
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+  - id: ee602049-8a18-43df-9299-a689a025a371
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 786
@@ -121,7 +139,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## &#x200B;3. Places データをAnalytics リクエストに添付する
 
-Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、Launchのデータ要素を介してデバイスに関連するすべてのPOI データを利用できるようにします。 [ データの添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを自動的にAnalyticsへの今後のリクエストに追加できます。 これにより、デバイスの場所を収集する際に、Analyticsに対して1回限りの呼び出しを行う必要がなくなります。
+Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、Launchのデータ要素を介してデバイスに関連するすべてのPOI データを利用できるようにします。 [&#x200B; データの添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを自動的にAnalyticsへの今後のリクエストに追加できます。 これにより、デバイスの場所を収集する際に、Analyticsに対して1回限りの呼び出しを行う必要がなくなります。
 
 このトピックについて詳しくは、[Analytics リクエストへの場所コンテキストの追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)を参照してください。
 
@@ -133,7 +151,7 @@ Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、
 >
 >ユースケースで[region entry event](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)をSDKによってトリガーする必要がある場合は、以下に説明するように手動で行う必要があります。
 
-`getNearbyPointsOfInterest` APIによって返されるリストには、ユーザーが現在POI内にいるかどうかを示す[ カスタムオブジェクト ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)が含まれています。 ユーザーがPOIに属している場合は、そのリージョンのエントリイベントをSDK トリガーに設定できます。
+`getNearbyPointsOfInterest` APIによって返されるリストには、ユーザーが現在POI内にいるかどうかを示す[&#x200B; カスタムオブジェクト &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)が含まれています。 ユーザーがPOIに属している場合は、そのリージョンのエントリイベントをSDK トリガーに設定できます。
 
 >[!IMPORTANT]
 >
@@ -248,7 +266,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 以下のコードサンプルは、デバイスの現在の場所を取得し、必要なエントリイベントをトリガーし、1回の訪問で同じ場所に複数のエントリを取得しないようにする方法を示しています。
 
-このコードサンプルには、ユーザーがPOI](#trigger-entry-events-when-the-user-is-in-a-poi)にいるときにエントリイベントを[ トリガーするオプションの手順が含まれています。
+このコードサンプルには、ユーザーがPOI[&#128279;](#trigger-entry-events-when-the-user-is-in-a-poi)にいるときにエントリイベントを トリガーするオプションの手順が含まれています。
 
 >[!IMPORTANT]
 >

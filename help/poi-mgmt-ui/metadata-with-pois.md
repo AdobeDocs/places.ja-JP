@@ -3,10 +3,19 @@ title: POIでのメタデータの使用
 description: この節では、POIでメタデータを使用する方法に関する情報と戦略について説明します。
 exl-id: e669e560-a999-43ff-aeb4-06e6308b0d5c
 TQID: https://experienceleague.adobe.com/wTzahAs7MMSv0q-cEhkNObBpALUJXqDXlOcqjitezwY
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 296
@@ -24,14 +33,14 @@ POI メタデータは、様々な方法で使用できます。 POI管理の観
 
 Experience Platform Launchでは、トラッキングやメッセージの目的で重要なPlaces サービスのメタデータフィールドごとにデータ要素を作成できます。
 
-![ ジム施設のデータ要素](/help/assets/gymfacility.png)
+![&#x200B; ジム施設のデータ要素](/help/assets/gymfacility.png)
 
 次に、Analytics拡張機能を使用して、コンテキストデータとして必要なメタデータを含む新しいヒットを作成するためのアクションを作成できます。
 
-![ ジム施設のアクション ](/help/assets/Analytics-gym.png)
+![&#x200B; ジム施設のアクション &#x200B;](/help/assets/Analytics-gym.png)
 
 ## Adobe Campaignでのアプリ内メッセージ
 
 メタデータは、Adobe Campaign Standardで定義されたローカル通知やアプリ内メッセージのフィルターとして使用できます。 メタデータをフィルターとして使用することで、実際の場所に関連したより適切なメッセージを作成できます。
 
-![ ローカル通知とアプリ内メッセージをACS](/help/assets/ACS_gym_metadata.png)でフィルタリング
+![&#x200B; ローカル通知とアプリ内メッセージをACS](/help/assets/ACS_gym_metadata.png)でフィルタリング
