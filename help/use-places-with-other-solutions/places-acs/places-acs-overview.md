@@ -1,17 +1,28 @@
 ---
-title: Adobe Campaign Standardでの Places Service の使用
-description: ここでは、Campaign Standardで Places Service を使用する方法の概要を説明します。
+title: Adobe Campaign StandardでのPlaces サービスの使用
+description: ここでは、Campaign StandardでPlaces サービスを使用する方法の概要を説明します。
 exl-id: e2906ad3-5c78-417b-bc9a-4dd259bbafe9
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/Z6RwbMh-9u5jhGy-6ljjsxt4-P3P14urkMPTo8KjlD4
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: 54
 ht-degree: 0%
 
 ---
 
-# Adobe Campaign Standardでの Places Service の使用 {#location-service-acs}
+# Adobe Campaign StandardでのPlaces サービスの使用 {#location-service-acs}
 
-Campaign Standardで Places Service を使用する場合、次のメッセージタイプを使用できます。
+Campaign StandardでPlaces サービスを使用する場合は、次のメッセージタイプを使用できます。
 
-* [Places Service でのプッシュ通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
-* [Places Service を使用したアプリ内メッセージ](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
+* [Places サービスを使用したプッシュ通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
+* [Places サービスを使用したアプリ内メッセージ](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)

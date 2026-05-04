@@ -1,11 +1,29 @@
 ---
 title: リリースノート
-description: Places Service のリリースノート。
+description: Places サービスのリリースノート。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 2%
+source-wordcount: 1612
+ht-degree: 4%
 
 ---
 
@@ -13,90 +31,90 @@ ht-degree: 2%
 
 ## 2020 年 7 月 9 日
 
-* **Places and Places Monitor 拡張機能**
+* **Places and Places Monitor Extensions**
 
-   * Places and Places Monitor 拡張機能が [React Native アプリケーションに追加されました &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * [Cordova アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova) 用の場所および場所モニター拡張機能が追加されました
-   * 詳しくは、[Places 拡張機能の使用 &#x200B;](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html) を参照してください。
+   * [React Native アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)のPlacesおよびPlaces Monitor拡張機能が追加されました
+   * [Cordova アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)の場所と場所のモニター拡張機能が追加されました
+   * 詳細については、[Places拡張機能の使用](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)を参照してください。
 
 
-## 2020 年 5 月 12 日（Pt）
+## 2020年5月12日（PT）
 
-* **Places Service**
+* **Places サービス**
 
-   * 「POI を読み込み」ボタンを使用して、CSV ファイルから POI を一括読み込みする
-   * 複数の POI を選択し、メタデータ値を一括編集または追加する
+   * 「POIのインポート」ボタンを使用して、CSV ファイルからPOIを一括読み込み
+   * 複数のPOIを選択し、メタデータ値を一括編集または追加します
 
-## 2020 年 5 月 6 日（Pt）
+## 2020年5月6日（PT）
 
 * **PlacesMonitor 2.2.1**
 
    * **Android**
 
-      * ログの改善
+      * ログ記録の改善
 
-## 2020 年 5 月 5 日（Pt）
+## 2020年5月5日（PT）
 
 
 * **PlacesMonitor 2.1.3**
 
    * **iOS**
 
-      * ログの改善
+      * ログ記録の改善
 
-## 2020 年 2 月 20 日（Pt）
+## 2020年2月20日（PT）
 
 * **ACPPlaces 1.3.1 （iOS）**
 
-   * Places 拡張機能で、Core SDK のイベントハブにバージョン情報がレポートされるようになりました。
-   * デバイス POI メンバーシップ情報のデフォルトの有効期間は、収集時から 1 時間になりました。 詳細は、「[Modifying Places membership time to-live](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)」を参照してください
+   * Places拡張機能が、コア SDKのイベントハブにバージョン情報をレポートするようになりました。
+   * デバイス POI メンバーシップ情報には、収集された時点から1時間のデフォルトの有効期間が設定されるようになりました。 詳しくは、[Places メンバーシップの有効期間の変更](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)を参照してください
 
 
-* **場所 1.4.1 （Android）**
+* **Places 1.4.1 （Android）**
 
-   * Places 拡張機能で、Core SDK のイベントハブにバージョン情報がレポートされるようになりました。
-   * デバイス POI メンバーシップ情報のデフォルトの有効期間は、収集時から 1 時間になりました。 詳細は、「[Modifying Places membership time to-live](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)」を参照してください
+   * Places拡張機能が、コア SDKのイベントハブにバージョン情報をレポートするようになりました。
+   * デバイス POI メンバーシップ情報には、収集された時点から1時間のデフォルトの有効期間が設定されるようになりました。 詳しくは、[Places メンバーシップの有効期間の変更](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)を参照してください
 
-## 2020 年 1 月 27 日（Pt）
+## 2020年1月27日（PT）
 
 * **PlacesMonitor 2.2.0**
 
    * **Android**
 
-      * 新しい Places API を呼び出して、アプリの起動時と、アプリの実行中に認証が変更された際の場所の認証ステータスを収集します。
-      * setRequestLocationPermission API と非推奨の setLocationPermission API を追加しました。
+      * 新しいPlaces APIを呼び出して、アプリの起動時や、アプリの実行中に認証が変更された際に、位置情報の認証ステータスを収集します。
+      * setRequestLocationPermission APIと非推奨のsetLocationPermission APIを追加しました。
 
 ## 2020 年 1 月 10 日
 
-* **場所 1.4.0**
+* **場所1.4.0**
 
    * **Android**
 
-      * 場所サービスのデバイス認証ステータスを設定する新しい API、`setAuthorizationStatus` を追加しました。 値が保存され、「場所」共有状態で使用されます。
+      * Places サービスのデバイス認証ステータスを設定するための新しいAPI `setAuthorizationStatus`を追加しました。 値は保存され、Places共有状態で使用されます。
 
-## 2019 年 12 月 4 日（Pt）
+## 2019年12月4日（PT）
 
 * **PlacesMonitor 2.1.2**
 
    * **iOS**
 
-      * Places API を呼び出して、変更時にデバイスから CLAuthorizationStatus を収集します。
+      * Places APIを呼び出して、デバイスが変更されたときにCLAuthorizationStatusを収集します。
 
-## 2019 年 12 月 3 日（Pt）
+## 2019年12月3日（PT）
 
-* **ACPPlaces 1.3.0**
+* **ACPlaces 1.3.0**
 
    * **iOS**
 
-      * 場所サービスのデバイス認証ステータスを設定する新しい API、`setAuthorizationStatus` を追加しました。 値が保存され、「場所」共有状態で使用されます。
+      * Places サービスのデバイス認証ステータスを設定するための新しいAPI `setAuthorizationStatus`を追加しました。 値は保存され、Places共有状態で使用されます。
 
-## 2019 年 11 月 26 日
+## 2019年11月25日（PT）
 
 * **PlacesMonitor 2.1.1**
 
    * **iOS**
 
-      * 複数ポッドプロジェクトオプションを使用した Cocoapods プロジェクトのインポート文を修正しました。
+      * 複数のポッドプロジェクトオプションを使用したCocoapods プロジェクトの固定読み込みステートメント。
 
 ## 2019年11月22日（PT）
 
@@ -104,22 +122,22 @@ ht-degree: 2%
 
    * **Android**
 
-      * これで、モニタがAndroid デバイスのブートを認識し、必要に応じて、デバイスの現在の場所に基づいて OS に再度ジオフェンスを登録します。
-      * Entry/Exit イベントが破棄されることがある競合状態を修正しました。
+      * モニターは、Android デバイスのブートを認識し、必要に応じて、デバイスの現在位置に基づいてOSにジオフェンスを再度登録します。
+      * 入退出イベントが破棄されることがあるレース条件を修正しました。
 
-## 2019 年 10 月 9 日（Pt）
+## 2019年10月9日（PT）
 
 * **PlacesMonitor 2.1.0**
 
    * **iOS**
 
-      * ユーザーにプロンプトが表示される場所の認証リクエストのタイプを設定する新しい API、`setRequestAuthorizationLevel` を追加しました。
+      * ユーザーに対するプロンプトが表示される場所の承認要求のタイプを設定するために、新しいAPI `setRequestAuthorizationLevel`を追加しました。
 
 
    * **Android**
 
-      * ユーザーにプロンプトを表示する場所の権限リクエストのタイプを設定する新しい API、`setLocationPermission` を追加しました。
-      * Places Monitor でAndroid 10 がサポートされるようになりました。
+      * ユーザーが求める場所の権限リクエストのタイプを設定するために、新しいAPI `setLocationPermission`を追加しました。
+      * Places MonitorでAndroid 10がサポートされるようになりました。
 
 ## 2019 年 8 月 8 日（PT）
 
@@ -127,30 +145,30 @@ ht-degree: 2%
 
 ### UI アップデート
 
-以下に、場所 UI の更新のリストを示します。
+Places UIに対する更新のリストを次に示します。
 
 #### 新機能
 
-* マップのない POI を表示する新しいリスト表示を追加しました。
-* 市区町村、州、国、メタデータに POI フィルタリングオプションを追加しました。
-* 組織の最初のライブラリが自動的に作成されます。
-* リスト表示に POI ソートを追加しました。
+* マップのないPOIを表示する新しいリストビューを追加しました。
+* 都市、状態、国、メタデータのPOI フィルタリングオプションを追加しました。
+* 組織内の最初のライブラリが自動的に作成されます。
+* リスト表示にPOI ソート機能を追加しました。
 
 #### UI アップデート
 
-* リストと詳細パネルを UI の右側に移動しました。
-* UI の上部に新しい検索パネルを追加しました。
-* ライブラリが 1 つしか存在しない場合、POI を作成すると、このライブラリが自動的に選択されます。
-* ライブラリ管理がポップアップウィンドウに移動されました。
-* フィルターの横に POI 数を追加しました。
+* リストと詳細パネルをUIの右側に移動しました。
+* UIの上部に新しい検索パネルを追加しました。
+* ライブラリが1つしかない場合、POIを作成するときに、このライブラリが自動的に選択されます。
+* ライブラリ管理をポップアップウィンドウに移動しました。
+* フィルターの横にPOI カウントを追加しました。
 
 ## 2019 年 8 月 6 日（PT）
 
 このリリースでは、次の更新が行われました。
 
-### Launch 拡張機能 2.0.0 の監視
+### Monitor Launch Extension 2.0.0
 
-* Places Monitor 2.0 のAndroidとiOSのインストール手順を更新しました。
+* Places Monitor 2.0のAndroidおよびiOSのインストール手順を更新しました。
 
 ## 2019年7月31日（PT）
 
@@ -158,15 +176,15 @@ ht-degree: 2%
 
 ### Places Monitor 2.0.0
 
-* 監視ステータスがローンチ間で保持されるようになりました。
-* 場所の権限リクエストによるコールバックの処理で、PlacesActivity を拡張する必要がなくなりました。
-* 既存の API が変更され、開発者がデバイスからすべての場所データをクリアできるようになりました。
+* 監視ステータスが起動間で保持されるようになりました。
+* 場所の権限リクエストに起因するコールバックの処理で、PlacesActivityを拡張する必要がなくなりました。
+* 既存のAPIを変更し、開発者がデバイスからすべてのPlaces データを消去できるようにしました。
 
-  古い API: `public static void stop();`
+  古いAPI: `public static void stop();`
 
-  新しい API: `public static void stop (final boolean clearData);`
+  新しいAPI: `public static void stop (final boolean clearData);`
 
-* エラーシナリオをより効果的に処理するために、`getNearbyPointsOfInterest` API の使用を更新しました。
+* エラーシナリオをより効果的に処理するために、`getNearbyPointsOfInterest` APIの使用を更新しました。
 
 ## 2019年7月25日（PT）
 
@@ -174,91 +192,91 @@ ht-degree: 2%
 
 ### ACPPlacesMonitor 2.0.0
 
-* デバイスからすべての Places データを消去するには、
+* デバイスからすべてのPlaces データを消去するには、次の手順を実行します。
 
-  acpclacesmonitor で、既存の API `+ (void) stop;` を `+ (void) stop: (BOOL) clearData;` に置き換えました。
+  acplacesMonitorで、既存のAPI `+ (void) stop;`を`+ (void) stop: (BOOL) clearData;`に置き換えました。
 
-* エラーシナリオをより効果的に処理するために、ACPPlaces `getNearbyPointsOfInterest` API の使用を更新しました。
+* エラーシナリオをより効果的に処理するために、ACPPlaces `getNearbyPointsOfInterest` APIの使用を更新しました。
 
-## 2019 年 7 月 22 日（Pt）
+## 2019年7月22日（PT）
 
 このリリースでは、次の更新が行われました。
 
 ### Android Places 1.3.0
 
-* 共有状態、アプリ内メモリ、共有環境設定からすべての場所関連データをクリアする新しい API が追加されました。
-* アプリケーションの開始時に共有状態が更新されない問題を修正しました。
-* コールバックがインターネット上 `getNearbyPointsOfInterest` エラーコード `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` を返していたバグを修正しました。
-* （errorCallback を除く） `getNearbyPointsOfInterest`API は、近くの目標地点の取得でエラーが発生した場合、空の poi リストで `successCallback` を呼び出します。
+* 共有状態、アプリ内メモリ、および共有設定からすべてのPlaces関連データを消去する新しいAPIを追加しました。
+* アプリケーションの起動中に共有状態が更新されない問題を修正しました。
+* `getNearbyPointsOfInterest` コールバックがインターネットなしのエラーコード `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR`を返していたバグを修正しました。
+* `getNearbyPointsOfInterest` API （errorCallbackを使用しない）は、近くのポイントの取得でエラーが発生した場合、空のpoi リストで`successCallback`が呼び出されます。
 
-## 2019 年 7 月 19 日（Pt）
+## 2019年7月19日（PT）
 
 このリリースでは、次の更新が行われました。
 
 **iOS Places 1.2.0**
 
-共有状態、アプリ内メモリおよび `NSUserDefaults` から場所に関連するすべてのデータをクリアする新しい API が追加されました。
+共有状態、アプリ内メモリ、および`NSUserDefaults`からすべてのPlaces関連データを消去する新しいAPIを追加しました。
 
-## 2019 年 6 月 25 日（Pt）
+## 2019年6月25日（PT）
 
 このリリースでは、次の更新が行われました。
 
 **iOS Places Monitor 1.0.2**
 
-* コード内ドキュメントとログの改善を含む、QOL の向上。
+* コード内ドキュメントとログ記録の改善など、生活の質の向上。
 
-## 2019 年 6 月 17 日（Pt）
+## 2019年6月17日（PT）
 
 このリリースでは、次の更新が行われました。
 
-**iOSの場所 1.1.0**
+**iOS Places 1.1.0**
 
-* 近くの場所の取得に失敗した場合にエラーコードを返す新しい API を追加しました。
-* プライバシーステータスがオプトアウトに変更された場合、すべての Places 関連のデータがデバイスから消去されるようになりました。
-* 最初の起動後、ネットワークの状態が悪いために Places イベントが失われることがある問題を修正しました。
-* POI エントリイベントを迅速に順次処理する際に、ルールエンジンを介したトークン置換で誤った POI が参照されることがある問題を修正しました。
+* 近くの場所の取得に失敗した場合にエラーコードを返す新しいAPIを追加しました。
+* プライバシーステータスがオプトアウトに変更されると、Places関連のすべてのデータがデバイスから消去されるようになりました。
+* 最初の起動後に、ネットワークの状態が悪いため、Places イベントが失われることがある問題を修正しました。
+* POI エントリイベントを迅速に処理する際に、ルールエンジンを介したトークンの置換で誤ったPOIが参照される場合がある問題を修正しました。
 
-## 2019 年 5 月 30 日（Pt）
+## 2019 年 5 月 31 日
 
 **Android Places Monitor 1.0.1**
 
-* 場所の監視が開始されたときに POI のエントリイベントが発生しない問題を修正しました。
+* Places モニタリングの開始時にPOIのエントリイベントが発生しない問題を修正しました。
 
-## 2019 年 5 月 28 日（Pt）
+## 2019 年 5 月 28 日
 
-場所 UI の次の問題を修正しました。
+場所UIの次の問題を修正しました。
 
-* 場所のソリューション切り替えボタンを更新して、Experience Cloudの残りの部分と整合させます。
-* ランクが変更されなかったインスタンスでランクが保存される問題を修正しました。
-* UI で許可される最小半径を 10 メートルに増やしました。
-* フィールド内のすべての数値を削除すると、半径フィールドが 20 メートルにリセットされる問題を修正しました。
+* Placesのソリューションスイッチャーを更新して、Experience Cloudの他の部分に合わせました。
+* ランクの変更が行われなかったインスタンスでランクが保存されていた問題を修正しました。
+* UIの最小半径を10 メートルに変更しました。
+* フィールド内のすべての数値を削除すると、半径フィールドが20 メートルにリセットされる問題を修正しました。
 
-## 2019 年 5 月 17 日（Pt）
+## 2019年5月17日（PT）
 
 このリリースでは、次の更新が行われました。
 
 **Android Places 1.2.0**
 
-* 個々のジオフェンスを処理する新しい API を追加しました。
-* 複数の連続したエントリイベントを防ぐためのバグ修正。
+* 個々のジオフェンスを処理するための新しいAPIを追加しました。
+* 複数の連続したエントリイベントを防ぐバグ修正。
 
 **Android Places Monitor 1.0.0**
 
-Android用 Places Monitor の初回リリースです。
+Places Monitor for Androidの初期リリース。
 
-Places Monitor は OS レベルの Location API を管理し、Places 拡張機能と直接通信します。 両方の拡張機能がインストールされていれば、お客様はアプリケーションで標準の地域監視を行うことができます。
-Places Monitor の詳細については、ここをクリックしてください。
+Places Monitorは、OS レベルのLocation APIを管理し、Places拡張機能と直接通信します。 両方の拡張機能がインストールされている場合、お客様はアプリケーションで領域を監視できます。
+場所モニターの詳細については、ここをクリックしてください。
 
 
-## 2019 年 5 月 2 日（Pt）
+## 2019年5月2日（PT）
 
-**Androidの場所 1.1.0**
+**Android Places 1.1.0**
 
-* getNearByPlaces に新しい API が導入されました。この API は errorCallback を持ち、エラーの理由を示す errorCode を使用して呼び出されます。
-* Places 拡張機能は、設定が取得されるまでイベントをキューに入れるようになりました。
+* getNearByPlacesの新しいAPIを導入しました。このAPIにはerrorCallbackがあり、エラーの理由を示すerrorCodeで呼び出されます。
+* Places拡張機能は、設定が取得されるまでイベントをキューに入れるようになりました。
 * 環境対応設定のサポートを追加しました。
-* バグ修正：地域入口/出口イベントのキーを修正しました
-* 最後の既知の場所のストレージは、ユーザーのプライバシーステータスに従うようになりました
+* バグ修正：地域のエントリ/終了イベントのキーを修正しました
+* 最後の既知の場所を保存すると、ユーザーのプライバシーステータスが適切に尊重されるようになりました
 
 
 ## 2019年4月9日（PT）
@@ -267,61 +285,61 @@ Places Monitor の詳細については、ここをクリックしてくださ�
 
 **iOS Places Monitor 1.0.1**
 
-* 完全な単体テストカバレッジを追加しました。
-* CI 統合（CircleCI）
+* フルユニットテストのカバレッジを追加しました。
+* CI統合（CircleCI）
 * コードカバレッジ統合（codecov）
 
-## 2019 年 3 月 25 日（Pt）
+## 2019年3月25日（PT）
 
 iOS Places Monitor 1.0.0
 
-iOS用 Places Monitor の初回リリースです。
+Places Monitor for iOSの初期リリース。
 
-Places Monitor は OS レベルの Location API を管理し、Places 拡張機能と直接通信します。 両方の拡張機能がインストールされていれば、お客様はアプリケーションで標準の地域監視を行うことができます。
+Places Monitorは、OS レベルのLocation APIを管理し、Places拡張機能と直接通信します。 両方の拡張機能がインストールされている場合、お客様はアプリケーションで領域を監視できます。
 
 ## 2019 年 3 月 1 日
 
 ### Beta リリース
 
-これは、ユーザーが実際の場所のデータを使用してユーザーのエクスペリエンスを強化できるツールセットである Places Service の最初のリリースです。 最初のリリースの主なユースケースは、モバイルアプリがカスタムの場所データを取得し、Adobe Experience Platform Launchを通じてそのデータに基づいて動作できるようにすることです。
+これは、Places サービスの最初のリリースであり、顧客が実際の位置情報を使用してユーザー体験を充実させることを可能にする一連のツールです。 最初のリリースの主なユースケースは、モバイルアプリがAdobe Experience Platform Launchを通じてカスタム位置データを取得し、そのデータに基づいてアクションを実行できるようにすることです。
 
 ### 主な特長
 
 このリリースの主な機能は次のとおりです。
 
-#### Places Service UI
+#### Places サービス UI
 
-目標地点（POI）を表示および管理できる管理 UI がリリースされました。 また、POI をライブラリに整理することもできます。 市区町村、状態、カテゴリなどの標準のメタデータに加えて、POI にカスタムメタデータを追加する機能もサポートしています。
+POI （Point Of Interest）を表示および管理できる管理UIをリリースしました。 POIをライブラリに整理することもできます。 都市、州、カテゴリーなどの標準メタデータに加えて、カスタムメタデータをPOIに追加する機能もサポートしています。
 
-* UI を表示するには、[https://places.adobe.com](https://places.adobe.com) に移動します。
-* UI を使い始めるには、[&#x200B; はじめに &#x200B;](/help/getting-started.md) を参照してください。
+* UIを表示するには、[https://places.adobe.com](https://places.adobe.com)に移動します。
+* UIの使用を開始するには、[はじめに](/help/getting-started.md)を参照してください。
 
-#### Places 拡張機能
+#### Places拡張機能
 
-Places 拡張機能を使用すると、Places サービスライブラリをモバイルアプリに追加し、その POI に基づいて行動できます。 Experience Platform Launchのルールビルダーを使用すると、ユーザーが POI に入って出たときに実行されるトリガーアクションを設定できます。
+Places拡張機能を使用すると、Places サービスライブラリをモバイルアプリに追加し、POIに基づいてアクションを実行できます。 Adobe Experience Platform Launchのルールビルダーを使用すると、トリガーアクションを実行して、利用者がPOIに出入りしたときに実行できます。
 
-Places 拡張機能で次の操作を行います。
+Places拡張機能で、次の操作を行います。
 
-* アプリに含める POI ライブラリを選択できます。
-* POI のエントリまたは終了時にトリガーとなるルールイベント。
-* ユーザーの現在の POI を指すデータ要素を作成します。
+* アプリに含めるPOI ライブラリを選択できます。
+* POIの出入りにトリガーするルールイベント。
+* ユーザーの現在のPOIを指すデータ要素を作成します。
 
-Places 拡張機能について詳しくは、[Places 拡張機能 &#x200B;](/help/places-ext-aep-sdks/places-extension/places-extension.md) を参照してください。
+Places拡張機能について詳しくは、[Places拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md)を参照してください。
 
 #### Places API
 
-Places API を使用して、次の操作を実行できます。
+Places APIを使用して、次の操作を行うことができます。
 
-* 開発者が POI のリストにデータを入力し、更新できるようにします。
-* 独自の UI を作成するか、既存の POI データベースと統合します。
-* POI の一括読み込みを行うには、Places API バッチエンドポイントを使用します。
+* 開発者がPOIのリストを入力し、更新できるようにします。
+* 独自のUIを構築するか、既存のPOI データベースと統合できます。
+* Places API バッチエンドポイントを使用して、POIを一括インポートします。
 
-  提供された Python ユーティリティを使用して、一括読み込みを完了できます。
+  提供されているPython ユーティリティを使用して、一括読み込みを完了できます。
 
-Places API について詳しくは、「[Web サービス API](/help/web-service-api/places-web-services.md)」を参照してください。
+Places APIについて詳しくは、[Web サービス API](/help/web-service-api/places-web-services.md)を参照してください。
 
 ### まもなくリリース
 
 #### Analytics の統合
 
-Analytics 拡張機能は、ユーザーが POI （パッシブ呼び出し）にいる場合に、Places Service データベースから送信されるすべての Analytics 呼び出しに場所コンテキストデータを自動的に追加するように更新されています。 このアップデートにより、ルールを作成して、POI の入口または出口（アクティブな呼び出し）で直接 Analytics トラッキングコールを実行することもできます。
+Analytics拡張機能が更新され、ユーザーがPOI （パッシブ呼び出し）に入ったときに、Places サービス データベースから送信されるすべてのAnalytics呼び出しに位置情報データが自動的に追加されます。 また、このアップデートにより、ルール作成でAnalyticsのトラック呼び出しをPOIのエントリまたは終了時（アクティブな呼び出し）に直接実行できるようになりました。

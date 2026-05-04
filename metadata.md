@@ -2,6 +2,8 @@
 cloud: Experience Cloud
 product: places service
 solution: Data Collection, Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
 landing-page-name: mobile
 landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
@@ -14,36 +16,36 @@ tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/ja#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.ja-JP
 index: true
-source-git-commit: 4fb4fa8bbf060afaf6a42a31c2936f42ec1044f2
+source-git-commit: c34560100defb53b29dc8121405bfa51058c69a4
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 98%
+source-wordcount: 167
+ht-degree: 80%
 
 ---
 
 
 <!-- We need better links for Getting Started and Tutorials. We can do this after we hit stage -->
 
-# 社内用のメタデータ
+# 内部使用のメタデータ
 
-metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.md ファイルには、リポジトリ内のユーザーガイドの TOC.md ファイルに渡されるリポジトリレベルのメタデータが含まれています。 任意のユーザーガイドの metadata.md コンテンツを変更する場合は、任意の TOC.md ファイルで変更します。
 
-| メタデータ | 説明 |
+| メタデータ | それはどう機能しますか。 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用します |
-| solution-hub-url | Helpx ハブページを開きます |
-| solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。未実装 |
-| getting-started-title | チュートリアルが適切でない場合はほとんど使用されません |
-| getting-started-url | Helpx 開始ページへのリンク |
-| tutorials-title | チュートリアルが適切でない場合はほとんど使用されません |
-| tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です |
+| solution-title | 記事ヘッダーにリンクとして使用 |
+| solution-hub-url | helpx ハブページを開きます |
+| solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 まだ実装されていません |
+| getting-started-title | チュートリアルが適切でない場合はめったに使用されません |
+| getting-started-url | Helpx 入門ページへのリンク |
+| tutorials-title | チュートリアルが適切でない場合はめったに使用されません |
+| tutorials-url | ビデオチュートリアルへのリンク - helpx チュートリアルまたは KT チュートリアル |
+| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を指定します。 デフォルトは 2 です |
 | git-repo | https://github.com/AdobeDocs/places.ja-JP |
-| index | set index=no for soft launch |
+| index | ソフト起動でindex=noを設定 |
 
 TOC.md ファイル内
 
-| メタデータ | 説明 |
+| メタデータ | それはどう機能しますか。 |
 |--- |--- |
-| user-guide-title | 記事ヘッダーでリンクとして使用します |
-| user-guide-url | Helpx ハブページを開きます |
+| user-guide-title | 記事ヘッダーにリンクとして使用 |
+| user-guide-url | helpx ハブページを開きます |

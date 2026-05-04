@@ -1,38 +1,49 @@
 ---
 title: プッシュ通知
-description: この節では、プッシュ通知で Places Service を使用する方法について説明します。
+description: この節では、プッシュ通知でPlaces サービスを使用する方法について説明します。
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/aaTMSoOkVUfbPDpPiRm7P3-8d8JSO9N0Ga12Hlmf-go
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 10%
+source-wordcount: 229
+ht-degree: 14%
 
 ---
 
 # プッシュ通知
 
-Mobile Services を使用すると、Adobe Analytics セグメントにプッシュ通知を送信できます。 Places Service では、POI との過去のインタラクションを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去 30 日間にストアのいずれかに滞在しているユーザーにメッセージを送信できます。
+Mobile Servicesでは、Adobe Analytics セグメントにプッシュ通知を送信できます。 Places サービスでは、POIとの過去のやり取りを使用して、プッシュメッセージのオーディエンスをセグメント化できます。 例えば、過去30日以内に店舗にアクセスしたことがあるユーザーにメッセージを送信できます。
 
 開始する前に、次のタスクを完了していることを確認してください。
 
-* Places Service のデータがAdobe Analyticsによって処理されました。
+* Places サービス データはAdobe Analyticsによって処理されました。
 
-  つまり、モバイルアプリは Places Service のデータをレポートスイートに正常に送信し、データをセグメント化に使用できます。
+  つまり、モバイルアプリがPlaces サービスデータをレポートスイートに正常に送信し、そのデータをセグメント化に利用できるようになりました。
 
-* Mobile Services のプッシュ通知チャネルが設定されます。
-
-  詳しくは、「[プッシュメッセージの作成](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)」を参照してください。
-
-* Mobile Services の Analytics セグメントにプッシュ通知を送信する方法を説明します。
+* Mobile Servicesのプッシュ通知チャネルが設定されます。
 
   詳しくは、「[プッシュメッセージの作成](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)」を参照してください。
 
-## 通知の送信
+* Mobile ServicesのAnalytics セグメントにプッシュ通知を送信する方法について説明します。
 
-**[!UICONTROL プッシュ通知を作成]** ワークフローの *オーディエンス* タブで、次のいずれかの方法でこのメッセージのオーディエンスを作成できます。
+  詳しくは、「[プッシュメッセージの作成](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)」を参照してください。
 
-* **[!UICONTROL Analytics セグメント]** ドロップダウンリストで、以前に作成したAdobe Analytics セグメントを選択します。
+## 通知を送信
 
-* 「**[!UICONTROL カスタムセグメント]**」セクションで、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを作成します。
+「*プッシュ通知を作成*」ワークフローの「**[!UICONTROL オーディエンス]**」タブでは、次のいずれかの方法でこのメッセージのオーディエンスを作成できます。
 
-![&#x200B; プッシュメッセージの設定 &#x200B;](/help/assets/push-set-up.png)
+* 「**[!UICONTROL Analytics セグメント]**」ドロップダウンリストで、以前に作成したAdobe Analytics セグメントを選択します。
+
+* **[!UICONTROL カスタムセグメント]** セクションで、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを構築します。
+
+![&#x200B; プッシュメッセージの設定](/help/assets/push-set-up.png)
