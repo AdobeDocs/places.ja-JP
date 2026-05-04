@@ -28,7 +28,7 @@ Places サービスの概要を説明する便利なビデオを次に示しま�
 Test of different youtube link for exl
 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/41647)
+>[!VIDEO](https://video.tv.adobe.com/v/3455113?captions=jpn)
 
 ## Places サービスの使用
 
