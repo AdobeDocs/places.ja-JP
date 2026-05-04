@@ -76,7 +76,7 @@ Mobile Servicesでは、Analyticsに送信されている位置情報を、ア�
 
 >[!TIP]
 >
->分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
+>分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
 
 ![&#x200B; アクションの作成](/help/assets/configure-action.png)
 
