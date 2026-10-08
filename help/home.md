@@ -59,7 +59,7 @@ Places サービスは、次のコンポーネントで構成されます。
 
 * **Web サービス**
 
-  Places REST APIを使用して、POIを作成および管理できます。 REST APIについて詳しくは、[ ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
+  Places REST APIを使用して、POIを作成および管理できます。 REST APIについて詳しくは、[&#x200B; ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
 
 * **POI管理インターフェイス**
 

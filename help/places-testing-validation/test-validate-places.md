@@ -58,7 +58,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->このプランでは、POIが[Places サービス UI](https://places.adobe.com)で作成され、Places拡張機能の最新バージョンがインストールされ、正しく設定されていることを前提としています。 アクティブな地域モニタリングを行う場合は、地域モニタリングソリューションが実装されていることも前提としています。 詳しくは、[Places拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md)、[iOSのCoreLocation ドキュメント ](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)、または[Androidの場所ドキュメント ](https://developer.android.com/training/location/geofencing)を参照してください。
+>このプランでは、POIが[Places サービス UI](https://places.adobe.com)で作成され、Places拡張機能の最新バージョンがインストールされ、正しく設定されていることを前提としています。 アクティブな地域モニタリングを行う場合は、地域モニタリングソリューションが実装されていることも前提としています。 詳しくは、[Places拡張機能](/help/places-ext-aep-sdks/places-extension/places-extension.md)、[iOSのCoreLocation ドキュメント &#x200B;](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)、または[Androidの場所ドキュメント &#x200B;](https://developer.android.com/training/location/geofencing)を参照してください。
 
 | 手順 | 説明 | 期待される結果 |
 |--- |--- |--- |
@@ -66,9 +66,9 @@ ht-degree: 2%
 | 1a | 場所の更新がiOSで設定されていることを確認します。 また、iOSで適切なプリストキーを設定し、ユーザーに位置情報のトラッキングを依頼する必要があります。 | 確認済み |
 | 2 | IOSに設定されているモニタリングモードを確認します。 連続モードは、より高い精度と持続性を可能にするだけでなく、バッテリー寿命をより大きく排出します。 | 大きな変化または継続的 |
 | 3 | 複数のPOI ライブラリを使用している場合は、Experience Platform LaunchのPlaces拡張機能で適切なライブラリが選択されていることを確認します。 | 確認済み |
-| 4 | Mobile CoreおよびPlaces拡張機能の最新バージョンが、GradleまたはCocoaPodsを介してアプリにバンドルされていることを確認します。 | 確認済み – 最近の更新について詳しくは、[ リリースノートを参照してください。](/help/release-notes.md) |
+| 4 | Mobile CoreおよびPlaces拡張機能の最新バージョンが、GradleまたはCocoaPodsを介してアプリにバンドルされていることを確認します。 | 確認済み – 最近の更新について詳しくは、[&#x200B; リリースノートを参照してください。](/help/release-notes.md) |
 | 5 | テスト用に正しい環境が設定されていることを確認します。 Launch環境IDは、Launch開発環境と一致する必要があります。 | 確認済み |
-| 6 | テストするPOIごとにGPX ファイルを作成します。 GPX ファイルは、ローカル開発環境で使用して、場所エントリをシミュレートできます。 GPX ファイルの作成と使用について詳しくは、次を参照してください。iOS Simulatorの<br>[GPX ファイル [閉じる]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[ モバイルアプリでの位置情報テスト ](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX ファイルが作成され、アプリプロジェクトに読み込まれます。 |
+| 6 | テストするPOIごとにGPX ファイルを作成します。 GPX ファイルは、ローカル開発環境で使用して、場所エントリをシミュレートできます。 GPX ファイルの作成と使用について詳しくは、次を参照してください。iOS Simulatorの<br>[GPX ファイル [閉じる]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[&#x200B; モバイルアプリでの位置情報テスト &#x200B;](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX ファイルが作成され、アプリプロジェクトに読み込まれます。 |
 | 7 | 他の操作を行わなくても、Android StudioまたはXCodeからアプリケーションを起動し、トラッキング場所へのアクセスをリクエストするための適切なアラートを確認できます。 *Always Allow*&#x200B;権限をクリックします。<br><br> デバイス シミュレーターを使用する代わりに、コンピューターに接続されている実際のデバイスを使用することをお勧めします。 | IDEを介して読み込まれたアプリケーションに位置情報の要求プロンプトが表示される |
 | 8 | 場所の権限が承認されると。 Places SDKは、デバイスの現在の場所を取得し、リージョンモニタリングコードは、現在の場所から最も近い20のPOIのモニタリングを開始する必要があります | 表の下にあるログサンプルを参照してください。 |
 | 9 | XCodeまたはAndroid studioの異なる場所を切り替えると、特定のPOIのエントリイベントが生成されます。 POIへのエントリには、次のログが必要です。 | 表の下にあるログサンプルを参照してください。 |
@@ -84,7 +84,7 @@ ht-degree: 2%
 |  | **Places サービスを使用したAdobe Campaign Standard アプリ内メッセージのテスト。** |  |
 | 12 | メインのCampaign ダッシュボードで、新しいアプリ内メッセージを設定します（タイプ = ブロードキャスト） |  |
 | 12a | トリガーで、**Places event type - Entryをトリガー**&#x200B;として選択します。 |  |
-| 12b | **[!UICONTROL Places Custom metadata]**&#x200B;を追加フィルターとして選択します。POI タイプ = Last Entered POIを使用します。<br>ほとんどの場合、**[!UICONTROL Last Entered]**&#x200B;は&#x200B;**[!UICONTROL 現在のPOI]**&#x200B;と同じであるため、**[!UICONTROL Last Entered]**&#x200B;をPOI タイプとして使用します。 <br><br>**[!UICONTROL 現在のPOI ]**は、重複するPOI ジオフェンスがあるインスタンスでのみ使用してください。 この場合、これらのPOIをランク付けする必要があります。その場合、**[!UICONTROL &#x200B;現在のPOI ]**は、ユーザーが現在使用している可能性のある2または3つのジオフェンスのうち、上位にランク付けされたPOIを表示します。 |  |
+| 12b | **[!UICONTROL Places Custom metadata]**&#x200B;を追加フィルターとして選択します。POI タイプ = Last Entered POIを使用します。<br>ほとんどの場合、**[!UICONTROL Last Entered]**&#x200B;は&#x200B;**[!UICONTROL 現在のPOI]**&#x200B;と同じであるため、**[!UICONTROL Last Entered]**&#x200B;をPOI タイプとして使用します。 <br><br>**[!UICONTROL 現在のPOI &#x200B;]**&#x200B;は、重複するPOI ジオフェンスがあるインスタンスでのみ使用してください。 この場合、これらのPOIをランク付けする必要があります。その場合、**[!UICONTROL &#x200B;現在のPOI &#x200B;]**&#x200B;は、ユーザーが現在使用している可能性のある2または3つのジオフェンスのうち、上位にランク付けされたPOIを表示します。 |  |
 | 12c | メッセージを受信するPOIを絞り込むのに役立つカスタムメタデータキーを選択します。 |  |
 | 12d | 頻度と期間については、条件が気に入らない場合はトリガーの有効期限を短くできるように、1日または2日に制限してください。 |  |
 | 12e | Always/OnceまたはUntil click-throughの場合は、*ALWAYS*&#x200B;を選択して、複数の場所でテストを行うことができます。 | 適切なメタデータ条件を満たす場所の変更をシミュレートすると、アプリ内メッセージが常に表示されます。 |

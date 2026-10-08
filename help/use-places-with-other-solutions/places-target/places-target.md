@@ -50,7 +50,7 @@ Places拡張機能がエントリと離脱に対してイベントを送信す�
 1. 「**[!UICONTROL イベントタイプ]**」ドロップダウンリストから、「**[!UICONTROL 要求されたコンテンツ]**」を選択します。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![ イベントを追加](/help/assets/ad-setEvent_target.png)
+![&#x200B; イベントを追加](/help/assets/ad-setEvent_target.png)
 
 ## &#x200B;3. 条件を追加
 
@@ -86,13 +86,13 @@ Places拡張機能がエントリと離脱に対してイベントを送信す�
 >
 >`request[*]`の表記法は、`request`配列&#x200B;_の各オブジェクトについて_&#x200B;として読み上げることができます。
 
-![ アクションを定義](/help/assets/ad-setAction-target.png)
+![&#x200B; アクションを定義](/help/assets/ad-setAction-target.png)
 
 ## &#x200B;5. ルールを保存し、プロパティを再構築する
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![ ルールを完了しました](/help/assets/ad-ruleComplete-target.png)
+![&#x200B; ルールを完了しました](/help/assets/ad-ruleComplete-target.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. Launch プロパティを再構築し、正しい環境にデプロイします。

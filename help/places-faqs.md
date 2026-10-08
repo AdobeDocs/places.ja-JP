@@ -30,7 +30,7 @@ Places サービスに関するよくある質問と情報を次に示します�
 
 ## v4 SDKでのtrackLocationからの移行
 
-v4 SDKから移行する場合に`trackLocation` APIへの置き換えを探している場合は、「[ アクティブなリージョンモニタリングなしでPlaces サービスを使用する](use-places-without-active-monitoring.md)」を参照してください。
+v4 SDKから移行する場合に`trackLocation` APIへの置き換えを探している場合は、「[&#x200B; アクティブなリージョンモニタリングなしでPlaces サービスを使用する](use-places-without-active-monitoring.md)」を参照してください。
 
 ## サイズと信頼性
 

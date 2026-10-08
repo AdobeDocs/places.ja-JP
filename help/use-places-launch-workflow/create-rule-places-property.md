@@ -99,7 +99,7 @@ Experience Platform Launchでデータ要素を作成するには：
 
 ### Places サービス用のExperience Platform Launchでのルールの作成
 
-![ ルールの作成](/help/assets/placesrule.png)
+![&#x200B; ルールの作成](/help/assets/placesrule.png)
 
 1. Experience Platform Launch で、「**[!UICONTROL ルール]**」タブをクリックします。
 1. 「**[!UICONTROL ルールを追加]**」をクリックします。

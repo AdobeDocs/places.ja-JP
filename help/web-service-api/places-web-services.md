@@ -50,5 +50,5 @@ Web サービス APIを使用する前に、次の要件が満たされている
 
 追加情報:
 
-* 使用可能なAPIとその使用方法について詳しくは、[ ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
-* これらのAPIのヘッダーとパラメーターについて詳しくは、[ ヘッダーとパラメーター](/help/web-service-api/api-usage/headers-and-parameters.md)を参照してください。
+* 使用可能なAPIとその使用方法について詳しくは、[&#x200B; ライブラリの管理](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)および[POIの管理](/help/web-service-api/api-usage/manage-pois/manage-pois.md)を参照してください。
+* これらのAPIのヘッダーとパラメーターについて詳しくは、[&#x200B; ヘッダーとパラメーター](/help/web-service-api/api-usage/headers-and-parameters.md)を参照してください。

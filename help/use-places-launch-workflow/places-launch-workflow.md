@@ -26,5 +26,5 @@ ht-degree: 0%
 ---
 # Experience Platform Launch ワークフローの一部としてPlaces サービスを使用する {#loc-service-launch-workflow}
 
-* データ要素を定義するには、[ データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
+* データ要素を定義するには、[&#x200B; データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
 * 入口と出口のルールを作成するには、[入口と出口のルールの作成](/help/use-places-launch-workflow/create-rule-places-property.md)を参照してください。

@@ -70,6 +70,6 @@ Places拡張機能の設定について詳しくは、次の情報を参照し�
 
 アクティブな地域モニタリングを行う場合は、オペレーティングシステムを直接実装する必要があります。 詳しくは、次のドキュメントを参照してください。
 
-* iOS - [CoreLocation ドキュメント ](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
+* iOS - [CoreLocation ドキュメント &#x200B;](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
 
-* Android - [場所に関するドキュメント ](https://developer.android.com/training/location/geofencing)
+* Android - [場所に関するドキュメント &#x200B;](https://developer.android.com/training/location/geofencing)

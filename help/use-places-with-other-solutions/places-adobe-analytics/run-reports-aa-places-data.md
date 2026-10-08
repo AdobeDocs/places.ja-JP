@@ -101,7 +101,7 @@ Places サービスが入口イベントと出口イベントを送信した後�
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![ 「ルールは完了しました。」 ](/help/assets/ad-ruleComplete_use-analytics-data.png)
+![&#x200B; 「ルールは完了しました。」 &#x200B;](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 

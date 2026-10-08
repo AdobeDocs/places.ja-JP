@@ -44,7 +44,7 @@ Places サービスの&#x200B;**POIsの読み込み** ボタンを使用する�
 
 ## Python API スクリプト
 
-Web サービス APIを使用して、.csv ファイルからPOIをPOI データベースにバッチインポートする作業を簡略化するための一連のPython スクリプトが作成されました。 これらのスクリプトは、このオープンソース [git リポジトリ ](https://github.com/adobe/places-scripts)からダウンロードできます。
+Web サービス APIを使用して、.csv ファイルからPOIをPOI データベースにバッチインポートする作業を簡略化するための一連のPython スクリプトが作成されました。 これらのスクリプトは、このオープンソース [git リポジトリ &#x200B;](https://github.com/adobe/places-scripts)からダウンロードできます。
 
 これらのスクリプトを実行する前に、web サービス APIにアクセスするには、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の「*ユーザーアクセスの前提条件*」を参照してください。
 
@@ -52,7 +52,7 @@ Web サービス APIを使用して、.csv ファイルからPOIをPOI データ
 
 >[!TIP]
 >
->この情報は、[Git リポジトリ ](https://github.com/adobe/places-scripts)のreadme ファイルにも含まれています。
+>この情報は、[Git リポジトリ &#x200B;](https://github.com/adobe/places-scripts)のreadme ファイルにも含まれています。
 
 ## CSV ファイル
 
@@ -96,7 +96,7 @@ Places サービス UIでは、次の列の値が使用されます。
 
     アイコンの値は、次の図に示す順序で一覧表示されます。
 
-    UIの![ アイコン ](/help/assets/UI_icons.png)
+    UIの![&#x200B; アイコン &#x200B;](/help/assets/UI_icons.png)
 
   * 値が空白のままの場合、UIはデフォルトのアイコンとしてstarを使用します。
 
@@ -104,7 +104,7 @@ Places サービス UIでは、次の列の値が使用されます。
 
 ## スクリプトの実行
 
-1. [git リポジトリ ](https://github.com/adobe/places-scripts)からローカルディレクトリにファイルをダウンロードします。
+1. [git リポジトリ &#x200B;](https://github.com/adobe/places-scripts)からローカルディレクトリにファイルをダウンロードします。
 1. テキストエディターで`config.py` ファイルを開き、次のタスクを実行します。
 
    a. 次の変数値を文字列として編集します。

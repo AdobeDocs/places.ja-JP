@@ -52,7 +52,7 @@ ht-degree: 6%
 
 1. Launch プロパティでは、目的のPlaces サービス変数に対してデータ要素が作成されています。
 
-   Launchのデータ要素について詳しくは、[ データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
+   Launchのデータ要素について詳しくは、[&#x200B; データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
 
 
 ## &#x200B;1. 起動ルールの作成
@@ -69,7 +69,7 @@ ht-degree: 6%
 
 ## &#x200B;2. Analytics変数の作成
 
-コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[ コンバージョン変数（eVar） ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
+コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[&#x200B; コンバージョン変数（eVar） &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
 
 この例では、コンバージョン変数&#x200B;**[!UICONTROL Evar2]**&#x200B;が作成され、**[!UICONTROL Places POI Name]**&#x200B;という名前が付けられています。 レポートで公開する場所の変数ごとに、追加の変数を作成する必要があります。
 

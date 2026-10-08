@@ -50,4 +50,4 @@ Mobile Servicesでは、Adobe Analytics セグメントにプッシュ通知を�
 
 * **[!UICONTROL カスタムセグメント]** セクションで、使用可能なカスタムセグメントパラメーターを使用してオーディエンスを構築します。
 
-![ プッシュメッセージの設定](/help/assets/push-set-up.png)
+![&#x200B; プッシュメッセージの設定](/help/assets/push-set-up.png)

@@ -40,14 +40,14 @@ POI メタデータは、様々な方法で使用できます。 POI管理の観
 
 Experience Platform Launchでは、トラッキングやメッセージの目的で重要なPlaces サービスのメタデータフィールドごとにデータ要素を作成できます。
 
-![ ジム施設のデータ要素](/help/assets/gymfacility.png)
+![&#x200B; ジム施設のデータ要素](/help/assets/gymfacility.png)
 
 次に、Analytics拡張機能を使用して、コンテキストデータとして必要なメタデータを含む新しいヒットを作成するためのアクションを作成できます。
 
-![ ジム施設のアクション ](/help/assets/Analytics-gym.png)
+![&#x200B; ジム施設のアクション &#x200B;](/help/assets/Analytics-gym.png)
 
 ## Adobe Campaignでのアプリ内メッセージ
 
 メタデータは、Adobe Campaign Standardで定義されたローカル通知やアプリ内メッセージのフィルターとして使用できます。 メタデータをフィルターとして使用することで、実際の場所に関連したより適切なメッセージを作成できます。
 
-![ ローカル通知とアプリ内メッセージをACS](/help/assets/ACS_gym_metadata.png)でフィルタリング
+![&#x200B; ローカル通知とアプリ内メッセージをACS](/help/assets/ACS_gym_metadata.png)でフィルタリング

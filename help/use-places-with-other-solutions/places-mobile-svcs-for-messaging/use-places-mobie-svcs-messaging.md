@@ -42,7 +42,7 @@ ht-degree: 3%
 
 * 古いバージョンのSDKの従来のMobile Services UIの&#x200B;*Manage Places* POI管理ページを次に示します。
 
-  ![ レガシーUI](/help/assets/legacy-location-v4-ui.png)
+  ![&#x200B; レガシーUI](/help/assets/legacy-location-v4-ui.png)
 
 * Places サービス UIを次に示します。
 
@@ -54,11 +54,11 @@ ht-degree: 3%
 
 * Experience Platform Launch ルールの作成と、モバイルアプリ内のACP SDKへの公開について詳しく説明します。
 
-  詳しくは、[ ルールエンジン ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)を参照してください。
+  詳しくは、[&#x200B; ルールエンジン &#x200B;](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)を参照してください。
 
 * Experience Platform Launch データ要素は、ルールエンジンで使用されるPlaces拡張機能データから作成されます。
 
-  詳しくは、[ データ要素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)を参照してください。
+  詳しくは、[&#x200B; データ要素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)を参照してください。
 
 ## レポート
 
@@ -70,12 +70,12 @@ ht-degree: 3%
 
 * モバイルサービスのレポート機能。
 
-  詳しくは、[ レポート ](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)を参照してください。
+  詳しくは、[&#x200B; レポート &#x200B;](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)を参照してください。
 
 ## レポートの可視化
 
 Adobe Analyticsに送信されるPlaces サービスデータを使用して、モバイルサービスレポートを実行できます。 次の例では、ユーザーがいずれかのPOIにエントリを持っている場合にイベントが送信されます。 このレポートでは、POI エントリイベントのフィルターが、標準のユーザーレポートに追加されました。
 
-![ レポートの可視化](/help/assets/report-visualize.png)
+![&#x200B; レポートの可視化](/help/assets/report-visualize.png)
 
 Places サービスデータのビジュアライゼーションに関する柔軟性は、Adobe Analytics インターフェイスで追加できます。

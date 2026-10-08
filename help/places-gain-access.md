@@ -36,9 +36,9 @@ ht-degree: 2%
 ---
 # Places サービスへのアクセス権を取得 {#adding-user-launch-places}
 
-Places サービスは、データ収集UI内で使用できるようになりました。 データ収集には、[Adobe Experience Cloud ホーム ](https://experience.adobe.com)のクイックアクセスメニューからアクセスできます。
+Places サービスは、データ収集UI内で使用できるようになりました。 データ収集には、[Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com)のクイックアクセスメニューからアクセスできます。
 
-![ クイックアクセスメニュー](/help/assets/quickaccess.png)
+![&#x200B; クイックアクセスメニュー](/help/assets/quickaccess.png)
 
 Adobe Experience Platform メニューからデータ収集にアクセスすることもできます。
 
@@ -46,13 +46,13 @@ Adobe Experience Platform メニューからデータ収集にアクセスする
 
 ユーザーIDにアクセス権がある場合、次に示すように、データ収集のデータ管理の下の左側のパネルにPlaces サービスアイコンが表示されます。
 
-![ データ収集の左側のパネル ](/help/assets/places_in_data_collection.png)
+![&#x200B; データ収集の左側のパネル &#x200B;](/help/assets/places_in_data_collection.png)
 
 この場所にPlaces サービスが表示されない場合は、組織内の管理者に連絡して、Admin ConsoleのAdobe Experience PlatformにユーザーIDを追加してください。
 
 ## Places サービスおよびExperience Adobe Experience Platform Data Collectionへのアクセスにユーザーを追加する
 
-PlacesがAdobe Experience Platformに含まれるようになりました。 [Places サービス ](https://experience.adobe.com/#/data-collection/places)へのアクセスを許可するには、Admin Console as a userのAdobe Experience Platformに追加する必要があります。 モバイルプロパティを設定し、Experience Platform SDKでPlacesを使用するために必要な権限を持つAdobe Experience Platform Data Collectionへのアクセス権をユーザーに付与するには、Admin ConsoleのAdobe Experience Platform Data Collectionにも追加し、Adobe Experience Platform Data Collectionに対する次の権限を付与する必要があります。
+PlacesがAdobe Experience Platformに含まれるようになりました。 [Places サービス &#x200B;](https://experience.adobe.com/#/data-collection/places)へのアクセスを許可するには、Admin Console as a userのAdobe Experience Platformに追加する必要があります。 モバイルプロパティを設定し、Experience Platform SDKでPlacesを使用するために必要な権限を持つAdobe Experience Platform Data Collectionへのアクセス権をユーザーに付与するには、Admin ConsoleのAdobe Experience Platform Data Collectionにも追加し、Adobe Experience Platform Data Collectionに対する次の権限を付与する必要があります。
 
 * プロパティ権限のすべての権限：
   * 承認
@@ -71,10 +71,10 @@ PlacesがAdobe Experience Platformに含まれるようになりました。 [Pl
 
 ### &#x200B;1. Adobe Experience PlatformとAdobe Experience Platform Data Collectionがプロビジョニングされていることを確認します
 
-1. Experience Cloud組織[Adobe Experience Cloud ホーム ](https://experience.adobe.com)にログインします。
+1. Experience Cloud組織[Adobe Experience Cloud ホーム &#x200B;](https://experience.adobe.com)にログインします。
 1. 右上のExperience Cloud シェルスイッチャーをクリックして、ドロップダウンメニューを表示します。
 
-   ![ シェルスイッチャー](/help/assets/places_shell_switcher1.png)
+   ![&#x200B; シェルスイッチャー](/help/assets/places_shell_switcher1.png)
 
 1. リストの下部にある「**[!UICONTROL Admin Console]**」をクリックします。 （**[!UICONTROL Admin Console]**&#x200B;へのリンクは、「クイックアクセス」セクションにも表示されます）。
 

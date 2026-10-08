@@ -18,5 +18,5 @@ ht-degree: 15%
 
 データ要素は、クエリ文字列、URL、cookie値、JavaScript変数などに値をマッピングできる変数です。 Experience Platform Launchでは、変数名でこの値を参照できます。 データ要素のコレクションは、ルール（イベント、条件、アクション）の構築に使用できる定義されたデータのディクショナリとなり、データディクショナリはExperience Platform Launch全体で共有され、Places拡張機能で使用できます。
 
-データ要素について詳しくは、[ データ要素](https://docs.adobelaunch.com/launch-reference/managing-resources/data-elements)を参照してください。
+データ要素について詳しくは、[&#x200B; データ要素](https://docs.adobelaunch.com/launch-reference/managing-resources/data-elements)を参照してください。
 

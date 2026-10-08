@@ -32,19 +32,19 @@ Places サービス REST APIへの各リクエストには、次の項目が必�
 * クライアント秘密鍵
 * ベアラートークン
 
-[Adobe Developer コンソール ](https://developer.adobe.com/console)を含むプロジェクトには、次のアイテムが用意されています。
+[Adobe Developer コンソール &#x200B;](https://developer.adobe.com/console)を含むプロジェクトには、次のアイテムが用意されています。
 
 * Places サービス API用のプロジェクトを作成するには、以下の「*Places サービスプロジェクトの作成*」セクションを参照してください。
 
 >[!IMPORTANT]
 >
->[Adobe Developer コンソール ](https://developer.adobe.com/console)にログインできない場合、または&#x200B;*統合の作成ページ*&#x200B;でPlaces サービスがオプションでない場合は、[Web サービス APIの概要](/help/web-service-api/places-web-services.md)の&#x200B;*組織の要件*&#x200B;を参照してください。
+>[Adobe Developer コンソール &#x200B;](https://developer.adobe.com/console)にログインできない場合、または&#x200B;*統合の作成ページ*&#x200B;でPlaces サービスがオプションでない場合は、[Web サービス APIの概要](/help/web-service-api/places-web-services.md)の&#x200B;*組織の要件*&#x200B;を参照してください。
 
 ## Places サービス API プロジェクトの作成
 
 Places サービス API用のプロジェクトを作成するには、次の手順を実行します。
 
-1. Adobe IDで[Adobe Developer web サイト ](https://developer.adobe.com)にログインします。
+1. Adobe IDで[Adobe Developer web サイト &#x200B;](https://developer.adobe.com)にログインします。
 2. ページの右上隅にある「**[!UICONTROL コンソール]**」をクリックします。
 3. 複数のAdobe組織に割り当てられている場合は、ページの右上隅にあるドロップダウンリストから正しい組織を選択します。
 4. 「**[!UICONTROL 新しいプロジェクトを作成]**」ボタンをクリックします。

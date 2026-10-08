@@ -44,8 +44,8 @@ ht-degree: 4%
 
 * **Places and Places Monitor Extensions**
 
-  * [React Native アプリケーション ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)のPlacesおよびPlaces Monitor拡張機能が追加されました
-  * [Cordova アプリケーション ](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)の場所と場所のモニター拡張機能が追加されました
+  * [React Native アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)のPlacesおよびPlaces Monitor拡張機能が追加されました
+  * [Cordova アプリケーション &#x200B;](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)の場所と場所のモニター拡張機能が追加されました
   * 詳細については、[Places拡張機能の使用](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)を参照してください。
 
 

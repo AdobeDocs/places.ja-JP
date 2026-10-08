@@ -155,7 +155,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## &#x200B;3. Places データをAnalytics リクエストに添付する
 
-Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、Launchのデータ要素を介してデバイスに関連するすべてのPOI データを利用できるようにします。 [ データの添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを自動的にAnalyticsへの今後のリクエストに追加できます。 これにより、デバイスの場所を収集する際に、Analyticsに対して1回限りの呼び出しを行う必要がなくなります。
+Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、Launchのデータ要素を介してデバイスに関連するすべてのPOI データを利用できるようにします。 [&#x200B; データの添付](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ルールを使用すると、Places データを自動的にAnalyticsへの今後のリクエストに追加できます。 これにより、デバイスの場所を収集する際に、Analyticsに対して1回限りの呼び出しを行う必要がなくなります。
 
 このトピックについて詳しくは、[Analytics リクエストへの場所コンテキストの追加](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)を参照してください。
 
@@ -167,7 +167,7 @@ Places SDKは、`getNearbyPointsOfInterest` APIを呼び出すことにより、
 >
 >ユースケースで[region entry event](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)をSDKによってトリガーする必要がある場合は、以下に説明するように手動で行う必要があります。
 
-`getNearbyPointsOfInterest` APIによって返されるリストには、ユーザーが現在POI内にいるかどうかを示す[ カスタムオブジェクト ](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)が含まれています。 ユーザーがPOIに属している場合は、そのリージョンのエントリイベントをSDK トリガーに設定できます。
+`getNearbyPointsOfInterest` APIによって返されるリストには、ユーザーが現在POI内にいるかどうかを示す[&#x200B; カスタムオブジェクト &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)が含まれています。 ユーザーがPOIに属している場合は、そのリージョンのエントリイベントをSDK トリガーに設定できます。
 
 >[!IMPORTANT]
 >
@@ -282,7 +282,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 以下のコードサンプルは、デバイスの現在の場所を取得し、必要なエントリイベントをトリガーし、1回の訪問で同じ場所に複数のエントリを取得しないようにする方法を示しています。
 
-このコードサンプルには、ユーザーがPOI](#trigger-entry-events-when-the-user-is-in-a-poi)にいるときにエントリイベントを[ トリガーするオプションの手順が含まれています。
+このコードサンプルには、ユーザーがPOI[&#128279;](#trigger-entry-events-when-the-user-is-in-a-poi)にいるときにエントリイベントを トリガーするオプションの手順が含まれています。
 
 >[!IMPORTANT]
 >

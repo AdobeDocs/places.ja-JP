@@ -54,7 +54,7 @@ Mobile Servicesでは、Analyticsに送信されている位置情報を、ア�
 
 ### 前提条件
 
-開始する前に、Mobile Servicesでアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[ アプリ内メッセージの作成を参照してください。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)
+開始する前に、Mobile Servicesでアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[&#x200B; アプリ内メッセージの作成を参照してください。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)
 
 ## Experience Platform Launchのルール
 
@@ -83,13 +83,13 @@ Mobile Servicesでは、Analyticsに送信されている位置情報を、ア�
 
 >[!TIP]
 >
->分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
+>分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
 
-![ アクションの作成](/help/assets/configure-action.png)
+![&#x200B; アクションの作成](/help/assets/configure-action.png)
 
 完全なルールの例を次に示します。
 
-![ ルールを完了しました](/help/assets/create-a-rule.png)
+![&#x200B; ルールを完了しました](/help/assets/create-a-rule.png)
 
 ## Mobile Servicesでのアプリ内メッセージの作成
 
