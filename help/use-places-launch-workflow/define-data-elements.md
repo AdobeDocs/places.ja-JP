@@ -5,24 +5,31 @@ exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
 TQID: https://experienceleague.adobe.com/NQ83uUZJtNglAcxD6HNl4Gw1Y8-0-uqfu-hH8H0EITg
 product_v2:
   - id: a829a185-511f-4bf8-8dcf-9e684f8011cf
+    internal-label: Advertising
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
   - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+    internal-label: Data elements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 486
+source-wordcount: '488'
 ht-degree: 1%
-
 ---
-
 # データ要素の定義 {#define-data-elements}
 
 次の情報は、データ要素とその作成および公開方法を理解するのに役立ちます。
@@ -70,17 +77,17 @@ Places拡張機能を使用すると、次のターゲットから値を参照�
 
 1. データ要素の名前を入力し、**[!UICONTROL 保存]**&#x200B;をクリックします。
 
-   ![&#x200B; データ要素の作成](/help/assets/create-de-7-v3.png)
+   ![ データ要素の作成](/help/assets/create-de-7-v3.png)
 
 
 ## データ要素の使用
 
 データ要素を作成した後、データ要素ピッカーが存在する場合は、任意のルールコンポーネントからデータ要素を使用できます。
 
-![&#x200B; データ要素を使用](/help/assets/use-de-v2.png)
+![ データ要素を使用](/help/assets/use-de-v2.png)
 
 データ要素ピッカーがルールコンポーネントに存在しない場合は、データ要素名を&#x200B;**[!UICONTROL %]** トークンでラップすることで、データ要素を使用できます。
-例えば、データ要素名が&#x200B;**[!UICONTROL 最終POI市区町村]**&#x200B;の場合、テキスト入力に&#x200B;**[!UICONTROL 最終POI市区町村]**&#x200B;を追加できます。
+例えば、データ要素名が**[!UICONTROL 最終POI市区町村]**&#x200B;の場合、テキスト入力に&#x200B;**[!UICONTROL 最終POI市区町村]**&#x200B;を追加できます。
 
 
 ## データ要素の公開

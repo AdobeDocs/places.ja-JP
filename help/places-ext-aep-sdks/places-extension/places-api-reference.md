@@ -3,7 +3,13 @@ title: Places API リファレンス
 description: PlacesでのAPI参照に関する情報。
 feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 32%

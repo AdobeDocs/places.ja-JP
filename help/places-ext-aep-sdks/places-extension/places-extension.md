@@ -1,18 +1,22 @@
 ---
-title: Places 拡張機能
-description: 場所の拡張機能を使用すると、ユーザーの場所に基づいてアクションを実行できます。
+title: Places拡張機能
+description: Places拡張機能を使用すると、ユーザーの場所に基づいてアクションを実行できます。
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '38'
 ht-degree: 0%
-
 ---
+# Places拡張機能 {#places-extension}
 
-# Places 拡張機能 {#places-extension}
-
-Adobe開発者ポータルに移動し、[Places SDK 拡張機能 &#x200B;](https://developer.adobe.com/client-sdks/documentation/places/) のドキュメントを表示します。
+Adobe デベロッパーポータルに移動して、[Places SDK拡張機能](https://developer.adobe.com/client-sdks/documentation/places/)のドキュメントを表示します。
 
 <!-- 
 
@@ -29,7 +33,7 @@ The Places extension allows you to act based on the location of your users. This
 
 1. Complete the publishing process to update the SDK configuration.
 
-   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja).
+   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Configure the Places extension {#configure-places-extension}
 

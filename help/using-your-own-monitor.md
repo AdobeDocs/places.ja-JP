@@ -2,7 +2,10 @@
 title: 自分のモニターを使用する
 description: また、Places サービス拡張機能APIを使用して、監視サービスを使用したり、Places サービスと統合したりすることもできます。
 exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%

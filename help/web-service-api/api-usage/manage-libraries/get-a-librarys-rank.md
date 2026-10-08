@@ -1,17 +1,18 @@
 ---
-title: 図書館の地位を得る
-description: Places REST API を使用して、ライブラリのランクを取得します。
+title: ライブラリのランクを取得
+description: Places REST APIを使用して、ライブラリのランクを取得します。
 exl-id: c0abedd0-5ff4-4a01-9f8d-e3d17ea53a97
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 9%
-
 ---
+# ライブラリのランクを取得 {#get-library-rank}
 
-# 図書館の地位を得る {#get-library-rank}
-
-ライブラリをランク付けできるGET方式。
+ライブラリをランク付けできるGET メソッド。
 
 ## リクエスト
 
@@ -41,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->変数（`<API KEY>`、`<TOKEN>`、`<ORGID>` など）を実際の値に置き換えます。
+>`<API KEY>`、`<TOKEN>`、`<ORGID>`などの変数を実際の値に置き換えます。

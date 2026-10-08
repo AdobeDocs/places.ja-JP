@@ -5,24 +5,31 @@ exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 TQID: https://experienceleague.adobe.com/Z39ybIytDRlCbkMthWjvk5F-oexy0C9gtqgK1mmyMxM
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 689
+source-wordcount: '689'
 ht-degree: 2%
-
 ---
-
 # アプリ内通知 {#places-push-messaging}
 
 次の情報では、Places Service イベントからトリガーするようにアプリ内メッセージを設定する方法を示します。
@@ -47,7 +54,7 @@ Mobile Servicesでは、Analyticsに送信されている位置情報を、ア�
 
 ### 前提条件
 
-開始する前に、Mobile Servicesでアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[&#x200B; アプリ内メッセージの作成を参照してください。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)
+開始する前に、Mobile Servicesでアプリ内メッセージを送信および作成する方法と、トリガーの仕組みについて理解します。 詳しくは、[ アプリ内メッセージの作成を参照してください。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=ja)
 
 ## Experience Platform Launchのルール
 
@@ -76,13 +83,13 @@ Mobile Servicesでは、Analyticsに送信されている位置情報を、ア�
 
 >[!TIP]
 >
->分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
+>分析処理ルールを設定して、このコンテキストデータを取得できます。 詳しくは、[処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)を参照してください。 *アクションの作成*&#x200B;の例では、アクションは、Analyticsに送信されるPOI エントリイベントを説明するコンテキストとして`poiname`を送信します。
 
-![&#x200B; アクションの作成](/help/assets/configure-action.png)
+![ アクションの作成](/help/assets/configure-action.png)
 
 完全なルールの例を次に示します。
 
-![&#x200B; ルールを完了しました](/help/assets/create-a-rule.png)
+![ ルールを完了しました](/help/assets/create-a-rule.png)
 
 ## Mobile Servicesでのアプリ内メッセージの作成
 

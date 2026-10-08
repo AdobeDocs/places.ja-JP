@@ -1,17 +1,18 @@
 ---
-title: ライブラリ内のすべての POI を読み取る
-description: Places REST API を使用して、ライブラリ内のすべての POI を読み取ります。
+title: ライブラリ内のすべてのPOIの読み取り
+description: Places REST APIを使用して、ライブラリ内のすべてのPOIを読み取ります。
 exl-id: 08544909-661c-4a14-84e0-bacd0241a844
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 3%
-
 ---
+# ライブラリ内のすべてのPOIの読み取り {#read-all-pois-library}
 
-# ライブラリ内のすべての POI を読み取る {#read-all-pois-library}
-
-ライブラリ内のすべての POI を返すGETメソッド。
+ライブラリ内のすべてのPOIを返すGET メソッド。
 
 ## リクエスト
 
@@ -29,7 +30,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>/pois
 -H 'Accept-Language: en-US'
 ```
 
-## 応答のサンプル
+## 応答サンプル
 
 ```text
 {
@@ -159,7 +160,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>/pois
 
 ## CURL コマンド
 
-次の CURL コマンドを使用して API をテストします。
+APIをテストするには、次のCURL コマンドを使用します。
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>/pois' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -167,4 +168,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->&quot;、`<API KEY>`、`<TOKEN>`、`<ORGID>` を実際の値に置き換えます。
+>「、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。

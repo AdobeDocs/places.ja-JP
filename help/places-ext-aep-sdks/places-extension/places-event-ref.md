@@ -1,18 +1,22 @@
 ---
-title: 場所イベント参照
-description: Places 拡張機能で処理されるイベントのリスト。
+title: Places イベント参照
+description: Places拡張機能で処理されるイベントのリスト。
 feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 16%
-
+ht-degree: 17%
 ---
+# Places イベント参照 {#places-event-reference}
 
-# 場所イベント参照 {#places-event-reference}
-
-以下は、Places 拡張機能で処理されるイベントのリストです。
+Places拡張機能で処理されるイベントのリストを次に示します。
 
 ## GetCurrentPointsOfInterest
 
@@ -20,36 +24,36 @@ ht-degree: 16%
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| PLACES | REQUEST_コンテンツ | `requestgetuserwithinplaces` | True |
+| PLACES | REQUEST_CONTENT | `requestgetuserwithinplaces` | True |
 
 **イベントの説明**
 
-このイベントは、デバイスが現在配置されている POI を取得するためのリクエストです。
+このイベントは、デバイスが現在配置されているPOIを取得するためのリクエストです。
 
 **データペイロード定義**
 
 該当なし
 
-## GetNearcomerPointsOfInterest
+## GetNearbyPointsOfInterest
 
 **イベントの詳細**
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| PLACES | REQUEST_コンテンツ | `requestgetnearbyplaces` | True |
+| PLACES | REQUEST_CONTENT | `requestgetnearbyplaces` | True |
 
 **イベントの説明**
 
-このイベントは、現在のデバイスの場所と設定済みの Places ライブラリを考慮して、近くの POI を取得するリクエストです。
+このイベントは、現在のデバイスの場所と設定されたPlaces ライブラリを考慮して、近くのPOIを取得するためのリクエストです。
 
 **データペイロード定義**
 
 | キー | 値タイプ | 必須 | デフォルト値 | 説明 |
 | :--- | :--- | :--- | :--- | :--- |
-| 緯度 | double | true | 該当なし | 近接する POI の検索の中心の緯度の値を保持します。 |
-| 経度 | double | true | 該当なし | 近接する POI の検索の中心となる経度の値を保持します。 |
-| 半径 | 整数 | 偽 | 該当なし | 近隣の POI の検索で使用される半径（メートル）。 |
-| count | 整数 | 偽 | 10 | 結果の応答イベントで返される POI の最大数。 |
+| 緯度 | double | true | 該当なし | 近くのPOIの検索の中心の緯度値を保持します。 |
+| 経度 | double | true | 該当なし | 近くのPOIの検索の中心の経度値を保持します。 |
+| 半径 | 整数 | false | 該当なし | 半径（メートル）。近くのPOIの検索で使用されます。 |
+| count | 整数 | false | 10 | 結果として返される応答イベントのPOIの最大数。 |
 
 ## ProcessRegionEvent
 
@@ -57,19 +61,19 @@ ht-degree: 16%
 
 | タイプ | ソース | 名前 | ペア |
 | :--- | :--- | :--- | :--- |
-| PLACES | REQUEST_コンテンツ | `requestprocessregionevent` | False |
+| PLACES | REQUEST_CONTENT | `requestprocessregionevent` | False |
 
 **イベントの説明**
 
-このイベントにより、Places 拡張機能はジオフェンスのエントリまたは離脱イベントを処理します。
+このイベントにより、Places拡張機能がジオフェンスの入口または出口イベントを処理します。
 
 **データペイロード定義**
 
 | キー | 値タイプ | 必須 | 説明 |
 | :--- | :--- | :--- | :--- |
-| regionid | 文字列 | true | イベントを生成する地域の ID。 |
-| regioneventtype | int | true | 生成される地域イベントのタイプ。 入口の場合は 1、出口の場合は 2。 |
+| regionid | 文字列 | true | イベントを生成する地域のID。 |
+| regioneventtype | int | true | 生成する地域イベントのタイプ。 入口は1、出口は2。 |
 
-## Places 拡張機能によってディスパッチされたイベント
+## Places拡張機能によってディスパッチされるイベント
 
-この情報は現在進行中です。
+この情報は現在公開中です。
