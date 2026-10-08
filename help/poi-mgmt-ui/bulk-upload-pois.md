@@ -5,24 +5,31 @@ exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
 TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+    internal-label: APIs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # POIのバルクアップロード {#bulk-upload-pois}
 
 Places サービスの&#x200B;**POIsの読み込み** ボタンを使用すると、CSV ファイルを使用して新しいPOIを一括アップロードできます。 必要なデータ列と、オプションのカスタムメタデータを追加する方法を示すサンプルスプレッドシートテンプレートが提供されます。
@@ -78,20 +85,20 @@ Web サービス APIを使用して、.csv ファイルからPOIをPOI データ
 Places サービス UIでは、次の列の値が使用されます。
 
 * color:Places サービス UI マップ内のPOIの場所を表すピンの色として使用されます。
-   * 有効な値は、「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B、#3DC8DEおよび「」です。
-   * 値が空白のままの場合、Places サービス UIではデフォルトの色として青が使用されます。
+  * 有効な値は、「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B、#3DC8DEおよび「」です。
+  * 値が空白のままの場合、Places サービス UIではデフォルトの色として青が使用されます。
 
-     値は、それぞれ青（#3E76D0）、紫（#AA99E8）、フスキア（#DC2ABA）、オレンジ（#FC685B）、明るいオレンジ（#FC962E）、黄色（#F6C436）、明るい緑（#BECE5D）、緑（#61B56B）、明るい青（#3DC8DE）に対応します。
+    値は、それぞれ青（#3E76D0）、紫（#AA99E8）、フスキア（#DC2ABA）、オレンジ（#FC685B）、明るいオレンジ（#FC962E）、黄色（#F6C436）、明るい緑（#BECE5D）、緑（#61B56B）、明るい青（#3DC8DE）に対応します。
 
 * アイコン：Places サービス UI マップ上のPOIの場所を表すピンのアイコンとして使用されます。
 
-   * 有効な値は&quot;、ショップ、hotelbed、車、飛行機、列車、船、スタジアム、amusementpark、アンカー、ビーカー、入札、本、ブリーフケース、参照、ブラシ、建物、計算機、カメラ、時計、教育、懐中電灯、フォロー、ゲーム、女性、ギフト、ハンマー、ハート、ホーム、キー、起動、電球、メールボックス、お金、ピン、プロモーション、リボン、ショッピングカート、星、ターゲット、teapot、thumbDown、thumbUp、トラップ、トロフィー、レンチです。
+  * 有効な値は&quot;、ショップ、hotelbed、車、飛行機、列車、船、スタジアム、amusementpark、アンカー、ビーカー、入札、本、ブリーフケース、参照、ブラシ、建物、計算機、カメラ、時計、教育、懐中電灯、フォロー、ゲーム、女性、ギフト、ハンマー、ハート、ホーム、キー、起動、電球、メールボックス、お金、ピン、プロモーション、リボン、ショッピングカート、星、ターゲット、teapot、thumbDown、thumbUp、トラップ、トロフィー、レンチです。
 
-     アイコンの値は、次の図に示す順序で一覧表示されます。
+    アイコンの値は、次の図に示す順序で一覧表示されます。
 
-     UIの![&#x200B; アイコン &#x200B;](/help/assets/UI_icons.png)
+    UIの![&#x200B; アイコン &#x200B;](/help/assets/UI_icons.png)
 
-   * 値が空白のままの場合、UIはデフォルトのアイコンとしてstarを使用します。
+  * 値が空白のままの場合、UIはデフォルトのアイコンとしてstarを使用します。
 
 * 記載されていない列は空白のままにできます。
 
@@ -112,7 +119,7 @@ Places サービス UIでは、次の列の値が使用されます。
 
    * `org_id`
 
-     POIを読み込むExperience Cloudの組織ID。 組織IDの取得方法について詳しくは、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の「*ユーザーアクセスの前提条件*」を参照してください。
+     POIをインポートするExperience Cloud組織ID。 組織IDの取得方法について詳しくは、[統合の概要と前提条件](/help/web-service-api/adobe-i-o-integration.md)の「*ユーザーアクセスの前提条件*」を参照してください。
 
    * `api_key`
 

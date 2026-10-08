@@ -1,17 +1,18 @@
 ---
-title: ライブラリを読み取る
-description: Places REST API を使用してライブラリを読み取ります。
+title: ライブラリを読む
+description: Places REST APIを使用してライブラリを読み取ります。
 exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 4%
-
 ---
+# ライブラリを読む {#read-a-library}
 
-# ライブラリを読み取る {#read-a-library}
-
-ライブラリの詳細を返すGETメソッド。
+ライブラリの詳細を返すGET メソッド。
 
 ## リクエスト
 
@@ -29,7 +30,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 -H 'Accept-Language: en-US'
 ```
 
-## 応答のサンプル
+## 応答サンプル
 
 ```text
 {
@@ -82,7 +83,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 
 ## CURL コマンド
 
-次の CURL コマンドを使用して API をテストします。
+APIをテストするには、次のCURL コマンドを使用します。
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -90,4 +91,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`、および `<ORGID>` を実際の値に置き換えます。
+>`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`を実際の値に置き換えます。

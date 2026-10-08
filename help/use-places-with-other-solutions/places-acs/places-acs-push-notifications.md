@@ -5,23 +5,29 @@ exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
 TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 1026
+source-wordcount: '1026'
 ht-degree: 2%
-
 ---
-
 # Places サービスを使用したプッシュ通知 {#push-notifications}
 
 このセクションでは、過去の位置情報を使用して、Adobe Campaign Standardを通じて配信されるプッシュ通知をターゲティングする方法について説明します。
@@ -77,7 +83,7 @@ Adobe Experience Platform Launchのルールを利用すれば、イベントの
 1. **[!UICONTROL URL]**&#x200B;で、Campaign Standardの場所エンドポイントを作成する必要があります。
 
    URLは`https:///rest/head/mobileAppV5//locations/`に似ています。
-Campaign サーバーとpKey用に以前に作成した正しいデータ要素を使用していることを確認します。
+   Campaign サーバーとpKey用に以前に作成した正しいデータ要素を使用していることを確認します。
 
 1. ボックスをクリックして投稿本文を追加し、次の内容を送信します。
 

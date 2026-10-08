@@ -1,16 +1,17 @@
 ---
-title: Places Service を他のAdobeソリューションと併用する
-description: このセクションでは、Places Service を他のAdobeソリューションと併用する方法について説明します。
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: Places サービスを他のAdobe ソリューションと併用する
+description: この節では、Places サービスを他のAdobe ソリューションと共に使用する方法について説明します。
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
-
 ---
 
+# Places サービスを他のAdobe ソリューションと併用する {#use-places-other-solutions}
 
-# Places Service を他のAdobeソリューションと併用する {#use-places-other-solutions}
+Places サービスを使用して位置情報を収集することは、アプリでは役に立ちません。 位置情報を他のAdobeソリューションに提供することで、そこから真の価値を引き出すことができます。 このプロセスにより、位置情報を利用して、独自のエクスペリエンスを提供し、十分な情報にもとづいた意思決定をおこなうことができます。
 
-Places Service を使用して場所データを収集する機能は、それ自体ではアプリで役に立ちません。 他のAdobeソリューションに提供すると、場所データから真の価値を得られるようになります。 このプロセスでは、場所データを使用して、カスタムエクスペリエンスを提供し、十分な情報に基づいた意思決定を行うことができます。
-
-このセクションでは、Places Service を他のExperience Platform SDK 拡張機能と統合して、位置情報を有効にする方法について説明します。
+ここでは、位置情報を活用できるように、Places サービスを他のExperience Platform SDK拡張機能と統合する方法について説明します。
