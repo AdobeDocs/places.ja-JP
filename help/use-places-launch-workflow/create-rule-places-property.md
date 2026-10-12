@@ -2,7 +2,7 @@
 title: Places サービスプロパティのルールの作成
 description: Places SDKは、現在の場所を追跡し、現在の場所に設定されたPOIをモニタリングし、これらのPOIの入退出イベントをトラッキングします。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+TQID: 'https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -12,18 +12,18 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
+subfeature_v2:
   - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
-    internal-label: Data elements
+    internal-label: Data collection tags data elements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 13%
@@ -73,7 +73,7 @@ Places SDKでは、次のステートが維持されます。
 
 >[!CAUTION]
 >
->この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、[POIの作成](/help/poi-mgmt-ui/create-a-poi-ui.md)および&#x200B;*ライブラリの作成*&#x200B;を[複数ライブラリの管理](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=ja)で参照してください。
+>この例では、米国内の全コーヒーショップの POI ライブラリを作成済みであることを前提としています。 POIとライブラリの作成について詳しくは、[POIの作成](/help/poi-mgmt-ui/create-a-poi-ui.md)および&#x200B;*ライブラリの作成*&#x200B;を[複数ライブラリの管理](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)で参照してください。
 
 次の手順は、サンフランシスコのコーヒーショップに入ったときにSlackに投稿を送り返すルールを作成する方法の例です。
 
@@ -99,7 +99,7 @@ Experience Platform Launchでデータ要素を作成するには：
 
 ### Places サービス用のExperience Platform Launchでのルールの作成
 
-![&#x200B; ルールの作成](/help/assets/placesrule.png)
+![ ルールの作成](/help/assets/placesrule.png)
 
 1. Experience Platform Launch で、「**[!UICONTROL ルール]**」タブをクリックします。
 1. 「**[!UICONTROL ルールを追加]**」をクリックします。
@@ -143,7 +143,7 @@ Experience Platform Launchでデータ要素を作成するには：
 
 ### ルールの公開
 
-1. ルールをアクティブにするには、ルールを公開する必要があります。 Experience Platform Launchでのルールの公開について詳しくは、[公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja)を参照してください。
+1. ルールをアクティブにするには、ルールを公開する必要があります。 Experience Platform Launchでのルールの公開について詳しくは、[公開](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)を参照してください。
 
 ### 入口と出口を超えた思考
 

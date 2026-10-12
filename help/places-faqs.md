@@ -2,24 +2,23 @@
 title: よくある質問
 description: このトピックでは、よくある質問に関する追加情報を提供します。
 exl-id: cee9f447-5e50-4ed8-b37b-baecbc0e9b7b
-TQID: https://experienceleague.adobe.com/LL9eLMDJaq8ZmeiZxv28QZoqXL1A0QKZ-DvTDUx4Gnw
+TQID: 'https://experienceleague.adobe.com/LL9eLMDJaq8ZmeiZxv28QZoqXL1A0QKZ-DvTDUx4Gnw'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
-    internal-label: Adobe Sign
+    internal-label: Acrobat Sign
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -30,7 +29,7 @@ Places サービスに関するよくある質問と情報を次に示します�
 
 ## v4 SDKでのtrackLocationからの移行
 
-v4 SDKから移行する場合に`trackLocation` APIへの置き換えを探している場合は、「[&#x200B; アクティブなリージョンモニタリングなしでPlaces サービスを使用する](use-places-without-active-monitoring.md)」を参照してください。
+v4 SDKから移行する場合に`trackLocation` APIへの置き換えを探している場合は、「[ アクティブなリージョンモニタリングなしでPlaces サービスを使用する](use-places-without-active-monitoring.md)」を参照してください。
 
 ## サイズと信頼性
 

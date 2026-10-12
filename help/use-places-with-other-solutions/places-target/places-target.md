@@ -2,7 +2,7 @@
 title: Adobe Target
 description: この節では、Adobe TargetでPlaces サービスを使用する方法について説明します。
 exl-id: 6ee91fca-ea48-4de2-8dcf-87981813c678
-TQID: https://experienceleague.adobe.com/WsfkEJD0mN5aYKETjcnqiC13dVe5NPYeKfOCTOK82uE
+TQID: 'https://experienceleague.adobe.com/WsfkEJD0mN5aYKETjcnqiC13dVe5NPYeKfOCTOK82uE'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -12,14 +12,13 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 4%
@@ -50,7 +49,7 @@ Places拡張機能がエントリと離脱に対してイベントを送信す�
 1. 「**[!UICONTROL イベントタイプ]**」ドロップダウンリストから、「**[!UICONTROL 要求されたコンテンツ]**」を選択します。
 1. 「**[!UICONTROL 変更を保存]**」をクリックします。
 
-![&#x200B; イベントを追加](/help/assets/ad-setEvent_target.png)
+![ イベントを追加](/help/assets/ad-setEvent_target.png)
 
 ## &#x200B;3. 条件を追加
 
@@ -86,13 +85,13 @@ Places拡張機能がエントリと離脱に対してイベントを送信す�
 >
 >`request[*]`の表記法は、`request`配列&#x200B;_の各オブジェクトについて_&#x200B;として読み上げることができます。
 
-![&#x200B; アクションを定義](/help/assets/ad-setAction-target.png)
+![ アクションを定義](/help/assets/ad-setAction-target.png)
 
 ## &#x200B;5. ルールを保存し、プロパティを再構築する
 
 設定が完了したら、ルールが次の画像のようになっていることを確認します。
 
-![&#x200B; ルールを完了しました](/help/assets/ad-ruleComplete-target.png)
+![ ルールを完了しました](/help/assets/ad-ruleComplete-target.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. Launch プロパティを再構築し、正しい環境にデプロイします。

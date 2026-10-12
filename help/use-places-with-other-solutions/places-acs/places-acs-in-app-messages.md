@@ -2,7 +2,7 @@
 title: Places サービスを使用したアプリ内メッセージ
 description: この節では、Campaign StandardでプッシュメッセージをCampaign Standardのアプリ内メッセージと共に使用する方法について説明します。
 exl-id: c80727b8-20c9-4ca0-9f2c-20ec646bb7fa
-TQID: https://experienceleague.adobe.com/H2gW4nvnx8Es33S8nCt52OIUsNOY5SG1SZVJPw0BFFg
+TQID: 'https://experienceleague.adobe.com/H2gW4nvnx8Es33S8nCt52OIUsNOY5SG1SZVJPw0BFFg'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -18,8 +18,7 @@ feature_v2:
   - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
     internal-label: SDKs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -27,7 +26,7 @@ topic_v2:
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

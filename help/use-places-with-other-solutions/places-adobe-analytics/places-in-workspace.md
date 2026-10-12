@@ -2,7 +2,7 @@
 title: Analytics Workspaceでの位置情報に関するレポート
 description: この節では、Analytics Workspaceでの位置情報のレポート方法について説明します。
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
-TQID: https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E
+TQID: 'https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -13,13 +13,8 @@ product_v2:
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
     internal-label: Reports
-  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
-    internal-label: Reporting
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -29,7 +24,7 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 6%
@@ -48,11 +43,11 @@ ht-degree: 6%
 
 1. Adobe Analytics ユーザーは管理者であり、処理ルールにアクセスできます。
 
-   処理ルールについて詳しくは、「[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja)」を参照してください。
+   処理ルールについて詳しくは、「[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)」を参照してください。
 
 1. Launch プロパティでは、目的のPlaces サービス変数に対してデータ要素が作成されています。
 
-   Launchのデータ要素について詳しくは、[&#x200B; データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
+   Launchのデータ要素について詳しくは、[ データ要素の定義](/help/use-places-launch-workflow/define-data-elements.md)を参照してください。
 
 
 ## &#x200B;1. 起動ルールの作成
@@ -69,7 +64,7 @@ ht-degree: 6%
 
 ## &#x200B;2. Analytics変数の作成
 
-コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[&#x200B; コンバージョン変数（eVar） &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
+コンテキストデータ（手順1で送信）をマッピングするには、まずAnalytics レポートスイート用の変数を作成する必要があります。 Analyticsでの変数の作成について詳しくは、[ コンバージョン変数（eVar） ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=ja)を参照してください。
 
 この例では、コンバージョン変数&#x200B;**[!UICONTROL Evar2]**&#x200B;が作成され、**[!UICONTROL Places POI Name]**&#x200B;という名前が付けられています。 レポートで公開する場所の変数ごとに、追加の変数を作成する必要があります。
 
@@ -77,7 +72,7 @@ ht-degree: 6%
 
 ## &#x200B;3. 処理ルールの作成
 
-この手順は、コンテキストデータ（手順1）をAnalytics変数にマッピングするために必要です（手順2）。 処理ルールの作成について詳しくは、[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=ja)を参照してください。
+この手順は、コンテキストデータ（手順1）をAnalytics変数にマッピングするために必要です（手順2）。 処理ルールの作成について詳しくは、[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)を参照してください。
 
 この例では、コンテキストデータ値&#x200B;**[!UICONTROL poi.name]**&#x200B;を&#x200B;**[!UICONTROL Places POI Name （eVar2）]**&#x200B;にマッピングするための処理ルールが作成されています。 作成する各場所変数に対して、追加の処理ルールを作成する必要があります。
 

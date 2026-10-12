@@ -2,7 +2,7 @@
 title: Places サービスを使用したプッシュ通知
 description: この節では、Campaign Standardのプッシュ通知でPlaces サービスを使用する方法について説明します。
 exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
-TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
+TQID: 'https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -13,17 +13,14 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 2%
@@ -129,7 +126,7 @@ Campaignに位置情報が入力されたので、POIをオーディエンスセ
    >
    >ユーザーが前回このPOIにアクセスしてから時間を決定するために、追加の選択を行うことができます。
 
-   ![&#x200B; 「ACSのプッシュメッセージ 2」 &#x200B;](/help/assets/ACS_push2.png)
+   ![ 「ACSのプッシュメッセージ 2」 ](/help/assets/ACS_push2.png)
 
 1. 「**[!UICONTROL 確認]**」をクリックします。
 1. 上部で再度カウントを実行して、オーディエンスサイズの変更を確認します。
