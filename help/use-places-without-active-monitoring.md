@@ -2,12 +2,12 @@
 title: アクティブな地域モニタリングなしでPlaces サービスを使用
 description: この節では、アクティブな地域モニタリングなしでPlaces サービスを使用する方法について説明します。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-TQID: https://experienceleague.adobe.com/xUmdMOa5CvDZSxKFeyse-3vHsUwvm2s04-sIG0FnnCs
+TQID: 'https://experienceleague.adobe.com/xUmdMOa5CvDZSxKFeyse-3vHsUwvm2s04-sIG0FnnCs'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
-    internal-label: Adobe Sign
+    internal-label: Acrobat Sign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
     internal-label: Target
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
@@ -25,25 +25,18 @@ feature_v2:
     internal-label: Implementation
   - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
     internal-label: SDKs
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
+    internal-label: Data collection tags
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
-subfeature_v2:
-  - id: b572b7ff-a413-4173-b2b4-d7d3874f1b9b
-    internal-label: Best practices
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
-  - id: ee602049-8a18-43df-9299-a689a025a371
-    internal-label: Use cases
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%

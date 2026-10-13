@@ -2,7 +2,7 @@
 title: Web サービス APIの概要
 description: Places サービスとは、Adobeをご利用のお客様が、位置情報を利用して、Adobe Experience CloudとAdobe Experience Platformのソリューションを組み合わせることが容易になる一連のサービスです。これにより、適切なタイミングと場所で、適切なユーザーに適切なエクスペリエンスを提供できるようになります。
 exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
-TQID: https://experienceleague.adobe.com/jP7iQH7X85UZROjsa3XzuN0bJZjjKffODFGGji7XZfQ
+TQID: 'https://experienceleague.adobe.com/jP7iQH7X85UZROjsa3XzuN0bJZjjKffODFGGji7XZfQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -10,14 +10,13 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%

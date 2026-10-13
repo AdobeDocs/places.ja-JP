@@ -2,7 +2,7 @@
 title: Adobe AnalyticsでのPlaces サービスの使用
 description: この節では、Adobe AnalyticsでPlaces サービスを使用する方法について説明します。
 exl-id: d564934b-1ecc-452f-930a-2bcd1a8162ec
-TQID: https://experienceleague.adobe.com/czLYEYiu0CGXOiTEIn69RhApP4cOh97wRgX4zOR3tIs
+TQID: 'https://experienceleague.adobe.com/czLYEYiu0CGXOiTEIn69RhApP4cOh97wRgX4zOR3tIs'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -14,14 +14,13 @@ feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
     internal-label: Reports
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%

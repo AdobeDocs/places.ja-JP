@@ -2,7 +2,7 @@
 title: バルクアップロード POI
 description: この節では、POIを一括アップロードする方法について説明します。
 exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
-TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
+TQID: 'https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -16,8 +16,7 @@ feature_v2:
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
     internal-label: APIs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -25,7 +24,7 @@ topic_v2:
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 0%
