@@ -4,6 +4,7 @@ product: places service
 solution: Data Collection, Experience Platform
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: "Experience Platform"
 usetq: true
 landing-page-name: mobile
 landing-page-breadcrumb-title: Mobile SDK
@@ -19,11 +20,9 @@ git-repo: https://github.com/AdobeDocs/places.ja-JP
 index: true
 source-git-commit: 11476e8f3f542ce81aa16b6b0b016dbec16db57c
 workflow-type: tm+mt
-source-wordcount: 167
-ht-degree: 80%
-
+source-wordcount: '163'
+ht-degree: 82%
 ---
-
 
 <!-- We need better links for Getting Started and Tutorials. We can do this after we hit stage -->
 
